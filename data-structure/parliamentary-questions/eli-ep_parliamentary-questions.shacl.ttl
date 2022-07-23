@@ -1,0 +1,1302 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix aut-event: <http://publications.europa.eu/resource/authority/event/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix epvoc: <https://data.europarl.europa.eu/def/epvoc#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix questions: <https://data.europarl.europa.eu/def/parliamentary-questions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix resource-type: <http://publications.europa.eu/resource/authority/resource-type/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shacl-play: <https://shacl-play.sparna.fr/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.europarl.europa.eu/def/parliamentary-questions#> a owl:Ontology, skos:ConceptScheme,
+    adms:Asset;
+  dcterms:conformsTo <https://www.w3.org/TR/shacl>;
+  dcterms:created "2022-03-04"^^xsd:date;
+  dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:dateCopyrighted "2022"^^xsd:gYear;
+  dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
+  dcterms:title "Parliamentary questions dataset description"@en;
+  dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
+  vann:usageNote """2022-07-14
+- eli:is_exemplified_by changed to ObjectProperty (sh:IRI)
+2022-06-13
+- dcterms:title set to rdf:langString
+2022-06-07
+- add epvoc:identifierYear on eli:Work
+- add \"lt\" in languages
+- put 1,n cardinality on 'type' for controlled vocabularies
+2022-05-11:
+- update Catalogue Language list
+- add skos:example and sh:pattern
+- harmonise naming with eli-ep: rename :RoleReference to :ParticipationRoleReference; :FormatReference to :MediaTypeOrExtentReference
+2022-04-26:
+- changed aut-event:DOCUMENT_DEPOSIT to aut-event:DOCUMENT_SUBMISSION"""@en;
+  rdfs:label "Parliamentary questions dataset description"@en;
+  owl:versionIRI <https://data.europarl.europa.eu/def/eli-ep#>;
+  owl:versionInfo "0.4.4"@en;
+  skos:hasTopConcept questions:P10, questions:P100, questions:P101, questions:P103,
+    questions:P104, questions:P106, questions:P107, questions:P109, questions:P11, questions:P110,
+    questions:P12, questions:P13, questions:P14, questions:P17, questions:P18, questions:P19,
+    questions:P20, questions:P21, questions:P22, questions:P23, questions:P24, questions:P25,
+    questions:P27, questions:P28, questions:P30, questions:P31, questions:P32, questions:P33,
+    questions:P34, questions:P36, questions:P37, questions:P38, questions:P39, questions:P40,
+    questions:P41, questions:P42, questions:P43, questions:P44, questions:P46, questions:P47,
+    questions:P49, questions:P50, questions:P51, questions:P52, questions:P53, questions:P54,
+    questions:P56, questions:P57, questions:P58, questions:P59, questions:P60, questions:P61,
+    questions:P62, questions:P63, questions:P64, questions:P65, questions:P66, questions:P67,
+    questions:P70, questions:P71, questions:P72, questions:P74, questions:P75, questions:P76,
+    questions:P77, questions:P80, questions:P81, questions:P82, questions:P83, questions:P84,
+    questions:P85, questions:P87, questions:P88, questions:P89, questions:P9, questions:P90,
+    questions:P91, questions:P94, questions:P95, questions:P97, questions:P98;
+  adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP> .
+
+questions:Question a sh:NodeShape;
+  rdfs:label "Question"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/E-9-2022-000004";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property questions:P17, questions:P18, questions:P19, questions:P20, questions:P21,
+    questions:P22, questions:P23, questions:P24, questions:P25, questions:P27, questions:P28,
+    questions:P30, questions:P31, questions:P32, questions:P33, questions:P34;
+  sh:target questions:Question-target .
+
+questions:Question-target sh:select """PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX resource-type: <http://publications.europa.eu/resource/authority/resource-type/>
+SELECT ?this
+WHERE {
+ ?this eli:work_type ?type .
+ VALUES ?type {
+ # all narrower terms of QUEST_EP
+ resource-type:INTERPELL_G
+ resource-type:INTERPELL_K
+ resource-type:QUEST_ORAL
+ resource-type:QUEST_PRIORITY
+ resource-type:QUEST_TIME
+ resource-type:QUEST_WRITTEN
+ }
+}"""@en .
+
+questions:AnswerToQuestion a sh:NodeShape;
+  rdfs:label "Answer to question"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/E-9-2022-000004-ASW";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property questions:P36, questions:P37, questions:P38, questions:P39, questions:P40,
+    questions:P41, questions:P42, questions:P43, questions:P44, questions:P46, questions:P47,
+    questions:P49, questions:P50, questions:P51, questions:P52, questions:P53, questions:P54 .
+
+questions:AnnexOfAnswer a sh:NodeShape;
+  rdfs:label "Annex to Answer"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 3;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property questions:P56, questions:P57, questions:P58, questions:P59, questions:P60,
+    questions:P61, questions:P62, questions:P63, questions:P64, questions:P65, questions:P66,
+    questions:P67, questions:P70, questions:P71, questions:P72 .
+
+questions:Expression a sh:NodeShape;
+  rdfs:label "Expression"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/E-9-2022-000004/en";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+/[a-z][a-z]$";
+  sh:property questions:P74, questions:P75, questions:P76, questions:P77 .
+
+questions:Manifestation a sh:NodeShape;
+  rdfs:label "Manifestation"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/E-9-2022-000004/en/pdf";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 5;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+/[a-z][a-z]/.*$";
+  sh:property questions:P80, questions:P81, questions:P82, questions:P83, questions:P84,
+    questions:P85 .
+
+questions:DocumentSubmission a sh:NodeShape;
+  rdfs:label "Document submission"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/event/E-9-2022-000004";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 6;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\\-_]+$";
+  sh:property questions:P10, questions:P11, questions:P12, questions:P13, questions:P14,
+    questions:P9 .
+
+questions:Participation a sh:NodeShape;
+  rdfs:label "Participation"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 7;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/participation/[A-Za-z0-9\\-_]+_+[A-Za-z0-9\\-_]+$";
+  sh:property questions:P87, questions:P88, questions:P89, questions:P90, questions:P91 .
+
+questions:ParliamentaryTermReference a sh:NodeShape;
+  rdfs:label "Reference to a Parliamentary Term"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 10;
+  sh:pattern "^https://data.europarl.europa.eu/org/ep-[0-9].*$";
+  sh:property questions:P97, questions:P98 .
+
+questions:ActivityTypeReference a sh:NodeShape;
+  rdfs:label "Reference to an Activity type"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 11;
+  sh:pattern "^http://publications.europa.eu/resource/authority/event/.*$";
+  sh:property questions:P94, questions:P95 .
+
+questions:MediaTypeOrExtentReference a sh:NodeShape;
+  rdfs:label "Reference to a Format"@en;
+  skos:example "http://publications.europa.eu/resource/authority/file-type/PDF";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 13;
+  sh:pattern "http://publications.europa.eu/resource/authority/file-type/.*$";
+  sh:property questions:P100, questions:P101 .
+
+questions:ParticipationRoleReference a sh:NodeShape;
+  rdfs:label "Reference to a Role"@en;
+  skos:example "http://publications.europa.eu/resource/authority/role/AUT";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 15;
+  sh:pattern "http://publications.europa.eu/resource/authority/role/.*$";
+  sh:property questions:P103, questions:P104 .
+
+questions:OrganizationReference a sh:NodeShape;
+  rdfs:label "Reference to an Organization"@en;
+  skos:example "http://publications.europa.eu/resource/authority/corporate-body/EP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 16;
+  sh:pattern "http://publications.europa.eu/resource/authority/corporate-body/.*$";
+  sh:property questions:P106, questions:P107 .
+
+questions:PersonReference a sh:NodeShape;
+  rdfs:label "Reference to a Person"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 17;
+  sh:property questions:P109, questions:P110 .
+
+questions:P9 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli-dl:Activity;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+questions:P10 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "create a realization of"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:created_a_realization_of .
+
+questions:P11 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue aut-event:DOCUMENT_SUBMISSION;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity type"@en;
+  sh:node questions:ActivityTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_activity_type .
+
+questions:P12 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:name "participation"@en;
+  sh:node questions:Participation;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_participation .
+
+questions:P13 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_id .
+
+questions:P14 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:dateTime;
+  sh:name "activity date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_date .
+
+questions:P17 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli:Work;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+questions:P18 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:in _:node1g797rbj3x7317 .
+
+_:node1g797rbj3x7317 rdf:first resource-type:INTERPELL_G;
+  rdf:rest _:node1g797rbj3x7318 .
+
+_:node1g797rbj3x7318 rdf:first resource-type:INTERPELL_K;
+  rdf:rest _:node1g797rbj3x7319 .
+
+_:node1g797rbj3x7319 rdf:first resource-type:QUEST_ORAL;
+  rdf:rest _:node1g797rbj3x7320 .
+
+_:node1g797rbj3x7320 rdf:first resource-type:QUEST_PRIORITY;
+  rdf:rest _:node1g797rbj3x7321 .
+
+_:node1g797rbj3x7321 rdf:first resource-type:QUEST_TIME;
+  rdf:rest _:node1g797rbj3x7322 .
+
+_:node1g797rbj3x7322 rdf:first resource-type:QUEST_WRITTEN;
+  rdf:rest rdf:nil .
+
+questions:P18 sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:work_type .
+
+questions:P19 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date document"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:date_document .
+
+questions:P20 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+questions:P21 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "identifier year"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:identifierYear .
+
+questions:P22 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:title .
+
+questions:P23 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+questions:P24 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "ep number"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumber .
+
+questions:P25 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "en number version"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumberVersion .
+
+questions:P27 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype epvoc:publicRegister;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+questions:P28 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "parliamentary term"@en;
+  sh:node questions:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+questions:P30 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:name "creator"@en;
+  sh:nodeKind sh:IRI;
+  sh:or _:node1g797rbj3x7323 .
+
+_:node1g797rbj3x7323 rdf:first _:node1g797rbj3x7324 .
+
+_:node1g797rbj3x7324 sh:node questions:PersonReference .
+
+_:node1g797rbj3x7323 rdf:rest _:node1g797rbj3x7325 .
+
+_:node1g797rbj3x7325 rdf:first _:node1g797rbj3x7326 .
+
+_:node1g797rbj3x7326 sh:node questions:OrganizationReference .
+
+_:node1g797rbj3x7325 rdf:rest rdf:nil .
+
+questions:P30 sh:path dcterms:creator .
+
+questions:P31 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "publisher"@en;
+  sh:node questions:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:publisher .
+
+questions:P32 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "is realized by"@en;
+  sh:node questions:Expression;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_realized_by .
+
+questions:P33 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 2;
+  sh:name "answered in"@en;
+  sh:node questions:AnswerToQuestion;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x7327 .
+
+_:node1g797rbj3x7327 sh:inversePath eli-dl:answers_to .
+
+questions:P34 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "has realization created by"@en;
+  sh:node questions:DocumentSubmission;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x7328 .
+
+_:node1g797rbj3x7328 sh:inversePath eli-dl:created_a_realization_of .
+
+questions:P36 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli:Work;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+questions:P37 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue resource-type:ANSWER_TO_EP_QUESTION;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:work_type .
+
+questions:P38 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date document"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:date_document .
+
+questions:P39 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+questions:P40 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "identifier year"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:identifierYear .
+
+questions:P41 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:title .
+
+questions:P42 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+questions:P43 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "ep number"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumber .
+
+questions:P44 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "en number version"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumberVersion .
+
+questions:P46 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype epvoc:publicRegister;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+questions:P47 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "parliamentary term"@en;
+  sh:node questions:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+questions:P49 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:name "creator"@en;
+  sh:nodeKind sh:IRI;
+  sh:or _:node1g797rbj3x7329 .
+
+_:node1g797rbj3x7329 rdf:first _:node1g797rbj3x7330 .
+
+_:node1g797rbj3x7330 sh:node questions:PersonReference .
+
+_:node1g797rbj3x7329 rdf:rest _:node1g797rbj3x7331 .
+
+_:node1g797rbj3x7331 rdf:first _:node1g797rbj3x7332 .
+
+_:node1g797rbj3x7332 sh:node questions:OrganizationReference .
+
+_:node1g797rbj3x7331 rdf:rest rdf:nil .
+
+questions:P49 sh:path dcterms:creator .
+
+questions:P50 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "publisher"@en;
+  sh:node questions:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:publisher .
+
+questions:P51 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "is realized by"@en;
+  sh:node questions:Expression;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_realized_by .
+
+questions:P52 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "answers to"@en;
+  sh:node questions:Question;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:answers_to .
+
+questions:P53 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:name "has annex"@en;
+  sh:node questions:AnnexOfAnswer;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x7333 .
+
+_:node1g797rbj3x7333 sh:inversePath eli:is_annex_of .
+
+questions:P54 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "has realization created by"@en;
+  sh:node questions:DocumentSubmission;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x7334 .
+
+_:node1g797rbj3x7334 sh:inversePath eli-dl:created_a_realization_of .
+
+questions:P56 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli:Work;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+questions:P57 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue resource-type:ANNEX;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:work_type .
+
+questions:P58 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date document"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:date_document .
+
+questions:P59 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+questions:P60 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "identifier year"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:identifierYear .
+
+questions:P61 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:title .
+
+questions:P62 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+questions:P63 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "ep number"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumber .
+
+questions:P64 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "en number version"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumberVersion .
+
+questions:P65 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "numbering"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:numbering .
+
+questions:P66 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype epvoc:publicRegister;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+questions:P67 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "parliamentary term"@en;
+  sh:node questions:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+questions:P70 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "publisher"@en;
+  sh:node questions:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:publisher .
+
+questions:P71 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "is realized by"@en;
+  sh:node questions:Expression;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_realized_by .
+
+questions:P72 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "is annex of"@en;
+  sh:node questions:AnswerToQuestion;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_annex_of .
+
+questions:P74 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli:Expression;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P75 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:title .
+
+questions:P76 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:name "alternative title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:title_alternative .
+
+questions:P77 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "is embodied by"@en;
+  sh:node questions:Manifestation;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_embodied_by .
+
+questions:P80 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli:Manifestation;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P81 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "issued"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:issued .
+
+questions:P82 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:minCount 1;
+  sh:name "is exemplified by"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_exemplified_by .
+
+questions:P83 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:long;
+  sh:maxCount 1;
+  sh:name "byte size"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:byteSize .
+
+questions:P84 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "format"@en;
+  sh:node questions:MediaTypeOrExtentReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:format .
+
+questions:P85 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "media type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:media_type .
+
+questions:P87 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli-dl:Participation;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P88 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "participation role"@en;
+  sh:node questions:ParticipationRoleReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:participation_role .
+
+questions:P89 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "participation organization"@en;
+  sh:node questions:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_participant_organization .
+
+questions:P90 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "participation in name of"@en;
+  sh:node questions:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:participation_in_name_of .
+
+questions:P91 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:maxCount 1;
+  sh:name "participation person"@en;
+  sh:node questions:PersonReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_participant_person .
+
+questions:P94 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli-dl:ActivityType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P95 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x7335 .
+
+_:node1g797rbj3x7335 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x7336 .
+
+_:node1g797rbj3x7336 rdf:first "es";
+  rdf:rest _:node1g797rbj3x7337 .
+
+_:node1g797rbj3x7337 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x7338 .
+
+_:node1g797rbj3x7338 rdf:first "da";
+  rdf:rest _:node1g797rbj3x7339 .
+
+_:node1g797rbj3x7339 rdf:first "de";
+  rdf:rest _:node1g797rbj3x7340 .
+
+_:node1g797rbj3x7340 rdf:first "et";
+  rdf:rest _:node1g797rbj3x7341 .
+
+_:node1g797rbj3x7341 rdf:first "el";
+  rdf:rest _:node1g797rbj3x7342 .
+
+_:node1g797rbj3x7342 rdf:first "en";
+  rdf:rest _:node1g797rbj3x7343 .
+
+_:node1g797rbj3x7343 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x7344 .
+
+_:node1g797rbj3x7344 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x7345 .
+
+_:node1g797rbj3x7345 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x7346 .
+
+_:node1g797rbj3x7346 rdf:first "it";
+  rdf:rest _:node1g797rbj3x7347 .
+
+_:node1g797rbj3x7347 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x7348 .
+
+_:node1g797rbj3x7348 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x7349 .
+
+_:node1g797rbj3x7349 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x7350 .
+
+_:node1g797rbj3x7350 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x7351 .
+
+_:node1g797rbj3x7351 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x7352 .
+
+_:node1g797rbj3x7352 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x7353 .
+
+_:node1g797rbj3x7353 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x7354 .
+
+_:node1g797rbj3x7354 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x7355 .
+
+_:node1g797rbj3x7355 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x7356 .
+
+_:node1g797rbj3x7356 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x7357 .
+
+_:node1g797rbj3x7357 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x7358 .
+
+_:node1g797rbj3x7358 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+questions:P95 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+questions:P97 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli-dl:ParliamentaryTerm;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P98 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x7359 .
+
+_:node1g797rbj3x7359 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x7360 .
+
+_:node1g797rbj3x7360 rdf:first "es";
+  rdf:rest _:node1g797rbj3x7361 .
+
+_:node1g797rbj3x7361 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x7362 .
+
+_:node1g797rbj3x7362 rdf:first "da";
+  rdf:rest _:node1g797rbj3x7363 .
+
+_:node1g797rbj3x7363 rdf:first "de";
+  rdf:rest _:node1g797rbj3x7364 .
+
+_:node1g797rbj3x7364 rdf:first "et";
+  rdf:rest _:node1g797rbj3x7365 .
+
+_:node1g797rbj3x7365 rdf:first "el";
+  rdf:rest _:node1g797rbj3x7366 .
+
+_:node1g797rbj3x7366 rdf:first "en";
+  rdf:rest _:node1g797rbj3x7367 .
+
+_:node1g797rbj3x7367 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x7368 .
+
+_:node1g797rbj3x7368 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x7369 .
+
+_:node1g797rbj3x7369 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x7370 .
+
+_:node1g797rbj3x7370 rdf:first "it";
+  rdf:rest _:node1g797rbj3x7371 .
+
+_:node1g797rbj3x7371 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x7372 .
+
+_:node1g797rbj3x7372 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x7373 .
+
+_:node1g797rbj3x7373 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x7374 .
+
+_:node1g797rbj3x7374 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x7375 .
+
+_:node1g797rbj3x7375 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x7376 .
+
+_:node1g797rbj3x7376 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x7377 .
+
+_:node1g797rbj3x7377 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x7378 .
+
+_:node1g797rbj3x7378 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x7379 .
+
+_:node1g797rbj3x7379 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x7380 .
+
+_:node1g797rbj3x7380 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x7381 .
+
+_:node1g797rbj3x7381 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x7382 .
+
+_:node1g797rbj3x7382 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+questions:P98 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+questions:P100 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue dcterms:MediaTypeOrExtent;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P101 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x7383 .
+
+_:node1g797rbj3x7383 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x7384 .
+
+_:node1g797rbj3x7384 rdf:first "es";
+  rdf:rest _:node1g797rbj3x7385 .
+
+_:node1g797rbj3x7385 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x7386 .
+
+_:node1g797rbj3x7386 rdf:first "da";
+  rdf:rest _:node1g797rbj3x7387 .
+
+_:node1g797rbj3x7387 rdf:first "de";
+  rdf:rest _:node1g797rbj3x7388 .
+
+_:node1g797rbj3x7388 rdf:first "et";
+  rdf:rest _:node1g797rbj3x7389 .
+
+_:node1g797rbj3x7389 rdf:first "el";
+  rdf:rest _:node1g797rbj3x7390 .
+
+_:node1g797rbj3x7390 rdf:first "en";
+  rdf:rest _:node1g797rbj3x7391 .
+
+_:node1g797rbj3x7391 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x7392 .
+
+_:node1g797rbj3x7392 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x7393 .
+
+_:node1g797rbj3x7393 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x7394 .
+
+_:node1g797rbj3x7394 rdf:first "it";
+  rdf:rest _:node1g797rbj3x7395 .
+
+_:node1g797rbj3x7395 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x7396 .
+
+_:node1g797rbj3x7396 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x7397 .
+
+_:node1g797rbj3x7397 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x7398 .
+
+_:node1g797rbj3x7398 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x7399 .
+
+_:node1g797rbj3x7399 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x7400 .
+
+_:node1g797rbj3x7400 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x7401 .
+
+_:node1g797rbj3x7401 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x7402 .
+
+_:node1g797rbj3x7402 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x7403 .
+
+_:node1g797rbj3x7403 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x7404 .
+
+_:node1g797rbj3x7404 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x7405 .
+
+_:node1g797rbj3x7405 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x7406 .
+
+_:node1g797rbj3x7406 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+questions:P101 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+questions:P103 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue eli-dl:ParticipationRole;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P104 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x7407 .
+
+_:node1g797rbj3x7407 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x7408 .
+
+_:node1g797rbj3x7408 rdf:first "es";
+  rdf:rest _:node1g797rbj3x7409 .
+
+_:node1g797rbj3x7409 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x7410 .
+
+_:node1g797rbj3x7410 rdf:first "da";
+  rdf:rest _:node1g797rbj3x7411 .
+
+_:node1g797rbj3x7411 rdf:first "de";
+  rdf:rest _:node1g797rbj3x7412 .
+
+_:node1g797rbj3x7412 rdf:first "et";
+  rdf:rest _:node1g797rbj3x7413 .
+
+_:node1g797rbj3x7413 rdf:first "el";
+  rdf:rest _:node1g797rbj3x7414 .
+
+_:node1g797rbj3x7414 rdf:first "en";
+  rdf:rest _:node1g797rbj3x7415 .
+
+_:node1g797rbj3x7415 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x7416 .
+
+_:node1g797rbj3x7416 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x7417 .
+
+_:node1g797rbj3x7417 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x7418 .
+
+_:node1g797rbj3x7418 rdf:first "it";
+  rdf:rest _:node1g797rbj3x7419 .
+
+_:node1g797rbj3x7419 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x7420 .
+
+_:node1g797rbj3x7420 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x7421 .
+
+_:node1g797rbj3x7421 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x7422 .
+
+_:node1g797rbj3x7422 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x7423 .
+
+_:node1g797rbj3x7423 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x7424 .
+
+_:node1g797rbj3x7424 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x7425 .
+
+_:node1g797rbj3x7425 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x7426 .
+
+_:node1g797rbj3x7426 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x7427 .
+
+_:node1g797rbj3x7427 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x7428 .
+
+_:node1g797rbj3x7428 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x7429 .
+
+_:node1g797rbj3x7429 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x7430 .
+
+_:node1g797rbj3x7430 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+questions:P104 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+questions:P106 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue org:Organization;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P107 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel .
+
+questions:P109 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue foaf:Person;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P110 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype xsd:string;
+  sh:minCount 1;
+  sh:name "name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .

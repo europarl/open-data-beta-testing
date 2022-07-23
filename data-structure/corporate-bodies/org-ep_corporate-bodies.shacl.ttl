@@ -1,0 +1,640 @@
+@prefix adms: <https://www.w3.org/ns/adms#> .
+@prefix corporate-bodies: <https://data.europarl.europa.eu/def/corporate-bodies#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix epvoc: <https://data.europarl.europa.eu/def/epvoc#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix org-ep: <https://data.europarl.europa.eu/def/org-ep#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.europarl.europa.eu/def/corporate-bodies#> a owl:Ontology, skos:ConceptScheme,
+    adms:Asset;
+  dct:conformsTo <https://www.w3.org/TR/shacl>;
+  dct:created "2022-03-24"^^xsd:date;
+  dct:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dct:dateCopyrighted "2022"^^xsd:gYear;
+  dct:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dct:modified "2022-06-28T00:00:00.000Z"^^xsd:dateTime;
+  dct:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dct:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
+  dct:title "Corporate bodies dataset specification"@en;
+  dct:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
+  rdfs:label "Corporate bodies dataset specification"@en;
+  owl:versionIRI <https://data.europarl.europa.eu/def/org-ep#>;
+  owl:versionInfo "0.3.1";
+  skos:hasTopConcept corporate-bodies:P10, corporate-bodies:P11, corporate-bodies:P12,
+    corporate-bodies:P13, corporate-bodies:P14, corporate-bodies:P15, corporate-bodies:P16,
+    corporate-bodies:P17, corporate-bodies:P18, corporate-bodies:P19, corporate-bodies:P20,
+    corporate-bodies:P23, corporate-bodies:P24, corporate-bodies:P27, corporate-bodies:P28,
+    corporate-bodies:P31, corporate-bodies:P32, corporate-bodies:P33, corporate-bodies:P9;
+  adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
+  adms:versionNotes """2022-06-28
+- creation of the second language list (one with EU languages, one with more languages - mainly used for EU vocabularies)
+- removed sh:maxCount for rdf:type of org:Organization
+2022-06-16
+- removed cardinality for rdf:type of vocabularies
+2022-06-15
+- added dcterms:source to Organization and epvoc:classificationOrganization on Membership
+2022-05-24
+- removed sh:note corporate-bodies:Organization in cells K15 & K16 to avoid never ending loop.
+- REMARK: target query to be reviewed once added new classification to distinguish Codict bodies
+2022-04-20:
+- template harmonisation with eli-ep (purpose of blue and green categories)
+2022-04-19:
+- template harmonisation with eli-ep (add sh:targetClass)
+- add skos:example and sh:pattern
+- errors correction for periodOfTime (properties).
+- TO VALIDATATE parts in yellow
+2022-04-08: review
+- queries sh:select needs to be validated; why not sh:targetClass ?!
+2022-03-24: creation"""@en .
+
+corporate-bodies:Organization a sh:NodeShape;
+  rdfs:label "Organization"@en;
+  skos:example "https://data.europarl.europa.eu/org/1234";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^https://data.europarl.europa.eu/org/.*$";
+  sh:property corporate-bodies:P10, corporate-bodies:P11, corporate-bodies:P12, corporate-bodies:P13,
+    corporate-bodies:P14, corporate-bodies:P15, corporate-bodies:P16, corporate-bodies:P17,
+    corporate-bodies:P18, corporate-bodies:P19, corporate-bodies:P20, corporate-bodies:P9;
+  sh:target corporate-bodies:Organization-target;
+  sh:targetClass org:Organization .
+
+corporate-bodies:Organization-target sh:select """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX org: <http://www.w3.org/ns/org#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?this
+WHERE {
+ ?this rdf:type org:Organization .
+}""" .
+
+corporate-bodies:CountryReference a sh:NodeShape;
+  rdfs:label "Reference to a Country"@en;
+  skos:example "http://publications.europa.eu/resource/authority/country/BEL";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:pattern "^http://publications.europa.eu/resource/authority/country/.*$";
+  sh:property corporate-bodies:P23, corporate-bodies:P24 .
+
+corporate-bodies:PeriodOfTimeReference a sh:NodeShape;
+  rdfs:label "Reference to a Period Of Time"@en;
+  skos:example "https://data.europarl.europa.eu/time-period/pt_9";
+  sh:closed true;
+  sh:order 3;
+  sh:property corporate-bodies:P31, corporate-bodies:P32, corporate-bodies:P33 .
+
+corporate-bodies:CorporateBodyClassificationReference a sh:NodeShape;
+  rdfs:label "Reference to a Corporate Body Classification"@en;
+  skos:example "http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:pattern "^http://publications.europa.eu/resource/authority/corporate-body-classification/.*$";
+  sh:property corporate-bodies:P27, corporate-bodies:P28 .
+
+corporate-bodies:P9 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:hasValue org:Organization;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+corporate-bodies:P10 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+corporate-bodies:P11 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype epvoc:codictBodyId;
+  sh:minCount 1;
+  sh:name "Notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+corporate-bodies:P12 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+corporate-bodies:P13 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g5oj6hp8x7218 .
+
+_:node1g5oj6hp8x7218 rdf:first "bg";
+  rdf:rest _:node1g5oj6hp8x7219 .
+
+_:node1g5oj6hp8x7219 rdf:first "es";
+  rdf:rest _:node1g5oj6hp8x7220 .
+
+_:node1g5oj6hp8x7220 rdf:first "cs";
+  rdf:rest _:node1g5oj6hp8x7221 .
+
+_:node1g5oj6hp8x7221 rdf:first "da";
+  rdf:rest _:node1g5oj6hp8x7222 .
+
+_:node1g5oj6hp8x7222 rdf:first "de";
+  rdf:rest _:node1g5oj6hp8x7223 .
+
+_:node1g5oj6hp8x7223 rdf:first "et";
+  rdf:rest _:node1g5oj6hp8x7224 .
+
+_:node1g5oj6hp8x7224 rdf:first "el";
+  rdf:rest _:node1g5oj6hp8x7225 .
+
+_:node1g5oj6hp8x7225 rdf:first "en";
+  rdf:rest _:node1g5oj6hp8x7226 .
+
+_:node1g5oj6hp8x7226 rdf:first "fr";
+  rdf:rest _:node1g5oj6hp8x7227 .
+
+_:node1g5oj6hp8x7227 rdf:first "ga";
+  rdf:rest _:node1g5oj6hp8x7228 .
+
+_:node1g5oj6hp8x7228 rdf:first "hr";
+  rdf:rest _:node1g5oj6hp8x7229 .
+
+_:node1g5oj6hp8x7229 rdf:first "it";
+  rdf:rest _:node1g5oj6hp8x7230 .
+
+_:node1g5oj6hp8x7230 rdf:first "lv";
+  rdf:rest _:node1g5oj6hp8x7231 .
+
+_:node1g5oj6hp8x7231 rdf:first "lt";
+  rdf:rest _:node1g5oj6hp8x7232 .
+
+_:node1g5oj6hp8x7232 rdf:first "hu";
+  rdf:rest _:node1g5oj6hp8x7233 .
+
+_:node1g5oj6hp8x7233 rdf:first "mt";
+  rdf:rest _:node1g5oj6hp8x7234 .
+
+_:node1g5oj6hp8x7234 rdf:first "nl";
+  rdf:rest _:node1g5oj6hp8x7235 .
+
+_:node1g5oj6hp8x7235 rdf:first "pl";
+  rdf:rest _:node1g5oj6hp8x7236 .
+
+_:node1g5oj6hp8x7236 rdf:first "pt";
+  rdf:rest _:node1g5oj6hp8x7237 .
+
+_:node1g5oj6hp8x7237 rdf:first "ro";
+  rdf:rest _:node1g5oj6hp8x7238 .
+
+_:node1g5oj6hp8x7238 rdf:first "sk";
+  rdf:rest _:node1g5oj6hp8x7239 .
+
+_:node1g5oj6hp8x7239 rdf:first "sl";
+  rdf:rest _:node1g5oj6hp8x7240 .
+
+_:node1g5oj6hp8x7240 rdf:first "fi";
+  rdf:rest _:node1g5oj6hp8x7241 .
+
+_:node1g5oj6hp8x7241 rdf:first "sv";
+  rdf:rest _:node1g5oj6hp8x7242 .
+
+_:node1g5oj6hp8x7242 rdf:first "lb";
+  rdf:rest rdf:nil .
+
+corporate-bodies:P13 sh:minCount 1;
+  sh:name "Preferred label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+corporate-bodies:P14 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g5oj6hp8x7243 .
+
+_:node1g5oj6hp8x7243 rdf:first "bg";
+  rdf:rest _:node1g5oj6hp8x7244 .
+
+_:node1g5oj6hp8x7244 rdf:first "es";
+  rdf:rest _:node1g5oj6hp8x7245 .
+
+_:node1g5oj6hp8x7245 rdf:first "cs";
+  rdf:rest _:node1g5oj6hp8x7246 .
+
+_:node1g5oj6hp8x7246 rdf:first "da";
+  rdf:rest _:node1g5oj6hp8x7247 .
+
+_:node1g5oj6hp8x7247 rdf:first "de";
+  rdf:rest _:node1g5oj6hp8x7248 .
+
+_:node1g5oj6hp8x7248 rdf:first "et";
+  rdf:rest _:node1g5oj6hp8x7249 .
+
+_:node1g5oj6hp8x7249 rdf:first "el";
+  rdf:rest _:node1g5oj6hp8x7250 .
+
+_:node1g5oj6hp8x7250 rdf:first "en";
+  rdf:rest _:node1g5oj6hp8x7251 .
+
+_:node1g5oj6hp8x7251 rdf:first "fr";
+  rdf:rest _:node1g5oj6hp8x7252 .
+
+_:node1g5oj6hp8x7252 rdf:first "ga";
+  rdf:rest _:node1g5oj6hp8x7253 .
+
+_:node1g5oj6hp8x7253 rdf:first "hr";
+  rdf:rest _:node1g5oj6hp8x7254 .
+
+_:node1g5oj6hp8x7254 rdf:first "it";
+  rdf:rest _:node1g5oj6hp8x7255 .
+
+_:node1g5oj6hp8x7255 rdf:first "lv";
+  rdf:rest _:node1g5oj6hp8x7256 .
+
+_:node1g5oj6hp8x7256 rdf:first "lt";
+  rdf:rest _:node1g5oj6hp8x7257 .
+
+_:node1g5oj6hp8x7257 rdf:first "hu";
+  rdf:rest _:node1g5oj6hp8x7258 .
+
+_:node1g5oj6hp8x7258 rdf:first "mt";
+  rdf:rest _:node1g5oj6hp8x7259 .
+
+_:node1g5oj6hp8x7259 rdf:first "nl";
+  rdf:rest _:node1g5oj6hp8x7260 .
+
+_:node1g5oj6hp8x7260 rdf:first "pl";
+  rdf:rest _:node1g5oj6hp8x7261 .
+
+_:node1g5oj6hp8x7261 rdf:first "pt";
+  rdf:rest _:node1g5oj6hp8x7262 .
+
+_:node1g5oj6hp8x7262 rdf:first "ro";
+  rdf:rest _:node1g5oj6hp8x7263 .
+
+_:node1g5oj6hp8x7263 rdf:first "sk";
+  rdf:rest _:node1g5oj6hp8x7264 .
+
+_:node1g5oj6hp8x7264 rdf:first "sl";
+  rdf:rest _:node1g5oj6hp8x7265 .
+
+_:node1g5oj6hp8x7265 rdf:first "fi";
+  rdf:rest _:node1g5oj6hp8x7266 .
+
+_:node1g5oj6hp8x7266 rdf:first "sv";
+  rdf:rest _:node1g5oj6hp8x7267 .
+
+_:node1g5oj6hp8x7267 rdf:first "lb";
+  rdf:rest rdf:nil .
+
+corporate-bodies:P14 sh:name "Alternative label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:altLabel;
+  sh:uniqueLang true .
+
+corporate-bodies:P15 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:name "Linked to"@en;
+  sh:nodeKind sh:IRI;
+  sh:path org:linkedTo .
+
+corporate-bodies:P16 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:name "Has suborganization"@en;
+  sh:nodeKind sh:IRI;
+  sh:path org:hasSubOrganization .
+
+corporate-bodies:P17 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Classification"@en;
+  sh:node corporate-bodies:CorporateBodyClassificationReference;
+  sh:nodeKind sh:IRI;
+  sh:path org:classification .
+
+corporate-bodies:P18 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:name "Represents"@en;
+  sh:node corporate-bodies:CountryReference;
+  sh:nodeKind sh:IRI;
+  sh:path euvoc:represents .
+
+corporate-bodies:P19 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Temporal"@en;
+  sh:node corporate-bodies:PeriodOfTimeReference;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:path dct:temporal .
+
+corporate-bodies:P20 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Source"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dct:source .
+
+corporate-bodies:P23 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:hasValue euvoc:Country;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+corporate-bodies:P24 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g5oj6hp8x7268 .
+
+_:node1g5oj6hp8x7268 rdf:first "bg";
+  rdf:rest _:node1g5oj6hp8x7269 .
+
+_:node1g5oj6hp8x7269 rdf:first "es";
+  rdf:rest _:node1g5oj6hp8x7270 .
+
+_:node1g5oj6hp8x7270 rdf:first "cs";
+  rdf:rest _:node1g5oj6hp8x7271 .
+
+_:node1g5oj6hp8x7271 rdf:first "da";
+  rdf:rest _:node1g5oj6hp8x7272 .
+
+_:node1g5oj6hp8x7272 rdf:first "de";
+  rdf:rest _:node1g5oj6hp8x7273 .
+
+_:node1g5oj6hp8x7273 rdf:first "et";
+  rdf:rest _:node1g5oj6hp8x7274 .
+
+_:node1g5oj6hp8x7274 rdf:first "el";
+  rdf:rest _:node1g5oj6hp8x7275 .
+
+_:node1g5oj6hp8x7275 rdf:first "en";
+  rdf:rest _:node1g5oj6hp8x7276 .
+
+_:node1g5oj6hp8x7276 rdf:first "fr";
+  rdf:rest _:node1g5oj6hp8x7277 .
+
+_:node1g5oj6hp8x7277 rdf:first "ga";
+  rdf:rest _:node1g5oj6hp8x7278 .
+
+_:node1g5oj6hp8x7278 rdf:first "hr";
+  rdf:rest _:node1g5oj6hp8x7279 .
+
+_:node1g5oj6hp8x7279 rdf:first "it";
+  rdf:rest _:node1g5oj6hp8x7280 .
+
+_:node1g5oj6hp8x7280 rdf:first "lv";
+  rdf:rest _:node1g5oj6hp8x7281 .
+
+_:node1g5oj6hp8x7281 rdf:first "lt";
+  rdf:rest _:node1g5oj6hp8x7282 .
+
+_:node1g5oj6hp8x7282 rdf:first "hu";
+  rdf:rest _:node1g5oj6hp8x7283 .
+
+_:node1g5oj6hp8x7283 rdf:first "mt";
+  rdf:rest _:node1g5oj6hp8x7284 .
+
+_:node1g5oj6hp8x7284 rdf:first "nl";
+  rdf:rest _:node1g5oj6hp8x7285 .
+
+_:node1g5oj6hp8x7285 rdf:first "pl";
+  rdf:rest _:node1g5oj6hp8x7286 .
+
+_:node1g5oj6hp8x7286 rdf:first "pt";
+  rdf:rest _:node1g5oj6hp8x7287 .
+
+_:node1g5oj6hp8x7287 rdf:first "ro";
+  rdf:rest _:node1g5oj6hp8x7288 .
+
+_:node1g5oj6hp8x7288 rdf:first "sk";
+  rdf:rest _:node1g5oj6hp8x7289 .
+
+_:node1g5oj6hp8x7289 rdf:first "sl";
+  rdf:rest _:node1g5oj6hp8x7290 .
+
+_:node1g5oj6hp8x7290 rdf:first "fi";
+  rdf:rest _:node1g5oj6hp8x7291 .
+
+_:node1g5oj6hp8x7291 rdf:first "sv";
+  rdf:rest _:node1g5oj6hp8x7292 .
+
+_:node1g5oj6hp8x7292 rdf:first "eu";
+  rdf:rest _:node1g5oj6hp8x7293 .
+
+_:node1g5oj6hp8x7293 rdf:first "sq";
+  rdf:rest _:node1g5oj6hp8x7294 .
+
+_:node1g5oj6hp8x7294 rdf:first "ca";
+  rdf:rest _:node1g5oj6hp8x7295 .
+
+_:node1g5oj6hp8x7295 rdf:first "tr";
+  rdf:rest _:node1g5oj6hp8x7296 .
+
+_:node1g5oj6hp8x7296 rdf:first "lb";
+  rdf:rest _:node1g5oj6hp8x7297 .
+
+_:node1g5oj6hp8x7297 rdf:first "is";
+  rdf:rest _:node1g5oj6hp8x7298 .
+
+_:node1g5oj6hp8x7298 rdf:first "rm";
+  rdf:rest _:node1g5oj6hp8x7299 .
+
+_:node1g5oj6hp8x7299 rdf:first "mk";
+  rdf:rest _:node1g5oj6hp8x7300 .
+
+_:node1g5oj6hp8x7300 rdf:first "sr";
+  rdf:rest _:node1g5oj6hp8x7301 .
+
+_:node1g5oj6hp8x7301 rdf:first "no";
+  rdf:rest _:node1g5oj6hp8x7302 .
+
+_:node1g5oj6hp8x7302 rdf:first "uk";
+  rdf:rest _:node1g5oj6hp8x7303 .
+
+_:node1g5oj6hp8x7303 rdf:first "bs";
+  rdf:rest _:node1g5oj6hp8x7304 .
+
+_:node1g5oj6hp8x7304 rdf:first "gl";
+  rdf:rest _:node1g5oj6hp8x7305 .
+
+_:node1g5oj6hp8x7305 rdf:first "fo";
+  rdf:rest _:node1g5oj6hp8x7306 .
+
+_:node1g5oj6hp8x7306 rdf:first "be";
+  rdf:rest _:node1g5oj6hp8x7307 .
+
+_:node1g5oj6hp8x7307 rdf:first "ru";
+  rdf:rest rdf:nil .
+
+corporate-bodies:P24 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+corporate-bodies:P27 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:hasValue euvoc:CorporateBodyClassification;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+corporate-bodies:P28 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g5oj6hp8x7308 .
+
+_:node1g5oj6hp8x7308 rdf:first "bg";
+  rdf:rest _:node1g5oj6hp8x7309 .
+
+_:node1g5oj6hp8x7309 rdf:first "es";
+  rdf:rest _:node1g5oj6hp8x7310 .
+
+_:node1g5oj6hp8x7310 rdf:first "cs";
+  rdf:rest _:node1g5oj6hp8x7311 .
+
+_:node1g5oj6hp8x7311 rdf:first "da";
+  rdf:rest _:node1g5oj6hp8x7312 .
+
+_:node1g5oj6hp8x7312 rdf:first "de";
+  rdf:rest _:node1g5oj6hp8x7313 .
+
+_:node1g5oj6hp8x7313 rdf:first "et";
+  rdf:rest _:node1g5oj6hp8x7314 .
+
+_:node1g5oj6hp8x7314 rdf:first "el";
+  rdf:rest _:node1g5oj6hp8x7315 .
+
+_:node1g5oj6hp8x7315 rdf:first "en";
+  rdf:rest _:node1g5oj6hp8x7316 .
+
+_:node1g5oj6hp8x7316 rdf:first "fr";
+  rdf:rest _:node1g5oj6hp8x7317 .
+
+_:node1g5oj6hp8x7317 rdf:first "ga";
+  rdf:rest _:node1g5oj6hp8x7318 .
+
+_:node1g5oj6hp8x7318 rdf:first "hr";
+  rdf:rest _:node1g5oj6hp8x7319 .
+
+_:node1g5oj6hp8x7319 rdf:first "it";
+  rdf:rest _:node1g5oj6hp8x7320 .
+
+_:node1g5oj6hp8x7320 rdf:first "lv";
+  rdf:rest _:node1g5oj6hp8x7321 .
+
+_:node1g5oj6hp8x7321 rdf:first "lt";
+  rdf:rest _:node1g5oj6hp8x7322 .
+
+_:node1g5oj6hp8x7322 rdf:first "hu";
+  rdf:rest _:node1g5oj6hp8x7323 .
+
+_:node1g5oj6hp8x7323 rdf:first "mt";
+  rdf:rest _:node1g5oj6hp8x7324 .
+
+_:node1g5oj6hp8x7324 rdf:first "nl";
+  rdf:rest _:node1g5oj6hp8x7325 .
+
+_:node1g5oj6hp8x7325 rdf:first "pl";
+  rdf:rest _:node1g5oj6hp8x7326 .
+
+_:node1g5oj6hp8x7326 rdf:first "pt";
+  rdf:rest _:node1g5oj6hp8x7327 .
+
+_:node1g5oj6hp8x7327 rdf:first "ro";
+  rdf:rest _:node1g5oj6hp8x7328 .
+
+_:node1g5oj6hp8x7328 rdf:first "sk";
+  rdf:rest _:node1g5oj6hp8x7329 .
+
+_:node1g5oj6hp8x7329 rdf:first "sl";
+  rdf:rest _:node1g5oj6hp8x7330 .
+
+_:node1g5oj6hp8x7330 rdf:first "fi";
+  rdf:rest _:node1g5oj6hp8x7331 .
+
+_:node1g5oj6hp8x7331 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+corporate-bodies:P28 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+corporate-bodies:P31 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:hasValue dct:PeriodOfTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+corporate-bodies:P32 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcat:startDate .
+
+corporate-bodies:P33 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/corporate-bodies#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:name "End date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcat:endDate .
