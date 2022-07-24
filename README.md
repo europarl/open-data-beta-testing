@@ -17,7 +17,7 @@ The European Parliament Open Data project team is looking for companies, data jo
 Teams and individuals participating in the beta test phase will receive sample datasets and access to APIs. The teams involved will receive support in the form of: 
 
 - documentation of the datasets and their models;
-- an exchange thread on GitHub to answer their questions;
+- an exchange thread on this GitHub repository to answer their questions;
 - direct support in video meetings if necessary.
 
 Advantages of being a beta tester:
@@ -40,6 +40,8 @@ Seven data collections will be made available as open data for phase 1 of the pr
 6. Plenary session documents: Documents related to the activities in Plenary of the European Parliament, containing agendas, minutes (incl. results of votes), verbatim reports of proceedings (debates).
 7. Parliamentary questions: Parliamentary questions and answers, containing oral questions, written questions, interpellations, etc.
 
+Samples of these datasets are available from the [`data`](./data/) folder of this repositories.
+
 Data collections to be made available in the next phases of the project (non-exhaustive list):
 
 8. Detail of the results of votes by Members of the European Parliament on legislative texts and their amendments.
@@ -49,7 +51,7 @@ Data collections to be made available in the next phases of the project (non-exh
 
 ### Management of multilingualism
 
-RDF datasets are multilingual  and rely on the multilingual controlled vocabularies published by the EU Publications Office (types of event, types of documents, subjects of the legislative proposal, etc.). 
+RDF datasets are multilingual and rely on [the multilingual controlled vocabularies published by the EU Publications Office](https://op.europa.eu/en/web/eu-vocabularies/authority-tables) (types of event, types of documents, subjects of the legislative proposal, etc.). 
 
 CSV datasets are monolingual, with a version in each of the 24 official languages of the EU.
 
@@ -63,7 +65,7 @@ Datasets on parliamentary activities are based on the [ELI and ELI-DL ontologies
 
 The documents are described with metadata conformant to [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) and the ELI ontology. Different formats are provided depending on the types of document: Word, PDF, HTML, XML.
 
-Documentation of data models is made available for re-users.
+Documentation of data models is available from the [data-structure](./data-structure) folder of this repository.
 
 The project takes in account the standards defined for [linked open data](https://en.wikipedia.org/wiki/Linked_data).
 
