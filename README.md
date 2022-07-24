@@ -4,11 +4,29 @@
 
 Over the 2021, the European Parliament has been pursuing a project to make its public data available as open data. The project will be launched operationally in the 4th quarter of 2022. Data made available cover the organisation of the European Parliament, its activities, and the documents produced during the legislative process.
 
-The main ambition of the project is to make useful data available to re-users and to facilitate the development of new services and analyses by commercial companies, journalists, and non governmental organizations.  
+The main ambition of the project is to make useful data available to re-users and to facilitate the development of new services and analyses by commercial companies, journalists, and non governmental organisations.  
 
 At this stage, the European Parliament wishes to better know the possible reuses of data and documents, and the wishes to address the needs of potential reusers on the content made available or on the means of distribution.
 
 The European Parliament is also seeking for companies, NGOs, and individuals to play the role during the beta phase starting now, before going into production in the 4th quarter of 2022.
+
+## Being a beta tester - Benefits of participating in the project during the beta launch phase
+
+The European Parliament Open Data project team is looking for companies, data journalists and non-governmental organisations to participate in the beta testing phase of the project. The beta testing phase will begin in July 2022 and end in November 2022.
+
+Teams and individuals participating in the beta test phase will receive sample datasets and access to APIs. The teams involved will receive support in the form of: 
+
+- documentation of the datasets and their models;
+- an exchange thread on GitHub to answer their questions;
+- direct support in video meetings if necessary.
+
+Advantages of being a beta tester:
+
+- Receiving support throughout all the beta-testing phase;
+- Access to direct communication with the team responsible for the project;
+- Acquiring first-hand experience on the European Parliament data;
+- Getting a competitive advantage for your new services and analyses;
+- Having a chance to get your proposals and requests taken in account in an early phase of the project.
 
 ## Data made available as open data
 
@@ -57,7 +75,7 @@ Two different access channels will be available: distribution in the form of dow
 
 ### Distribution as downloadable files
 
-Organization charts are regularly updated depending on the changes.
+Organisation charts are regularly updated depending on the changes.
 
 MEPs datasets are made available for each parliamentary term and regularly updated depending on the changes.
 
@@ -90,20 +108,3 @@ Questionnaire:
   - If so, could you describe these services or analyses and the target audiences?
 - Are the dataset subdivisions  and the distribution formats suitable for you? If not please tell us more about your needs.
 
-## Being a beta tester - Benefits of participating in the project during the beta launch phase
-
-The European Parliament Open Data project team is looking for companies, data journalists and non-governmental organisations to participate in the beta testing phase of the project. The beta test phase will begin in July 2022 and end in November 2022.
-
-Teams and individuals participating in the beta test phase will receive sample datasets and access to APIs. The teams involved will receive support in the form of: 
-
-- documentation of the datasets and their models;
-- an exchange thread on GitHub to answer their questions;
-- direct support in video meetings if necessary.
-
-Advantages of being a beta tester:
-
-- Receiving support throughout all the beta-testing phase;
-- Access to direct communication with the team responsible for the project;
-- Acquiring first-hand experience on the European Parliament data;
-- Getting a competitive advantage for your new services and analyses;
-- Having a chance to get your proposals and requests taken in account in an early phase of the project.
