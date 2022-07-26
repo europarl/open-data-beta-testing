@@ -8,13 +8,11 @@ The main ambition of the project is to make useful data available to re-users an
 
 At this stage, the European Parliament wishes to better know the possible reuses of data and documents, and the wishes to address the needs of potential reusers on the content made available or on the means of distribution.
 
-The European Parliament is also seeking for companies, NGOs, and individuals to play the role during the beta phase starting now, before going into production in the 4th quarter of 2022.
-
 ## Being a beta tester
 
 The European Parliament Open Data project team is looking for companies, data journalists and non-governmental organisations to participate in the beta testing phase of the project. The beta testing phase will begin in July 2022 and end in November 2022.
 
-If you are interested in being a beta tester, please register at
+If you are interested in being a beta tester, please express your interest by registering at
 
 TBD
 
