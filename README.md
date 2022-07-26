@@ -50,4 +50,4 @@ The documents are described with metadata conformant to [Dublin Core](https://ww
 
 The project takes in account the standards defined for [linked open data](https://en.wikipedia.org/wiki/Linked_data).
 
-Documentation of data models is available from the [data-structure](./data-structure) folder of this repository.
+Documentation of data models is available from the [`data-structure`](./data-structure) folder of this repository.
