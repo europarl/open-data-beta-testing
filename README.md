@@ -38,8 +38,6 @@ RDF datasets are multilingual and rely on [the multilingual controlled vocabular
 
 CSV datasets are monolingual, with a version in each of the 24 official languages of the EU.
 
-Documents are generally provided in English for the first version. Translations are provided as they are made available, generally within ten days. 
-
 ### Data modelling and standards
 
 The datasets of the organisation charts and of the Members of the European Parliament are based on the [W3C Organization Ontology](https://www.w3.org/TR/vocab-org/) (an ontology designed to describe organisations).
