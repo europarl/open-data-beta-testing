@@ -6,7 +6,7 @@ Calendar events of the European Parliament. This dataset contains the list of ca
 
 ## Data structure
 
-The data structure is defined in [`data-structure/calendar`](../data-structure/calendar/)
+The data structure is defined in [`data-structure/calendar`](../../data-structure/calendar/)
 
 ## Available formats
 
