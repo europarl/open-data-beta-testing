@@ -1,4 +1,4 @@
-# European Parliament Open Data Portal: Call for beta testers
+# European Parliament Open Data: Call for beta testers
 
 ## Context
 
