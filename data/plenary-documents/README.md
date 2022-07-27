@@ -6,7 +6,7 @@ Texts tabled for the Plenary of the European Parliament, containing reports, mot
 
 ## Data structure
 
-The data structure is defined in [`data-structure/plenary-documents`](../data-structure/plenary-documents/)
+The data structure is defined in [`data-structure/plenary-documents`](../../data-structure/plenary-documents/)
 
 ## Available formats
 
