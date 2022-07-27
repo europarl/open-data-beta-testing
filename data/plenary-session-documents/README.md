@@ -6,7 +6,7 @@ Documents related to the activities in Plenary of the European Parliament, conta
 
 ## Data structure
 
-The data structure is defined in [`data-structure/plenary-session-documents`](../data-structure/plenary-session-documents/)
+The data structure is defined in [`data-structure/plenary-session-documents`](../../data-structure/plenary-session-documents/)
 
 ## Available formats
 
