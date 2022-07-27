@@ -6,7 +6,7 @@ Texts adopted by the European Parliament, containing resolutions, legislative re
 
 ## Data structure
 
-The data structure is defined in [`data-structure/adopted-texts`](../data-structure/adopted-texts/)
+The data structure is defined in [`data-structure/adopted-texts`](../../data-structure/adopted-texts/)
 
 ## Available formats
 
