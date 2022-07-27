@@ -6,7 +6,7 @@ Organisation of the European Parliament, including the description of its politi
 
 ## Data structure
 
-The data structure is defined in [`data-structure/corporate-bodies`](../data-structure/corporate-bodies/)
+The data structure is defined in [`data-structure/corporate-bodies`](../../data-structure/corporate-bodies/)
 
 ## Available formats
 
