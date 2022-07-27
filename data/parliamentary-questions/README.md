@@ -6,7 +6,7 @@ Parliamentary questions and answers, containing oral questions, written question
 
 ## Data structure
 
-The data structure is defined in [`data-structure/parliamentary-questions`](../data-structure/parliamentary-questions/)
+The data structure is defined in [`data-structure/parliamentary-questions`](../../data-structure/parliamentary-questions/)
 
 ## Available formats
 
