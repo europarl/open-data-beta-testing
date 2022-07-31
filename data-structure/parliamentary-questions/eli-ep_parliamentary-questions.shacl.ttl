@@ -35,11 +35,15 @@
   dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:dateCopyrighted "2022"^^xsd:gYear;
   dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dcterms:modified "2022-07-25T00:00:00.000Z"^^xsd:dateTime;
   dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
   dcterms:title "Parliamentary questions dataset description"@en;
   dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
-  vann:usageNote """2022-07-14
+  vann:usageNote """2022-07-25
+- missing sh:node for :WorkType
+- added some skos:example
+2022-07-14
 - eli:is_exemplified_by changed to ObjectProperty (sh:IRI)
 2022-06-13
 - dcterms:title set to rdf:langString
@@ -55,21 +59,22 @@
 - changed aut-event:DOCUMENT_DEPOSIT to aut-event:DOCUMENT_SUBMISSION"""@en;
   rdfs:label "Parliamentary questions dataset description"@en;
   owl:versionIRI <https://data.europarl.europa.eu/def/eli-ep#>;
-  owl:versionInfo "0.4.4"@en;
+  owl:versionInfo "0.4.4";
   skos:hasTopConcept questions:P10, questions:P100, questions:P101, questions:P103,
     questions:P104, questions:P106, questions:P107, questions:P109, questions:P11, questions:P110,
-    questions:P12, questions:P13, questions:P14, questions:P17, questions:P18, questions:P19,
-    questions:P20, questions:P21, questions:P22, questions:P23, questions:P24, questions:P25,
-    questions:P27, questions:P28, questions:P30, questions:P31, questions:P32, questions:P33,
-    questions:P34, questions:P36, questions:P37, questions:P38, questions:P39, questions:P40,
-    questions:P41, questions:P42, questions:P43, questions:P44, questions:P46, questions:P47,
-    questions:P49, questions:P50, questions:P51, questions:P52, questions:P53, questions:P54,
-    questions:P56, questions:P57, questions:P58, questions:P59, questions:P60, questions:P61,
-    questions:P62, questions:P63, questions:P64, questions:P65, questions:P66, questions:P67,
-    questions:P70, questions:P71, questions:P72, questions:P74, questions:P75, questions:P76,
-    questions:P77, questions:P80, questions:P81, questions:P82, questions:P83, questions:P84,
-    questions:P85, questions:P87, questions:P88, questions:P89, questions:P9, questions:P90,
-    questions:P91, questions:P94, questions:P95, questions:P97, questions:P98;
+    questions:P112, questions:P113, questions:P12, questions:P13, questions:P14, questions:P17,
+    questions:P18, questions:P19, questions:P20, questions:P21, questions:P22, questions:P23,
+    questions:P24, questions:P25, questions:P27, questions:P28, questions:P30, questions:P31,
+    questions:P32, questions:P33, questions:P34, questions:P36, questions:P37, questions:P38,
+    questions:P39, questions:P40, questions:P41, questions:P42, questions:P43, questions:P44,
+    questions:P46, questions:P47, questions:P49, questions:P50, questions:P51, questions:P52,
+    questions:P53, questions:P54, questions:P56, questions:P57, questions:P58, questions:P59,
+    questions:P60, questions:P61, questions:P62, questions:P63, questions:P64, questions:P65,
+    questions:P66, questions:P67, questions:P70, questions:P71, questions:P72, questions:P74,
+    questions:P75, questions:P76, questions:P77, questions:P80, questions:P81, questions:P82,
+    questions:P83, questions:P84, questions:P85, questions:P87, questions:P88, questions:P89,
+    questions:P9, questions:P90, questions:P91, questions:P94, questions:P95, questions:P97,
+    questions:P98;
   adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP> .
 
 questions:Question a sh:NodeShape;
@@ -98,7 +103,7 @@ WHERE {
  resource-type:QUEST_TIME
  resource-type:QUEST_WRITTEN
  }
-}"""@en .
+}""" .
 
 questions:AnswerToQuestion a sh:NodeShape;
   rdfs:label "Answer to question"@en;
@@ -160,53 +165,64 @@ questions:Participation a sh:NodeShape;
 
 questions:ParliamentaryTermReference a sh:NodeShape;
   rdfs:label "Reference to a Parliamentary Term"@en;
+  skos:example "https://data.europarl.europa.eu/org/ep-9";
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 10;
+  sh:order 8;
   sh:pattern "^https://data.europarl.europa.eu/org/ep-[0-9].*$";
   sh:property questions:P97, questions:P98 .
 
 questions:ActivityTypeReference a sh:NodeShape;
   rdfs:label "Reference to an Activity type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/event/DOCUMENT_SUBMISSION";
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 11;
+  sh:order 9;
   sh:pattern "^http://publications.europa.eu/resource/authority/event/.*$";
   sh:property questions:P94, questions:P95 .
+
+questions:WorkTypeReference a sh:NodeShape;
+  rdfs:label "Reference to a Work type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/resource-type/QUEST_WRITTEN";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 10;
+  sh:pattern "http://publications.europa.eu/resource/authority/resource-type/.*$";
+  sh:property questions:P100, questions:P101 .
 
 questions:MediaTypeOrExtentReference a sh:NodeShape;
   rdfs:label "Reference to a Format"@en;
   skos:example "http://publications.europa.eu/resource/authority/file-type/PDF";
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 13;
+  sh:order 11;
   sh:pattern "http://publications.europa.eu/resource/authority/file-type/.*$";
-  sh:property questions:P100, questions:P101 .
+  sh:property questions:P103, questions:P104 .
 
 questions:ParticipationRoleReference a sh:NodeShape;
   rdfs:label "Reference to a Role"@en;
   skos:example "http://publications.europa.eu/resource/authority/role/AUT";
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 15;
+  sh:order 12;
   sh:pattern "http://publications.europa.eu/resource/authority/role/.*$";
-  sh:property questions:P103, questions:P104 .
+  sh:property questions:P106, questions:P107 .
 
 questions:OrganizationReference a sh:NodeShape;
   rdfs:label "Reference to an Organization"@en;
   skos:example "http://publications.europa.eu/resource/authority/corporate-body/EP";
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 16;
+  sh:order 13;
   sh:pattern "http://publications.europa.eu/resource/authority/corporate-body/.*$";
-  sh:property questions:P106, questions:P107 .
+  sh:property questions:P109, questions:P110 .
 
 questions:PersonReference a sh:NodeShape;
   rdfs:label "Reference to a Person"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 17;
-  sh:property questions:P109, questions:P110 .
+  sh:order 14;
+  sh:property questions:P112, questions:P113 .
 
 questions:P9 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
@@ -275,29 +291,30 @@ questions:P17 a skos:Concept;
 questions:P18 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
-  sh:in _:node1g797rbj3x7317 .
+  sh:in _:node1g797rbj3x9814 .
 
-_:node1g797rbj3x7317 rdf:first resource-type:INTERPELL_G;
-  rdf:rest _:node1g797rbj3x7318 .
+_:node1g797rbj3x9814 rdf:first resource-type:INTERPELL_G;
+  rdf:rest _:node1g797rbj3x9815 .
 
-_:node1g797rbj3x7318 rdf:first resource-type:INTERPELL_K;
-  rdf:rest _:node1g797rbj3x7319 .
+_:node1g797rbj3x9815 rdf:first resource-type:INTERPELL_K;
+  rdf:rest _:node1g797rbj3x9816 .
 
-_:node1g797rbj3x7319 rdf:first resource-type:QUEST_ORAL;
-  rdf:rest _:node1g797rbj3x7320 .
+_:node1g797rbj3x9816 rdf:first resource-type:QUEST_ORAL;
+  rdf:rest _:node1g797rbj3x9817 .
 
-_:node1g797rbj3x7320 rdf:first resource-type:QUEST_PRIORITY;
-  rdf:rest _:node1g797rbj3x7321 .
+_:node1g797rbj3x9817 rdf:first resource-type:QUEST_PRIORITY;
+  rdf:rest _:node1g797rbj3x9818 .
 
-_:node1g797rbj3x7321 rdf:first resource-type:QUEST_TIME;
-  rdf:rest _:node1g797rbj3x7322 .
+_:node1g797rbj3x9818 rdf:first resource-type:QUEST_TIME;
+  rdf:rest _:node1g797rbj3x9819 .
 
-_:node1g797rbj3x7322 rdf:first resource-type:QUEST_WRITTEN;
+_:node1g797rbj3x9819 rdf:first resource-type:QUEST_WRITTEN;
   rdf:rest rdf:nil .
 
 questions:P18 sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node questions:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -389,19 +406,19 @@ questions:P30 a skos:Concept;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:name "creator"@en;
   sh:nodeKind sh:IRI;
-  sh:or _:node1g797rbj3x7323 .
+  sh:or _:node1g797rbj3x9820 .
 
-_:node1g797rbj3x7323 rdf:first _:node1g797rbj3x7324 .
+_:node1g797rbj3x9820 rdf:first _:node1g797rbj3x9821 .
 
-_:node1g797rbj3x7324 sh:node questions:PersonReference .
+_:node1g797rbj3x9821 sh:node questions:PersonReference .
 
-_:node1g797rbj3x7323 rdf:rest _:node1g797rbj3x7325 .
+_:node1g797rbj3x9820 rdf:rest _:node1g797rbj3x9822 .
 
-_:node1g797rbj3x7325 rdf:first _:node1g797rbj3x7326 .
+_:node1g797rbj3x9822 rdf:first _:node1g797rbj3x9823 .
 
-_:node1g797rbj3x7326 sh:node questions:OrganizationReference .
+_:node1g797rbj3x9823 sh:node questions:OrganizationReference .
 
-_:node1g797rbj3x7325 rdf:rest rdf:nil .
+_:node1g797rbj3x9822 rdf:rest rdf:nil .
 
 questions:P30 sh:path dcterms:creator .
 
@@ -430,9 +447,9 @@ questions:P33 a skos:Concept;
   sh:name "answered in"@en;
   sh:node questions:AnswerToQuestion;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7327 .
+  sh:path _:node1g797rbj3x9824 .
 
-_:node1g797rbj3x7327 sh:inversePath eli-dl:answers_to .
+_:node1g797rbj3x9824 sh:inversePath eli-dl:answers_to .
 
 questions:P34 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
@@ -442,9 +459,9 @@ questions:P34 a skos:Concept;
   sh:name "has realization created by"@en;
   sh:node questions:DocumentSubmission;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7328 .
+  sh:path _:node1g797rbj3x9825 .
 
-_:node1g797rbj3x7328 sh:inversePath eli-dl:created_a_realization_of .
+_:node1g797rbj3x9825 sh:inversePath eli-dl:created_a_realization_of .
 
 questions:P36 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
@@ -462,6 +479,7 @@ questions:P37 a skos:Concept;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node questions:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -553,19 +571,19 @@ questions:P49 a skos:Concept;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:name "creator"@en;
   sh:nodeKind sh:IRI;
-  sh:or _:node1g797rbj3x7329 .
+  sh:or _:node1g797rbj3x9826 .
 
-_:node1g797rbj3x7329 rdf:first _:node1g797rbj3x7330 .
+_:node1g797rbj3x9826 rdf:first _:node1g797rbj3x9827 .
 
-_:node1g797rbj3x7330 sh:node questions:PersonReference .
+_:node1g797rbj3x9827 sh:node questions:PersonReference .
 
-_:node1g797rbj3x7329 rdf:rest _:node1g797rbj3x7331 .
+_:node1g797rbj3x9826 rdf:rest _:node1g797rbj3x9828 .
 
-_:node1g797rbj3x7331 rdf:first _:node1g797rbj3x7332 .
+_:node1g797rbj3x9828 rdf:first _:node1g797rbj3x9829 .
 
-_:node1g797rbj3x7332 sh:node questions:OrganizationReference .
+_:node1g797rbj3x9829 sh:node questions:OrganizationReference .
 
-_:node1g797rbj3x7331 rdf:rest rdf:nil .
+_:node1g797rbj3x9828 rdf:rest rdf:nil .
 
 questions:P49 sh:path dcterms:creator .
 
@@ -602,9 +620,9 @@ questions:P53 a skos:Concept;
   sh:name "has annex"@en;
   sh:node questions:AnnexOfAnswer;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7333 .
+  sh:path _:node1g797rbj3x9830 .
 
-_:node1g797rbj3x7333 sh:inversePath eli:is_annex_of .
+_:node1g797rbj3x9830 sh:inversePath eli:is_annex_of .
 
 questions:P54 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
@@ -613,9 +631,9 @@ questions:P54 a skos:Concept;
   sh:name "has realization created by"@en;
   sh:node questions:DocumentSubmission;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7334 .
+  sh:path _:node1g797rbj3x9831 .
 
-_:node1g797rbj3x7334 sh:inversePath eli-dl:created_a_realization_of .
+_:node1g797rbj3x9831 sh:inversePath eli-dl:created_a_realization_of .
 
 questions:P56 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
@@ -633,6 +651,7 @@ questions:P57 a skos:Concept;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node questions:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -908,78 +927,78 @@ questions:P95 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x7335 .
+  sh:languageIn _:node1g797rbj3x9832 .
 
-_:node1g797rbj3x7335 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7336 .
+_:node1g797rbj3x9832 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9833 .
 
-_:node1g797rbj3x7336 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7337 .
+_:node1g797rbj3x9833 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9834 .
 
-_:node1g797rbj3x7337 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7338 .
+_:node1g797rbj3x9834 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9835 .
 
-_:node1g797rbj3x7338 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7339 .
+_:node1g797rbj3x9835 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9836 .
 
-_:node1g797rbj3x7339 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7340 .
+_:node1g797rbj3x9836 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9837 .
 
-_:node1g797rbj3x7340 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7341 .
+_:node1g797rbj3x9837 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9838 .
 
-_:node1g797rbj3x7341 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7342 .
+_:node1g797rbj3x9838 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9839 .
 
-_:node1g797rbj3x7342 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7343 .
+_:node1g797rbj3x9839 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9840 .
 
-_:node1g797rbj3x7343 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7344 .
+_:node1g797rbj3x9840 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9841 .
 
-_:node1g797rbj3x7344 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7345 .
+_:node1g797rbj3x9841 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9842 .
 
-_:node1g797rbj3x7345 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7346 .
+_:node1g797rbj3x9842 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9843 .
 
-_:node1g797rbj3x7346 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7347 .
+_:node1g797rbj3x9843 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9844 .
 
-_:node1g797rbj3x7347 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7348 .
+_:node1g797rbj3x9844 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9845 .
 
-_:node1g797rbj3x7348 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7349 .
+_:node1g797rbj3x9845 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9846 .
 
-_:node1g797rbj3x7349 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7350 .
+_:node1g797rbj3x9846 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9847 .
 
-_:node1g797rbj3x7350 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7351 .
+_:node1g797rbj3x9847 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9848 .
 
-_:node1g797rbj3x7351 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7352 .
+_:node1g797rbj3x9848 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9849 .
 
-_:node1g797rbj3x7352 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7353 .
+_:node1g797rbj3x9849 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9850 .
 
-_:node1g797rbj3x7353 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7354 .
+_:node1g797rbj3x9850 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9851 .
 
-_:node1g797rbj3x7354 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7355 .
+_:node1g797rbj3x9851 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9852 .
 
-_:node1g797rbj3x7355 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7356 .
+_:node1g797rbj3x9852 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9853 .
 
-_:node1g797rbj3x7356 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7357 .
+_:node1g797rbj3x9853 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9854 .
 
-_:node1g797rbj3x7357 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7358 .
+_:node1g797rbj3x9854 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9855 .
 
-_:node1g797rbj3x7358 rdf:first "sv";
+_:node1g797rbj3x9855 rdf:first "sv";
   rdf:rest rdf:nil .
 
 questions:P95 sh:name "pref label"@en;
@@ -1000,78 +1019,78 @@ questions:P98 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x7359 .
+  sh:languageIn _:node1g797rbj3x9856 .
 
-_:node1g797rbj3x7359 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7360 .
+_:node1g797rbj3x9856 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9857 .
 
-_:node1g797rbj3x7360 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7361 .
+_:node1g797rbj3x9857 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9858 .
 
-_:node1g797rbj3x7361 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7362 .
+_:node1g797rbj3x9858 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9859 .
 
-_:node1g797rbj3x7362 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7363 .
+_:node1g797rbj3x9859 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9860 .
 
-_:node1g797rbj3x7363 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7364 .
+_:node1g797rbj3x9860 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9861 .
 
-_:node1g797rbj3x7364 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7365 .
+_:node1g797rbj3x9861 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9862 .
 
-_:node1g797rbj3x7365 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7366 .
+_:node1g797rbj3x9862 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9863 .
 
-_:node1g797rbj3x7366 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7367 .
+_:node1g797rbj3x9863 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9864 .
 
-_:node1g797rbj3x7367 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7368 .
+_:node1g797rbj3x9864 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9865 .
 
-_:node1g797rbj3x7368 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7369 .
+_:node1g797rbj3x9865 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9866 .
 
-_:node1g797rbj3x7369 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7370 .
+_:node1g797rbj3x9866 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9867 .
 
-_:node1g797rbj3x7370 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7371 .
+_:node1g797rbj3x9867 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9868 .
 
-_:node1g797rbj3x7371 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7372 .
+_:node1g797rbj3x9868 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9869 .
 
-_:node1g797rbj3x7372 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7373 .
+_:node1g797rbj3x9869 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9870 .
 
-_:node1g797rbj3x7373 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7374 .
+_:node1g797rbj3x9870 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9871 .
 
-_:node1g797rbj3x7374 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7375 .
+_:node1g797rbj3x9871 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9872 .
 
-_:node1g797rbj3x7375 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7376 .
+_:node1g797rbj3x9872 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9873 .
 
-_:node1g797rbj3x7376 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7377 .
+_:node1g797rbj3x9873 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9874 .
 
-_:node1g797rbj3x7377 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7378 .
+_:node1g797rbj3x9874 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9875 .
 
-_:node1g797rbj3x7378 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7379 .
+_:node1g797rbj3x9875 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9876 .
 
-_:node1g797rbj3x7379 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7380 .
+_:node1g797rbj3x9876 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9877 .
 
-_:node1g797rbj3x7380 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7381 .
+_:node1g797rbj3x9877 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9878 .
 
-_:node1g797rbj3x7381 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7382 .
+_:node1g797rbj3x9878 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9879 .
 
-_:node1g797rbj3x7382 rdf:first "sv";
+_:node1g797rbj3x9879 rdf:first "sv";
   rdf:rest rdf:nil .
 
 questions:P98 sh:minCount 1;
@@ -1083,7 +1102,7 @@ questions:P98 sh:minCount 1;
 questions:P100 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
-  sh:hasValue dcterms:MediaTypeOrExtent;
+  sh:hasValue eli:WorkType;
   sh:minCount 1;
   sh:name "type"@en;
   sh:nodeKind sh:IRI;
@@ -1093,82 +1112,81 @@ questions:P101 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x7383 .
+  sh:languageIn _:node1g797rbj3x9880 .
 
-_:node1g797rbj3x7383 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7384 .
+_:node1g797rbj3x9880 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9881 .
 
-_:node1g797rbj3x7384 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7385 .
+_:node1g797rbj3x9881 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9882 .
 
-_:node1g797rbj3x7385 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7386 .
+_:node1g797rbj3x9882 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9883 .
 
-_:node1g797rbj3x7386 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7387 .
+_:node1g797rbj3x9883 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9884 .
 
-_:node1g797rbj3x7387 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7388 .
+_:node1g797rbj3x9884 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9885 .
 
-_:node1g797rbj3x7388 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7389 .
+_:node1g797rbj3x9885 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9886 .
 
-_:node1g797rbj3x7389 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7390 .
+_:node1g797rbj3x9886 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9887 .
 
-_:node1g797rbj3x7390 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7391 .
+_:node1g797rbj3x9887 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9888 .
 
-_:node1g797rbj3x7391 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7392 .
+_:node1g797rbj3x9888 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9889 .
 
-_:node1g797rbj3x7392 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7393 .
+_:node1g797rbj3x9889 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9890 .
 
-_:node1g797rbj3x7393 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7394 .
+_:node1g797rbj3x9890 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9891 .
 
-_:node1g797rbj3x7394 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7395 .
+_:node1g797rbj3x9891 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9892 .
 
-_:node1g797rbj3x7395 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7396 .
+_:node1g797rbj3x9892 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9893 .
 
-_:node1g797rbj3x7396 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7397 .
+_:node1g797rbj3x9893 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9894 .
 
-_:node1g797rbj3x7397 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7398 .
+_:node1g797rbj3x9894 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9895 .
 
-_:node1g797rbj3x7398 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7399 .
+_:node1g797rbj3x9895 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9896 .
 
-_:node1g797rbj3x7399 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7400 .
+_:node1g797rbj3x9896 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9897 .
 
-_:node1g797rbj3x7400 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7401 .
+_:node1g797rbj3x9897 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9898 .
 
-_:node1g797rbj3x7401 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7402 .
+_:node1g797rbj3x9898 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9899 .
 
-_:node1g797rbj3x7402 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7403 .
+_:node1g797rbj3x9899 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9900 .
 
-_:node1g797rbj3x7403 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7404 .
+_:node1g797rbj3x9900 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9901 .
 
-_:node1g797rbj3x7404 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7405 .
+_:node1g797rbj3x9901 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9902 .
 
-_:node1g797rbj3x7405 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7406 .
+_:node1g797rbj3x9902 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9903 .
 
-_:node1g797rbj3x7406 rdf:first "sv";
+_:node1g797rbj3x9903 rdf:first "sv";
   rdf:rest rdf:nil .
 
-questions:P101 sh:minCount 1;
-  sh:name "pref label"@en;
+questions:P101 sh:name "pref label"@en;
   sh:nodeKind sh:Literal;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
@@ -1176,7 +1194,7 @@ questions:P101 sh:minCount 1;
 questions:P103 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
-  sh:hasValue eli-dl:ParticipationRole;
+  sh:hasValue dcterms:MediaTypeOrExtent;
   sh:minCount 1;
   sh:name "type"@en;
   sh:nodeKind sh:IRI;
@@ -1186,81 +1204,82 @@ questions:P104 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x7407 .
+  sh:languageIn _:node1g797rbj3x9904 .
 
-_:node1g797rbj3x7407 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7408 .
+_:node1g797rbj3x9904 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9905 .
 
-_:node1g797rbj3x7408 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7409 .
+_:node1g797rbj3x9905 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9906 .
 
-_:node1g797rbj3x7409 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7410 .
+_:node1g797rbj3x9906 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9907 .
 
-_:node1g797rbj3x7410 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7411 .
+_:node1g797rbj3x9907 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9908 .
 
-_:node1g797rbj3x7411 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7412 .
+_:node1g797rbj3x9908 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9909 .
 
-_:node1g797rbj3x7412 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7413 .
+_:node1g797rbj3x9909 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9910 .
 
-_:node1g797rbj3x7413 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7414 .
+_:node1g797rbj3x9910 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9911 .
 
-_:node1g797rbj3x7414 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7415 .
+_:node1g797rbj3x9911 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9912 .
 
-_:node1g797rbj3x7415 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7416 .
+_:node1g797rbj3x9912 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9913 .
 
-_:node1g797rbj3x7416 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7417 .
+_:node1g797rbj3x9913 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9914 .
 
-_:node1g797rbj3x7417 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7418 .
+_:node1g797rbj3x9914 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9915 .
 
-_:node1g797rbj3x7418 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7419 .
+_:node1g797rbj3x9915 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9916 .
 
-_:node1g797rbj3x7419 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7420 .
+_:node1g797rbj3x9916 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9917 .
 
-_:node1g797rbj3x7420 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7421 .
+_:node1g797rbj3x9917 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9918 .
 
-_:node1g797rbj3x7421 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7422 .
+_:node1g797rbj3x9918 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9919 .
 
-_:node1g797rbj3x7422 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7423 .
+_:node1g797rbj3x9919 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9920 .
 
-_:node1g797rbj3x7423 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7424 .
+_:node1g797rbj3x9920 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9921 .
 
-_:node1g797rbj3x7424 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7425 .
+_:node1g797rbj3x9921 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9922 .
 
-_:node1g797rbj3x7425 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7426 .
+_:node1g797rbj3x9922 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9923 .
 
-_:node1g797rbj3x7426 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7427 .
+_:node1g797rbj3x9923 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9924 .
 
-_:node1g797rbj3x7427 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7428 .
+_:node1g797rbj3x9924 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9925 .
 
-_:node1g797rbj3x7428 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7429 .
+_:node1g797rbj3x9925 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9926 .
 
-_:node1g797rbj3x7429 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7430 .
+_:node1g797rbj3x9926 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9927 .
 
-_:node1g797rbj3x7430 rdf:first "sv";
+_:node1g797rbj3x9927 rdf:first "sv";
   rdf:rest rdf:nil .
 
-questions:P104 sh:name "pref label"@en;
+questions:P104 sh:minCount 1;
+  sh:name "pref label"@en;
   sh:nodeKind sh:Literal;
   sh:path skos:prefLabel;
   sh:uniqueLang true .
@@ -1268,7 +1287,7 @@ questions:P104 sh:name "pref label"@en;
 questions:P106 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
-  sh:hasValue org:Organization;
+  sh:hasValue eli-dl:ParticipationRole;
   sh:minCount 1;
   sh:name "type"@en;
   sh:nodeKind sh:IRI;
@@ -1278,12 +1297,104 @@ questions:P107 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9928 .
+
+_:node1g797rbj3x9928 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9929 .
+
+_:node1g797rbj3x9929 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9930 .
+
+_:node1g797rbj3x9930 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9931 .
+
+_:node1g797rbj3x9931 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9932 .
+
+_:node1g797rbj3x9932 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9933 .
+
+_:node1g797rbj3x9933 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9934 .
+
+_:node1g797rbj3x9934 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9935 .
+
+_:node1g797rbj3x9935 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9936 .
+
+_:node1g797rbj3x9936 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9937 .
+
+_:node1g797rbj3x9937 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9938 .
+
+_:node1g797rbj3x9938 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9939 .
+
+_:node1g797rbj3x9939 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9940 .
+
+_:node1g797rbj3x9940 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9941 .
+
+_:node1g797rbj3x9941 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9942 .
+
+_:node1g797rbj3x9942 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9943 .
+
+_:node1g797rbj3x9943 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9944 .
+
+_:node1g797rbj3x9944 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9945 .
+
+_:node1g797rbj3x9945 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9946 .
+
+_:node1g797rbj3x9946 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9947 .
+
+_:node1g797rbj3x9947 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9948 .
+
+_:node1g797rbj3x9948 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9949 .
+
+_:node1g797rbj3x9949 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9950 .
+
+_:node1g797rbj3x9950 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9951 .
+
+_:node1g797rbj3x9951 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+questions:P107 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+questions:P109 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:hasValue org:Organization;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+questions:P110 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
+  sh:datatype rdf:langString;
   sh:minCount 1;
   sh:name "name"@en;
   sh:nodeKind sh:Literal;
   sh:path skos:prefLabel .
 
-questions:P109 a skos:Concept;
+questions:P112 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:hasValue foaf:Person;
@@ -1292,7 +1403,7 @@ questions:P109 a skos:Concept;
   sh:nodeKind sh:IRI;
   sh:path rdf:type .
 
-questions:P110 a skos:Concept;
+questions:P113 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/parliamentary-questions#>;
   sh:datatype xsd:string;
