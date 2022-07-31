@@ -1,0 +1,1174 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix aut-event: <http://publications.europa.eu/resource/authority/event/> .
+@prefix calendar: <https://data.europarl.europa.eu/def/calendar#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix epvoc: <https://data.europarl.europa.eu/def/epvoc#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shacl-play: <https://shacl-play.sparna.fr/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.europarl.europa.eu/def/calendar#> a owl:Ontology, skos:ConceptScheme,
+    adms:Asset;
+  dcterms:conformsTo <https://www.w3.org/TR/shacl>;
+  dcterms:created "2022-03-04"^^xsd:date;
+  dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:dateCopyrighted "2022"^^xsd:gYear;
+  dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dcterms:modified "2022-07-26T00:00:00.000Z"^^xsd:dateTime;
+  dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
+  dcterms:title "Calendar dataset description"@en;
+  dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
+  rdfs:label "Calendar dataset description"@en;
+  owl:versionIRI <https://data.europarl.europa.eu/def/eli-ep#>;
+  owl:versionInfo "0.4.4"@en;
+  skos:hasTopConcept calendar:P10, calendar:P11, calendar:P12, calendar:P13, calendar:P14,
+    calendar:P15, calendar:P16, calendar:P17, calendar:P20, calendar:P21, calendar:P23,
+    calendar:P24, calendar:P25, calendar:P26, calendar:P27, calendar:P28, calendar:P29,
+    calendar:P30, calendar:P31, calendar:P33, calendar:P34, calendar:P37, calendar:P38,
+    calendar:P39, calendar:P40, calendar:P41, calendar:P42, calendar:P44, calendar:P45,
+    calendar:P47, calendar:P48, calendar:P49, calendar:P50, calendar:P53, calendar:P54,
+    calendar:P55, calendar:P56, calendar:P58, calendar:P59, calendar:P61, calendar:P62,
+    calendar:P64, calendar:P65, calendar:P67, calendar:P68, calendar:P69, calendar:P71,
+    calendar:P72, calendar:P74, calendar:P75, calendar:P9;
+  adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
+  adms:versionNotes """2022-07-26
+- suppress vcard:hasLocality on epvoc:Room
+2022-07-25 - v0.4.4
+- missing check on extended list of languages for calendar:CountryReference
+2022-07-11
+- add prefix definition for geosparql:
+2022-06-16
+- harmonisation of cardinalities, dataType for calendar:*Reference
+2022-06-07
+- add \"lt\" in languages
+- put 1,n cardinality on 'rdf:type' for vocabularies
+2022-05-12
+- add geosparql:sfWithin for dcterms:Location
+2022-05-03:
+- add skos:example and sh:pattern
+- META4LEG harmonisation: rename :PlenarySession to :PlenaryPartSession; EP_PLENARY_SESSION to EP_PLENARY_PART_SESSION
+- add business semantics: rename :Work to :PlenarySessionDocument
+- rename aut-event to event
+2022-04-20:
+- harmonisation of blue and green categories
+- added rdf:type for :Room
+2022-03-22:
+ compatibility with eli-ep
+changes of this file could evolve separately of eli-ep general application profile...
+- language list completed"""@en .
+
+calendar:PlenaryPartSession a sh:NodeShape;
+  rdfs:label "Plenary Session"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/event/GMTG-PL-2020-10-23";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\\-_]+$";
+  sh:property calendar:P10, calendar:P11, calendar:P12, calendar:P13, calendar:P14,
+    calendar:P15, calendar:P16, calendar:P17, calendar:P20, calendar:P21, calendar:P9;
+  sh:target calendar:PlenaryPartSession-target;
+  shacl-play:color "DarkBlue"@en .
+
+calendar:PlenaryPartSession-target sh:select """PREFIX eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#>
+PREFIX aut-event: <http://publications.europa.eu/resource/authority/event/>
+SELECT ?this
+WHERE {
+ ?this eli-dl:had_activity_type aut-event:EP_PLENARY_PART_SESSION .
+}"""@en .
+
+calendar:PlenarySitting a sh:NodeShape;
+  rdfs:label "Plenary Sitting"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/eventMTG-PL-2020-10-23";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\\-_]+$";
+  sh:property calendar:P23, calendar:P24, calendar:P25, calendar:P26, calendar:P27,
+    calendar:P28, calendar:P29, calendar:P30, calendar:P31, calendar:P33, calendar:P34;
+  shacl-play:color "DarkBlue"@en .
+
+calendar:MeetingPart a sh:NodeShape;
+  rdfs:label "Meeting Part"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/event/CMTG-PL-2020-014536-08";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 3;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\\-_]+$";
+  sh:property calendar:P37, calendar:P38, calendar:P39, calendar:P40, calendar:P41,
+    calendar:P42, calendar:P44, calendar:P45;
+  shacl-play:color "DarkBlue"@en .
+
+calendar:PlenarySessionDocument a sh:NodeShape;
+  rdfs:label "Work"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/A-9-2019-0001";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property calendar:P53, calendar:P54, calendar:P55, calendar:P56;
+  shacl-play:color "Orange"@en .
+
+calendar:Room a sh:NodeShape;
+  rdfs:label "Room"@en;
+  skos:example "https://data.europarl.europa.eu/room/LOWHEM";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 5;
+  sh:pattern "^https://data.europarl.europa.eu/room/[A-Za-z0-9\\-_]+$";
+  sh:property calendar:P47, calendar:P48, calendar:P49, calendar:P50;
+  shacl-play:color "Red"@en .
+
+calendar:ParliamentaryTermReference a sh:NodeShape;
+  rdfs:label "Reference to a Parliamentary Term"@en;
+  skos:example "https://data.europarl.europa.eu/org/ep-9";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 6;
+  sh:pattern "^https://data.europarl.europa.eu/org/ep-[0-9].*$";
+  sh:property calendar:P61, calendar:P62;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:ActivityTypeReference a sh:NodeShape;
+  rdfs:label "Reference to an Activity type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/event/EP_PLENARY_PART_SESSION";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 7;
+  sh:pattern "http://publications.europa.eu/resource/authority/event/.*$";
+  sh:property calendar:P58, calendar:P59;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:WorkTypeReference a sh:NodeShape;
+  rdfs:label "Reference to a Work type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 8;
+  sh:pattern "http://publications.europa.eu/resource/authority/resource-type/.*$";
+  sh:property calendar:P64, calendar:P65;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:LocationReference a sh:NodeShape;
+  rdfs:label "Reference to a Place"@en;
+  skos:example "http://publications.europa.eu/resource/authority/place/FRA_SXB";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 9;
+  sh:pattern "http://publications.europa.eu/resource/authority/place/.*$";
+  sh:property calendar:P67, calendar:P68, calendar:P69;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:SiteReference a sh:NodeShape;
+  rdfs:label "Reference to a Site"@en;
+  skos:example "http://publications.europa.eu/resource/authority/site/ASP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 10;
+  sh:pattern "http://publications.europa.eu/resource/authority/site/.*$";
+  sh:property calendar:P71, calendar:P72;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:CountryReference a sh:NodeShape;
+  rdfs:label "Reference to a Country"@en;
+  skos:example "http://publications.europa.eu/resource/authority/country/ITA";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 11;
+  sh:pattern "http://publications.europa.eu/resource/authority/country/.*$";
+  sh:property calendar:P74, calendar:P75;
+  shacl-play:color "DarkGrey"@en .
+
+calendar:P9 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli-dl:Activity;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+calendar:P10 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue aut-event:EP_PLENARY_PART_SESSION;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity type"@en;
+  sh:node calendar:ActivityTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_activity_type .
+
+calendar:P11 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_date .
+
+calendar:P12 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_start_date .
+
+calendar:P13 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity end date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_end_date .
+
+calendar:P14 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:name "documented by a realization of"@en;
+  sh:node calendar:PlenarySessionDocument;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:documented_by_a_realization_of .
+
+calendar:P15 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:name "recorded in realization of"@en;
+  sh:node calendar:PlenarySessionDocument;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:recorded_in_realization_of .
+
+calendar:P16 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:minCount 1;
+  sh:name "consists of"@en;
+  sh:node calendar:PlenarySitting;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:consists_of .
+
+calendar:P17 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "parliamentary term"@en;
+  sh:node calendar:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+calendar:P20 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_id .
+
+calendar:P21 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:name "activity label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_label .
+
+calendar:P23 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli-dl:Activity;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+calendar:P24 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue aut-event:EP_PLENARY_SITTING;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity type"@en;
+  sh:node calendar:ActivityTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_activity_type .
+
+calendar:P25 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_date .
+
+calendar:P26 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_start_date .
+
+calendar:P27 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity end date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_end_date .
+
+calendar:P28 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:name "documented by a realization of"@en;
+  sh:node calendar:PlenarySessionDocument;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:documented_by_a_realization_of .
+
+calendar:P29 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:name "recorded in realization of"@en;
+  sh:node calendar:PlenarySessionDocument;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:recorded_in_realization_of .
+
+calendar:P30 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:name "consists of"@en;
+  sh:node calendar:MeetingPart;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:consists_of .
+
+calendar:P31 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "locality"@en;
+  sh:node calendar:LocationReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasLocality .
+
+calendar:P33 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_id .
+
+calendar:P34 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "activity label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_label .
+
+calendar:P37 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli-dl:Activity;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+calendar:P38 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue aut-event:EP_MEETING_PART;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity type"@en;
+  sh:node calendar:ActivityTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_activity_type .
+
+calendar:P39 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "room part"@en;
+  sh:node calendar:Room;
+  sh:nodeKind sh:IRI;
+  sh:path epvoc:hasRoom .
+
+calendar:P40 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_date .
+
+calendar:P41 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_start_date .
+
+calendar:P42 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity end date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_end_date .
+
+calendar:P44 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_id .
+
+calendar:P45 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "activity label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_label .
+
+calendar:P47 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue epvoc:Room;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+calendar:P48 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "office address"@en;
+  sh:nodeKind sh:Literal;
+  sh:path euvoc:officeAddress .
+
+calendar:P49 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+calendar:P50 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "site"@en;
+  sh:node calendar:SiteReference;
+  sh:nodeKind sh:IRI;
+  sh:path epvoc:hasSite .
+
+calendar:P53 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli:ComplexWork;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+calendar:P54 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+calendar:P55 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+calendar:P56 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:node calendar:WorkTypeReference;
+  sh:path eli:work_type .
+
+calendar:P58 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli-dl:ActivityType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P59 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10290 .
+
+_:node1g797rbj3x10290 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10291 .
+
+_:node1g797rbj3x10291 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10292 .
+
+_:node1g797rbj3x10292 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10293 .
+
+_:node1g797rbj3x10293 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10294 .
+
+_:node1g797rbj3x10294 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10295 .
+
+_:node1g797rbj3x10295 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10296 .
+
+_:node1g797rbj3x10296 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10297 .
+
+_:node1g797rbj3x10297 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10298 .
+
+_:node1g797rbj3x10298 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10299 .
+
+_:node1g797rbj3x10299 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10300 .
+
+_:node1g797rbj3x10300 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10301 .
+
+_:node1g797rbj3x10301 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10302 .
+
+_:node1g797rbj3x10302 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10303 .
+
+_:node1g797rbj3x10303 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10304 .
+
+_:node1g797rbj3x10304 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10305 .
+
+_:node1g797rbj3x10305 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10306 .
+
+_:node1g797rbj3x10306 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10307 .
+
+_:node1g797rbj3x10307 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10308 .
+
+_:node1g797rbj3x10308 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10309 .
+
+_:node1g797rbj3x10309 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10310 .
+
+_:node1g797rbj3x10310 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10311 .
+
+_:node1g797rbj3x10311 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10312 .
+
+_:node1g797rbj3x10312 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10313 .
+
+_:node1g797rbj3x10313 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+calendar:P59 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+calendar:P61 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli-dl:ParliamentaryTerm;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P62 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10314 .
+
+_:node1g797rbj3x10314 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10315 .
+
+_:node1g797rbj3x10315 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10316 .
+
+_:node1g797rbj3x10316 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10317 .
+
+_:node1g797rbj3x10317 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10318 .
+
+_:node1g797rbj3x10318 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10319 .
+
+_:node1g797rbj3x10319 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10320 .
+
+_:node1g797rbj3x10320 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10321 .
+
+_:node1g797rbj3x10321 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10322 .
+
+_:node1g797rbj3x10322 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10323 .
+
+_:node1g797rbj3x10323 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10324 .
+
+_:node1g797rbj3x10324 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10325 .
+
+_:node1g797rbj3x10325 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10326 .
+
+_:node1g797rbj3x10326 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10327 .
+
+_:node1g797rbj3x10327 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10328 .
+
+_:node1g797rbj3x10328 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10329 .
+
+_:node1g797rbj3x10329 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10330 .
+
+_:node1g797rbj3x10330 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10331 .
+
+_:node1g797rbj3x10331 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10332 .
+
+_:node1g797rbj3x10332 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10333 .
+
+_:node1g797rbj3x10333 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10334 .
+
+_:node1g797rbj3x10334 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10335 .
+
+_:node1g797rbj3x10335 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10336 .
+
+_:node1g797rbj3x10336 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10337 .
+
+_:node1g797rbj3x10337 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+calendar:P62 sh:minCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+calendar:P64 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue eli:WorkType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P65 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10338 .
+
+_:node1g797rbj3x10338 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10339 .
+
+_:node1g797rbj3x10339 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10340 .
+
+_:node1g797rbj3x10340 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10341 .
+
+_:node1g797rbj3x10341 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10342 .
+
+_:node1g797rbj3x10342 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10343 .
+
+_:node1g797rbj3x10343 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10344 .
+
+_:node1g797rbj3x10344 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10345 .
+
+_:node1g797rbj3x10345 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10346 .
+
+_:node1g797rbj3x10346 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10347 .
+
+_:node1g797rbj3x10347 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10348 .
+
+_:node1g797rbj3x10348 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10349 .
+
+_:node1g797rbj3x10349 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10350 .
+
+_:node1g797rbj3x10350 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10351 .
+
+_:node1g797rbj3x10351 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10352 .
+
+_:node1g797rbj3x10352 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10353 .
+
+_:node1g797rbj3x10353 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10354 .
+
+_:node1g797rbj3x10354 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10355 .
+
+_:node1g797rbj3x10355 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10356 .
+
+_:node1g797rbj3x10356 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10357 .
+
+_:node1g797rbj3x10357 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10358 .
+
+_:node1g797rbj3x10358 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10359 .
+
+_:node1g797rbj3x10359 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10360 .
+
+_:node1g797rbj3x10360 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10361 .
+
+_:node1g797rbj3x10361 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+calendar:P65 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+calendar:P67 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue dcterms:Location;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P68 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10362 .
+
+_:node1g797rbj3x10362 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10363 .
+
+_:node1g797rbj3x10363 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10364 .
+
+_:node1g797rbj3x10364 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10365 .
+
+_:node1g797rbj3x10365 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10366 .
+
+_:node1g797rbj3x10366 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10367 .
+
+_:node1g797rbj3x10367 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10368 .
+
+_:node1g797rbj3x10368 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10369 .
+
+_:node1g797rbj3x10369 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10370 .
+
+_:node1g797rbj3x10370 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10371 .
+
+_:node1g797rbj3x10371 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10372 .
+
+_:node1g797rbj3x10372 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10373 .
+
+_:node1g797rbj3x10373 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10374 .
+
+_:node1g797rbj3x10374 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10375 .
+
+_:node1g797rbj3x10375 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10376 .
+
+_:node1g797rbj3x10376 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10377 .
+
+_:node1g797rbj3x10377 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10378 .
+
+_:node1g797rbj3x10378 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10379 .
+
+_:node1g797rbj3x10379 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10380 .
+
+_:node1g797rbj3x10380 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10381 .
+
+_:node1g797rbj3x10381 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10382 .
+
+_:node1g797rbj3x10382 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10383 .
+
+_:node1g797rbj3x10383 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10384 .
+
+_:node1g797rbj3x10384 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10385 .
+
+_:node1g797rbj3x10385 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+calendar:P68 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+calendar:P69 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:maxCount 1;
+  sh:name "euvoc:Country"@en;
+  sh:node calendar:CountryReference;
+  sh:nodeKind sh:IRI;
+  sh:path geosparql:sfWithin .
+
+calendar:P71 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue org:Site;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P72 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10386 .
+
+_:node1g797rbj3x10386 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10387 .
+
+_:node1g797rbj3x10387 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10388 .
+
+_:node1g797rbj3x10388 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10389 .
+
+_:node1g797rbj3x10389 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10390 .
+
+_:node1g797rbj3x10390 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10391 .
+
+_:node1g797rbj3x10391 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10392 .
+
+_:node1g797rbj3x10392 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10393 .
+
+_:node1g797rbj3x10393 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10394 .
+
+_:node1g797rbj3x10394 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10395 .
+
+_:node1g797rbj3x10395 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10396 .
+
+_:node1g797rbj3x10396 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10397 .
+
+_:node1g797rbj3x10397 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10398 .
+
+_:node1g797rbj3x10398 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10399 .
+
+_:node1g797rbj3x10399 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10400 .
+
+_:node1g797rbj3x10400 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10401 .
+
+_:node1g797rbj3x10401 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10402 .
+
+_:node1g797rbj3x10402 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10403 .
+
+_:node1g797rbj3x10403 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10404 .
+
+_:node1g797rbj3x10404 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10405 .
+
+_:node1g797rbj3x10405 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10406 .
+
+_:node1g797rbj3x10406 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10407 .
+
+_:node1g797rbj3x10407 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10408 .
+
+_:node1g797rbj3x10408 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10409 .
+
+_:node1g797rbj3x10409 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+calendar:P72 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+calendar:P74 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:hasValue euvoc:Country;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+calendar:P75 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x10410 .
+
+_:node1g797rbj3x10410 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10411 .
+
+_:node1g797rbj3x10411 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10412 .
+
+_:node1g797rbj3x10412 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10413 .
+
+_:node1g797rbj3x10413 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10414 .
+
+_:node1g797rbj3x10414 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10415 .
+
+_:node1g797rbj3x10415 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10416 .
+
+_:node1g797rbj3x10416 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10417 .
+
+_:node1g797rbj3x10417 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10418 .
+
+_:node1g797rbj3x10418 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10419 .
+
+_:node1g797rbj3x10419 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10420 .
+
+_:node1g797rbj3x10420 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10421 .
+
+_:node1g797rbj3x10421 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10422 .
+
+_:node1g797rbj3x10422 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10423 .
+
+_:node1g797rbj3x10423 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10424 .
+
+_:node1g797rbj3x10424 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10425 .
+
+_:node1g797rbj3x10425 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10426 .
+
+_:node1g797rbj3x10426 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10427 .
+
+_:node1g797rbj3x10427 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10428 .
+
+_:node1g797rbj3x10428 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10429 .
+
+_:node1g797rbj3x10429 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10430 .
+
+_:node1g797rbj3x10430 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10431 .
+
+_:node1g797rbj3x10431 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10432 .
+
+_:node1g797rbj3x10432 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10433 .
+
+_:node1g797rbj3x10433 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x10434 .
+
+_:node1g797rbj3x10434 rdf:first "eu";
+  rdf:rest _:node1g797rbj3x10435 .
+
+_:node1g797rbj3x10435 rdf:first "sq";
+  rdf:rest _:node1g797rbj3x10436 .
+
+_:node1g797rbj3x10436 rdf:first "ca";
+  rdf:rest _:node1g797rbj3x10437 .
+
+_:node1g797rbj3x10437 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x10438 .
+
+_:node1g797rbj3x10438 rdf:first "lb";
+  rdf:rest _:node1g797rbj3x10439 .
+
+_:node1g797rbj3x10439 rdf:first "is";
+  rdf:rest _:node1g797rbj3x10440 .
+
+_:node1g797rbj3x10440 rdf:first "rm";
+  rdf:rest _:node1g797rbj3x10441 .
+
+_:node1g797rbj3x10441 rdf:first "mk";
+  rdf:rest _:node1g797rbj3x10442 .
+
+_:node1g797rbj3x10442 rdf:first "sr";
+  rdf:rest _:node1g797rbj3x10443 .
+
+_:node1g797rbj3x10443 rdf:first "no";
+  rdf:rest _:node1g797rbj3x10444 .
+
+_:node1g797rbj3x10444 rdf:first "uk";
+  rdf:rest _:node1g797rbj3x10445 .
+
+_:node1g797rbj3x10445 rdf:first "bs";
+  rdf:rest _:node1g797rbj3x10446 .
+
+_:node1g797rbj3x10446 rdf:first "gl";
+  rdf:rest _:node1g797rbj3x10447 .
+
+_:node1g797rbj3x10447 rdf:first "fo";
+  rdf:rest _:node1g797rbj3x10448 .
+
+_:node1g797rbj3x10448 rdf:first "be";
+  rdf:rest _:node1g797rbj3x10449 .
+
+_:node1g797rbj3x10449 rdf:first "ru";
+  rdf:rest rdf:nil .
+
+calendar:P75 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .

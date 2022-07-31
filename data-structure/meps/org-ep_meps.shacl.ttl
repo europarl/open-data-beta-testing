@@ -1,0 +1,1513 @@
+@prefix adms: <https://www.w3.org/ns/adms#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix epvoc: <https://data.europarl.europa.eu/def/epvoc#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix meps: <https://data.europarl.europa.eu/def/meps#> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix org-ep: <https://data.europarl.europa.eu/def/org-ep#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.europarl.europa.eu/def/meps#> a owl:Ontology, skos:ConceptScheme, <http://www.w3.org/ns/adms#Asset>;
+  dcterms:conformsTo <https://www.w3.org/TR/shacl>;
+  dcterms:created "2022-03-24"^^xsd:date;
+  dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:dateCopyrighted "2022"^^xsd:gYear;
+  dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dcterms:modified "2022-06-28T00:00:00.000Z"^^xsd:dateTime;
+  dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
+  dcterms:title "Meps dataset description"@en;
+  dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
+  rdfs:label "Meps dataset description"@en;
+  owl:versionIRI <https://data.europarl.europa.eu/def/org-ep#>;
+  owl:versionInfo "0.3.1";
+  skos:hasTopConcept meps:P10, meps:P11, meps:P12, meps:P13, meps:P14, meps:P15, meps:P16,
+    meps:P17, meps:P18, meps:P19, meps:P20, meps:P21, meps:P22, meps:P23, meps:P24, meps:P25,
+    meps:P26, meps:P27, meps:P28, meps:P29, meps:P30, meps:P31, meps:P34, meps:P35, meps:P36,
+    meps:P37, meps:P38, meps:P39, meps:P40, meps:P41, meps:P42, meps:P45, meps:P46, meps:P47,
+    meps:P50, meps:P51, meps:P52, meps:P53, meps:P56, meps:P57, meps:P59, meps:P60, meps:P62,
+    meps:P63, meps:P65, meps:P67, meps:P69, meps:P71, meps:P72, meps:P73, meps:P75, meps:P76,
+    meps:P78, meps:P79, meps:P81, meps:P82, meps:P84, meps:P85, meps:P87, meps:P88, meps:P9,
+    meps:P90, meps:P91, meps:P93, meps:P94;
+  adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
+  adms:versionNotes """2022-06-28
+- creation of the second language list (one with EU languages, one with more languages - mainly used for EU vocabularies)
+- removed sh:minCount=1 for AddressType
+2022-06-16
+- relaxed cardinality on types for vocabularies and irganizations, added language tags (in red) for extra eu languages, 
+2022-06-15
+- added epvoc:classificationOrganization
+- added missing language \"lt\"
+2022-05-24
+- minor error some data type was in wrong cell
+- REMARK: target query to be reviewed adding org:role/MEMBER_EP
+2022-05-02:
+- error fix on :Voice & :Fax, plus remove :TelefoneTypeReference
+- clean up on :hasValues
+2022-04-20:
+- template harmonisation with eli-ep (purpose of blue and green categories). Moved from green to middle blue ContactPoint, OnlineAccount
+2022-04-19:
+- template harmonisation with eli-ep (add sh:targetClass)
+- move meps:Membership and :Organization to outside target
+- add skos:example and sh:pattern
+- error correction for periodOfTime, contactPoint, addressType, onlineAccount, role, site, TelefoneType VS. Voice & Fax
+- TO VALIDATE parts in yellow
+- Harmonise with eli-ep-ap, e.g. skos:inScheme, etc.
+2022-04-08: review
+- queries sh:select needs to be validated
+2022-03-24: creation"""@en .
+
+meps:Person a sh:NodeShape;
+  rdfs:label "Person"@en;
+  skos:example "https://data.europarl.europa.eu/person/124936";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^https://data.europarl.europa.eu/person/[0-9]*?$";
+  sh:property meps:P10, meps:P11, meps:P12, meps:P13, meps:P14, meps:P15, meps:P16,
+    meps:P17, meps:P18, meps:P19, meps:P20, meps:P21, meps:P22, meps:P23, meps:P24, meps:P25,
+    meps:P26, meps:P27, meps:P28, meps:P29, meps:P30, meps:P31, meps:P9;
+  sh:target meps:Person-target .
+
+meps:Person-target sh:select """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX org: <http://www.w3.org/ns/org#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?this
+WHERE {
+ ?this rdf:type foaf:Person .
+}""" .
+
+meps:Membership a sh:NodeShape;
+  rdfs:label "Membership"@en;
+  skos:example "https://data.europarl.europa.eu/membership/12345-m-999900001 , https://data.europarl.europa.eu/membership/12345-f-999900001";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:property meps:P34, meps:P35, meps:P36, meps:P37, meps:P38, meps:P39, meps:P40,
+    meps:P41, meps:P42;
+  sh:targetClass org:Membership .
+
+meps:Organization a sh:NodeShape;
+  rdfs:label "Organization"@en;
+  skos:example "https://data.europarl.europa.eu/org/1234";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 3;
+  sh:pattern "^https://data.europarl.europa.eu/org/.*$";
+  sh:property meps:P45, meps:P46, meps:P47;
+  sh:targetClass org:Organization .
+
+meps:ContactPoint a sh:NodeShape;
+  rdfs:label "Contact Point"@en;
+  sh:closed true;
+  sh:order 4;
+  sh:property meps:P50, meps:P51, meps:P52, meps:P53;
+  sh:targetClass euvoc:ContactPoint .
+
+meps:OnlineAccount a sh:NodeShape;
+  rdfs:label "Online Account"@en;
+  skos:example "https://twitter.com/mariearenaps";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 5;
+  sh:property meps:P56, meps:P57;
+  sh:targetClass foaf:OnlineAccount .
+
+meps:Voice a sh:NodeShape;
+  rdfs:label "Voice"@en;
+  skos:example "https://data.europarl.europa.eu/tel/33388175139";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 6;
+  sh:pattern "^https://data.europarl.europa.eu/tel/[0-9]*$";
+  sh:property meps:P59, meps:P60;
+  sh:targetClass vcard:Voice .
+
+meps:Fax a sh:NodeShape;
+  rdfs:label "Fax"@en;
+  skos:example "https://data.europarl.europa.eu/tel/33388175139";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 7;
+  sh:pattern "^https://data.europarl.europa.eu/tel/[0-9]*$";
+  sh:property meps:P62, meps:P63;
+  sh:targetClass vcard:Fax .
+
+meps:ImageReference a sh:NodeShape;
+  rdfs:label "Reference to a Image"@en;
+  skos:example "https://www.europarl.europa.eu/mepphoto/124936.jpg";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 8;
+  sh:property meps:P65 .
+
+meps:ResourceReference a sh:NodeShape;
+  rdfs:label "Reference to a Resource"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 9;
+  sh:property meps:P67 .
+
+meps:DocumentReference a sh:NodeShape;
+  rdfs:label "Reference to a Document"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 10;
+  sh:property meps:P69 .
+
+meps:PeriodOfTimeReference a sh:NodeShape;
+  rdfs:label "Reference to a Period Of Time"@en;
+  skos:example "https://data.europarl.europa.eu/time-period/pt_9";
+  sh:closed true;
+  sh:order 11;
+  sh:property meps:P71, meps:P72, meps:P73 .
+
+meps:GenderReference a sh:NodeShape;
+  rdfs:label "Reference to a Gender"@en;
+  skos:example "http://publications.europa.eu/resource/authority/human-sex/FEMALE";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 12;
+  sh:pattern "http://publications.europa.eu/resource/authority/human-sex/.*$";
+  sh:property meps:P75, meps:P76 .
+
+meps:HonorificTitleReference a sh:NodeShape;
+  rdfs:label "Reference to a Honorific Title"@en;
+  skos:example "http://publications.europa.eu/resource/authority/honorific/MR";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 13;
+  sh:pattern "http://publications.europa.eu/resource/authority/honorific/.*$";
+  sh:property meps:P78, meps:P79 .
+
+meps:CountryReference a sh:NodeShape;
+  rdfs:label "Reference to a Country"@en;
+  skos:example "http://publications.europa.eu/resource/authority/country/BEL";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 14;
+  sh:pattern "http://publications.europa.eu/resource/authority/country/.*$";
+  sh:property meps:P81, meps:P82 .
+
+meps:AddressTypeReference a sh:NodeShape;
+  rdfs:label "Reference to a Address Type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/address-type/TWT";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 15;
+  sh:pattern "http://publications.europa.eu/resource/authority/address-type/.*$";
+  sh:property meps:P84, meps:P85 .
+
+meps:RoleReference a sh:NodeShape;
+  rdfs:label "Reference to a Role"@en;
+  skos:example "http://publications.europa.eu/resource/authority/role/MEMBER_EP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 16;
+  sh:pattern "http://publications.europa.eu/resource/authority/role/.*$";
+  sh:property meps:P90, meps:P91 .
+
+meps:CorporateBodyClassificationReference a sh:NodeShape;
+  rdfs:label "Reference to a Corporate Body Classification"@en;
+  skos:example "http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 17;
+  sh:pattern "http://publications.europa.eu/resource/authority/corporate-body-classification/.*$";
+  sh:property meps:P87, meps:P88 .
+
+meps:SiteReference a sh:NodeShape;
+  rdfs:label "Reference to a Site"@en;
+  skos:example "http://publications.europa.eu/resource/authority/site/ASP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 18;
+  sh:pattern "http://publications.europa.eu/resource/authority/site/.*$";
+  sh:property meps:P93, meps:P94 .
+
+meps:P9 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue foaf:Person;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P10 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+meps:P11 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype epvoc:codictPersonId;
+  sh:minCount 1;
+  sh:name "Notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+meps:P12 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:minCount 1;
+  sh:name "Label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+meps:P13 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Given name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path foaf:givenName .
+
+meps:P14 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Family name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path foaf:familyName .
+
+meps:P15 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Upper given name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:upperGivenName .
+
+meps:P16 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Upper family name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:upperFamilyName .
+
+meps:P17 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Official given name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path euvoc:officialGivenName .
+
+meps:P18 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Official family name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path euvoc:officialFamilyName .
+
+meps:P19 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Uppercase official given name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:upperOfficialGivenName .
+
+meps:P20 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Uppercase official family name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:upperOfficialFamilyName .
+
+meps:P21 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:name "Birthday"@en;
+  sh:nodeKind sh:Literal;
+  sh:path vcard:bday .
+
+meps:P22 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:name "Death date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:deathDate .
+
+meps:P23 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Has gender"@en;
+  sh:node meps:GenderReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasGender .
+
+meps:P24 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Image"@en;
+  sh:node meps:ImageReference;
+  sh:nodeKind sh:IRI;
+  sh:path foaf:img .
+
+meps:P25 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Has honorific prefix"@en;
+  sh:node meps:HonorificTitleReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasHonorificPrefix .
+
+meps:P26 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Citizenship"@en;
+  sh:node meps:CountryReference;
+  sh:nodeKind sh:IRI;
+  sh:path person:citizenship .
+
+meps:P27 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Place of birth"@en;
+  sh:nodeKind sh:Literal;
+  sh:path person:placeOfBirth .
+
+meps:P28 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Has email"@en;
+  sh:node meps:ResourceReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasEmail .
+
+meps:P29 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Homepage"@en;
+  sh:node meps:DocumentReference;
+  sh:nodeKind sh:IRI;
+  sh:path foaf:homepage .
+
+meps:P30 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Account"@en;
+  sh:node meps:OnlineAccount;
+  sh:nodeKind sh:IRI;
+  sh:path foaf:account .
+
+meps:P31 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Has membership"@en;
+  sh:node meps:Membership;
+  sh:nodeKind sh:IRI;
+  sh:path org:hasMembership .
+
+meps:P34 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue org:Membership;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P35 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Membership id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+meps:P36 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:minCount 1;
+  sh:name "Notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:or _:node1g8tmdfl9x863 .
+
+_:node1g8tmdfl9x863 rdf:first _:node1g8tmdfl9x864 .
+
+_:node1g8tmdfl9x864 sh:datatype epvoc:codictFunctionId .
+
+_:node1g8tmdfl9x863 rdf:rest _:node1g8tmdfl9x865 .
+
+_:node1g8tmdfl9x865 rdf:first _:node1g8tmdfl9x866 .
+
+_:node1g8tmdfl9x866 sh:datatype epvoc:codictMandateId .
+
+_:node1g8tmdfl9x865 rdf:rest rdf:nil .
+
+meps:P36 sh:path skos:notation .
+
+meps:P37 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Member during"@en;
+  sh:node meps:PeriodOfTimeReference;
+  sh:nodeKind sh:BlankNode;
+  sh:path org:memberDuring .
+
+meps:P38 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Role"@en;
+  sh:node meps:RoleReference;
+  sh:nodeKind sh:IRI;
+  sh:path org:role .
+
+meps:P39 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Organization"@en;
+  sh:node meps:Organization;
+  sh:nodeKind sh:IRI;
+  sh:path org:organization .
+
+meps:P40 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Represents"@en;
+  sh:node meps:CountryReference;
+  sh:nodeKind sh:IRI;
+  sh:path euvoc:represents .
+
+meps:P41 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Contact point"@en;
+  sh:node meps:ContactPoint;
+  sh:nodeKind sh:BlankNode;
+  sh:path dcat:contactPoint .
+
+meps:P42 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Membership Classification"@en;
+  sh:node meps:CorporateBodyClassificationReference;
+  sh:nodeKind sh:IRI;
+  sh:path epvoc:membershipClassification .
+
+meps:P45 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue org:Organization;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P46 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x867 .
+
+_:node1g8tmdfl9x867 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x868 .
+
+_:node1g8tmdfl9x868 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x869 .
+
+_:node1g8tmdfl9x869 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x870 .
+
+_:node1g8tmdfl9x870 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x871 .
+
+_:node1g8tmdfl9x871 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x872 .
+
+_:node1g8tmdfl9x872 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x873 .
+
+_:node1g8tmdfl9x873 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x874 .
+
+_:node1g8tmdfl9x874 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x875 .
+
+_:node1g8tmdfl9x875 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x876 .
+
+_:node1g8tmdfl9x876 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x877 .
+
+_:node1g8tmdfl9x877 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x878 .
+
+_:node1g8tmdfl9x878 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x879 .
+
+_:node1g8tmdfl9x879 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x880 .
+
+_:node1g8tmdfl9x880 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x881 .
+
+_:node1g8tmdfl9x881 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x882 .
+
+_:node1g8tmdfl9x882 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x883 .
+
+_:node1g8tmdfl9x883 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x884 .
+
+_:node1g8tmdfl9x884 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x885 .
+
+_:node1g8tmdfl9x885 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x886 .
+
+_:node1g8tmdfl9x886 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x887 .
+
+_:node1g8tmdfl9x887 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x888 .
+
+_:node1g8tmdfl9x888 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x889 .
+
+_:node1g8tmdfl9x889 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x890 .
+
+_:node1g8tmdfl9x890 rdf:first "sv";
+  rdf:rest _:node1g8tmdfl9x891 .
+
+_:node1g8tmdfl9x891 rdf:first "lb";
+  rdf:rest rdf:nil .
+
+meps:P46 sh:minCount 1;
+  sh:name "Preferred label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P47 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:minCount 1;
+  sh:name "Classification"@en;
+  sh:node meps:CorporateBodyClassificationReference;
+  sh:nodeKind sh:IRI;
+  sh:path org:classification .
+
+meps:P50 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue epvoc:ContactPoint;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P51 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "Office address"@en;
+  sh:nodeKind sh:Literal;
+  sh:path euvoc:officeAddress .
+
+meps:P52 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Has site"@en;
+  sh:node meps:SiteReference;
+  sh:nodeKind sh:IRI;
+  sh:path epvoc:hasSite .
+
+meps:P53 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:name "Has telephone"@en;
+  sh:nodeKind sh:IRI;
+  sh:or _:node1g8tmdfl9x892 .
+
+_:node1g8tmdfl9x892 rdf:first _:node1g8tmdfl9x893 .
+
+_:node1g8tmdfl9x893 sh:node meps:Voice .
+
+_:node1g8tmdfl9x892 rdf:rest _:node1g8tmdfl9x894 .
+
+_:node1g8tmdfl9x894 rdf:first _:node1g8tmdfl9x895 .
+
+_:node1g8tmdfl9x895 sh:node meps:Fax .
+
+_:node1g8tmdfl9x894 rdf:rest rdf:nil .
+
+meps:P53 sh:path vcard:hasTelephone .
+
+meps:P56 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue foaf:OnlineAccount;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P57 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:name "Type"@en;
+  sh:node meps:AddressTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:type .
+
+meps:P59 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue vcard:Voice;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P60 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Has value"@en;
+  sh:node meps:ResourceReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasValue .
+
+meps:P62 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue vcard:Fax;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P63 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Has value"@en;
+  sh:node meps:ResourceReference;
+  sh:nodeKind sh:IRI;
+  sh:path vcard:hasValue .
+
+meps:P65 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue foaf:Image;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P67 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue rdfs:Resource;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P69 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue foaf:Document;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P71 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue dcterms:PeriodOfTime;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P72 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "Start date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcat:startDate .
+
+meps:P73 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:name "End date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcat:endDate .
+
+meps:P75 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue vcard:Gender;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P76 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x896 .
+
+_:node1g8tmdfl9x896 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x897 .
+
+_:node1g8tmdfl9x897 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x898 .
+
+_:node1g8tmdfl9x898 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x899 .
+
+_:node1g8tmdfl9x899 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x900 .
+
+_:node1g8tmdfl9x900 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x901 .
+
+_:node1g8tmdfl9x901 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x902 .
+
+_:node1g8tmdfl9x902 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x903 .
+
+_:node1g8tmdfl9x903 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x904 .
+
+_:node1g8tmdfl9x904 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x905 .
+
+_:node1g8tmdfl9x905 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x906 .
+
+_:node1g8tmdfl9x906 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x907 .
+
+_:node1g8tmdfl9x907 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x908 .
+
+_:node1g8tmdfl9x908 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x909 .
+
+_:node1g8tmdfl9x909 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x910 .
+
+_:node1g8tmdfl9x910 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x911 .
+
+_:node1g8tmdfl9x911 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x912 .
+
+_:node1g8tmdfl9x912 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x913 .
+
+_:node1g8tmdfl9x913 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x914 .
+
+_:node1g8tmdfl9x914 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x915 .
+
+_:node1g8tmdfl9x915 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x916 .
+
+_:node1g8tmdfl9x916 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x917 .
+
+_:node1g8tmdfl9x917 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x918 .
+
+_:node1g8tmdfl9x918 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x919 .
+
+_:node1g8tmdfl9x919 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P76 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P78 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue euvoc:HonorificTitle;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P79 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x920 .
+
+_:node1g8tmdfl9x920 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x921 .
+
+_:node1g8tmdfl9x921 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x922 .
+
+_:node1g8tmdfl9x922 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x923 .
+
+_:node1g8tmdfl9x923 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x924 .
+
+_:node1g8tmdfl9x924 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x925 .
+
+_:node1g8tmdfl9x925 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x926 .
+
+_:node1g8tmdfl9x926 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x927 .
+
+_:node1g8tmdfl9x927 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x928 .
+
+_:node1g8tmdfl9x928 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x929 .
+
+_:node1g8tmdfl9x929 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x930 .
+
+_:node1g8tmdfl9x930 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x931 .
+
+_:node1g8tmdfl9x931 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x932 .
+
+_:node1g8tmdfl9x932 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x933 .
+
+_:node1g8tmdfl9x933 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x934 .
+
+_:node1g8tmdfl9x934 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x935 .
+
+_:node1g8tmdfl9x935 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x936 .
+
+_:node1g8tmdfl9x936 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x937 .
+
+_:node1g8tmdfl9x937 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x938 .
+
+_:node1g8tmdfl9x938 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x939 .
+
+_:node1g8tmdfl9x939 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x940 .
+
+_:node1g8tmdfl9x940 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x941 .
+
+_:node1g8tmdfl9x941 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x942 .
+
+_:node1g8tmdfl9x942 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x943 .
+
+_:node1g8tmdfl9x943 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P79 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P81 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue euvoc:Country;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P82 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x944 .
+
+_:node1g8tmdfl9x944 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x945 .
+
+_:node1g8tmdfl9x945 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x946 .
+
+_:node1g8tmdfl9x946 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x947 .
+
+_:node1g8tmdfl9x947 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x948 .
+
+_:node1g8tmdfl9x948 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x949 .
+
+_:node1g8tmdfl9x949 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x950 .
+
+_:node1g8tmdfl9x950 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x951 .
+
+_:node1g8tmdfl9x951 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x952 .
+
+_:node1g8tmdfl9x952 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x953 .
+
+_:node1g8tmdfl9x953 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x954 .
+
+_:node1g8tmdfl9x954 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x955 .
+
+_:node1g8tmdfl9x955 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x956 .
+
+_:node1g8tmdfl9x956 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x957 .
+
+_:node1g8tmdfl9x957 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x958 .
+
+_:node1g8tmdfl9x958 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x959 .
+
+_:node1g8tmdfl9x959 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x960 .
+
+_:node1g8tmdfl9x960 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x961 .
+
+_:node1g8tmdfl9x961 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x962 .
+
+_:node1g8tmdfl9x962 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x963 .
+
+_:node1g8tmdfl9x963 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x964 .
+
+_:node1g8tmdfl9x964 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x965 .
+
+_:node1g8tmdfl9x965 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x966 .
+
+_:node1g8tmdfl9x966 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x967 .
+
+_:node1g8tmdfl9x967 rdf:first "sv";
+  rdf:rest _:node1g8tmdfl9x968 .
+
+_:node1g8tmdfl9x968 rdf:first "eu";
+  rdf:rest _:node1g8tmdfl9x969 .
+
+_:node1g8tmdfl9x969 rdf:first "sq";
+  rdf:rest _:node1g8tmdfl9x970 .
+
+_:node1g8tmdfl9x970 rdf:first "ca";
+  rdf:rest _:node1g8tmdfl9x971 .
+
+_:node1g8tmdfl9x971 rdf:first "tr";
+  rdf:rest _:node1g8tmdfl9x972 .
+
+_:node1g8tmdfl9x972 rdf:first "lb";
+  rdf:rest _:node1g8tmdfl9x973 .
+
+_:node1g8tmdfl9x973 rdf:first "is";
+  rdf:rest _:node1g8tmdfl9x974 .
+
+_:node1g8tmdfl9x974 rdf:first "rm";
+  rdf:rest _:node1g8tmdfl9x975 .
+
+_:node1g8tmdfl9x975 rdf:first "mk";
+  rdf:rest _:node1g8tmdfl9x976 .
+
+_:node1g8tmdfl9x976 rdf:first "sr";
+  rdf:rest _:node1g8tmdfl9x977 .
+
+_:node1g8tmdfl9x977 rdf:first "no";
+  rdf:rest _:node1g8tmdfl9x978 .
+
+_:node1g8tmdfl9x978 rdf:first "uk";
+  rdf:rest _:node1g8tmdfl9x979 .
+
+_:node1g8tmdfl9x979 rdf:first "bs";
+  rdf:rest _:node1g8tmdfl9x980 .
+
+_:node1g8tmdfl9x980 rdf:first "gl";
+  rdf:rest _:node1g8tmdfl9x981 .
+
+_:node1g8tmdfl9x981 rdf:first "fo";
+  rdf:rest _:node1g8tmdfl9x982 .
+
+_:node1g8tmdfl9x982 rdf:first "be";
+  rdf:rest _:node1g8tmdfl9x983 .
+
+_:node1g8tmdfl9x983 rdf:first "ru";
+  rdf:rest rdf:nil .
+
+meps:P82 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P84 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue euvoc:AddressType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P85 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x984 .
+
+_:node1g8tmdfl9x984 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x985 .
+
+_:node1g8tmdfl9x985 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x986 .
+
+_:node1g8tmdfl9x986 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x987 .
+
+_:node1g8tmdfl9x987 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x988 .
+
+_:node1g8tmdfl9x988 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x989 .
+
+_:node1g8tmdfl9x989 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x990 .
+
+_:node1g8tmdfl9x990 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x991 .
+
+_:node1g8tmdfl9x991 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x992 .
+
+_:node1g8tmdfl9x992 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x993 .
+
+_:node1g8tmdfl9x993 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x994 .
+
+_:node1g8tmdfl9x994 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x995 .
+
+_:node1g8tmdfl9x995 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x996 .
+
+_:node1g8tmdfl9x996 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x997 .
+
+_:node1g8tmdfl9x997 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x998 .
+
+_:node1g8tmdfl9x998 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x999 .
+
+_:node1g8tmdfl9x999 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x1000 .
+
+_:node1g8tmdfl9x1000 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x1001 .
+
+_:node1g8tmdfl9x1001 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x1002 .
+
+_:node1g8tmdfl9x1002 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x1003 .
+
+_:node1g8tmdfl9x1003 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x1004 .
+
+_:node1g8tmdfl9x1004 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x1005 .
+
+_:node1g8tmdfl9x1005 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x1006 .
+
+_:node1g8tmdfl9x1006 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x1007 .
+
+_:node1g8tmdfl9x1007 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P85 sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P87 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue euvoc:CorporateBodyClassification;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P88 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x1008 .
+
+_:node1g8tmdfl9x1008 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x1009 .
+
+_:node1g8tmdfl9x1009 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x1010 .
+
+_:node1g8tmdfl9x1010 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x1011 .
+
+_:node1g8tmdfl9x1011 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x1012 .
+
+_:node1g8tmdfl9x1012 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x1013 .
+
+_:node1g8tmdfl9x1013 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x1014 .
+
+_:node1g8tmdfl9x1014 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x1015 .
+
+_:node1g8tmdfl9x1015 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x1016 .
+
+_:node1g8tmdfl9x1016 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x1017 .
+
+_:node1g8tmdfl9x1017 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x1018 .
+
+_:node1g8tmdfl9x1018 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x1019 .
+
+_:node1g8tmdfl9x1019 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x1020 .
+
+_:node1g8tmdfl9x1020 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x1021 .
+
+_:node1g8tmdfl9x1021 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x1022 .
+
+_:node1g8tmdfl9x1022 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x1023 .
+
+_:node1g8tmdfl9x1023 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x1024 .
+
+_:node1g8tmdfl9x1024 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x1025 .
+
+_:node1g8tmdfl9x1025 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x1026 .
+
+_:node1g8tmdfl9x1026 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x1027 .
+
+_:node1g8tmdfl9x1027 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x1028 .
+
+_:node1g8tmdfl9x1028 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x1029 .
+
+_:node1g8tmdfl9x1029 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x1030 .
+
+_:node1g8tmdfl9x1030 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x1031 .
+
+_:node1g8tmdfl9x1031 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P88 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P90 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue org:Role;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P91 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x1032 .
+
+_:node1g8tmdfl9x1032 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x1033 .
+
+_:node1g8tmdfl9x1033 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x1034 .
+
+_:node1g8tmdfl9x1034 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x1035 .
+
+_:node1g8tmdfl9x1035 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x1036 .
+
+_:node1g8tmdfl9x1036 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x1037 .
+
+_:node1g8tmdfl9x1037 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x1038 .
+
+_:node1g8tmdfl9x1038 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x1039 .
+
+_:node1g8tmdfl9x1039 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x1040 .
+
+_:node1g8tmdfl9x1040 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x1041 .
+
+_:node1g8tmdfl9x1041 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x1042 .
+
+_:node1g8tmdfl9x1042 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x1043 .
+
+_:node1g8tmdfl9x1043 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x1044 .
+
+_:node1g8tmdfl9x1044 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x1045 .
+
+_:node1g8tmdfl9x1045 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x1046 .
+
+_:node1g8tmdfl9x1046 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x1047 .
+
+_:node1g8tmdfl9x1047 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x1048 .
+
+_:node1g8tmdfl9x1048 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x1049 .
+
+_:node1g8tmdfl9x1049 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x1050 .
+
+_:node1g8tmdfl9x1050 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x1051 .
+
+_:node1g8tmdfl9x1051 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x1052 .
+
+_:node1g8tmdfl9x1052 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x1053 .
+
+_:node1g8tmdfl9x1053 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x1054 .
+
+_:node1g8tmdfl9x1054 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x1055 .
+
+_:node1g8tmdfl9x1055 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P91 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+meps:P93 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:hasValue org:Site;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+meps:P94 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/meps#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/meps#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g8tmdfl9x1056 .
+
+_:node1g8tmdfl9x1056 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x1057 .
+
+_:node1g8tmdfl9x1057 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x1058 .
+
+_:node1g8tmdfl9x1058 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x1059 .
+
+_:node1g8tmdfl9x1059 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x1060 .
+
+_:node1g8tmdfl9x1060 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x1061 .
+
+_:node1g8tmdfl9x1061 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x1062 .
+
+_:node1g8tmdfl9x1062 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x1063 .
+
+_:node1g8tmdfl9x1063 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x1064 .
+
+_:node1g8tmdfl9x1064 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x1065 .
+
+_:node1g8tmdfl9x1065 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x1066 .
+
+_:node1g8tmdfl9x1066 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x1067 .
+
+_:node1g8tmdfl9x1067 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x1068 .
+
+_:node1g8tmdfl9x1068 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x1069 .
+
+_:node1g8tmdfl9x1069 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x1070 .
+
+_:node1g8tmdfl9x1070 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x1071 .
+
+_:node1g8tmdfl9x1071 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x1072 .
+
+_:node1g8tmdfl9x1072 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x1073 .
+
+_:node1g8tmdfl9x1073 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x1074 .
+
+_:node1g8tmdfl9x1074 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x1075 .
+
+_:node1g8tmdfl9x1075 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x1076 .
+
+_:node1g8tmdfl9x1076 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x1077 .
+
+_:node1g8tmdfl9x1077 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x1078 .
+
+_:node1g8tmdfl9x1078 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x1079 .
+
+_:node1g8tmdfl9x1079 rdf:first "sv";
+  rdf:rest rdf:nil .
+
+meps:P94 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .

@@ -1,0 +1,1288 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix aut-event: <http://publications.europa.eu/resource/authority/event/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix eli-dl: <http://data.europa.eu/eli/eli-draft-legislation-ontology#> .
+@prefix epvoc: <https://data.europarl.europa.eu/def/epvoc#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix op-aut: <http://publications.europa.eu/resource/authority/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix questions: <https://data.europarl.europa.eu/def/parliamentary-questions#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix resource-type: <http://publications.europa.eu/resource/authority/resource-type/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix shacl-play: <https://shacl-play.sparna.fr/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix ta: <https://data.europarl.europa.eu/def/adopted-texts#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.europarl.europa.eu/def/adopted-texts#> a owl:Ontology, skos:ConceptScheme,
+    adms:Asset;
+  dcterms:conformsTo <https://www.w3.org/TR/shacl>;
+  dcterms:created "2022-04-25"^^xsd:date;
+  dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:dateCopyrighted "2022"^^xsd:gYear;
+  dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
+  dcterms:modified "2022-07-25T00:00:00.000Z"^^xsd:dateTime;
+  dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
+  dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
+  dcterms:title "Adopted texts dataset description"@en;
+  dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
+  rdfs:label "Adopted texts dataset description"@en;
+  owl:versionIRI <https://data.europarl.europa.eu/def/eli-ep#>;
+  owl:versionInfo "0.4.4";
+  skos:hasTopConcept ta:P10, ta:P11, ta:P12, ta:P13, ta:P14, ta:P17, ta:P18, ta:P19,
+    ta:P20, ta:P21, ta:P22, ta:P23, ta:P24, ta:P25, ta:P26, ta:P27, ta:P28, ta:P29, ta:P30,
+    ta:P31, ta:P32, ta:P35, ta:P36, ta:P37, ta:P38, ta:P39, ta:P40, ta:P41, ta:P42, ta:P43,
+    ta:P44, ta:P45, ta:P46, ta:P47, ta:P48, ta:P49, ta:P50, ta:P52, ta:P53, ta:P54, ta:P55,
+    ta:P58, ta:P59, ta:P60, ta:P61, ta:P62, ta:P63, ta:P65, ta:P66, ta:P67, ta:P70, ta:P71,
+    ta:P73, ta:P74, ta:P76, ta:P77, ta:P79, ta:P80, ta:P82, ta:P83, ta:P85, ta:P86, ta:P88,
+    ta:P9;
+  adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
+  adms:versionNotes """2022-07-25
+- missing sh:node for :WorkType
+2022-07-14
+- eli:is_exemplified_by changed to ObjectProperty (sh:IRI)
+2022-06-14
+- remove prefLabel on ta:ConceptReference
+2022-06-09
+- remove eli:Work from sh:targetClass for ta:Corrigendum
+2022-06-07
+- add epvoc:identifierYear on eli:Work
+- add \"lt\" in languages
+- put 1,n cardinality on 'rdf:type' for vocabularies
+2022-05-03
+- add skos:example and sh:pattern
+- harmonise naming with eli-ep: rename :RoleReference to :ParticipationRoleReference; :FormatReference to :MediaTypeOrExtentReference; :DescriptorReference to :ConceptReference; :DocumentDeposit to :DocumentSubmission
+- rename aut-event to event
+- remove [sh:inversePath eli-dl:created_a_realization_of] for ta:Corrigendum
+2022-04-25
+- creation"""@en .
+
+ta:AdoptedText a sh:NodeShape;
+  rdfs:label "Adopted text"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/TA-9-2021-0362";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 1;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property ta:P17, ta:P18, ta:P19, ta:P20, ta:P21, ta:P22, ta:P23, ta:P24, ta:P25,
+    ta:P26, ta:P27, ta:P28, ta:P29, ta:P30, ta:P31, ta:P32;
+  sh:target ta:AdoptedText-target;
+  shacl-play:color "Orange" .
+
+ta:AdoptedText-target sh:select """PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX resource-type: <http://publications.europa.eu/resource/authority/resource-type/>
+SELECT ?this
+WHERE {
+ ?this eli:work_type resource-type:ADOPT_TEXT .
+}""" .
+
+ta:Corrigendum a sh:NodeShape;
+  rdfs:label "Corrigendum to adopted text"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/TA-9-2021-0362-COR01";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 2;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+$";
+  sh:property ta:P35, ta:P36, ta:P37, ta:P38, ta:P39, ta:P40, ta:P41, ta:P42, ta:P43,
+    ta:P44, ta:P45, ta:P46, ta:P47, ta:P48, ta:P49, ta:P50;
+  shacl-play:color "Orange" .
+
+ta:Expression a sh:NodeShape;
+  rdfs:label "Expression"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/TA-9-2021-0362/en";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 3;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+/[a-z][a-z]$";
+  sh:property ta:P52, ta:P53, ta:P54, ta:P55;
+  sh:targetClass eli:Expression;
+  shacl-play:color "Blue" .
+
+ta:Manifestation a sh:NodeShape;
+  rdfs:label "Manifestation"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/doc/TA-9-2021-0362/en/pdf";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 4;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\\-_]+/[a-z][a-z]/.*$";
+  sh:property ta:P58, ta:P59, ta:P60, ta:P61, ta:P62, ta:P63;
+  sh:targetClass eli:Manifestation;
+  shacl-play:color "Green" .
+
+ta:DocumentSubmission a sh:NodeShape;
+  rdfs:label "Document submission"@en;
+  skos:example "https://data.europarl.europa.eu/eli/dl/event/TA-9-2021-0362";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 5;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\\-_]+$";
+  sh:property ta:P10, ta:P11, ta:P12, ta:P13, ta:P14, ta:P9;
+  sh:targetClass eli:Activity;
+  shacl-play:color "DarkBlue" .
+
+ta:Participation a sh:NodeShape;
+  rdfs:label "Participation"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 6;
+  sh:pattern "^https://data.europarl.europa.eu/eli/dl/participation/[A-Za-z0-9\\-_]+_+[A-Za-z0-9\\-_]+$";
+  sh:property ta:P65, ta:P66, ta:P67;
+  sh:targetClass eli-dl:Participation;
+  shacl-play:color "Black" .
+
+ta:ParliamentaryTermReference a sh:NodeShape;
+  rdfs:label "Reference to a Parliamentary Term"@en;
+  skos:example "https://data.europarl.europa.eu/org/ep-9";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 7;
+  sh:pattern "^https://data.europarl.europa.eu/org/ep-[0-9].*$";
+  sh:property ta:P76, ta:P77;
+  shacl-play:color "DarkGrey" .
+
+ta:ActivityTypeReference a sh:NodeShape;
+  rdfs:label "Reference to an Activity type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/event/DOCUMENT_SUBMISSION";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 8;
+  sh:pattern "http://publications.europa.eu/resource/authority/event/.*$";
+  sh:property ta:P70, ta:P71;
+  shacl-play:color "DarkGrey" .
+
+ta:WorkTypeReference a sh:NodeShape;
+  rdfs:label "Reference to a Work type"@en;
+  skos:example "http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:pattern "http://publications.europa.eu/resource/authority/resource-type/.*$";
+  sh:property ta:P73, ta:P74 .
+
+ta:MediaTypeOrExtentReference a sh:NodeShape;
+  rdfs:label "Reference to a Media Type or Extent (Format)"@en;
+  skos:example "http://publications.europa.eu/resource/authority/file-type/PDF";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 9;
+  sh:pattern "http://publications.europa.eu/resource/authority/file-type/.*$";
+  sh:property ta:P79, ta:P80;
+  shacl-play:color "DarkGrey" .
+
+ta:ParticipationRoleReference a sh:NodeShape;
+  rdfs:label "Reference to a Participation Role"@en;
+  skos:example "http://publications.europa.eu/resource/authority/role/AUT";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 11;
+  sh:pattern "http://publications.europa.eu/resource/authority/role/.*$";
+  sh:property ta:P82, ta:P83;
+  shacl-play:color "DarkGrey" .
+
+ta:OrganizationReference a sh:NodeShape;
+  rdfs:label "Reference to an Organization"@en;
+  skos:example "http://publications.europa.eu/resource/authority/corporate-body/EP";
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 12;
+  sh:pattern "http://publications.europa.eu/resource/authority/corporate-body/.*$";
+  sh:property ta:P85, ta:P86;
+  shacl-play:color "DarkGrey" .
+
+ta:ConceptReference a sh:NodeShape;
+  rdfs:label "Reference to a Concept"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 13;
+  sh:property ta:P88;
+  shacl-play:color "DarkGrey" .
+
+ta:P9 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli-dl:Activity;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+ta:P10 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "create a realization of"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:created_a_realization_of .
+
+ta:P11 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue aut-event:DOCUMENT_SUBMISSION;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity type"@en;
+  sh:node ta:ActivityTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_activity_type .
+
+ta:P12 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "participation"@en;
+  sh:node ta:Participation;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_participation .
+
+ta:P13 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity id"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_id .
+
+ta:P14 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "activity date"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli-dl:activity_date .
+
+ta:P17 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli:Work;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+ta:P18 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue resource-type:ADOPT_TEXT;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:node ta:WorkTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli:work_type .
+
+ta:P19 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date document"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:date_document .
+
+ta:P20 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+ta:P21 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "identifier year"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:identifierYear .
+
+ta:P22 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:title .
+
+ta:P23 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+ta:P24 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "ep number"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumber .
+
+ta:P25 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype epvoc:publicRegister;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+ta:P26 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "parliamentary term"@en;
+  sh:node ta:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+ta:P27 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "descriptor"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_about .
+
+ta:P28 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:name "publisher"@en;
+  sh:node ta:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:publisher .
+
+ta:P29 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "is realized by"@en;
+  sh:node ta:Expression;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_realized_by .
+
+ta:P30 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "consolidates"@en;
+  sh:node ta:Corrigendum;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x9648 .
+
+_:node1g797rbj3x9648 sh:inversePath eli:consolidated_by .
+
+ta:P31 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "is corrected by"@en;
+  sh:node ta:Corrigendum;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x9649 .
+
+_:node1g797rbj3x9649 sh:inversePath eli:corrects .
+
+ta:P32 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:name "has realization created by"@en;
+  sh:node ta:DocumentSubmission;
+  sh:nodeKind sh:IRI;
+  sh:path _:node1g797rbj3x9650 .
+
+_:node1g797rbj3x9650 sh:inversePath eli-dl:created_a_realization_of .
+
+ta:P35 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli:Work;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:path rdf:type .
+
+ta:P36 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue resource-type:CORRIGENDUM;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "work type"@en;
+  sh:node ta:WorkTypeReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli:work_type .
+
+ta:P37 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "date document"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:date_document .
+
+ta:P38 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "identifier"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dc:identifier .
+
+ta:P39 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "identifier year"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:identifierYear .
+
+ta:P40 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:title .
+
+ta:P41 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path rdfs:label .
+
+ta:P42 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "ep number"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:epNumber .
+
+ta:P43 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:string;
+  sh:maxCount 1;
+  sh:name "numbering"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:numbering .
+
+ta:P44 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype epvoc:publicRegister;
+  sh:name "notation"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:notation .
+
+ta:P45 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "parliamentary term"@en;
+  sh:node ta:ParliamentaryTermReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:parliamentary_term .
+
+ta:P46 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:name "publisher"@en;
+  sh:node ta:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:publisher .
+
+ta:P47 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "descriptor"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_about .
+
+ta:P48 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "is realized by"@en;
+  sh:node ta:Expression;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_realized_by .
+
+ta:P49 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "consolidated by"@en;
+  sh:node ta:AdoptedText;
+  sh:nodeKind sh:IRI;
+  sh:path eli:consolidated_by .
+
+ta:P50 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 0;
+  sh:name "corrects"@en;
+  sh:node ta:AdoptedText;
+  sh:nodeKind sh:IRI;
+  sh:path eli:corrects .
+
+ta:P52 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli:Expression;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P53 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:minCount 1;
+  sh:name "title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:title .
+
+ta:P54 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:name "alternative title"@en;
+  sh:nodeKind sh:Literal;
+  sh:path eli:title_alternative .
+
+ta:P55 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:name "is embodied by"@en;
+  sh:node ta:Manifestation;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_embodied_by .
+
+ta:P58 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli:Manifestation;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P59 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:dateTime;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "issued"@en;
+  sh:nodeKind sh:Literal;
+  sh:path dcterms:issued .
+
+ta:P60 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:minCount 1;
+  sh:name "is exemplified by"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:is_exemplified_by .
+
+ta:P61 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype xsd:long;
+  sh:maxCount 1;
+  sh:name "byte size"@en;
+  sh:nodeKind sh:Literal;
+  sh:path epvoc:byteSize .
+
+ta:P62 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "format"@en;
+  sh:node ta:MediaTypeOrExtentReference;
+  sh:nodeKind sh:IRI;
+  sh:path dcterms:format .
+
+ta:P63 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "media type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path eli:media_type .
+
+ta:P65 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli-dl:Participation;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P66 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:name "participation role"@en;
+  sh:node ta:ParticipationRoleReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:participation_role .
+
+ta:P67 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:maxCount 1;
+  sh:name "participation organization"@en;
+  sh:node ta:OrganizationReference;
+  sh:nodeKind sh:IRI;
+  sh:path eli-dl:had_participant_organization .
+
+ta:P70 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli-dl:ActivityType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P71 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9651 .
+
+_:node1g797rbj3x9651 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9652 .
+
+_:node1g797rbj3x9652 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9653 .
+
+_:node1g797rbj3x9653 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9654 .
+
+_:node1g797rbj3x9654 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9655 .
+
+_:node1g797rbj3x9655 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9656 .
+
+_:node1g797rbj3x9656 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9657 .
+
+_:node1g797rbj3x9657 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9658 .
+
+_:node1g797rbj3x9658 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9659 .
+
+_:node1g797rbj3x9659 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9660 .
+
+_:node1g797rbj3x9660 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9661 .
+
+_:node1g797rbj3x9661 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9662 .
+
+_:node1g797rbj3x9662 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9663 .
+
+_:node1g797rbj3x9663 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9664 .
+
+_:node1g797rbj3x9664 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9665 .
+
+_:node1g797rbj3x9665 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9666 .
+
+_:node1g797rbj3x9666 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9667 .
+
+_:node1g797rbj3x9667 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9668 .
+
+_:node1g797rbj3x9668 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9669 .
+
+_:node1g797rbj3x9669 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9670 .
+
+_:node1g797rbj3x9670 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9671 .
+
+_:node1g797rbj3x9671 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9672 .
+
+_:node1g797rbj3x9672 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9673 .
+
+_:node1g797rbj3x9673 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9674 .
+
+_:node1g797rbj3x9674 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9675 .
+
+_:node1g797rbj3x9675 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9676 .
+
+_:node1g797rbj3x9676 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P71 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P73 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli:WorkType;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P74 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9677 .
+
+_:node1g797rbj3x9677 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9678 .
+
+_:node1g797rbj3x9678 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9679 .
+
+_:node1g797rbj3x9679 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9680 .
+
+_:node1g797rbj3x9680 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9681 .
+
+_:node1g797rbj3x9681 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9682 .
+
+_:node1g797rbj3x9682 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9683 .
+
+_:node1g797rbj3x9683 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9684 .
+
+_:node1g797rbj3x9684 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9685 .
+
+_:node1g797rbj3x9685 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9686 .
+
+_:node1g797rbj3x9686 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9687 .
+
+_:node1g797rbj3x9687 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9688 .
+
+_:node1g797rbj3x9688 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9689 .
+
+_:node1g797rbj3x9689 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9690 .
+
+_:node1g797rbj3x9690 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9691 .
+
+_:node1g797rbj3x9691 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9692 .
+
+_:node1g797rbj3x9692 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9693 .
+
+_:node1g797rbj3x9693 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9694 .
+
+_:node1g797rbj3x9694 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9695 .
+
+_:node1g797rbj3x9695 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9696 .
+
+_:node1g797rbj3x9696 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9697 .
+
+_:node1g797rbj3x9697 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9698 .
+
+_:node1g797rbj3x9698 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9699 .
+
+_:node1g797rbj3x9699 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9700 .
+
+_:node1g797rbj3x9700 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9701 .
+
+_:node1g797rbj3x9701 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9702 .
+
+_:node1g797rbj3x9702 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P74 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P76 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli-dl:ParliamentaryTerm;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P77 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9703 .
+
+_:node1g797rbj3x9703 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9704 .
+
+_:node1g797rbj3x9704 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9705 .
+
+_:node1g797rbj3x9705 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9706 .
+
+_:node1g797rbj3x9706 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9707 .
+
+_:node1g797rbj3x9707 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9708 .
+
+_:node1g797rbj3x9708 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9709 .
+
+_:node1g797rbj3x9709 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9710 .
+
+_:node1g797rbj3x9710 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9711 .
+
+_:node1g797rbj3x9711 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9712 .
+
+_:node1g797rbj3x9712 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9713 .
+
+_:node1g797rbj3x9713 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9714 .
+
+_:node1g797rbj3x9714 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9715 .
+
+_:node1g797rbj3x9715 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9716 .
+
+_:node1g797rbj3x9716 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9717 .
+
+_:node1g797rbj3x9717 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9718 .
+
+_:node1g797rbj3x9718 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9719 .
+
+_:node1g797rbj3x9719 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9720 .
+
+_:node1g797rbj3x9720 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9721 .
+
+_:node1g797rbj3x9721 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9722 .
+
+_:node1g797rbj3x9722 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9723 .
+
+_:node1g797rbj3x9723 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9724 .
+
+_:node1g797rbj3x9724 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9725 .
+
+_:node1g797rbj3x9725 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9726 .
+
+_:node1g797rbj3x9726 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9727 .
+
+_:node1g797rbj3x9727 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9728 .
+
+_:node1g797rbj3x9728 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P77 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P79 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue dcterms:MediaTypeOrExtent;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P80 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9729 .
+
+_:node1g797rbj3x9729 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9730 .
+
+_:node1g797rbj3x9730 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9731 .
+
+_:node1g797rbj3x9731 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9732 .
+
+_:node1g797rbj3x9732 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9733 .
+
+_:node1g797rbj3x9733 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9734 .
+
+_:node1g797rbj3x9734 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9735 .
+
+_:node1g797rbj3x9735 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9736 .
+
+_:node1g797rbj3x9736 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9737 .
+
+_:node1g797rbj3x9737 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9738 .
+
+_:node1g797rbj3x9738 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9739 .
+
+_:node1g797rbj3x9739 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9740 .
+
+_:node1g797rbj3x9740 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9741 .
+
+_:node1g797rbj3x9741 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9742 .
+
+_:node1g797rbj3x9742 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9743 .
+
+_:node1g797rbj3x9743 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9744 .
+
+_:node1g797rbj3x9744 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9745 .
+
+_:node1g797rbj3x9745 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9746 .
+
+_:node1g797rbj3x9746 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9747 .
+
+_:node1g797rbj3x9747 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9748 .
+
+_:node1g797rbj3x9748 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9749 .
+
+_:node1g797rbj3x9749 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9750 .
+
+_:node1g797rbj3x9750 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9751 .
+
+_:node1g797rbj3x9751 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9752 .
+
+_:node1g797rbj3x9752 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9753 .
+
+_:node1g797rbj3x9753 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9754 .
+
+_:node1g797rbj3x9754 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P80 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P82 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue eli-dl:ParticipationRole;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P83 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9755 .
+
+_:node1g797rbj3x9755 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9756 .
+
+_:node1g797rbj3x9756 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9757 .
+
+_:node1g797rbj3x9757 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9758 .
+
+_:node1g797rbj3x9758 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9759 .
+
+_:node1g797rbj3x9759 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9760 .
+
+_:node1g797rbj3x9760 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9761 .
+
+_:node1g797rbj3x9761 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9762 .
+
+_:node1g797rbj3x9762 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9763 .
+
+_:node1g797rbj3x9763 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9764 .
+
+_:node1g797rbj3x9764 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9765 .
+
+_:node1g797rbj3x9765 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9766 .
+
+_:node1g797rbj3x9766 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9767 .
+
+_:node1g797rbj3x9767 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9768 .
+
+_:node1g797rbj3x9768 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9769 .
+
+_:node1g797rbj3x9769 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9770 .
+
+_:node1g797rbj3x9770 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9771 .
+
+_:node1g797rbj3x9771 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9772 .
+
+_:node1g797rbj3x9772 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9773 .
+
+_:node1g797rbj3x9773 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9774 .
+
+_:node1g797rbj3x9774 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9775 .
+
+_:node1g797rbj3x9775 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9776 .
+
+_:node1g797rbj3x9776 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9777 .
+
+_:node1g797rbj3x9777 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9778 .
+
+_:node1g797rbj3x9778 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9779 .
+
+_:node1g797rbj3x9779 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9780 .
+
+_:node1g797rbj3x9780 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P83 sh:minCount 1;
+  sh:name "pref label"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P85 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue org:Organization;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .
+
+ta:P86 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:datatype rdf:langString;
+  sh:languageIn _:node1g797rbj3x9781 .
+
+_:node1g797rbj3x9781 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x9782 .
+
+_:node1g797rbj3x9782 rdf:first "es";
+  rdf:rest _:node1g797rbj3x9783 .
+
+_:node1g797rbj3x9783 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x9784 .
+
+_:node1g797rbj3x9784 rdf:first "da";
+  rdf:rest _:node1g797rbj3x9785 .
+
+_:node1g797rbj3x9785 rdf:first "de";
+  rdf:rest _:node1g797rbj3x9786 .
+
+_:node1g797rbj3x9786 rdf:first "et";
+  rdf:rest _:node1g797rbj3x9787 .
+
+_:node1g797rbj3x9787 rdf:first "el";
+  rdf:rest _:node1g797rbj3x9788 .
+
+_:node1g797rbj3x9788 rdf:first "en";
+  rdf:rest _:node1g797rbj3x9789 .
+
+_:node1g797rbj3x9789 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x9790 .
+
+_:node1g797rbj3x9790 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x9791 .
+
+_:node1g797rbj3x9791 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x9792 .
+
+_:node1g797rbj3x9792 rdf:first "it";
+  rdf:rest _:node1g797rbj3x9793 .
+
+_:node1g797rbj3x9793 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x9794 .
+
+_:node1g797rbj3x9794 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x9795 .
+
+_:node1g797rbj3x9795 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x9796 .
+
+_:node1g797rbj3x9796 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x9797 .
+
+_:node1g797rbj3x9797 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x9798 .
+
+_:node1g797rbj3x9798 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x9799 .
+
+_:node1g797rbj3x9799 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x9800 .
+
+_:node1g797rbj3x9800 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x9801 .
+
+_:node1g797rbj3x9801 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x9802 .
+
+_:node1g797rbj3x9802 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x9803 .
+
+_:node1g797rbj3x9803 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x9804 .
+
+_:node1g797rbj3x9804 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x9805 .
+
+_:node1g797rbj3x9805 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x9806 .
+
+_:node1g797rbj3x9806 rdf:first "is";
+  rdf:rest rdf:nil .
+
+ta:P86 sh:minCount 1;
+  sh:name "name"@en;
+  sh:nodeKind sh:Literal;
+  sh:path skos:prefLabel;
+  sh:uniqueLang true .
+
+ta:P88 a skos:Concept;
+  skos:inScheme <https://data.europarl.europa.eu/def/adopted-texts#>;
+  skos:topConceptOf <https://data.europarl.europa.eu/def/adopted-texts#>;
+  sh:hasValue skos:Concept;
+  sh:minCount 1;
+  sh:name "type"@en;
+  sh:nodeKind sh:IRI;
+  sh:path rdf:type .

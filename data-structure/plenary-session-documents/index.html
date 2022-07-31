@@ -1,0 +1,3329 @@
+<html lang="en">
+   <head>
+      <style type="text/css">
+					.anchor {
+						float: left;
+						padding-right: 4px;
+						margin-left: -20px;
+						line-height: 1;
+						padding-top:12px;
+					}
+
+					.monospace {
+						font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+						font-size: 87.5%;
+					}
+					
+					
+					.CONTAINER{
+				         width: calc(100% - 40px);
+				         max-width: 1000px;
+				         margin-left: auto;
+				         margin-right: auto;
+				      }
+				
+				      h2 {
+				         margin: 25px 0px 10px 0px;
+				      }
+				
+				      ul{
+				         margin: 0.5em
+				         margin-bottom: 2rem;
+				      }
+				      
+				      a {
+                      color: #007bff;
+                      text-decoration: none;
+                      background-color: transparent;
+	                  }
+	
+	                  a:-webkit-any-link {
+	                      cursor: pointer;                      
+	                  }
+	                  
+				      
+				     
+				     table {
+						    display: table;
+						    border-spacing: 0px;
+							margin-botton: 1rem;
+						}
+						
+						tr:nth-child(even) {
+						    background-color: #eee;
+						}
+						
+						
+						.prefixes table {
+						    border-collapse: collapse;
+						    margin-bottom: 1rem;
+						    color: #212529;
+						}
+						
+						
+						.prefixes td {
+						    padding: 0.25rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						
+						
+						.propertyshapes table {
+						    border-collapse: collapse;
+						}
+			
+			
+						.propertyshapes thead {
+						    display: table-header-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+						
+						
+						.propertyshapes tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						p {
+					      font-size: 0.875em;
+					    }
+						
+						@media only print {
+							
+						}
+						
+						@page {
+								size: A4 portrait;
+								margin-top: 1.2cm;
+								margin-bottom: 1.2cm;
+								margin-left: 1.2cm;
+								margin-right: 1.2cm;
+								background-repeat: no-repeat;
+								background-position: 40px 10px;
+								 @bottom-center {
+								 	content: counter(page);
+								 }
+						}
+						
+						
+						.propertyshapes th:nth-child(4) {
+						    width: 6%;
+						}
+						
+						.propertyshapes td {
+						    padding: 0.75rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						.propertyshapes tbody {
+						    display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+			
+			
+						.propertyshapes tbody tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						.text-break {
+						    word-break: break-word;
+						}
+						
+						body {
+						         margin: 0;
+						         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+						         background-color: #fff;
+						      }
+				     
+				     			
+					
+					
+					
+				</style>
+   </head>
+   <body>
+      <div class="container">
+         <br/>
+         <table style="width:100%">
+            <tr>
+               <td width="20%">
+                  <img src="https://www.europarl.europa.eu/portal/img/ep-logo.svg"/>
+               </td>
+               <td width="80%">
+                  <div>
+                     <center>
+                        <h1>Plenary session documents dataset description</h1>
+                     </center>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br/>
+         <br/>
+         <b>Created date: </b>2022-04-04<br/>
+         <b>Last updated: </b>2022-07-27T00:00:00.000Z<br/>
+         <b>Copyright date: </b>2022<br/>
+         <b>Version: </b>0.4.4<br/>
+         <b>License: </b>
+         <a href="https://www.europarl.europa.eu/legal-notice/en/" target="_blank">https://www.europarl.europa.eu/legal-notice/en/</a>
+         <br/>
+         <b>Creator: </b>
+         <a href="http://publications.europa.eu/resource/dataset/corporate-body/EP"
+            target="_blank">http://publications.europa.eu/resource/dataset/corporate-body/EP</a>
+         <br/>
+         <b>Publisher: </b>
+         <a href="http://publications.europa.eu/resource/dataset/corporate-body/EP"
+            target="_blank">http://publications.europa.eu/resource/dataset/corporate-body/EP</a>
+         <br/>
+         <br/>
+         <hr/>
+         <br/>
+         <div>
+            <h2>Table of Content</h2>
+            <a href="#diagram">Dataset diagram</a>
+            <br/>
+            <a href="#prefixes">Namespaces</a>
+            <br/>
+            <a href="#psd:PlenaryAtt">ComplexWork Plenary Att</a>
+            <br/>
+            <a href="#psd:PlenaryAgenda">ComplexWork Plenary agenda</a>
+            <br/>
+            <a href="#psd:PlenaryDebates">ComplexWork Plenary debates</a>
+            <br/>
+            <a href="#psd:PlenaryDebatesAnnex">ComplexWork Plenary debates annex</a>
+            <br/>
+            <a href="#psd:PlenaryMinutes">ComplexWork Plenary minutes</a>
+            <br/>
+            <a href="#psd:PlenarySittingAgenda">ComplexWork Plenary sitting agenda</a>
+            <br/>
+            <a href="#psd:PlenaryVotes">ComplexWork Plenary votes</a>
+            <br/>
+            <a href="#psd:Manifestation">Is embodied by</a>
+            <br/>
+            <a href="#psd:Expression">Realized By</a>
+            <br/>
+            <a href="#psd:MediaTypeOrExtentReference">Reference to a Format</a>
+            <br/>
+            <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+            <br/>
+            <a href="#psd:VersionReference">Reference to a Status</a>
+            <br/>
+            <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+            <br/>
+            <a href="#psd:OrganizationReference">Reference to an Organization</a>
+            <br/>
+            <a href="#psd:VersionedAnnexWork">Versioned Annex Work</a>
+            <br/>
+            <a href="#psd:VersionedWork">Versioned Work</a>
+            <br/>
+            <a href="#psd:PlenaryRcv">Work Plenary Rcv</a>
+            <br/>
+         </div>
+         <br/>
+         <div id="diagram">
+            <h2>Dataset diagram</h2>
+            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1406px" preserveAspectRatio="none" style="width:4249px;height:1406px;" version="1.1" viewBox="0 0 4249 1406" width="4249px" zoomAndPan="magnify"><defs><filter height="300%" id="fsdorl9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class psd:Manifestation--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:Manifestation" xlink:show="new" xlink:title="#psd:Manifestation" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="98.3203" style="stroke: #008000; stroke-width: 1.5;" width="232" x="3691" y="1163"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="123" x="3745.5" y="1180.9951">psd:Manifestation</text><line style="stroke: #008000; stroke-width: 1.5;" x1="3692" x2="3922" y1="1189.2969" y2="1189.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="3697" y="1203.5073">dcterms:issued  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="3697" y="1216.312">eli:is_exemplified_by  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="3697" y="1229.1167">eli:media_type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="3697" y="1241.9214">epvoc:byteSize  : xsd:long  [0..1]</text><text fill="#008000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="3701" y="1254.7261">rdf:type  [1..1]  = eli:Manifestation</text></a><!--class psd:MediaTypeOrExtentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:MediaTypeOrExtentReference" xlink:show="new" xlink:title="#psd:MediaTypeOrExtentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="3659" y="1338"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="238" x="3688" y="1355.9951">psd:MediaTypeOrExtentReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="3660" x2="3954" y1="1364.2969" y2="1364.2969"/><text fill="#A9A9A9" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="3669" y="1378.5073">rdf:type  [1..*]  = dcterms:MediaTypeOrExtent</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="3665" y="1391.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class psd:Expression--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:Expression" xlink:show="new" xlink:title="#psd:Expression" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #0000FF; stroke-width: 1.5;" width="203" x="3705.5" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="107" x="3753.5" y="1043.9951">psd:Expression</text><line style="stroke: #0000FF; stroke-width: 1.5;" x1="3706.5" x2="3907.5" y1="1052.2969" y2="1052.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="3711.5" y="1066.5073">eli:title  : rdf:langString  [1..*]</text><text fill="#0000FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="3715.5" y="1079.312">rdf:type  [1..1]  = eli:Expression</text></a><!--class psd:OrganizationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:OrganizationReference" xlink:show="new" xlink:title="#psd:OrganizationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="743" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="796" y="1043.9951">psd:OrganizationReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="744" x2="1038" y1="1052.2969" y2="1052.2969"/><text fill="#A9A9A9" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="753" y="1066.5073">rdf:type  [1..*]  = org:Organization</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="749" y="1079.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class psd:ParliamentaryTermReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:ParliamentaryTermReference" xlink:show="new" xlink:title="#psd:ParliamentaryTermReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="2393" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="231" x="2425.5" y="1043.9951">psd:ParliamentaryTermReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="2394" x2="2688" y1="1052.2969" y2="1052.2969"/><text fill="#A9A9A9" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="2403" y="1066.5073">rdf:type  [1..*]  = eli-dl:ParliamentaryTerm</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="2399" y="1079.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class psd:PlenaryAgenda--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryAgenda" xlink:show="new" xlink:title="#psd:PlenaryAgenda" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="2758.5" y="410"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="134" x="2815" y="427.9951">psd:PlenaryAgenda</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="2759.5" x2="3004.5" y1="436.2969" y2="436.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2764.5" y="450.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="2764.5" y="463.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="2764.5" y="476.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="2764.5" y="488.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="2764.5" y="501.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="2768.5" y="514.5308">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="2764.5" y="527.3354">rdfs:label  : xsd:string</text></a><!--class psd:PlenarySittingAgenda--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenarySittingAgenda" xlink:show="new" xlink:title="#psd:PlenarySittingAgenda" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="2607.5" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="177" x="2642.5" y="628.9951">psd:PlenarySittingAgenda</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="2608.5" x2="2853.5" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2613.5" y="651.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="2613.5" y="664.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="2613.5" y="677.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="2613.5" y="689.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="2613.5" y="702.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="82" x="2617.5" y="715.5308">rdf:type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="2613.5" y="728.3354">rdfs:label  : xsd:string</text></a><!--class psd:VersionedWork--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:VersionedWork" xlink:show="new" xlink:title="#psd:VersionedWork" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FFA500; stroke-width: 1.5;" width="260" x="3490" y="818.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="136" x="3552" y="836.4951">psd:VersionedWork</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="3491" x2="3749" y1="844.7969" y2="844.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="3496" y="859.0073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="3496" y="871.812">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="3496" y="884.6167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="3496" y="897.4214">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FFA500" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="3500" y="910.2261">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="3496" y="923.0308">rdfs:label  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="248" x="3496" y="935.8354">skos:notation  : epvoc:publicRegister  [0..1]</text></a><!--class psd:WorkTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:WorkTypeReference" xlink:show="new" xlink:title="#psd:WorkTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="1138" y="850.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="1200" y="868.4951">psd:WorkTypeReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1139" x2="1433" y1="876.7969" y2="876.7969"/><text fill="#A9A9A9" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="1148" y="891.0073">rdf:type  [1..*]  = eli:WorkType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1144" y="903.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class psd:PlenaryAtt--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryAtt" xlink:show="new" xlink:title="#psd:PlenaryAtt" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="3331.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="100" x="3405" y="25.9951">psd:PlenaryAtt</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="3332.5" x2="3577.5" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="3337.5" y="48.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="3337.5" y="61.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="3337.5" y="74.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="3337.5" y="86.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="3337.5" y="99.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="3341.5" y="112.5308">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="3337.5" y="125.3354">rdfs:label  : xsd:string</text></a><!--class psd:PlenaryMinutes--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryMinutes" xlink:show="new" xlink:title="#psd:PlenaryMinutes" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="2254.5" y="209"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="136" x="2310" y="226.9951">psd:PlenaryMinutes</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="2255.5" x2="2500.5" y1="235.2969" y2="235.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2260.5" y="249.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="2260.5" y="262.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="2260.5" y="275.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="2260.5" y="287.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="2260.5" y="300.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="2264.5" y="313.5308">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="2260.5" y="326.3354">rdfs:label  : xsd:string</text></a><!--class psd:PlenaryDebates--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryDebates" xlink:show="new" xlink:title="#psd:PlenaryDebates" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="111.125" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="808.5" y="416.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="862" y="434.4951">psd:PlenaryDebates</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="809.5" x2="1054.5" y1="442.7969" y2="442.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="814.5" y="457.0073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="814.5" y="469.812">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="814.5" y="482.6167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="814.5" y="495.4214">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="818.5" y="508.2261">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="814.5" y="521.0308">rdfs:label  : xsd:string</text></a><!--class psd:PlenaryDebatesAnnex--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryDebatesAnnex" xlink:show="new" xlink:title="#psd:PlenaryDebatesAnnex" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="111.125" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="787.5" y="617.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="183" x="819.5" y="635.4951">psd:PlenaryDebatesAnnex</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="788.5" x2="1033.5" y1="643.7969" y2="643.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="793.5" y="658.0073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="793.5" y="670.812">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="793.5" y="683.6167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="793.5" y="696.4214">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="797.5" y="709.2261">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="793.5" y="722.0308">rdfs:label  : xsd:string</text></a><!--class psd:VersionedAnnexWork--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:VersionedAnnexWork" xlink:show="new" xlink:title="#psd:VersionedAnnexWork" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="136.7344" style="stroke: #FFA500; stroke-width: 1.5;" width="247" x="2686.5" y="812"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="2720.5" y="829.9951">psd:VersionedAnnexWork</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="2687.5" x2="2932.5" y1="838.2969" y2="838.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2692.5" y="852.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="2692.5" y="865.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="2692.5" y="878.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="2692.5" y="890.9214">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="2692.5" y="903.7261">epvoc:numbering  : xsd:string  [0..1]</text><text fill="#FFA500" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="2696.5" y="916.5308">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="2692.5" y="929.3354">rdfs:label  : xsd:string</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="150" x="2692.5" y="942.1401">skos:notation  : xsd:string</text></a><polygon fill="#FEFECE" filter="url(#fsdorl9)" points="2558,460,2570,472,2558,484,2546,472,2558,460" style="stroke: #A80036; stroke-width: 1.5;"/><!--class psd:PlenaryRcv--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryRcv" xlink:show="new" xlink:title="#psd:PlenaryRcv" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FFA500; stroke-width: 1.5;" width="247" x="1819.5" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="1890" y="628.9951">psd:PlenaryRcv</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="1820.5" x2="2065.5" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1825.5" y="651.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="1825.5" y="664.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="1825.5" y="677.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="1825.5" y="689.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="1825.5" y="702.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FFA500" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1829.5" y="715.5308">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="1825.5" y="728.3354">rdfs:label  : xsd:string</text></a><!--class psd:PlenaryVotes--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:PlenaryVotes" xlink:show="new" xlink:title="#psd:PlenaryVotes" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="123.9297" style="stroke: #FF00FF; stroke-width: 1.5;" width="247" x="2101.5" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="2164.5" y="628.9951">psd:PlenaryVotes</text><line style="stroke: #FF00FF; stroke-width: 1.5;" x1="2102.5" x2="2347.5" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2107.5" y="651.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="2107.5" y="664.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="2107.5" y="677.1167">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="2107.5" y="689.9214">epvoc:epNumber  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="2107.5" y="702.7261">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#FF00FF" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="81" x="2111.5" y="715.5308">rdf:type  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="127" x="2107.5" y="728.3354">rdfs:label  : xsd:string</text></a><!--class psd:VersionReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#psd:VersionReference" xlink:show="new" xlink:title="#psd:VersionReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fsdorl9)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="3944" y="1026"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="155" x="4014.5" y="1043.9951">psd:VersionReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="3945" x2="4239" y1="1052.2969" y2="1052.2969"/><text fill="#A9A9A9" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176" x="3954" y="1066.5073">rdf:type  [1..*]  = epvoc:Status</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="3950" y="1079.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><path d="M3807,1261.3594 C3807,1284.4006 3807,1311.314 3807,1332.3388 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3807,1337.5513,3811,1328.5513,3807,1332.5513,3803,1328.5513,3807,1337.5513" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="3808" y="1304.0669">dcterms:format [1..1]</text><path d="M3807,1086.0784 C3807,1106.4125 3807,1133.8409 3807,1157.9077 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3807,1162.9885,3811,1153.9885,3807,1157.9885,3803,1153.9885,3807,1162.9885" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="3808" y="1129.0669">eli:is_embodied_by</text><path d="M2758.2581,528.5336 C2746.243,538.6942 2735.6852,550.4567 2728,564 C2720.9271,576.4642 2718.2997,591.0885 2718.1071,605.5054 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2718.1425,610.8031,2722.082,601.7764,2718.1089,605.8032,2714.0822,601.8302,2718.1425,610.8031" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="2729" y="577.0669">^is_derivative_of</text><path d="M2816.9452,610.9582 C2826.5495,601.6535 2835.5404,591.5969 2843,581 C2851.835,568.4492 2858.8694,553.6867 2864.3913,539.1489 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2866.2064,534.2308,2859.3377,541.2892,2864.4752,538.9215,2866.8429,544.0591,2866.2064,534.2308" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="2854" y="577.0669">eli:is_derivative_of [1..1]</text><path d="M3005.837,496.2464 C3075.3725,511.7703 3162.9812,534.5483 3238,564 C3278.9087,580.0604 3292.0112,581.9622 3325,611 C3375.9203,655.8218 3357.0886,698.0816 3414,735 C3469.5754,771.0517 3507.1506,725.059 3560,765 C3576.3695,777.3713 3588.6753,795.498 3597.7406,813.7407 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3599.976,818.3777,3599.6709,808.5336,3597.8047,813.8737,3592.4646,812.0076,3599.976,818.3777" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="3415" y="677.5669">dcat:hasCurrentVersion</text><path d="M3005.7883,505.7269 C3041.7726,519.6685 3079.3326,538.6617 3109,564 C3176.4649,621.6203 3136.9731,687.6442 3212,735 C3327.9324,808.1748 3397.0731,702.3208 3519,765 C3541.2449,776.4355 3560.7595,795.021 3576.5538,813.9728 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3580.0732,818.2762,3577.472,808.7771,3576.9079,814.4057,3571.2792,813.8416,3580.0732,818.2762" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="3213" y="677.5669">eli:has_member</text><path d="M2758.2983,503.1588 C2705.8249,515.0281 2643.7813,527.301 2587,534 C2423.7979,553.2545 1243.1862,514.7343 1110,611 C1060.6901,646.6407 1097.9907,695.168 1052,735 C1017.2466,765.0995 995.2139,746.7856 953,765 C914.4307,781.6419 892.0603,775.6544 871,812 C832.8096,877.9084 857.8934,971.1204 876.3755,1021.1051 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="878.1411,1025.805,878.7204,1015.9732,876.3827,1021.1244,871.2314,1018.7867,878.1411,1025.805" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="954" y="778.0669">dcterms:publisher [0..1]</text><path d="M2996.6504,534.3279 C3023.0491,554.8795 3047.3638,580.4623 3061,611 C3076.5533,645.8311 3049.0372,755.0164 3076,782 C3129.4563,835.4975 3363.9345,756.2159 3415,812 C3456.1135,856.9125 3444.1587,895.547 3415,949 C3405.7605,965.9375 3360.2935,989.8686 3342,996 C3226.0111,1034.8754 2892.7926,1048.6465 2694.5694,1053.4638 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2689.3286,1053.5899,2698.4222,1057.3722,2694.3272,1053.4696,2698.2298,1049.3745,2689.3286,1053.5899" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="3077" y="778.0669">eli-dl:parliamentary_term [1..1]</text><path d="M2758.4478,501.4874 C2705.8636,513.1197 2643.6969,525.6674 2587,534 C2186.7385,592.8256 2061.0902,475.2061 1680,611 C1603.5382,638.2457 1413.3953,781.5944 1328.3189,847.4095 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1324.3479,850.4841,1333.913,848.137,1328.3014,847.4231,1329.0153,841.8114,1324.3479,850.4841" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1681" y="677.5669">eli:work_type [1..1]</text><path d="M3468.4527,132.3333 C3494.0098,245.3177 3552.2921,477.4977 3611,534 C3645.0467,566.7676 3684.6906,526.1653 3713,564 C3768.5645,638.2604 3716.6129,745.2231 3670.9379,813.7963 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3667.9397,818.2568,3676.2803,813.019,3670.7291,814.1072,3669.6409,808.556,3667.9397,818.2568" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="3612" y="476.5669">dcat:hasCurrentVersion</text><path d="M3578.6071,88.7996 C3680.0324,112.0672 3807,162.8023 3807,271 C3807,271 3807,271 3807,673 C3807,730.548 3766.8179,779.3305 3723.7065,815.1081 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3719.7961,818.3119,3729.293,815.7024,3723.6638,815.1432,3724.223,809.514,3719.7961,818.3119" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="3808" y="476.5669">eli:has_member</text><path d="M3331.486,70.6063 C2715.6062,74.4221 6,100.8768 6,271 C6,271 6,271 6,880.5 C6,954.5987 89.1034,921.7258 158,949 C217.8531,972.6941 232.1153,982.2406 295,996 C443.4255,1028.476 616.5554,1043.4258 737.8496,1050.2764 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="742.8634,1050.5567,734.1008,1046.0605,737.8712,1050.2776,733.6541,1054.048,742.8634,1050.5567" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="7" y="577.0669">dcterms:publisher [0..1]</text><path d="M3578.7669,86.9341 C3643.8856,100.0271 3722.871,122.816 3785,162 C3808.4463,176.7873 3810.8695,185.7736 3826,209 C4016.9882,502.181 4075.4978,774.0484 3805,996 C3762.7426,1030.6735 3022.0253,1047.701 2694.5558,1053.561 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2689.2871,1053.6549,2698.3571,1057.4935,2694.2863,1053.5656,2698.2142,1049.4948,2689.2871,1053.6549" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="3985" y="577.0669">eli-dl:parliamentary_term [1..1]</text><path d="M3331.4544,93.0573 C3125.9772,131.4054 2715.9767,207.9236 2506.965,246.9313 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2501.759,247.9029,2511.3401,250.1839,2506.6741,246.9856,2509.8724,242.3197,2501.759,247.9029" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="2950" y="175.0669">eli:is_annex_of [1..1]</text><path d="M3331.2402,75.2927 C2880.2353,95.3851 1351,170.894 1351,271 C1351,271 1351,271 1351,673 C1351,736.1199 1323.2718,805.305 1304.036,845.7062 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1301.7347,850.4881,1309.2419,844.113,1303.903,845.9827,1302.0333,840.6438,1301.7347,850.4881" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1352" y="476.5669">eli:work_type [1..1]</text><path d="M829.8903,527.7167 C818.2983,538.2375 808.1125,550.3136 801,564 C791.6283,582.0337 797.3827,598.9213 810.1473,613.7673 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="813.5387,617.4972,810.4436,608.1473,810.175,613.7978,804.5245,613.5292,813.5387,617.4972" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="86" x="802" y="577.0669">^is_annex_of</text><path d="M916.8331,617.1688 C919.5657,591.014 922.8277,559.7918 925.6252,533.0159 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="926.1782,527.7228,921.2644,536.2583,925.6585,532.6957,929.2211,537.0898,926.1782,527.7228" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="924" y="577.0669">eli:is_annex_of [1..1]</text><path d="M1055.6484,495.2922 C1128.8035,508.3455 1223.4126,523.9689 1308,534 C1425.0463,547.8803 2266.2446,548.2196 2366,611 C2419.7476,644.8257 2383.2268,701.2149 2437,735 C2516.4185,784.8977 2766.4662,744.5392 2858,765 C2878.4595,769.5734 2881.4972,777.625 2902,782 C3154.0051,835.774 3231.6423,747.0463 3481,812 C3486.2821,813.3759 3491.6001,814.964 3496.915,816.722 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3501.7941,818.383,3494.5634,811.6959,3497.0609,816.7716,3491.9852,819.269,3501.7941,818.383" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="2438" y="677.5669">dcat:hasCurrentVersion</text><path d="M1055.5198,496.4714 C1128.631,509.9272 1223.2391,525.5599 1308,534 C1481.1321,551.2397 2709.3342,549.2605 2872,611 C2956.1121,642.9246 2947.9034,703.0346 3032,735 C3217.7073,805.5878 3293.1363,692.2317 3478,765 C3506.5116,776.2231 3533.6902,795.3771 3556.4952,814.8956 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3560.4085,818.2853,3556.2244,809.3694,3556.6291,815.0118,3550.9867,815.4164,3560.4085,818.2853" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="3033" y="677.5669">eli:has_member</text><path d="M808.4341,492.6834 C679.6688,516.6084 489.4601,559.3988 437,611 C386.0744,661.0919 401.3308,694.3184 391,765 C373.7371,883.1097 416.4915,953.4117 528,996 C594.2987,1021.3214 671.4244,1035.9652 737.4911,1044.4301 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="742.6317,1045.0792,734.2038,1039.9831,737.6711,1044.4528,733.2015,1047.9201,742.6317,1045.0792" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="392" y="778.0669">dcterms:publisher [0..1]</text><path d="M831.8098,527.5559 C816.4862,538.4852 801.6011,550.7259 789,564 C780.1426,573.3305 677.3054,752.5667 674,765 C661.897,810.5256 730.6154,784.6928 769,812 C830.8558,856.0049 804.4318,912.5138 871,949 C904.0516,967.1156 1981.4376,1026.2005 2387.8737,1047.9064 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2392.9203,1048.1758,2384.1464,1043.7017,2387.9274,1047.9092,2383.7198,1051.6903,2392.9203,1048.1758" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="675" y="778.0669">eli-dl:parliamentary_term [1..1]</text><path d="M1019.1842,527.5673 C1034.7098,538.8923 1050.2866,551.2637 1064,564 C1135.7643,630.6512 1125.1419,675.5811 1203,735 C1229.2593,755.0402 1251.2141,738.5486 1271,765 C1288.0741,787.8261 1290.8923,820.5372 1289.9777,845.3246 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1289.7297,850.4873,1294.1573,841.6898,1289.9698,845.4931,1286.1666,841.3056,1289.7297,850.4873" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1204" y="677.5669">eli:work_type [1..1]</text><path d="M887.0917,728.7562 C875.5579,748.9122 859.6623,769.712 839,782 C772.2859,821.6752 543.4758,754.8058 491,812 C449.8355,856.8658 454.7258,900.0956 491,949 C521.0067,989.4547 638.0206,1017.6818 737.7949,1034.9459 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="742.8328,1035.8109,734.6397,1030.3453,737.9049,1034.9646,733.2856,1038.2299,742.8328,1035.8109" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="492" y="885.0669">dcterms:publisher [0..1]</text><path d="M893.0589,728.5868 C876.7205,791.1906 862.8034,891.6494 919,949 C942.6693,973.1553 1493.2473,976.8861 1527,979 C1832.4273,998.1284 2189.1291,1026.655 2387.6411,1043.083 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2392.8842,1043.5171,2384.2451,1038.7879,2387.9013,1043.1044,2383.5847,1046.7606,2392.8842,1043.5171" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="920" y="885.0669">eli-dl:parliamentary_term [1..1]</text><path d="M1034.7091,712.4984 C1066.4495,721.2611 1100.7433,729.552 1133,735 C1344.2021,770.6707 1407.8732,706.7723 1614,765 C1629.4981,769.378 1630.4324,777.8759 1646,782 C1863.7,839.6729 2439.6054,761.1524 2659,812 C2666.2913,813.6898 2673.659,815.743 2681.0126,818.0683 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2686.1001,819.7204,2678.7757,813.1361,2681.3446,818.176,2676.3047,820.7449,2686.1001,819.7204" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="1647" y="778.0669">eli:has_member</text><path d="M1034.6745,724.2968 C1061.9078,736.7478 1090.2855,750.6398 1116,765 C1160.4231,789.808 1208.1034,822.8154 1241.6289,847.1904 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1246.0574,850.4199,1241.1424,841.8851,1242.0175,847.4738,1236.4287,848.3489,1246.0574,850.4199" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1142" y="778.0669">eli:work_type [1..1]</text><path d="M2447.2742,333.0935 C2471.2401,356.1366 2497.4656,383.2073 2519,410 C2531.9131,426.0662 2544.1093,446.6436 2551.3194,459.5782 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2553.7422,463.9753,2552.902,454.1623,2551.3291,459.5961,2545.8953,458.0233,2553.7422,463.9753" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="86" x="2492" y="376.0669">^is_annex_of</text><path d="M2554.7228,481.0312 C2549.3556,494.5555 2537.4108,519.9759 2519,534 C2490.1983,555.9392 2398.4851,573.8115 2363,581 C2240.7681,605.7616 2204.5009,578.8548 2084,611 C2078.3157,612.5164 2072.5671,614.23 2066.8072,616.0958 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M2566.3808,468.244 C2634.7001,437.626 3103.4102,227.5687 3331.2178,125.4743 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M2554.2011,480.4354 C2548.1523,493.1815 2535.3294,517.5993 2519,534 C2491.51,561.6102 2479.5415,562.9748 2445,581 C2434.9297,586.2551 2393.0594,603.9133 2348.506,622.3741 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M2501.5759,275.1189 C2764.8224,284.8328 3363.2427,312.2597 3440,363 C3531.5557,423.5227 3476.6832,505.143 3556,581 C3578.4125,602.4349 3600.5463,586.0754 3619,611 C3661.7861,668.7893 3653.5626,754.3162 3640.1538,813.4525 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3639.0117,818.3761,3644.942,810.5128,3640.1416,813.5054,3637.149,808.705,3639.0117,818.3761" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="3557" y="577.0669">dcat:hasCurrentVersion</text><path d="M2501.632,290.546 C2632.799,312.9208 2845.224,353.8587 3023,410 C3209.317,468.8385 3241.5229,522.6709 3428,581 C3489.9779,600.3864 3525.7037,564.4668 3571,611 C3598.3723,639.1198 3610.8169,742.9917 3616.2047,813.2563 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3616.5805,818.2558,3619.8945,808.9812,3616.2056,813.2699,3611.917,809.581,3616.5805,818.2558" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="3429" y="577.0669">eli:has_member</text><path d="M2254.1519,275.8046 C1790.5445,294.594 184,367.2613 184,472 C184,472 184,472 184,880.5 C184,993.6901 529.6638,1034.3942 737.5975,1048.6399 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="742.7896,1048.9921,734.0811,1044.3918,737.8011,1048.6535,733.5394,1052.3735,742.7896,1048.9921" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="185" y="677.5669">dcterms:publisher [0..1]</text><path d="M2254.409,274.1282 C1930.1397,283.5549 1061.3622,317.0007 791,410 C602.2383,474.9303 371.5493,568.0645 481,735 C499.3352,762.965 519.4296,751.4474 550,765 C596.3706,785.5573 613.8407,781.015 654,812 C716.0451,859.8711 696.1352,911.5985 765,949 C905.6484,1025.3882 1982.6784,1048.2223 2387.6831,1054.148 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2392.7118,1054.2213,2383.771,1050.0906,2387.7123,1054.1484,2383.6545,1058.0897,2392.7118,1054.2213" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="482" y="677.5669">eli-dl:parliamentary_term [1..1]</text><path d="M2254.4916,290.6806 C2067.1497,325.9493 1708.1315,415.3442 1473,611 C1404.8009,667.7493 1421.8481,710.0043 1370,782 C1354.0044,804.2114 1334.2167,827.5823 1317.8654,845.9826 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1314.2175,850.0695,1323.1948,846.0187,1317.547,846.3393,1317.2264,840.6915,1314.2175,850.0695" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1530" y="577.0669">eli:work_type [1..1]</text><path d="M1943.909,735.1136 C1940.9575,752.6567 1934.3756,770.1688 1921,782 C1855.8926,839.5897 1604.6679,765.8632 1531,812 C1471.2421,849.4252 1508.569,908.288 1451,949 C1386.8563,994.3615 1186.9366,1024.6092 1044.2911,1041.045 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1039.2413,1041.6239,1048.6384,1044.5726,1044.2088,1041.0543,1047.7271,1036.6247,1039.2413,1041.6239" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1532" y="885.0669">dcterms:publisher [0..1]</text><path d="M2037.049,735.0706 C2065.3066,756.9456 2094.692,783.3078 2117,812 C2172.1786,882.9698 2129.6442,941.3215 2201,996 C2230.6791,1018.7424 2312.1824,1033.5684 2387.9483,1042.7925 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2392.93,1043.392,2384.4724,1038.3453,2387.9658,1042.7946,2383.5165,1046.288,2392.93,1043.392" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="2164" y="885.0669">eli-dl:parliamentary_term [1..1]</text><path d="M2010.2919,610.813 C2090.6604,536.5414 2224.5118,412.8443 2306.6373,336.949 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2310.5085,333.3714,2301.184,336.5421,2306.8364,336.7649,2306.6136,342.4174,2310.5085,333.3714" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="2226" y="476.5669">eli:is_annex_of [1..1]</text><path d="M2066.6951,728.8468 C2072.5109,731.0123 2078.299,733.0766 2084,735 C2168.4705,763.499 2190.6597,770.0233 2279,782 C2379.1389,795.5763 3092.9755,777.6131 3188,812 C3281.2116,845.7309 3271.3917,913.6463 3364,949 C3409.8835,966.5162 3771.0078,943.5509 3805,979 C3815.3039,989.7455 3817.0242,1005.7071 3815.6778,1020.3159 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3815.0533,1025.6247,3820.0774,1017.1537,3815.6374,1020.6589,3812.1322,1016.219,3815.0533,1025.6247" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="3365" y="885.0669">eli:is_realized_by</text><path d="M1819.2982,720.8303 C1802.2448,726.2425 1784.815,731.176 1768,735 C1645.9593,762.7539 1607.073,726.4536 1488,765 C1472.3927,770.0524 1395.2664,815.1933 1340.973,847.5159 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1336.45,850.2103,1346.2291,849.0406,1340.7455,847.6513,1342.1348,842.1677,1336.45,850.2103" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1489" y="778.0669">eli:work_type [1..1]</text><path d="M2854.8206,727.4146 C2863.9152,730.3038 2873.0365,732.8827 2882,735 C3056.7966,776.2883 3111.3261,719.2186 3285,765 C3302.1098,769.5102 3304.5661,775.4417 3321,782 C3373.8629,803.0962 3433.1969,823.3289 3484.989,839.9095 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3489.9771,841.5026,3482.6206,834.9541,3485.2141,839.9815,3480.1868,842.5749,3489.9771,841.5026" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="3322" y="778.0669">dcat:hasCurrentVersion</text><path d="M2844.8774,735.1114 C2888.622,758.7375 2929.5099,780.4324 2935,782 C3130.7257,837.887 3191.6933,775.8181 3392,812 C3422.5,817.5093 3454.6949,825.6685 3484.9749,834.4526 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3489.8176,835.8674,3482.3006,829.5039,3485.0183,834.4651,3480.057,837.1828,3489.8176,835.8674" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="2936" y="778.0669">eli:has_member</text><path d="M2607.4401,728.5613 C2554.7943,749.4866 2492.0106,770.8955 2433,782 C2380.5933,791.8618 1995.5321,778.5515 1954,812 C1904.6941,851.7093 1963.0887,907.825 1915,949 C1785.3996,1059.9678 1703.6248,977.6276 1534,996 C1366.7242,1014.118 1174.603,1031.6127 1044.2493,1042.9887 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1039.2517,1043.4245,1048.5652,1046.6274,1044.2328,1042.9901,1047.8701,1038.6576,1039.2517,1043.4245" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1955" y="885.0669">dcterms:publisher [0..1]</text><path d="M2607.2125,724.5805 C2564.2548,743.0641 2525.9424,760.4812 2523,765 C2518.8772,771.3316 2517.8476,776.4738 2523,782 C2588.019,851.7359 2885.981,742.2641 2951,812 C2992.5224,856.5348 2982.5536,896.9248 2951,949 C2923.7462,993.9789 2799.0397,1022.0925 2694.2402,1038.1492 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2689.2653,1038.9047,2698.7639,1041.5078,2694.2086,1038.1538,2697.5626,1033.5985,2689.2653,1038.9047" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="2980" y="885.0669">eli-dl:parliamentary_term [1..1]</text><path d="M2607.1743,727.3931 C2598.081,730.2874 2588.9613,732.8734 2580,735 C2446.8543,766.5972 2102.5286,772.7199 1966,782 C1741.6775,797.2476 1680.605,763.7639 1461,812 C1424.4004,820.0391 1385.4174,834.6523 1353.5561,848.3228 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1348.9081,850.332,1358.7564,850.4325,1353.4976,848.348,1355.5821,843.0892,1348.9081,850.332" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="2304" y="778.0669">eli:work_type [1..1]</text><path d="M2348.8933,727.1165 C2357.9707,730.0762 2367.0683,732.7524 2376,735 C2501.2305,766.513 2540.6236,730.2686 2665,765 C2682.0423,769.759 2683.8226,777.7548 2701,782 C2999.422,855.7516 3088.9081,760.7134 3392,812 C3422.5592,817.171 3454.7786,825.1901 3485.0637,833.9451 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3489.9071,835.3563,3482.3854,828.9983,3485.1067,833.9576,3480.1475,836.6789,3489.9071,835.3563" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="2702" y="778.0669">dcat:hasCurrentVersion</text><path d="M2348.6662,725.5018 C2408.8175,748.0971 2482.9019,771.675 2552,782 C2921.4694,837.208 3023.4277,751.09 3392,812 C3422.5788,817.0534 3454.8064,825.0239 3485.0931,833.7689 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3489.9367,835.1787,3482.4133,828.8227,3485.136,833.7813,3480.1774,836.5039,3489.9367,835.1787" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="2553" y="778.0669">eli:has_member</text><path d="M2101.1826,730.9107 C2055.7766,749.9646 2003.3979,769.458 1954,782 C1867.7328,803.9031 1827.5961,759.1249 1756,812 C1701.6329,852.1512 1744.3843,908.8721 1690,949 C1577.1608,1032.2593 1516.9354,976.9802 1378,996 C1266.4765,1011.2672 1140.3352,1026.7589 1044.3778,1038.1759 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1039.2563,1038.7848,1048.6657,1041.694,1044.2213,1038.1944,1047.721,1033.75,1039.2563,1038.7848" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1757" y="885.0669">dcterms:publisher [0..1]</text><path d="M2219.6244,735.1678 C2221.2953,752.1927 2226.3582,769.4041 2238,782 C2284.1458,831.9278 2332.6603,772.5065 2388,812 C2445.3934,852.9591 2430.3302,889.396 2468,949 C2483.5906,973.6686 2502.1332,1000.8223 2516.6288,1021.6028 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2519.658,1025.9372,2517.7809,1016.2689,2516.7937,1021.8389,2511.2237,1020.8517,2519.658,1025.9372" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="2469" y="885.0669">eli-dl:parliamentary_term [1..1]</text><path d="M2332.733,610.7142 C2341.8039,601.7874 2349.8437,591.8859 2356,581 C2398.3232,506.1625 2396.4817,404.3812 2389.0585,338.1947 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2388.4676,333.0953,2385.5302,342.4959,2389.0432,338.0621,2393.477,341.575,2388.4676,333.0953" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="131" x="2395" y="476.5669">eli:is_annex_of [1..1]</text><path d="M2101.1673,729.8098 C2095.4143,731.7012 2089.6741,733.446 2084,735 C1976.9178,764.3278 1945.447,746.3436 1836,765 C1801.452,770.8891 1793.6053,776.4575 1759,782 C1627.5613,803.0515 1590.4018,780.7835 1461,812 C1425.0263,820.6782 1386.5772,835.1129 1354.9078,848.4997 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1350.2855,850.4664,1360.1331,850.6235,1354.8864,848.5088,1357.001,843.2621,1350.2855,850.4664" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1837" y="778.0669">eli:work_type [1..1]</text><path d="M2686.4467,940.8174 C2677.2889,943.9627 2668.0804,946.7474 2659,949 C2504.6687,987.2852 1445.5824,1033.5538 1044.4943,1049.913 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1039.2218,1050.1279,1048.3773,1053.7579,1044.2176,1049.9242,1048.0514,1045.7645,1039.2218,1050.1279" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="2365" y="992.0669">dcterms:publisher [0..1]</text><path d="M2704.8418,949.1069 C2665.7779,974.5929 2623.2427,1002.3435 2591.3032,1023.1813 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2587.0666,1025.9454,2596.7899,1024.3776,2591.2541,1023.2133,2592.4185,1017.6775,2587.0666,1025.9454" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="2653" y="992.0669">eli-dl:parliamentary_term [1..1]</text><path d="M2933.7408,940.113 C2942.8543,943.4249 2952.0016,946.4394 2961,949 C3060.9995,977.4565 3090.5814,961.1085 3193,979 C3227.5235,985.0309 3235.4255,990.2684 3270,996 C3418.2656,1020.5789 3591.2682,1037.8926 3699.9803,1047.4084 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3705.1082,1047.8556,3696.4899,1043.0885,3700.1271,1047.421,3695.7946,1051.0582,3705.1082,1047.8556" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="3271" y="992.0669">eli:is_realized_by</text><path d="M2933.5807,940.7082 C2942.732,943.8794 2951.9316,946.6997 2961,949 C3143.2566,995.232 3202.2758,927.1 3383,979 C3398.479,983.4452 3399.4939,991.6503 3415,996 C3634.047,1057.4463 3700.0991,999.055 3926,1026 C3930.1803,1026.4986 3934.4145,1027.0358 3938.6834,1027.6057 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3943.7096,1028.2894,3935.331,1023.1127,3938.7552,1027.6154,3934.2525,1031.0397,3943.7096,1028.2894" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="3416" y="992.0669">epvoc:versionType [0..1]</text><path d="M3489.7446,924.7382 C3458.0741,934.0706 3424.0808,942.921 3392,949 C3233.3822,979.0568 3190.7655,964.2538 3030,979 C2954.8254,985.8954 2936.329,991.0702 2861,996 C2184.9675,1040.2424 1376.2521,1051.9395 1044.4698,1054.9689 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1039.1366,1055.0173,1048.1726,1058.9354,1044.1364,1054.9719,1048.0999,1050.9357,1039.1366,1055.0173" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="3031" y="992.0669">dcterms:publisher [0..1]</text><path d="M3612.9533,942.6021 C3607.4634,962.7373 3597.8308,983.1682 3581,996 C3546.3776,1022.3962 2975.2928,1043.033 2694.4729,1051.6377 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2689.1269,1051.8011,2698.245,1055.5241,2694.1246,1051.6482,2698.0004,1047.5278,2689.1269,1051.8011" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="3597" y="992.0669">eli-dl:parliamentary_term [1..1]</text><path d="M3750.1925,910.0752 C3815.5669,927.836 3884.8999,952.1592 3904,979 C3915.9953,995.8566 3905.2693,1010.9199 3887.2078,1023.1564 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3882.9906,1025.8839,3892.7201,1024.355,3887.189,1023.1686,3888.3755,1017.6375,3882.9906,1025.8839" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="3910" y="992.0669">eli:is_realized_by</text><path d="M3750.4205,891.4076 C3834.188,903.2199 3942.5283,927.8126 4026,979 C4043.4238,989.6848 4058.6169,1006.5126 4070.0196,1021.715 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="4073.134,1025.9534,4071.0282,1016.3323,4070.1733,1021.9242,4064.5815,1021.0694,4073.134,1025.9534" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="4046" y="992.0669">epvoc:versionType [0..1]</text></g></svg></div>
+            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/jPhVJ-Gs4CVVzwzmkRUJZh9L-vAZI9IZj18S9q1tggfsvTtCBXRvLSS1bh--Tk9a7ITs4Zlt1clFrpFZ-OoDb_o991ccE4QR2EVvxsd2xiaReENFYnz2s984qFMVLtyytDwTVxwwNEI7wMcSfGdmwMmV0IhYw2Tbz8NYx0Ro7E_W6mdP8rgUd2Z3vvIcBnTfb5BqxWRJD4qM5s9vT9JbON234xA5d656qkG8lOku5y4L1KW-BlecVFXm9WqX9FXXdy4jlNnbtBSxs0A5P0D7A43XXW6Dys2RqXWpzFVo-7Zv3-fLF4mcULv0YFWdhtnQY1aya1XGRMqoXuXmqnMyGfn5P4iWNAttbTLxkrKiObWn7iJm8jbpkWdMUmRbbaaVepJPSTCJg-dfHYI_IkePek4sQA_uQ-bBomoT_bWQdI5rhovVCyhtMTcetw82v3wfWuTDCkKgNgTXbQYkTJMB4HQLSGg78vpixXabPRIjlBODPQZ2BNEa1vF-C6sLLONz2TCddivzNQBMKfG-rJQwN-zBl-eIx4WfBevOAtzAyu17jxt6QuWisIiIyby1rrXyfCP-ItTyozxA_HeAsp1tPCGftRKKz42DwjunVi4q8ZZckSDq_y3JFXIepM1ajBpkFeHHLqcFshwKV-WH95puV0T9YEjeRtZZvklLmRQdD2ZBp-y9OtobUZX0_tASGw3acU_KCwpIRQ-CQB812Vawea7Ikd_bYjk73cPouIjGGIs4trBwL6bY5ZpY_AAWF4TCZjj5Z7LL8vWLwuZaZzn9sLUD0LNpHpOgOrwjEoxh9bCdhSIwxIEjuvpeS-80MuNffX1sGwVQw9mBPPxoLSnxE52xiR0HlKeFANZX0zMvDn16UUf1zhaGYqsgcjhuK7H_0UvAd5Wb9DkIa1wqTNnr0MwGywAGjAehzs79c9r9CUv4aZ3qmwYbuCjG7OSJG2rFPgMdSiiP7NkIRToqGwe-l259mI1NBaquIU2LDrYpyzxWoGmuKATQkY1NsRloLbbFWkqJh76PNmjmpHnzS-J0kTYH-X2ijwTVmGNRxl8kw7PLFF5jnUI2S4zQPyHOSSyLvH69j-3SjNR4KOt45In5mn4kHS45CCd8C6KDJCwWI8MPwrpnowFOTT--GyKtZdgMlUvgK_lbm7W0EY7tyZbqi1d4_90wfCgJgqR83wv6PX9XpHL1W-lq38MyRD8aN7tvPRdeDIaJgSpgd6BA63e-Hgs5xpRFHzO9ua2sJlYQ2YyMXWlFz0xGZilrgEogUBQGLamktQFhqPoDGxjZklIC4OctT8gkjIFNQYJJRwyTQuU6e6WuzW95OL8R43JA5d1BUK51-tWjXrsOAWtd8g7nmeM2jYTp4Y3TSgr-pJ6dlzpQ6js7S6vF0KVaJNakxpLrHATEmNHiMfOEo4XxYKjLk-PdUn6UWHmfD8aQxI7JSZ_jF7bEHqcJy3gaJ5gUWFP4wOAgoRiveUsuwehlw6sn7676WFkUPFMtyZ7X-VBTpTPqqWqQ3intbEo7vT9qM7Pq9i5VNJzjqCiPBh1BKo_8TGrFk9LeNA3MlPaJviOrLuW7qss1jnEOqmckgpY2UiZ4T40rMmSm6mN7ssjZFmv4kKj3NxrsfutzmhNCmpt3hCXrZ_j4lRzQxNibwRcKzp-cJ6WoVGBURSBarQHcOVLibfPXVecQr3YiZewxW1iycGoVJISfyI-DfahepR2Tx5BzkHfvABlHS2ruNDBx1Irjmc9LOfgayh-KXljBVGhOIFI1S6x-VD7xhjJv0-V7sWoOpOZ7d6HCXiB8G-LzMMQREzYHd8bQRhAX4D9pIrcOhozZ_ykfiTPZxLLrEtKV-TQZ3Q6R2AgVOs2FQPXNlq2SiJsgBdlv_m00"
+                  target="_blank">View as PNG</a>
+            </small>
+            <br/>
+         </div>
+         <div id="prefixes">
+            <h2>Namespaces</h2>
+            <table class="prefixes" style="width:60%">
+               <thead>
+                  <tr>
+                     <th>Prefix</th>
+                     <th>Namespace</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>dc</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>dcat</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/dcat#" target="_blank">http://www.w3.org/ns/dcat#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>dcterms</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>eli</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/ontology#" target="_blank">http://data.europa.eu/eli/ontology#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>eli-dl</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+                              target="_blank">http://data.europa.eu/eli/eli-draft-legislation-ontology#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>epvoc</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="https://data.europarl.europa.eu/def/epvoc#" target="_blank">https://data.europarl.europa.eu/def/epvoc#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>org</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/org#" target="_blank">http://www.w3.org/ns/org#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>rdf</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>rdfs</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>resource-type</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/resource/authority/resource-type/"
+                              target="_blank">http://publications.europa.eu/resource/authority/resource-type/</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>skos</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a>
+                        </span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>xsd</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>
+                        </span>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryAgenda">
+            <h2>ComplexWork Plenary agenda</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/doc/OJ-9-2021-07-05</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has derivative</td>
+                     <td>
+                        <code>^eli:is_derivative_of</code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenarySittingAgenda">ComplexWork Plenary sitting agenda</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryDebates">
+            <h2>ComplexWork Plenary debates</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-07-05</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has annex</td>
+                     <td>
+                        <code>^eli:is_annex_of</code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryDebatesAnnex">ComplexWork Plenary debates annex</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryMinutes">
+            <h2>ComplexWork Plenary minutes</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/doc/OJ-9-2021-07-05</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has annex</td>
+                     <td>
+                        <code>^eli:is_annex_of</code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryRcv">psd:PlenaryRcv </a>or<a href="# psd:PlenaryAtt"> psd:PlenaryAtt </a>or<a href="# psd:PlenaryVotes"> psd:PlenaryVotes </a>or<br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryDebatesAnnex">
+            <h2>ComplexWork Plenary debates annex</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedAnnexWork">Versioned Annex Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is annex of</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_annex_of">eli:is_annex_of</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryDebates">ComplexWork Plenary debates</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenarySittingAgenda">
+            <h2>ComplexWork Plenary sitting agenda</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is derivative of</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_derivative_of">eli:is_derivative_of</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryAgenda">ComplexWork Plenary agenda</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryRcv">
+            <h2>Work Plenary Rcv</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is annex of</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_annex_of">eli:is_annex_of</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryMinutes">ComplexWork Plenary minutes</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is realized by</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_realized_by">eli:is_realized_by</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:Expression">Realized By</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:Work</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryVotes">
+            <h2>ComplexWork Plenary votes</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is annex of</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_annex_of">eli:is_annex_of</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryMinutes">ComplexWork Plenary minutes</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:PlenaryAtt">
+            <h2>ComplexWork Plenary Att</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>ep number</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#epNumber">epvoc:epNumber</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has current version</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>has member</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#has_member">eli:has_member</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionedWork">Versioned Work</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is annex of</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_annex_of">eli:is_annex_of</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:PlenaryMinutes">ComplexWork Plenary minutes</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code/>
+                        <br/>
+                        <p>
+                           <small>(eli:ComplexWork, eli:Work)</small>
+                        </p>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>work type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#work_type">eli:work_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:WorkTypeReference">Reference to a Work Type</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:Expression">
+            <h2>Realized By</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europa.eu/eli/ontology#Expression">eli:Expression</a>
+               </li>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+/[a-z][a-z]$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>is embodied by</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_embodied_by">eli:is_embodied_by</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:Manifestation">Is embodied by</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#title">eli:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:Expression</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:Manifestation">
+            <h2>Is embodied by</h2>
+            <ul>
+               <li>Target Class: <a href="http://data.europa.eu/eli/ontology#Manifestation">eli:Manifestation</a>
+               </li>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+/[a-z][a-z]/.*$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>byte size</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#byteSize">epvoc:byteSize</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:long</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>format</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/format">dcterms:format</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:MediaTypeOrExtentReference">Reference to a Format</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is exemplified by</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_exemplified_by">eli:is_exemplified_by</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>IRI</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>issued</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>media type</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#media_type">eli:media_type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>IRI</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:Manifestation</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:VersionedWork">
+            <h2>Versioned Work</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is realized by</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_realized_by">eli:is_realized_by</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:Expression">Realized By</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>notation</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>epvoc:publicRegister</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:Work</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>version status</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#versionType">epvoc:versionType</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionReference">Reference to a Status</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:VersionedAnnexWork">
+            <h2>Versioned Annex Work</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>date document</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#date_document">eli:date_document</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:dateTime</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/elements/1.1/identifier">dc:identifier</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>identifier year</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#identifierYear">epvoc:identifierYear</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>is realized by</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/ontology#is_realized_by">eli:is_realized_by</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:Expression">Realized By</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>notation</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>numbering</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#numbering">epvoc:numbering</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>xsd:string</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>parliamentary term</td>
+                     <td>
+                        <code>
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#parliamentary_term">eli-dl:parliamentary_term</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>publisher</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:OrganizationReference">Reference to an Organization</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>title</td>
+                     <td>
+                        <code>
+                           <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:Work</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>version status</td>
+                     <td>
+                        <code>
+                           <a href="https://data.europarl.europa.eu/def/epvoc#versionType">epvoc:versionType</a>
+                        </code>
+                     </td>
+                     <td>
+                        <a href="#psd:VersionReference">Reference to a Status</a>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:ParliamentaryTermReference">
+            <h2>Reference to a Parliamentary Term</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/org/ep-[0-9].*$</span>
+               </li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/org/ep-9</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>pref label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli-dl:ParliamentaryTerm</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:MediaTypeOrExtentReference">
+            <h2>Reference to a Format</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/file-type/.*$</span>
+               </li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/file-type/PDF</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>pref label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>dcterms:MediaTypeOrExtent</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:OrganizationReference">
+            <h2>Reference to an Organization</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/corporate-body/.*$</span>
+               </li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/corporate-body/EP</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>pref label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>org:Organization</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:VersionReference">
+            <h2>Reference to a Status</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>pref label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>epvoc:Status</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+         <div id="psd:WorkTypeReference">
+            <h2>Reference to a Work Type</h2>
+            <ul>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/resource-type/.*$</span>
+               </li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/resource-type/PLENARY_AGENDA</span>
+               </li>
+            </ul>
+            <table class="propertyshapes" style="width:100%">
+               <thead>
+                  <tr>
+                     <th>Property name</th>
+                     <th>URI</th>
+                     <th>Expected value</th>
+                     <th>Card.</th>
+                     <th>Description</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>pref label</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>rdf:langString</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>type</td>
+                     <td>
+                        <code>
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">rdf:type</a>
+                        </code>
+                     </td>
+                     <td>
+                        <code>eli:WorkType</code>
+                        <br/>
+                     </td>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <br/>
+      </div>
+   </body>
+</html>
