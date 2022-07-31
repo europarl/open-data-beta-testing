@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <html lang="en">
    <head>
-      <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"/>
       <style type="text/css">
 					.anchor {
 						float: left;
@@ -18,24 +13,163 @@
 						font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 						font-size: 87.5%;
 					}
+					
+					
+					.CONTAINER{
+				         width: calc(100% - 40px);
+				         max-width: 1000px;
+				         margin-left: auto;
+				         margin-right: auto;
+				      }
+				
+				      h2 {
+				         margin: 25px 0px 10px 0px;
+				      }
+				
+				      ul{
+				         margin: 0.5em
+				         margin-bottom: 2rem;
+				      }
+				      
+				      a {
+                      color: #007bff;
+                      text-decoration: none;
+                      background-color: transparent;
+	                  }
+	
+	                  a:-webkit-any-link {
+	                      cursor: pointer;                      
+	                  }
+	                  
+				      
+				     
+				     table {
+						    display: table;
+						    border-spacing: 0px;
+							margin-botton: 1rem;
+						}
+						
+						tr:nth-child(even) {
+						    background-color: #eee;
+						}
+						
+						
+						.prefixes table {
+						    border-collapse: collapse;
+						    margin-bottom: 1rem;
+						    color: #212529;
+						}
+						
+						
+						.prefixes td {
+						    padding: 0.25rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						
+						
+						.propertyshapes table {
+						    border-collapse: collapse;
+						}
+			
+			
+						.propertyshapes thead {
+						    display: table-header-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+						
+						
+						.propertyshapes tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						p {
+					      font-size: 0.875em;
+					    }
+						
+						@media only print {
+							
+						}
+						
+						@page {
+								size: A4 portrait;
+								margin-top: 1.2cm;
+								margin-bottom: 1.2cm;
+								margin-left: 1.2cm;
+								margin-right: 1.2cm;
+								background-repeat: no-repeat;
+								background-position: 40px 10px;
+								 @bottom-center {
+								 	content: counter(page);
+								 }
+						}
+						
+						
+						.propertyshapes th:nth-child(4) {
+						    width: 6%;
+						}
+						
+						.propertyshapes td {
+						    padding: 0.75rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						.propertyshapes tbody {
+						    display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+			
+			
+						.propertyshapes tbody tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						.text-break {
+						    word-break: break-word;
+						}
+						
+						body {
+						         margin: 0;
+						         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+						         background-color: #fff;
+						      }
+				     
+				     			
+					
+					
+					
 				</style>
    </head>
    <body>
-      <div class="container-md">
+      <div class="container">
          <br/>
-         <div class="container">
-            <div class="row row-cols-auto">
-               <div class="col">
-                  <center>
-                     <h1>Calendar dataset description</h1>
-                  </center>
-               </div>
-            </div>
-         </div>
+         <table style="width:100%">
+            <tr>
+               <td width="20%">
+                  <img src="https://www.europarl.europa.eu/portal/img/ep-logo.svg"/>
+               </td>
+               <td width="80%">
+                  <div>
+                     <center>
+                        <h1>Calendar dataset description</h1>
+                     </center>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br/>
          <br/>
          <b>Created date: </b>2022-03-04<br/>
-         <b>Last updated: </b>2022-07-11T00:00:00.000Z<br/>
-         <b>Copyright date  </b>2022<br/>
+         <b>Last updated: </b>2022-07-26T00:00:00.000Z<br/>
+         <b>Copyright date: </b>2022<br/>
          <b>Version: </b>0.4.4<br/>
          <b>License: </b>
          <a href="https://www.europarl.europa.eu/legal-notice/en/" target="_blank">https://www.europarl.europa.eu/legal-notice/en/</a>
@@ -50,7 +184,6 @@
          <br/>
          <br/>
          <hr/>
-         <br/>
          <br/>
          <div>
             <h2>Table of Content</h2>
@@ -84,15 +217,15 @@
          <br/>
          <div id="diagram">
             <h2>Dataset diagram</h2>
-            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="927px" preserveAspectRatio="none" style="width:1532px;height:927px;" version="1.1" viewBox="0 0 1532 927" width="1532px" zoomAndPan="magnify"><defs><filter height="300%" id="fz8al47" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class calendar:ActivityTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:ActivityTypeReference" xlink:show="new" xlink:title="#calendar:ActivityTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="259" x="18.7758" y="578.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="217" x="39.7758" y="596.4951">calendar:ActivityTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="19.7758" x2="276.7758" y1="604.7969" y2="604.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="199" x="24.7758" y="619.0073">rdf:type  [1..*]  = eli-dl:ActivityType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="24.7758" y="631.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class calendar:CountryReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:CountryReference" xlink:show="new" xlink:title="#calendar:CountryReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="263.2758" y="859"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="316.2758" y="876.9951">calendar:CountryReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="264.2758" x2="558.2758" y1="885.2969" y2="885.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="269.2758" y="899.5073">rdf:type  [1..*]  = euvoc:Country</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="269.2758" y="912.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:LocationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:LocationReference" xlink:show="new" xlink:title="#calendar:LocationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="263.2758" y="722"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="194" x="314.2758" y="739.9951">calendar:LocationReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="264.2758" x2="558.2758" y1="748.2969" y2="748.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="269.2758" y="762.5073">rdf:type  [1..*]  = dcterms:Location</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="269.2758" y="775.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:MeetingPart--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:MeetingPart" xlink:show="new" xlink:title="#calendar:MeetingPart" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="439.7758" y="384"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="504.7758" y="401.9951">calendar:MeetingPart</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="440.7758" x2="715.7758" y1="410.2969" y2="410.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="445.7758" y="424.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="445.7758" y="437.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="445.7758" y="450.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="234" x="445.7758" y="462.9214">eli-dl:activity_label  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="445.7758" y="475.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="445.7758" y="488.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:Room--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:Room" xlink:show="new" xlink:title="#calendar:Room" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="72.7109" style="stroke: #FF0000; stroke-width: 1.5;" width="238" x="636.2758" y="572"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="105" x="702.7758" y="589.9951">calendar:Room</text><line style="stroke: #FF0000; stroke-width: 1.5;" x1="637.2758" x2="873.2758" y1="598.2969" y2="598.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="642.2758" y="612.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="642.2758" y="625.312">euvoc:officeAddress  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="642.2758" y="638.1167">rdf:type  [1..1]  = epvoc:Room</text></a><!--class calendar:ParliamentaryTermReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:ParliamentaryTermReference" xlink:show="new" xlink:title="#calendar:ParliamentaryTermReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="57.2758" y="221.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="264" x="73.2758" y="239.4951">calendar:ParliamentaryTermReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="58.2758" x2="352.2758" y1="247.7969" y2="247.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="63.2758" y="262.0073">rdf:type  [1..*]  = eli-dl:ParliamentaryTerm</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="63.2758" y="274.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:PlenaryPartSession--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenaryPartSession" xlink:show="new" xlink:title="#calendar:PlenaryPartSession" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="388.7758" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="196" x="429.2758" y="25.9951">calendar:PlenaryPartSession</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="389.7758" x2="664.7758" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="394.7758" y="48.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="394.7758" y="61.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="394.7758" y="74.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="394.7758" y="86.9214">eli-dl:activity_label  : rdf:langString</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="394.7758" y="99.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="394.7758" y="112.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:PlenarySitting--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenarySitting" xlink:show="new" xlink:title="#calendar:PlenarySitting" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="388.7758" y="196"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="448.7758" y="213.9951">calendar:PlenarySitting</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="389.7758" x2="664.7758" y1="222.2969" y2="222.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="394.7758" y="236.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="394.7758" y="249.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="394.7758" y="262.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="234" x="394.7758" y="274.9214">eli-dl:activity_label  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="394.7758" y="287.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="394.7758" y="300.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:PlenarySessionDocument--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenarySessionDocument" xlink:show="new" xlink:title="#calendar:PlenarySessionDocument" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="72.7109" style="stroke: #FFA500; stroke-width: 1.5;" width="248" x="966.2758" y="403"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="242" x="969.2758" y="420.9951">calendar:PlenarySessionDocument</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="967.2758" x2="1213.2758" y1="429.2969" y2="429.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="972.2758" y="443.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="972.2758" y="456.312">rdf:type  [1..*]  = eli:ComplexWork</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="972.2758" y="469.1167">rdfs:label  : xsd:string  [0..1]</text></a><!--class calendar:WorkTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:WorkTypeReference" xlink:show="new" xlink:title="#calendar:WorkTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="259" x="960.7758" y="578.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="205" x="987.7758" y="596.4951">calendar:WorkTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="961.7758" x2="1218.7758" y1="604.7969" y2="604.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="966.7758" y="619.0073">rdf:type  [1..*]  = eli:WorkType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="966.7758" y="631.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class calendar:SiteReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:SiteReference" xlink:show="new" xlink:title="#calendar:SiteReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fz8al47)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="607.2758" y="722"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="674.2758" y="739.9951">calendar:SiteReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="608.2758" x2="902.2758" y1="748.2969" y2="748.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="613.2758" y="762.5073">rdf:type  [1..*]  = org:Site</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="613.2758" y="775.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><path d="M411.2758,782.0652 C411.2758,803.0662 411.2758,831.1934 411.2758,853.3298 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="411.2758,858.5315,415.2758,849.5315,411.2758,853.5315,407.2758,849.5315,411.2758,858.5315" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="412.2758" y="825.0669">geosparql:sfWithin [0..1]</text><path d="M567.3,495.2118 C561.2186,512.5856 551.8085,530.2527 537.2758,542 C498.7354,573.1535 379.5365,590.3331 283.1436,599.3837 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="277.9919,599.8618,287.3231,603.0128,282.9705,599.3997,286.5837,595.0471,277.9919,599.8618" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="553.2758" y="538.0669">eli-dl:had_activity_type [1..1]</text><path d="M717.1519,482.0607 C735.0303,493.2568 751.0028,507.3311 762.2758,525 C770.0111,537.124 770.7282,552.3363 768.6941,566.4436 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="767.8281,571.5832,773.268,563.373,768.6589,566.6527,765.3792,562.0436,767.8281,571.5832" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="140" x="770.2758" y="538.0669">epvoc:hasRoom [0..1]</text><path d="M527.2758,119.1431 C527.2758,141.6913 527.2758,167.7937 527.2758,190.8287 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="527.2758,195.9996,531.2758,186.9996,527.2758,190.9996,523.2758,186.9996,527.2758,195.9996" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="528.2758" y="162.0669">eli-dl:consists_of [1..*]</text><path d="M665.9939,91.3943 C796.3949,125.4941 985.4458,196.895 1081.2758,337 C1093.2691,354.5344 1096.0619,377.8971 1095.614,397.8893 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1095.434,402.8939,1099.7552,394.0436,1095.6139,397.8971,1091.7603,393.7558,1095.434,402.8939" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="1055.2758" y="256.0669">eli-dl:documented_by_a_realization_of</text><path d="M666.002,77.347 C879.2244,100.0433 1267.3159,147.5057 1308.2758,196 C1340.1089,233.6886 1332.4595,264.0009 1308.2758,307 C1284.4475,349.3672 1240.9827,379.7605 1199.0978,400.6598 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1194.5267,402.9066,1204.3682,402.526,1199.0139,400.7009,1200.839,395.3465,1194.5267,402.9066" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="201" x="1330.2758" y="256.0669">eli-dl:recorded_in_realization_of</text><path d="M388.747,82.2257 C259.9328,102.8141 81.7041,140.5156 39.2758,196 C-50.3899,313.2578 65.5932,497.9208 121.3897,573.9931 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="124.6504,578.4086,122.5218,568.7925,121.6802,574.3864,116.0863,573.5448,124.6504,578.4086" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="13.2758" y="350.0669">eli-dl:had_activity_type [1..1]</text><path d="M388.6815,112.2002 C364.4712,122.9276 340.0804,135.2531 318.2758,149 C287.7765,168.2286 257.7622,195.9894 236.3407,217.7719 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="232.7108,221.4895,241.8603,217.8445,236.2039,217.912,236.1363,212.2556,232.7108,221.4895" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="319.2758" y="162.0669">eli-dl:parliamentary_term [1..1]</text><path d="M1090.2758,476.1705 C1090.2758,504.9585 1090.2758,544.79 1090.2758,573.2154 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1090.2758,578.3851,1094.2758,569.3851,1090.2758,573.3851,1086.2758,569.3851,1090.2758,578.3851" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1091.2758" y="538.0669">eli:work_type [1..1]</text><path d="M448.4407,307.1838 C437.2801,321.6455 432.2619,337.7493 441.2758,354 C446.5933,363.5867 453.4826,372.2396 461.3395,380.0202 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="465.2716,383.77,461.519,374.6641,461.6532,380.3193,455.9979,380.4535,465.2716,383.77" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="442.2758" y="350.0669">eli-dl:consists_of</text><path d="M549.0341,307.0498 C558.5495,324.6262 571.4565,342.4603 588.2758,354 C596.0207,359.3137 814.8111,395.2676 960.9633,418.8286 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="966.1312,419.6614,957.8823,414.2803,961.1949,418.8658,956.6094,422.1784,966.1312,419.6614" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="589.2758" y="350.0669">eli-dl:documented_by_a_realization_of</text><path d="M665.9154,284.1302 C720.3215,298.3526 782.8779,316.4804 838.2758,337 C854.8684,343.146 858.0413,346.9624 874.2758,354 C911.4602,370.1193 952.7341,386.7579 989.1575,401.0244 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="994.0334,402.9314,987.1087,395.9279,989.3769,401.1101,984.1947,403.3783,994.0334,402.9314" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="201" x="875.2758" y="350.0669">eli-dl:recorded_in_realization_of</text><path d="M388.6929,301.8201 C291.7586,337.3099 178.9347,379.3362 175.2758,384 C132.3752,438.6831 135.9002,525.1087 142.1548,573.2154 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="142.8473,578.318,145.6006,568.8618,142.1749,573.3634,137.6733,569.9377,142.8473,578.318" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="176.2758" y="444.0669">eli-dl:had_activity_type [1..1]</text><path d="M453.0374,307.3571 C444.1029,316.497 435.8373,326.4566 429.2758,337 C383.5931,410.406 390.4814,439.2691 379.2758,525 C370.3853,593.0186 387.9717,672.345 400.4127,716.9204 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="401.8263,721.9167,403.2249,712.1677,400.465,717.1056,395.5271,714.3457,401.8263,721.9167" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="148" x="380.2758" y="538.0669">vcard:hasLocality [1..1]</text><path d="M755.2758,645.0824 C755.2758,667.0687 755.2758,694.9081 755.2758,716.6671 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="755.2758,721.7769,759.2758,712.7769,755.2758,716.7769,751.2758,712.7769,755.2758,721.7769" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="756.2758" y="688.0669">epvoc:hasSite [0..1]</text><path d="M667.58,645.0824 C612.2202,668.1758 541.3805,697.7267 488.2109,719.9064 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="483.446,721.8941,493.2922,722.1208,488.0606,719.9691,490.2122,714.7374,483.446,721.8941" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="148" x="595.2758" y="688.0669">vcard:hasLocality [0..1]</text></g></svg></div>
-            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/hLXTRzem57tdLtZjswGYcFQKQPDOktMJw5e1KX-gAdBj6x1mxDGsRUcldmC9Iy19d2nFXFZwt0_VStn1hvb8iC8n8Xnh_LCACsVlWCQV1nyeH4m0clw-_hMudKt-NFyOw7_cCawa06jkjXpG9kQV2gkl2YSte3LUmZsZPeN6er5XUQAKVBsKN2fqVeELb69mcRf7PmHp41IhO48CUs5ckzWcC8C850W2P-YSsv22AwpMrmgsNmQD6mAaQ1GO-nAXX_5m-F4HeQy8EBkWlBG78HymlPOwI1H4K_m476Nm78lbt2WcbcWZsFC6flQ51JnEwb9kX55RhtnERIjIsRn8abkNad0XDCQV8zVcCPK46oQ5Lo8EuukBRwW-pYL8RNlbcGSwkcTcnGHw60s7uqTKZ-ok4IK6LAmF6r0ZIZzrkW4mrlWEArEiq7U-WMA5IcP1tfmuwy6GOWDf16-Q1kdpWiLPThOSo1_76lM6nMYEeWlrQ8V16qhR0aeRkz0nkN8pLZ8_Sxd2D3outVLPXky7FvCotg4bAMjNMASl7Arzb6-vgSSk3NEqdztD6OwjI6ErNLW6UF6rRbUjcfviBDMy7hOVljtPJukULcrkRnzBwZhQkQp_Wtr-SAr8w0VfnKK_g4fAjaPgoKWNQ9avcSMScPGO1PT42isqqQ6CyYRf1BnVlP9aapPfmG7DNW4DdxOX3XLWpjvtTuRrsSfN7-hYaL4jrJ9NIT4eJE_7RhwQggU0I4LjxPXeLxdEgbSHqLu8RfNjQfSCE3AW963KFhE8WVBds0bIkMBtKgrTvn-yseM6GtS4MI78TggA4mvlgJVaZQI3WmAKSXrbkLRLEYTbezYUqhUpqDP0TH7P6hWs0bi3qsRUQKRh9h07m79FkiUhWh9w8_MkfXL-UbJIhfcqKRR2GVgfcc-KpbylBmGhcawNwIfF0VFaZmcydqVtj9q1BJ8s7rNRgk1-NpbA6_pHAUNpRxhYc7yFS_BkrwsC8aPWGgcoX-4TGaMfTvvtOtTJrBwr7RbhUvHqzSHzKXsNfakrt1cMeZxPsSySxRYYggDttcTLjr9kNCh2YT3kdvQLRL54c28Sziync9MaUly5uiIUKmpn4oZz5m00"
+            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="790px" preserveAspectRatio="none" style="width:1778px;height:790px;" version="1.1" viewBox="0 0 1778 790" width="1778px" zoomAndPan="magnify"><defs><filter height="300%" id="f40zw66" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class calendar:ActivityTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:ActivityTypeReference" xlink:show="new" xlink:title="#calendar:ActivityTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="259" x="32.6749" y="578.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="217" x="53.6749" y="596.4951">calendar:ActivityTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="33.6749" x2="290.6749" y1="604.7969" y2="604.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="199" x="38.6749" y="619.0073">rdf:type  [1..*]  = eli-dl:ActivityType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="38.6749" y="631.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class calendar:CountryReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:CountryReference" xlink:show="new" xlink:title="#calendar:CountryReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="354.1749" y="578.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="407.1749" y="596.4951">calendar:CountryReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="355.1749" x2="649.1749" y1="604.7969" y2="604.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="360.1749" y="619.0073">rdf:type  [1..*]  = euvoc:Country</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="360.1749" y="631.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:LocationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:LocationReference" xlink:show="new" xlink:title="#calendar:LocationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="382.1749" y="409.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="194" x="433.1749" y="427.4951">calendar:LocationReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="383.1749" x2="677.1749" y1="435.7969" y2="435.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="388.1749" y="450.0073">rdf:type  [1..*]  = dcterms:Location</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="388.1749" y="462.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:MeetingPart--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:MeetingPart" xlink:show="new" xlink:title="#calendar:MeetingPart" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="713.6749" y="384"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="778.6749" y="401.9951">calendar:MeetingPart</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="714.6749" x2="989.6749" y1="410.2969" y2="410.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="719.6749" y="424.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="719.6749" y="437.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="719.6749" y="450.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="234" x="719.6749" y="462.9214">eli-dl:activity_label  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="719.6749" y="475.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="719.6749" y="488.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:Room--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:Room" xlink:show="new" xlink:title="#calendar:Room" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="72.7109" style="stroke: #FF0000; stroke-width: 1.5;" width="238" x="804.1749" y="572"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="105" x="870.6749" y="589.9951">calendar:Room</text><line style="stroke: #FF0000; stroke-width: 1.5;" x1="805.1749" x2="1041.1749" y1="598.2969" y2="598.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="810.1749" y="612.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="810.1749" y="625.312">euvoc:officeAddress  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="810.1749" y="638.1167">rdf:type  [1..1]  = epvoc:Room</text></a><!--class calendar:ParliamentaryTermReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:ParliamentaryTermReference" xlink:show="new" xlink:title="#calendar:ParliamentaryTermReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="286.1749" y="221.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="264" x="302.1749" y="239.4951">calendar:ParliamentaryTermReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="287.1749" x2="581.1749" y1="247.7969" y2="247.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="292.1749" y="262.0073">rdf:type  [1..*]  = eli-dl:ParliamentaryTerm</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="292.1749" y="274.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class calendar:PlenaryPartSession--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenaryPartSession" xlink:show="new" xlink:title="#calendar:PlenaryPartSession" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="617.6749" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="196" x="658.1749" y="25.9951">calendar:PlenaryPartSession</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="618.6749" x2="893.6749" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="623.6749" y="48.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="623.6749" y="61.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="623.6749" y="74.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="623.6749" y="86.9214">eli-dl:activity_label  : rdf:langString</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="623.6749" y="99.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="623.6749" y="112.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:PlenarySitting--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenarySitting" xlink:show="new" xlink:title="#calendar:PlenarySitting" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="111.125" style="stroke: #00008B; stroke-width: 1.5;" width="277" x="617.6749" y="196"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="677.6749" y="213.9951">calendar:PlenarySitting</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="618.6749" x2="893.6749" y1="222.2969" y2="222.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="232" x="623.6749" y="236.5073">eli-dl:activity_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="623.6749" y="249.312">eli-dl:activity_end_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="623.6749" y="262.1167">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="234" x="623.6749" y="274.9214">eli-dl:activity_label  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="265" x="623.6749" y="287.7261">eli-dl:activity_start_date  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="623.6749" y="300.5308">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class calendar:PlenarySessionDocument--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:PlenarySessionDocument" xlink:show="new" xlink:title="#calendar:PlenarySessionDocument" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="72.7109" style="stroke: #FFA500; stroke-width: 1.5;" width="248" x="1119.1749" y="403"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="242" x="1122.1749" y="420.9951">calendar:PlenarySessionDocument</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="1120.1749" x2="1366.1749" y1="429.2969" y2="429.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1125.1749" y="443.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="1125.1749" y="456.312">rdf:type  [1..*]  = eli:ComplexWork</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1125.1749" y="469.1167">rdfs:label  : xsd:string  [0..1]</text></a><!--class calendar:WorkTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:WorkTypeReference" xlink:show="new" xlink:title="#calendar:WorkTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="259" x="1113.6749" y="578.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="205" x="1140.6749" y="596.4951">calendar:WorkTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1114.6749" x2="1371.6749" y1="604.7969" y2="604.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="1119.6749" y="619.0073">rdf:type  [1..*]  = eli:WorkType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="1119.6749" y="631.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class calendar:SiteReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#calendar:SiteReference" xlink:show="new" xlink:title="#calendar:SiteReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f40zw66)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="775.1749" y="722"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="162" x="842.1749" y="739.9951">calendar:SiteReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="776.1749" x2="1070.1749" y1="748.2969" y2="748.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="781.1749" y="762.5073">rdf:type  [1..*]  = org:Site</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="781.1749" y="775.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><path d="M516.3257,469.6591 C509.7049,485.7202 502.5082,506.0276 499.1749,525 C497.8675,532.4416 499.0046,534.4464 499.1749,542 C499.4034,552.1341 499.8275,563.1302 500.2863,573.2081 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="500.5285,578.385,504.1034,569.2079,500.2948,573.3905,496.1122,569.5818,500.5285,578.385" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="154" x="500.1749" y="538.0669">geosparql:sfWithin [0..1]</text><path d="M751.6025,495.1093 C710.332,517.5086 669.7166,538.8495 659.1749,542 C521.0385,583.2834 478.736,550.4988 336.1749,572 C323.5112,573.9099 310.3817,576.1596 297.2699,578.5887 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="292.0505,579.5651,301.6326,581.8416,296.9652,578.6455,300.1613,573.9781,292.0505,579.5651" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="694.1749" y="538.0669">eli-dl:had_activity_type [1..1]</text><path d="M875.6197,495.3053 C885.4583,518.724 896.6988,545.4794 905.7805,567.0964 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="907.8024,571.9092,908.0041,562.0624,905.8657,567.2995,900.6286,565.1611,907.8024,571.9092" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="140" x="895.1749" y="538.0669">epvoc:hasRoom [0..1]</text><path d="M756.1749,119.1431 C756.1749,141.6913 756.1749,167.7937 756.1749,190.8287 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="756.1749,195.9996,760.1749,186.9996,756.1749,190.9996,752.1749,186.9996,756.1749,195.9996" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="757.1749" y="162.0669">eli-dl:consists_of [1..*]</text><path d="M894.6847,87.5656 C1029.6115,119.1714 1227.5237,189.1005 1320.1749,337 C1333.523,358.3077 1320.0962,380.7699 1300.9258,399.2184 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1297.0214,402.853,1306.3343,399.6484,1300.6811,399.4462,1300.8834,393.7929,1297.0214,402.853" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="1300.1749" y="256.0669">eli-dl:documented_by_a_realization_of</text><path d="M895.0868,76.8661 C1112.0777,99.1609 1511.1472,146.4084 1553.1749,196 C1585.0704,233.6358 1580.3525,265.8277 1553.1749,307 C1512.9509,367.9367 1438.3152,400.9482 1372.3575,418.7802 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1367.2209,420.1432,1376.9458,421.7007,1372.0536,418.8606,1374.8937,413.9684,1367.2209,420.1432" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="201" x="1576.1749" y="256.0669">eli-dl:recorded_in_realization_of</text><path d="M617.6217,93.1812 C422.0854,138.4388 81.9968,230.7359 20.1749,337 C-28.6403,420.9071 64.3026,523.155 121.7017,574.9552 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="125.4292,578.2936,121.3937,569.3095,121.7047,574.9578,116.0564,575.2687,125.4292,578.2936" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="21.1749" y="350.0669">eli-dl:had_activity_type [1..1]</text><path d="M617.5806,112.2002 C593.3703,122.9276 568.9795,135.2531 547.1749,149 C516.6756,168.2286 486.6613,195.9894 465.2398,217.7719 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="461.6099,221.4895,470.7595,217.8446,465.103,217.9121,465.0356,212.2556,461.6099,221.4895" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="548.1749" y="162.0669">eli-dl:parliamentary_term [1..1]</text><path d="M1243.1749,476.1705 C1243.1749,504.9585 1243.1749,544.79 1243.1749,573.2154 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1243.1749,578.3851,1247.1749,569.3851,1243.1749,573.3851,1239.1749,569.3851,1243.1749,578.3851" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="1244.1749" y="538.0669">eli:work_type [1..1]</text><path d="M685.6928,307.2496 C675.0742,322.1009 670.49,338.3703 680.1749,354 C687.9074,366.479 698.067,377.1945 709.5901,386.384 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="713.5487,389.4423,708.8721,380.7746,709.592,386.3854,703.9811,387.1053,713.5487,389.4423" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="105" x="681.1749" y="350.0669">eli-dl:consists_of</text><path d="M783.2755,307.1974 C794.4992,324.7861 809.1618,342.5903 827.1749,354 C896.0606,397.633 928.2275,367.9531 1008.1749,384 C1042.6485,390.9195 1079.7588,399.2625 1114.0773,407.3535 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1119.1198,408.5452,1111.2813,402.5822,1114.2539,407.395,1109.441,410.3677,1119.1198,408.5452" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="828.1749" y="350.0669">eli-dl:documented_by_a_realization_of</text><path d="M895.0393,279.0982 C952.677,292.9387 1019.4409,312.1305 1077.1749,337 C1116.3235,353.8636 1157.0985,378.9182 1188.4398,400.0349 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1192.6032,402.8543,1187.3939,394.4959,1188.4631,400.0508,1182.9082,401.12,1192.6032,402.8543" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="201" x="1112.1749" y="350.0669">eli-dl:recorded_in_realization_of</text><path d="M617.4292,301.8606 C611.2852,303.675 605.1807,305.3987 599.1749,307 C415.8027,355.8901 306.089,242.9029 179.1749,384 C132.5485,435.837 142.6448,524.43 153.0549,573.3912 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="154.1262,578.2924,156.1117,568.6458,153.0583,573.4078,148.2963,570.3544,154.1262,578.2924" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="180.1749" y="444.0669">eli-dl:had_activity_type [1..1]</text><path d="M617.5648,300.6433 C565.0708,319.3331 517.6269,336.3582 517.1749,337 C503.4429,356.4968 507.4794,383.3869 514.5328,404.7331 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="516.1786,409.4757,517.0068,399.6617,514.5393,404.7521,509.449,402.2845,516.1786,409.4757" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="148" x="518.1749" y="350.0669">vcard:hasLocality [1..1]</text><path d="M923.1749,645.0824 C923.1749,667.0687 923.1749,694.9081 923.1749,716.6671 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="923.1749,721.7769,927.1749,712.7769,923.1749,716.7769,919.1749,712.7769,923.1749,721.7769" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="924.1749" y="688.0669">epvoc:hasSite [0..1]</text></g></svg></div>
+            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/hLXTRzem57tdLtZjswGYcFQKQPDOktMJw5e1KX-gAdBj6x1mxDGsRUcldmC9Iy19d2nFXFZwt0_VStn1hvb8iC8n8Xnh_LCACsVlWCQV1nyeH4m0clw-_hMudKt-NFyOw7_cCawa06jkjXpG9kQV2gkl2YSte3LUmZsZPeN6er5XUQAKVBsKN2fqVeELb69mcRf7PmHp41IhO48CUs5ckzWcC8C850W2P-YSsv22AwpMrmgsNmQD6mAaQ1GO-nAXX_5m-F4HeQy8EBkWlBG78HymlPOwI1H4K_m476Nm78lbt2WcbcWZsFC6flQ51JnEwb9kX55RhtnERIjIsRn8abkNad0XDCQV8zVcCPK46oQ5Lo8EuukBRwW-pYL8RNlbcGSwkcTcnGHw60s7uqTKZ-ok4IK6LAmF6r0ZIZzrkW4mrlWEArEiq7U-WMA5IcP1tfmuwy6GOWDf16-Q1kdpWiLPThOSo1_76lM6nMYEeWlrQ8V16qhR0aeRkz0nkN8pLZ8_Sxd2D3outVLPXky7FvCotg4bAMjNMASl7Arzb6-vgSSk3NEqdztD6OwjI6ErNLW6UF6rRbUjcfviBDMy7hOVljtPJukULcrkRnzBwZhQkQp_Wtr-SAr8w0VfnKK_g4fAjaPgoKWNQ9avcSMScPGO1PT42isqqQ6CyYRf1BnVlP9aapPfmG7DNW4DdxOX3XLWpjvtTuRrsSfN7-hYaL4jrJ9NIT4eJE_7RhwQggU0I4LjxPXeLxdEgbSHqLu8RfNjQfSCE3AW963KFhE8WVBds0bIkMBtKgrTvn-yseM6GtS4MI78TggA4mvlgJVaZQI3WmAKSXrbkLRLEYTbezYUqhUpqDP0TH7P6hWs0bi3qsRUQKRh9h07m79FkiUhWh9w8_MkfXL-UbJIhfcqKRR2GVgfcc-KpbylBmGhcawNwIfF0VFaZmcydqVtj9q1BJ8s7rNRgk1-NpbA6_pHAUNpRxhYc7yFS_BkrwsC8aPWGgcoX-4TGaMfTvvtO_TfEOxYh1wIJn9ooR1KovrXARQJdVsClevRfJfwvnLKTP7angKid0Zj_XnPsQv2X2d2OVySWrb9glTV84visyOGFu7IVm40"
                   target="_blank">View as PNG</a>
             </small>
             <br/>
          </div>
          <div id="prefixes">
             <h2>Namespaces</h2>
-            <table class="table table-striped table-sm" style="width:60%">
+            <table class="prefixes" style="width:60%">
                <thead>
                   <tr>
                      <th>Prefix</th>
@@ -102,59 +235,117 @@
                <tbody>
                   <tr>
                      <td>aut-event</td>
-                     <td>http://publications.europa.eu/resource/authority/event/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/resource/authority/event/"
+                              target="_blank">http://publications.europa.eu/resource/authority/event/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>dc</td>
-                     <td>http://purl.org/dc/elements/1.1/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>dcterms</td>
-                     <td>http://purl.org/dc/terms/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>eli</td>
-                     <td>http://data.europa.eu/eli/ontology#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/ontology#" target="_blank">http://data.europa.eu/eli/ontology#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>eli-dl</td>
-                     <td>http://data.europa.eu/eli/eli-draft-legislation-ontology#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+                              target="_blank">http://data.europa.eu/eli/eli-draft-legislation-ontology#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>epvoc</td>
-                     <td>https://data.europarl.europa.eu/def/epvoc#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="https://data.europarl.europa.eu/def/epvoc#" target="_blank">https://data.europarl.europa.eu/def/epvoc#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>euvoc</td>
-                     <td>http://publications.europa.eu/ontology/euvoc#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/ontology/euvoc#" target="_blank">http://publications.europa.eu/ontology/euvoc#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>geosparql</td>
-                     <td>http://www.opengis.net/ont/geosparql#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.opengis.net/ont/geosparql#" target="_blank">http://www.opengis.net/ont/geosparql#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>org</td>
-                     <td>http://www.w3.org/ns/org#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/org#" target="_blank">http://www.w3.org/ns/org#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdf</td>
-                     <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdfs</td>
-                     <td>http://www.w3.org/2000/01/rdf-schema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>skos</td>
-                     <td>http://www.w3.org/2004/02/skos/core#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>vcard</td>
-                     <td>http://www.w3.org/2006/vcard/ns#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2006/vcard/ns#" target="_blank">http://www.w3.org/2006/vcard/ns#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>xsd</td>
-                     <td>http://www.w3.org/2001/XMLSchema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>
+                        </span>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -163,13 +354,14 @@
          <div id="calendar:PlenaryPartSession">
             <h2>Plenary Session</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\-_]+$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/eli/dl/event/GMTG-PL-2020-10-23</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/event/GMTG-PL-2020-10-23</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -188,11 +380,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity end date</td>
@@ -202,11 +398,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity id</td>
@@ -216,11 +416,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity label</td>
@@ -230,11 +434,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity start date</td>
@@ -244,11 +452,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity type</td>
@@ -261,8 +473,12 @@
                         <a href="#calendar:ActivityTypeReference">Reference to an Activity type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>consists of</td>
@@ -275,8 +491,12 @@
                         <a href="#calendar:PlenarySitting">Plenary Sitting</a>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>documented by a realization of</td>
@@ -289,8 +509,12 @@
                         <a href="#calendar:PlenarySessionDocument">Work</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>parliamentary term</td>
@@ -303,8 +527,12 @@
                         <a href="#calendar:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>recorded in realization of</td>
@@ -317,8 +545,12 @@
                         <a href="#calendar:PlenarySessionDocument">Work</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -328,11 +560,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:Activity</span>
+                        <code>eli-dl:Activity</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -341,13 +577,14 @@
          <div id="calendar:PlenarySitting">
             <h2>Plenary Sitting</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\-_]+$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/eli/dl/eventMTG-PL-2020-10-23</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/eventMTG-PL-2020-10-23</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -366,11 +603,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity end date</td>
@@ -380,11 +621,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity id</td>
@@ -394,11 +639,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity label</td>
@@ -408,11 +657,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity start date</td>
@@ -422,11 +675,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity type</td>
@@ -439,8 +696,12 @@
                         <a href="#calendar:ActivityTypeReference">Reference to an Activity type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>consists of</td>
@@ -453,8 +714,12 @@
                         <a href="#calendar:MeetingPart">Meeting Part</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>documented by a realization of</td>
@@ -467,8 +732,12 @@
                         <a href="#calendar:PlenarySessionDocument">Work</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>locality</td>
@@ -481,8 +750,12 @@
                         <a href="#calendar:LocationReference">Reference to a Place</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>recorded in realization of</td>
@@ -495,8 +768,12 @@
                         <a href="#calendar:PlenarySessionDocument">Work</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -506,11 +783,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:Activity</span>
+                        <code>eli-dl:Activity</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -519,13 +800,14 @@
          <div id="calendar:MeetingPart">
             <h2>Meeting Part</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/event/[A-Za-z0-9\-_]+$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/eli/dl/event/CMTG-PL-2020-014536-08</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/event/CMTG-PL-2020-014536-08</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -544,11 +826,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity end date</td>
@@ -558,11 +844,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity id</td>
@@ -572,11 +862,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity label</td>
@@ -586,11 +880,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity start date</td>
@@ -600,11 +898,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity type</td>
@@ -617,8 +919,12 @@
                         <a href="#calendar:ActivityTypeReference">Reference to an Activity type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>room part</td>
@@ -631,8 +937,12 @@
                         <a href="#calendar:Room">Room</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -642,11 +952,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:Activity</span>
+                        <code>eli-dl:Activity</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -655,13 +969,14 @@
          <div id="calendar:PlenarySessionDocument">
             <h2>Work</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/eli/dl/doc/[A-Za-z0-9\-_]+$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/eli/dl/doc/A-9-2019-0001</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/eli/dl/doc/A-9-2019-0001</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -680,11 +995,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>label</td>
@@ -694,11 +1013,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -708,11 +1031,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:ComplexWork</span>
+                        <code>eli:ComplexWork</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>work type</td>
@@ -725,8 +1052,12 @@
                         <a href="#calendar:WorkTypeReference">Reference to a Work type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -735,13 +1066,14 @@
          <div id="calendar:Room">
             <h2>Room</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/room/[A-Za-z0-9\-_]+$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/room/LOWHEM</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/room/LOWHEM</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -760,25 +1092,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
-                  </tr>
-                  <tr>
-                     <td>locality</td>
                      <td>
-                        <code>
-                           <a href="http://www.w3.org/2006/vcard/ns#hasLocality">vcard:hasLocality</a>
-                        </code>
+                        <div style="width:30px">1..1</div>
                      </td>
-                     <td>
-                        <a href="#calendar:LocationReference">Reference to a Place</a>
-                        <br/>
+                     <td class="text-break">
+                        <p/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
                   </tr>
                   <tr>
                      <td>office address</td>
@@ -788,11 +1110,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>site</td>
@@ -805,8 +1131,12 @@
                         <a href="#calendar:SiteReference">Reference to a Site</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -816,11 +1146,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:Room</span>
+                        <code>epvoc:Room</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -829,13 +1163,14 @@
          <div id="calendar:ParliamentaryTermReference">
             <h2>Reference to a Parliamentary Term</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/org/ep-[0-9].*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/org/ep-9</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/org/ep-9</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -854,11 +1189,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -868,11 +1207,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:ParliamentaryTerm</span>
+                        <code>eli-dl:ParliamentaryTerm</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -881,13 +1224,14 @@
          <div id="calendar:ActivityTypeReference">
             <h2>Reference to an Activity type</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/event/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/event/EP_PLENARY_PART_SESSION</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/event/EP_PLENARY_PART_SESSION</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -906,11 +1250,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -920,11 +1268,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:ActivityType</span>
+                        <code>eli-dl:ActivityType</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -933,13 +1285,14 @@
          <div id="calendar:WorkTypeReference">
             <h2>Reference to a Work type</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/resource-type/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/resource-type/ADOPT_TEXT</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -958,11 +1311,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -972,11 +1329,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:WorkType</span>
+                        <code>eli:WorkType</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -985,13 +1346,14 @@
          <div id="calendar:LocationReference">
             <h2>Reference to a Place</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/place/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/place/FRA_SXB</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/place/FRA_SXB</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1013,8 +1375,12 @@
                         <a href="#calendar:CountryReference">Reference to a Country</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>pref label</td>
@@ -1024,11 +1390,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1038,11 +1408,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">dcterms:Location</span>
+                        <code>dcterms:Location</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1051,13 +1425,14 @@
          <div id="calendar:SiteReference">
             <h2>Reference to a Site</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/site/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/site/ASP</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/site/ASP</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1076,11 +1451,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1090,11 +1469,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Site</span>
+                        <code>org:Site</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1103,13 +1486,14 @@
          <div id="calendar:CountryReference">
             <h2>Reference to a Country</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/country/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/country/ITA</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/country/ITA</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1128,11 +1512,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1142,11 +1530,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">euvoc:Country</span>
+                        <code>euvoc:Country</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
