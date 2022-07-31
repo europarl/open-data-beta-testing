@@ -35,7 +35,7 @@
   dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:dateCopyrighted "2022"^^xsd:gYear;
   dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
-  dcterms:modified "2022-07-11T00:00:00.000Z"^^xsd:dateTime;
+  dcterms:modified "2022-07-26T00:00:00.000Z"^^xsd:dateTime;
   dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
   dcterms:title "Calendar dataset description"@en;
@@ -48,12 +48,16 @@
     calendar:P24, calendar:P25, calendar:P26, calendar:P27, calendar:P28, calendar:P29,
     calendar:P30, calendar:P31, calendar:P33, calendar:P34, calendar:P37, calendar:P38,
     calendar:P39, calendar:P40, calendar:P41, calendar:P42, calendar:P44, calendar:P45,
-    calendar:P47, calendar:P48, calendar:P49, calendar:P50, calendar:P51, calendar:P53,
-    calendar:P54, calendar:P55, calendar:P56, calendar:P58, calendar:P59, calendar:P61,
-    calendar:P62, calendar:P64, calendar:P65, calendar:P67, calendar:P68, calendar:P69,
-    calendar:P71, calendar:P72, calendar:P74, calendar:P75, calendar:P9;
+    calendar:P47, calendar:P48, calendar:P49, calendar:P50, calendar:P53, calendar:P54,
+    calendar:P55, calendar:P56, calendar:P58, calendar:P59, calendar:P61, calendar:P62,
+    calendar:P64, calendar:P65, calendar:P67, calendar:P68, calendar:P69, calendar:P71,
+    calendar:P72, calendar:P74, calendar:P75, calendar:P9;
   adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
-  adms:versionNotes """2022-07-11
+  adms:versionNotes """2022-07-26
+- suppress vcard:hasLocality on epvoc:Room
+2022-07-25 - v0.4.4
+- missing check on extended list of languages for calendar:CountryReference
+2022-07-11
 - add prefix definition for geosparql:
 2022-06-16
 - harmonisation of cardinalities, dataType for calendar:*Reference
@@ -133,7 +137,7 @@ calendar:Room a sh:NodeShape;
   sh:nodeKind sh:IRI;
   sh:order 5;
   sh:pattern "^https://data.europarl.europa.eu/room/[A-Za-z0-9\\-_]+$";
-  sh:property calendar:P47, calendar:P48, calendar:P49, calendar:P50, calendar:P51;
+  sh:property calendar:P47, calendar:P48, calendar:P49, calendar:P50;
   shacl-play:color "Red"@en .
 
 calendar:ParliamentaryTermReference a sh:NodeShape;
@@ -520,16 +524,6 @@ calendar:P50 a skos:Concept;
   sh:nodeKind sh:IRI;
   sh:path epvoc:hasSite .
 
-calendar:P51 a skos:Concept;
-  skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
-  skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
-  sh:maxCount 1;
-  sh:minCount 0;
-  sh:name "locality"@en;
-  sh:node calendar:LocationReference;
-  sh:nodeKind sh:IRI;
-  sh:path vcard:hasLocality .
-
 calendar:P53 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
@@ -579,78 +573,78 @@ calendar:P59 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5405 .
+  sh:languageIn _:node1g797rbj3x10290 .
 
-_:node1g797rbj3x5405 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5406 .
+_:node1g797rbj3x10290 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10291 .
 
-_:node1g797rbj3x5406 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5407 .
+_:node1g797rbj3x10291 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10292 .
 
-_:node1g797rbj3x5407 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5408 .
+_:node1g797rbj3x10292 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10293 .
 
-_:node1g797rbj3x5408 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5409 .
+_:node1g797rbj3x10293 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10294 .
 
-_:node1g797rbj3x5409 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5410 .
+_:node1g797rbj3x10294 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10295 .
 
-_:node1g797rbj3x5410 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5411 .
+_:node1g797rbj3x10295 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10296 .
 
-_:node1g797rbj3x5411 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5412 .
+_:node1g797rbj3x10296 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10297 .
 
-_:node1g797rbj3x5412 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5413 .
+_:node1g797rbj3x10297 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10298 .
 
-_:node1g797rbj3x5413 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5414 .
+_:node1g797rbj3x10298 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10299 .
 
-_:node1g797rbj3x5414 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5415 .
+_:node1g797rbj3x10299 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10300 .
 
-_:node1g797rbj3x5415 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5416 .
+_:node1g797rbj3x10300 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10301 .
 
-_:node1g797rbj3x5416 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5417 .
+_:node1g797rbj3x10301 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10302 .
 
-_:node1g797rbj3x5417 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5418 .
+_:node1g797rbj3x10302 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10303 .
 
-_:node1g797rbj3x5418 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5419 .
+_:node1g797rbj3x10303 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10304 .
 
-_:node1g797rbj3x5419 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5420 .
+_:node1g797rbj3x10304 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10305 .
 
-_:node1g797rbj3x5420 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5421 .
+_:node1g797rbj3x10305 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10306 .
 
-_:node1g797rbj3x5421 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5422 .
+_:node1g797rbj3x10306 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10307 .
 
-_:node1g797rbj3x5422 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5423 .
+_:node1g797rbj3x10307 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10308 .
 
-_:node1g797rbj3x5423 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5424 .
+_:node1g797rbj3x10308 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10309 .
 
-_:node1g797rbj3x5424 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5425 .
+_:node1g797rbj3x10309 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10310 .
 
-_:node1g797rbj3x5425 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5426 .
+_:node1g797rbj3x10310 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10311 .
 
-_:node1g797rbj3x5426 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5427 .
+_:node1g797rbj3x10311 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10312 .
 
-_:node1g797rbj3x5427 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5428 .
+_:node1g797rbj3x10312 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10313 .
 
-_:node1g797rbj3x5428 rdf:first "sv";
+_:node1g797rbj3x10313 rdf:first "sv";
   rdf:rest rdf:nil .
 
 calendar:P59 sh:name "pref label"@en;
@@ -671,78 +665,78 @@ calendar:P62 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5429 .
+  sh:languageIn _:node1g797rbj3x10314 .
 
-_:node1g797rbj3x5429 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5430 .
+_:node1g797rbj3x10314 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10315 .
 
-_:node1g797rbj3x5430 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5431 .
+_:node1g797rbj3x10315 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10316 .
 
-_:node1g797rbj3x5431 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5432 .
+_:node1g797rbj3x10316 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10317 .
 
-_:node1g797rbj3x5432 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5433 .
+_:node1g797rbj3x10317 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10318 .
 
-_:node1g797rbj3x5433 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5434 .
+_:node1g797rbj3x10318 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10319 .
 
-_:node1g797rbj3x5434 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5435 .
+_:node1g797rbj3x10319 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10320 .
 
-_:node1g797rbj3x5435 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5436 .
+_:node1g797rbj3x10320 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10321 .
 
-_:node1g797rbj3x5436 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5437 .
+_:node1g797rbj3x10321 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10322 .
 
-_:node1g797rbj3x5437 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5438 .
+_:node1g797rbj3x10322 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10323 .
 
-_:node1g797rbj3x5438 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5439 .
+_:node1g797rbj3x10323 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10324 .
 
-_:node1g797rbj3x5439 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5440 .
+_:node1g797rbj3x10324 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10325 .
 
-_:node1g797rbj3x5440 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5441 .
+_:node1g797rbj3x10325 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10326 .
 
-_:node1g797rbj3x5441 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5442 .
+_:node1g797rbj3x10326 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10327 .
 
-_:node1g797rbj3x5442 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5443 .
+_:node1g797rbj3x10327 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10328 .
 
-_:node1g797rbj3x5443 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5444 .
+_:node1g797rbj3x10328 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10329 .
 
-_:node1g797rbj3x5444 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5445 .
+_:node1g797rbj3x10329 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10330 .
 
-_:node1g797rbj3x5445 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5446 .
+_:node1g797rbj3x10330 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10331 .
 
-_:node1g797rbj3x5446 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5447 .
+_:node1g797rbj3x10331 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10332 .
 
-_:node1g797rbj3x5447 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5448 .
+_:node1g797rbj3x10332 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10333 .
 
-_:node1g797rbj3x5448 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5449 .
+_:node1g797rbj3x10333 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10334 .
 
-_:node1g797rbj3x5449 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5450 .
+_:node1g797rbj3x10334 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10335 .
 
-_:node1g797rbj3x5450 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5451 .
+_:node1g797rbj3x10335 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10336 .
 
-_:node1g797rbj3x5451 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5452 .
+_:node1g797rbj3x10336 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10337 .
 
-_:node1g797rbj3x5452 rdf:first "sv";
+_:node1g797rbj3x10337 rdf:first "sv";
   rdf:rest rdf:nil .
 
 calendar:P62 sh:minCount 1;
@@ -764,78 +758,78 @@ calendar:P65 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5453 .
+  sh:languageIn _:node1g797rbj3x10338 .
 
-_:node1g797rbj3x5453 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5454 .
+_:node1g797rbj3x10338 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10339 .
 
-_:node1g797rbj3x5454 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5455 .
+_:node1g797rbj3x10339 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10340 .
 
-_:node1g797rbj3x5455 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5456 .
+_:node1g797rbj3x10340 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10341 .
 
-_:node1g797rbj3x5456 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5457 .
+_:node1g797rbj3x10341 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10342 .
 
-_:node1g797rbj3x5457 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5458 .
+_:node1g797rbj3x10342 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10343 .
 
-_:node1g797rbj3x5458 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5459 .
+_:node1g797rbj3x10343 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10344 .
 
-_:node1g797rbj3x5459 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5460 .
+_:node1g797rbj3x10344 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10345 .
 
-_:node1g797rbj3x5460 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5461 .
+_:node1g797rbj3x10345 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10346 .
 
-_:node1g797rbj3x5461 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5462 .
+_:node1g797rbj3x10346 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10347 .
 
-_:node1g797rbj3x5462 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5463 .
+_:node1g797rbj3x10347 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10348 .
 
-_:node1g797rbj3x5463 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5464 .
+_:node1g797rbj3x10348 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10349 .
 
-_:node1g797rbj3x5464 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5465 .
+_:node1g797rbj3x10349 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10350 .
 
-_:node1g797rbj3x5465 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5466 .
+_:node1g797rbj3x10350 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10351 .
 
-_:node1g797rbj3x5466 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5467 .
+_:node1g797rbj3x10351 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10352 .
 
-_:node1g797rbj3x5467 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5468 .
+_:node1g797rbj3x10352 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10353 .
 
-_:node1g797rbj3x5468 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5469 .
+_:node1g797rbj3x10353 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10354 .
 
-_:node1g797rbj3x5469 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5470 .
+_:node1g797rbj3x10354 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10355 .
 
-_:node1g797rbj3x5470 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5471 .
+_:node1g797rbj3x10355 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10356 .
 
-_:node1g797rbj3x5471 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5472 .
+_:node1g797rbj3x10356 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10357 .
 
-_:node1g797rbj3x5472 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5473 .
+_:node1g797rbj3x10357 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10358 .
 
-_:node1g797rbj3x5473 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5474 .
+_:node1g797rbj3x10358 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10359 .
 
-_:node1g797rbj3x5474 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5475 .
+_:node1g797rbj3x10359 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10360 .
 
-_:node1g797rbj3x5475 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5476 .
+_:node1g797rbj3x10360 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10361 .
 
-_:node1g797rbj3x5476 rdf:first "sv";
+_:node1g797rbj3x10361 rdf:first "sv";
   rdf:rest rdf:nil .
 
 calendar:P65 sh:name "pref label"@en;
@@ -856,78 +850,78 @@ calendar:P68 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5477 .
+  sh:languageIn _:node1g797rbj3x10362 .
 
-_:node1g797rbj3x5477 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5478 .
+_:node1g797rbj3x10362 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10363 .
 
-_:node1g797rbj3x5478 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5479 .
+_:node1g797rbj3x10363 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10364 .
 
-_:node1g797rbj3x5479 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5480 .
+_:node1g797rbj3x10364 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10365 .
 
-_:node1g797rbj3x5480 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5481 .
+_:node1g797rbj3x10365 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10366 .
 
-_:node1g797rbj3x5481 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5482 .
+_:node1g797rbj3x10366 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10367 .
 
-_:node1g797rbj3x5482 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5483 .
+_:node1g797rbj3x10367 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10368 .
 
-_:node1g797rbj3x5483 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5484 .
+_:node1g797rbj3x10368 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10369 .
 
-_:node1g797rbj3x5484 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5485 .
+_:node1g797rbj3x10369 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10370 .
 
-_:node1g797rbj3x5485 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5486 .
+_:node1g797rbj3x10370 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10371 .
 
-_:node1g797rbj3x5486 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5487 .
+_:node1g797rbj3x10371 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10372 .
 
-_:node1g797rbj3x5487 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5488 .
+_:node1g797rbj3x10372 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10373 .
 
-_:node1g797rbj3x5488 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5489 .
+_:node1g797rbj3x10373 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10374 .
 
-_:node1g797rbj3x5489 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5490 .
+_:node1g797rbj3x10374 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10375 .
 
-_:node1g797rbj3x5490 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5491 .
+_:node1g797rbj3x10375 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10376 .
 
-_:node1g797rbj3x5491 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5492 .
+_:node1g797rbj3x10376 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10377 .
 
-_:node1g797rbj3x5492 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5493 .
+_:node1g797rbj3x10377 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10378 .
 
-_:node1g797rbj3x5493 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5494 .
+_:node1g797rbj3x10378 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10379 .
 
-_:node1g797rbj3x5494 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5495 .
+_:node1g797rbj3x10379 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10380 .
 
-_:node1g797rbj3x5495 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5496 .
+_:node1g797rbj3x10380 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10381 .
 
-_:node1g797rbj3x5496 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5497 .
+_:node1g797rbj3x10381 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10382 .
 
-_:node1g797rbj3x5497 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5498 .
+_:node1g797rbj3x10382 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10383 .
 
-_:node1g797rbj3x5498 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5499 .
+_:node1g797rbj3x10383 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10384 .
 
-_:node1g797rbj3x5499 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5500 .
+_:node1g797rbj3x10384 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10385 .
 
-_:node1g797rbj3x5500 rdf:first "sv";
+_:node1g797rbj3x10385 rdf:first "sv";
   rdf:rest rdf:nil .
 
 calendar:P68 sh:minCount 1;
@@ -958,78 +952,78 @@ calendar:P72 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5501 .
+  sh:languageIn _:node1g797rbj3x10386 .
 
-_:node1g797rbj3x5501 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5502 .
+_:node1g797rbj3x10386 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10387 .
 
-_:node1g797rbj3x5502 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5503 .
+_:node1g797rbj3x10387 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10388 .
 
-_:node1g797rbj3x5503 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5504 .
+_:node1g797rbj3x10388 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10389 .
 
-_:node1g797rbj3x5504 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5505 .
+_:node1g797rbj3x10389 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10390 .
 
-_:node1g797rbj3x5505 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5506 .
+_:node1g797rbj3x10390 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10391 .
 
-_:node1g797rbj3x5506 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5507 .
+_:node1g797rbj3x10391 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10392 .
 
-_:node1g797rbj3x5507 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5508 .
+_:node1g797rbj3x10392 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10393 .
 
-_:node1g797rbj3x5508 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5509 .
+_:node1g797rbj3x10393 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10394 .
 
-_:node1g797rbj3x5509 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5510 .
+_:node1g797rbj3x10394 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10395 .
 
-_:node1g797rbj3x5510 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5511 .
+_:node1g797rbj3x10395 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10396 .
 
-_:node1g797rbj3x5511 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5512 .
+_:node1g797rbj3x10396 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10397 .
 
-_:node1g797rbj3x5512 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5513 .
+_:node1g797rbj3x10397 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10398 .
 
-_:node1g797rbj3x5513 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5514 .
+_:node1g797rbj3x10398 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10399 .
 
-_:node1g797rbj3x5514 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5515 .
+_:node1g797rbj3x10399 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10400 .
 
-_:node1g797rbj3x5515 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5516 .
+_:node1g797rbj3x10400 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10401 .
 
-_:node1g797rbj3x5516 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5517 .
+_:node1g797rbj3x10401 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10402 .
 
-_:node1g797rbj3x5517 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5518 .
+_:node1g797rbj3x10402 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10403 .
 
-_:node1g797rbj3x5518 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5519 .
+_:node1g797rbj3x10403 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10404 .
 
-_:node1g797rbj3x5519 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5520 .
+_:node1g797rbj3x10404 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10405 .
 
-_:node1g797rbj3x5520 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5521 .
+_:node1g797rbj3x10405 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10406 .
 
-_:node1g797rbj3x5521 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5522 .
+_:node1g797rbj3x10406 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10407 .
 
-_:node1g797rbj3x5522 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5523 .
+_:node1g797rbj3x10407 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10408 .
 
-_:node1g797rbj3x5523 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5524 .
+_:node1g797rbj3x10408 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10409 .
 
-_:node1g797rbj3x5524 rdf:first "sv";
+_:node1g797rbj3x10409 rdf:first "sv";
   rdf:rest rdf:nil .
 
 calendar:P72 sh:minCount 1;
@@ -1051,78 +1045,126 @@ calendar:P75 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/calendar#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/calendar#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x5525 .
+  sh:languageIn _:node1g797rbj3x10410 .
 
-_:node1g797rbj3x5525 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x5526 .
+_:node1g797rbj3x10410 rdf:first "bg";
+  rdf:rest _:node1g797rbj3x10411 .
 
-_:node1g797rbj3x5526 rdf:first "es";
-  rdf:rest _:node1g797rbj3x5527 .
+_:node1g797rbj3x10411 rdf:first "es";
+  rdf:rest _:node1g797rbj3x10412 .
 
-_:node1g797rbj3x5527 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x5528 .
+_:node1g797rbj3x10412 rdf:first "cs";
+  rdf:rest _:node1g797rbj3x10413 .
 
-_:node1g797rbj3x5528 rdf:first "da";
-  rdf:rest _:node1g797rbj3x5529 .
+_:node1g797rbj3x10413 rdf:first "da";
+  rdf:rest _:node1g797rbj3x10414 .
 
-_:node1g797rbj3x5529 rdf:first "de";
-  rdf:rest _:node1g797rbj3x5530 .
+_:node1g797rbj3x10414 rdf:first "de";
+  rdf:rest _:node1g797rbj3x10415 .
 
-_:node1g797rbj3x5530 rdf:first "et";
-  rdf:rest _:node1g797rbj3x5531 .
+_:node1g797rbj3x10415 rdf:first "et";
+  rdf:rest _:node1g797rbj3x10416 .
 
-_:node1g797rbj3x5531 rdf:first "el";
-  rdf:rest _:node1g797rbj3x5532 .
+_:node1g797rbj3x10416 rdf:first "el";
+  rdf:rest _:node1g797rbj3x10417 .
 
-_:node1g797rbj3x5532 rdf:first "en";
-  rdf:rest _:node1g797rbj3x5533 .
+_:node1g797rbj3x10417 rdf:first "en";
+  rdf:rest _:node1g797rbj3x10418 .
 
-_:node1g797rbj3x5533 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x5534 .
+_:node1g797rbj3x10418 rdf:first "fr";
+  rdf:rest _:node1g797rbj3x10419 .
 
-_:node1g797rbj3x5534 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x5535 .
+_:node1g797rbj3x10419 rdf:first "ga";
+  rdf:rest _:node1g797rbj3x10420 .
 
-_:node1g797rbj3x5535 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x5536 .
+_:node1g797rbj3x10420 rdf:first "hr";
+  rdf:rest _:node1g797rbj3x10421 .
 
-_:node1g797rbj3x5536 rdf:first "it";
-  rdf:rest _:node1g797rbj3x5537 .
+_:node1g797rbj3x10421 rdf:first "it";
+  rdf:rest _:node1g797rbj3x10422 .
 
-_:node1g797rbj3x5537 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x5538 .
+_:node1g797rbj3x10422 rdf:first "lv";
+  rdf:rest _:node1g797rbj3x10423 .
 
-_:node1g797rbj3x5538 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x5539 .
+_:node1g797rbj3x10423 rdf:first "lt";
+  rdf:rest _:node1g797rbj3x10424 .
 
-_:node1g797rbj3x5539 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x5540 .
+_:node1g797rbj3x10424 rdf:first "hu";
+  rdf:rest _:node1g797rbj3x10425 .
 
-_:node1g797rbj3x5540 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x5541 .
+_:node1g797rbj3x10425 rdf:first "mt";
+  rdf:rest _:node1g797rbj3x10426 .
 
-_:node1g797rbj3x5541 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x5542 .
+_:node1g797rbj3x10426 rdf:first "nl";
+  rdf:rest _:node1g797rbj3x10427 .
 
-_:node1g797rbj3x5542 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x5543 .
+_:node1g797rbj3x10427 rdf:first "pl";
+  rdf:rest _:node1g797rbj3x10428 .
 
-_:node1g797rbj3x5543 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x5544 .
+_:node1g797rbj3x10428 rdf:first "pt";
+  rdf:rest _:node1g797rbj3x10429 .
 
-_:node1g797rbj3x5544 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x5545 .
+_:node1g797rbj3x10429 rdf:first "ro";
+  rdf:rest _:node1g797rbj3x10430 .
 
-_:node1g797rbj3x5545 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x5546 .
+_:node1g797rbj3x10430 rdf:first "sk";
+  rdf:rest _:node1g797rbj3x10431 .
 
-_:node1g797rbj3x5546 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x5547 .
+_:node1g797rbj3x10431 rdf:first "sl";
+  rdf:rest _:node1g797rbj3x10432 .
 
-_:node1g797rbj3x5547 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x5548 .
+_:node1g797rbj3x10432 rdf:first "fi";
+  rdf:rest _:node1g797rbj3x10433 .
 
-_:node1g797rbj3x5548 rdf:first "sv";
+_:node1g797rbj3x10433 rdf:first "sv";
+  rdf:rest _:node1g797rbj3x10434 .
+
+_:node1g797rbj3x10434 rdf:first "eu";
+  rdf:rest _:node1g797rbj3x10435 .
+
+_:node1g797rbj3x10435 rdf:first "sq";
+  rdf:rest _:node1g797rbj3x10436 .
+
+_:node1g797rbj3x10436 rdf:first "ca";
+  rdf:rest _:node1g797rbj3x10437 .
+
+_:node1g797rbj3x10437 rdf:first "tr";
+  rdf:rest _:node1g797rbj3x10438 .
+
+_:node1g797rbj3x10438 rdf:first "lb";
+  rdf:rest _:node1g797rbj3x10439 .
+
+_:node1g797rbj3x10439 rdf:first "is";
+  rdf:rest _:node1g797rbj3x10440 .
+
+_:node1g797rbj3x10440 rdf:first "rm";
+  rdf:rest _:node1g797rbj3x10441 .
+
+_:node1g797rbj3x10441 rdf:first "mk";
+  rdf:rest _:node1g797rbj3x10442 .
+
+_:node1g797rbj3x10442 rdf:first "sr";
+  rdf:rest _:node1g797rbj3x10443 .
+
+_:node1g797rbj3x10443 rdf:first "no";
+  rdf:rest _:node1g797rbj3x10444 .
+
+_:node1g797rbj3x10444 rdf:first "uk";
+  rdf:rest _:node1g797rbj3x10445 .
+
+_:node1g797rbj3x10445 rdf:first "bs";
+  rdf:rest _:node1g797rbj3x10446 .
+
+_:node1g797rbj3x10446 rdf:first "gl";
+  rdf:rest _:node1g797rbj3x10447 .
+
+_:node1g797rbj3x10447 rdf:first "fo";
+  rdf:rest _:node1g797rbj3x10448 .
+
+_:node1g797rbj3x10448 rdf:first "be";
+  rdf:rest _:node1g797rbj3x10449 .
+
+_:node1g797rbj3x10449 rdf:first "ru";
   rdf:rest rdf:nil .
 
 calendar:P75 sh:minCount 1;
