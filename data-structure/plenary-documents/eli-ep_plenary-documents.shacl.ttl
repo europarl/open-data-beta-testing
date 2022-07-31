@@ -35,15 +35,15 @@
   dcterms:creator <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:dateCopyrighted "2022"^^xsd:gYear;
   dcterms:license <https://www.europarl.europa.eu/legal-notice/en/>;
-  dcterms:modified "2022-07-14T00:00:00.000Z"^^xsd:dateTime;
+  dcterms:modified "2022-07-27T00:00:00.000Z"^^xsd:dateTime;
   dcterms:publisher <http://publications.europa.eu/resource/dataset/corporate-body/EP>;
   dcterms:rigthsHolder <http://publications.europa.eu/resource/dataset/corporate-body/EURUN>;
-  dcterms:title "Plenary documents dataset specification"@en;
+  dcterms:title "Plenary documents dataset description"@en;
   dcterms:type <http://publications.europa.eu/resource/authority/dataset-type/APROF>;
   vann:usageNote "No document type specification"@en;
-  rdfs:label "Plenary documents dataset specification"@en;
+  rdfs:label "Plenary documents dataset description"@en;
   owl:versionIRI <https://data.europarl.europa.eu/def/eli-ep#>;
-  owl:versionInfo "0.4.4"@en;
+  owl:versionInfo "0.4.4";
   skos:hasTopConcept pld:P10, pld:P100, pld:P101, pld:P103, pld:P104, pld:P106, pld:P107,
     pld:P109, pld:P11, pld:P110, pld:P112, pld:P113, pld:P115, pld:P12, pld:P13, pld:P14,
     pld:P17, pld:P18, pld:P19, pld:P20, pld:P21, pld:P22, pld:P23, pld:P24, pld:P25, pld:P26,
@@ -55,7 +55,14 @@
     pld:P85, pld:P86, pld:P87, pld:P88, pld:P9, pld:P90, pld:P91, pld:P92, pld:P93, pld:P94,
     pld:P97, pld:P98;
   adms:status <http://publications.europa.eu/resource/dataset/dataset-status/DEVELOP>;
-  adms:versionNotes """2022-07-14
+  adms:versionNotes """2022-07-27
+- harmonising general metadata (titles)
+2022-07-25
+- removed broken link. REMARK: be careful when copy paste content from other Excel files.
+- missing sh:node for :WorkType
+- added skos:example
+- why do we need :AgentReference ?!
+2022-07-14
 - eli:is_exemplified_by changed to ObjectProperty (sh:IRI)
 2022-06-14
 - remove prefLabel on ta:ConceptReference
@@ -77,7 +84,7 @@ pld:PlenaryDocument a sh:NodeShape;
     pld:P25, pld:P26, pld:P27, pld:P28, pld:P29, pld:P30, pld:P31, pld:P32, pld:P33, pld:P34,
     pld:P35, pld:P36;
   sh:target pld:PlenaryDocument-target;
-  shacl-play:color "Orange"@en .
+  shacl-play:color "Orange" .
 
 pld:PlenaryDocument-target sh:select """PREFIX eli: <http://data.europa.eu/eli/ontology#>
 PREFIX resource-type: <http://publications.europa.eu/resource/authority/resource-type/>
@@ -90,7 +97,7 @@ WHERE {
  resource-type:JOINT_MOTION_RES
  resource-type:QUEST_ORAL_SESSION
  }
-}"""@en .
+}""" .
 
 pld:Amendment a sh:NodeShape;
   rdfs:label "Work Plenary Amendment"@en;
@@ -100,7 +107,7 @@ pld:Amendment a sh:NodeShape;
   sh:property pld:P39, pld:P40, pld:P41, pld:P42, pld:P43, pld:P44, pld:P45, pld:P46,
     pld:P47, pld:P48, pld:P49, pld:P50, pld:P51, pld:P52, pld:P53, pld:P54, pld:P55, pld:P56,
     pld:P57;
-  shacl-play:color "Orange"@en .
+  shacl-play:color "Orange" .
 
 pld:Erratum a sh:NodeShape;
   rdfs:label "Work Plenary Erratum"@en;
@@ -109,7 +116,7 @@ pld:Erratum a sh:NodeShape;
   sh:order 9;
   sh:property pld:P60, pld:P61, pld:P62, pld:P63, pld:P64, pld:P65, pld:P66, pld:P67,
     pld:P68, pld:P69, pld:P70, pld:P71, pld:P72, pld:P73, pld:P74;
-  shacl-play:color "Orange"@en .
+  shacl-play:color "Orange" .
 
 pld:Expression a sh:NodeShape;
   rdfs:label "Realized By Expression"@en;
@@ -118,7 +125,7 @@ pld:Expression a sh:NodeShape;
   sh:order 10;
   sh:property pld:P77, pld:P78, pld:P79, pld:P80;
   sh:targetClass eli:Expression;
-  shacl-play:color "Blue"@en .
+  shacl-play:color "Blue" .
 
 pld:Manifestation a sh:NodeShape;
   rdfs:label "Is embodied by Manifestation"@en;
@@ -127,7 +134,7 @@ pld:Manifestation a sh:NodeShape;
   sh:order 11;
   sh:property pld:P83, pld:P84, pld:P85, pld:P86, pld:P87, pld:P88;
   sh:targetClass eli:Manifestation;
-  shacl-play:color "Green"@en .
+  shacl-play:color "Green" .
 
 pld:DocumentSubmission a sh:NodeShape;
   rdfs:label "Document Submission Activity"@en;
@@ -136,7 +143,7 @@ pld:DocumentSubmission a sh:NodeShape;
   sh:order 12;
   sh:property pld:P10, pld:P11, pld:P12, pld:P13, pld:P14, pld:P9;
   sh:targetClass eli-dl:Activity;
-  shacl-play:color "DarkBlue"@en .
+  shacl-play:color "DarkBlue" .
 
 pld:Participation a sh:NodeShape;
   rdfs:label "Participation"@en;
@@ -145,7 +152,7 @@ pld:Participation a sh:NodeShape;
   sh:order 13;
   sh:property pld:P90, pld:P91, pld:P92, pld:P93, pld:P94;
   sh:targetClass eli-dl:Participation;
-  shacl-play:color "Black"@en .
+  shacl-play:color "Black" .
 
 pld:ParliamentaryTermReference a sh:NodeShape;
   rdfs:label "Reference to a Parliamentary Term"@en;
@@ -154,7 +161,8 @@ pld:ParliamentaryTermReference a sh:NodeShape;
   sh:order 14;
   sh:pattern "^https://data.europarl.europa.eu/org/ep-[0-9].*$";
   sh:property pld:P100, pld:P101;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass <https://data.europarl.europa.eu/org/ep-9>;
+  shacl-play:color "DarkGrey" .
 
 pld:ActivityTypeReference a sh:NodeShape;
   rdfs:label "Reference to an Activity type"@en;
@@ -163,46 +171,64 @@ pld:ActivityTypeReference a sh:NodeShape;
   sh:order 15;
   sh:pattern "^http://publications.europa.eu/resource/authority/event/.*$";
   sh:property pld:P97, pld:P98;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass aut-event:DOCUMENT_SUBMISSION;
+  shacl-play:color "DarkGrey" .
+
+pld:WorkTypeReference a sh:NodeShape;
+  rdfs:label "Reference to a Work type"@en;
+  sh:closed true;
+  sh:nodeKind sh:IRI;
+  sh:order 16;
+  sh:pattern "http://publications.europa.eu/resource/authority/resource-type/.*$";
+  sh:targetClass resource-type:PLENARY_REPORT;
+  shacl-play:color "DarkGrey" .
 
 pld:AgentReference a sh:NodeShape;
   rdfs:label "Reference to an Agent"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
-  sh:order 16;
-  shacl-play:color "DarkGrey"@en .
+  sh:order 17;
+  shacl-play:color "DarkGrey" .
 
 pld:MediaTypeOrExtentReference a sh:NodeShape;
   rdfs:label "Reference to a Media Type"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
   sh:order 18;
+  sh:pattern "http://publications.europa.eu/resource/authority/file-type/.*$";
   sh:property pld:P103, pld:P104;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass <http://publications.europa.eu/resource/authority/file-type/PDF>;
+  shacl-play:color "DarkGrey" .
 
 pld:ParticipationRoleReference a sh:NodeShape;
   rdfs:label "Reference to a Role"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
   sh:order 19;
+  sh:pattern "http://publications.europa.eu/resource/authority/role/.*$";
   sh:property pld:P106, pld:P107;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass <http://publications.europa.eu/resource/authority/role/AUT>;
+  shacl-play:color "DarkGrey" .
 
 pld:OrganizationReference a sh:NodeShape;
   rdfs:label "Reference to an Organization"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
   sh:order 20;
+  sh:pattern "http://publications.europa.eu/resource/authority/corporate-body/.*$";
   sh:property pld:P109, pld:P110;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass <http://publications.europa.eu/resource/authority/corporate-body/EP>;
+  shacl-play:color "DarkGrey" .
 
 pld:PersonReference a sh:NodeShape;
   rdfs:label "Reference to a Person"@en;
   sh:closed true;
   sh:nodeKind sh:IRI;
   sh:order 21;
+  sh:pattern "^https://data.europarl.europa.eu/person/[0-9].*$";
   sh:property pld:P112, pld:P113;
-  shacl-play:color "DarkGrey"@en .
+  sh:targetClass <https://data.europarl.europa.eu/person/1234>;
+  shacl-play:color "DarkGrey" .
 
 pld:ConceptReference a sh:NodeShape;
   rdfs:label "Reference to a Concept"@en;
@@ -210,7 +236,7 @@ pld:ConceptReference a sh:NodeShape;
   sh:nodeKind sh:IRI;
   sh:order 23;
   sh:property pld:P115;
-  shacl-play:color "DarkGrey"@en .
+  shacl-play:color "DarkGrey" .
 
 pld:P9 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
@@ -279,23 +305,24 @@ pld:P17 a skos:Concept;
 pld:P18 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
-  sh:in _:node1g797rbj3x7438 .
+  sh:in _:node1g8tmdfl9x288 .
 
-_:node1g797rbj3x7438 rdf:first resource-type:PLENARY_REPORT;
-  rdf:rest _:node1g797rbj3x7439 .
+_:node1g8tmdfl9x288 rdf:first resource-type:PLENARY_REPORT;
+  rdf:rest _:node1g8tmdfl9x289 .
 
-_:node1g797rbj3x7439 rdf:first resource-type:MOTION_RES;
-  rdf:rest _:node1g797rbj3x7440 .
+_:node1g8tmdfl9x289 rdf:first resource-type:MOTION_RES;
+  rdf:rest _:node1g8tmdfl9x290 .
 
-_:node1g797rbj3x7440 rdf:first resource-type:JOINT_MOTION_RES;
-  rdf:rest _:node1g797rbj3x7441 .
+_:node1g8tmdfl9x290 rdf:first resource-type:JOINT_MOTION_RES;
+  rdf:rest _:node1g8tmdfl9x291 .
 
-_:node1g797rbj3x7441 rdf:first resource-type:QUEST_ORAL_SESSION;
+_:node1g8tmdfl9x291 rdf:first resource-type:QUEST_ORAL_SESSION;
   rdf:rest rdf:nil .
 
 pld:P18 sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node pld:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -395,19 +422,19 @@ pld:P29 a skos:Concept;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
   sh:name "creator"@en;
   sh:nodeKind sh:IRI;
-  sh:or _:node1g797rbj3x7442 .
+  sh:or _:node1g8tmdfl9x292 .
 
-_:node1g797rbj3x7442 rdf:first _:node1g797rbj3x7443 .
+_:node1g8tmdfl9x292 rdf:first _:node1g8tmdfl9x293 .
 
-_:node1g797rbj3x7443 sh:node pld:OrganizationReference .
+_:node1g8tmdfl9x293 sh:node pld:OrganizationReference .
 
-_:node1g797rbj3x7442 rdf:rest _:node1g797rbj3x7444 .
+_:node1g8tmdfl9x292 rdf:rest _:node1g8tmdfl9x294 .
 
-_:node1g797rbj3x7444 rdf:first _:node1g797rbj3x7445 .
+_:node1g8tmdfl9x294 rdf:first _:node1g8tmdfl9x295 .
 
-_:node1g797rbj3x7445 sh:node pld:PersonReference .
+_:node1g8tmdfl9x295 sh:node pld:PersonReference .
 
-_:node1g797rbj3x7444 rdf:rest rdf:nil .
+_:node1g8tmdfl9x294 rdf:rest rdf:nil .
 
 pld:P29 sh:path dcterms:creator .
 
@@ -450,9 +477,9 @@ pld:P34 a skos:Concept;
   sh:name "has realization created by"@en;
   sh:node pld:DocumentSubmission;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7446 .
+  sh:path _:node1g8tmdfl9x296 .
 
-_:node1g797rbj3x7446 sh:inversePath eli-dl:created_a_realization_of .
+_:node1g8tmdfl9x296 sh:inversePath eli-dl:created_a_realization_of .
 
 pld:P35 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
@@ -460,9 +487,9 @@ pld:P35 a skos:Concept;
   sh:name "is amended by"@en;
   sh:node pld:Amendment;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7447 .
+  sh:path _:node1g8tmdfl9x297 .
 
-_:node1g797rbj3x7447 sh:inversePath eli:amends .
+_:node1g8tmdfl9x297 sh:inversePath eli:amends .
 
 pld:P36 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
@@ -470,9 +497,9 @@ pld:P36 a skos:Concept;
   sh:name "is corrected by"@en;
   sh:node pld:Erratum;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7448 .
+  sh:path _:node1g8tmdfl9x298 .
 
-_:node1g797rbj3x7448 sh:inversePath eli:corrects .
+_:node1g8tmdfl9x298 sh:inversePath eli:corrects .
 
 pld:P39 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
@@ -486,20 +513,21 @@ pld:P39 a skos:Concept;
 pld:P40 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
-  sh:in _:node1g797rbj3x7449 .
+  sh:in _:node1g8tmdfl9x299 .
 
-_:node1g797rbj3x7449 rdf:first resource-type:AMEND_REPORT;
-  rdf:rest _:node1g797rbj3x7450 .
+_:node1g8tmdfl9x299 rdf:first resource-type:AMEND_REPORT;
+  rdf:rest _:node1g8tmdfl9x300 .
 
-_:node1g797rbj3x7450 rdf:first resource-type:AMEND_MOTION_RES;
-  rdf:rest _:node1g797rbj3x7451 .
+_:node1g8tmdfl9x300 rdf:first resource-type:AMEND_MOTION_RES;
+  rdf:rest _:node1g8tmdfl9x301 .
 
-_:node1g797rbj3x7451 rdf:first resource-type:AMEND_JOINT_MOTION_RES;
+_:node1g8tmdfl9x301 rdf:first resource-type:AMEND_JOINT_MOTION_RES;
   rdf:rest rdf:nil .
 
 pld:P40 sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node pld:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -618,19 +646,19 @@ pld:P53 a skos:Concept;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
   sh:name "creator"@en;
   sh:nodeKind sh:IRI;
-  sh:or _:node1g797rbj3x7452 .
+  sh:or _:node1g8tmdfl9x302 .
 
-_:node1g797rbj3x7452 rdf:first _:node1g797rbj3x7453 .
+_:node1g8tmdfl9x302 rdf:first _:node1g8tmdfl9x303 .
 
-_:node1g797rbj3x7453 sh:node pld:OrganizationReference .
+_:node1g8tmdfl9x303 sh:node pld:OrganizationReference .
 
-_:node1g797rbj3x7452 rdf:rest _:node1g797rbj3x7454 .
+_:node1g8tmdfl9x302 rdf:rest _:node1g8tmdfl9x304 .
 
-_:node1g797rbj3x7454 rdf:first _:node1g797rbj3x7455 .
+_:node1g8tmdfl9x304 rdf:first _:node1g8tmdfl9x305 .
 
-_:node1g797rbj3x7455 sh:node pld:PersonReference .
+_:node1g8tmdfl9x305 sh:node pld:PersonReference .
 
-_:node1g797rbj3x7454 rdf:rest rdf:nil .
+_:node1g8tmdfl9x304 rdf:rest rdf:nil .
 
 pld:P53 sh:path dcterms:creator .
 
@@ -658,9 +686,9 @@ pld:P56 a skos:Concept;
   sh:name "has realization created by"@en;
   sh:node pld:DocumentSubmission;
   sh:nodeKind sh:IRI;
-  sh:path _:node1g797rbj3x7456 .
+  sh:path _:node1g8tmdfl9x306 .
 
-_:node1g797rbj3x7456 sh:inversePath eli-dl:created_a_realization_of .
+_:node1g8tmdfl9x306 sh:inversePath eli-dl:created_a_realization_of .
 
 pld:P57 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
@@ -687,6 +715,7 @@ pld:P61 a skos:Concept;
   sh:maxCount 1;
   sh:minCount 1;
   sh:name "work type"@en;
+  sh:node pld:WorkTypeReference;
   sh:nodeKind sh:IRI;
   sh:path eli:work_type .
 
@@ -956,78 +985,78 @@ pld:P97 a skos:Concept;
 pld:P98 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
-  sh:languageIn _:node1g797rbj3x7457 .
+  sh:languageIn _:node1g8tmdfl9x307 .
 
-_:node1g797rbj3x7457 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7458 .
+_:node1g8tmdfl9x307 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x308 .
 
-_:node1g797rbj3x7458 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7459 .
+_:node1g8tmdfl9x308 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x309 .
 
-_:node1g797rbj3x7459 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7460 .
+_:node1g8tmdfl9x309 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x310 .
 
-_:node1g797rbj3x7460 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7461 .
+_:node1g8tmdfl9x310 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x311 .
 
-_:node1g797rbj3x7461 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7462 .
+_:node1g8tmdfl9x311 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x312 .
 
-_:node1g797rbj3x7462 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7463 .
+_:node1g8tmdfl9x312 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x313 .
 
-_:node1g797rbj3x7463 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7464 .
+_:node1g8tmdfl9x313 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x314 .
 
-_:node1g797rbj3x7464 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7465 .
+_:node1g8tmdfl9x314 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x315 .
 
-_:node1g797rbj3x7465 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7466 .
+_:node1g8tmdfl9x315 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x316 .
 
-_:node1g797rbj3x7466 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7467 .
+_:node1g8tmdfl9x316 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x317 .
 
-_:node1g797rbj3x7467 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7468 .
+_:node1g8tmdfl9x317 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x318 .
 
-_:node1g797rbj3x7468 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7469 .
+_:node1g8tmdfl9x318 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x319 .
 
-_:node1g797rbj3x7469 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7470 .
+_:node1g8tmdfl9x319 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x320 .
 
-_:node1g797rbj3x7470 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7471 .
+_:node1g8tmdfl9x320 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x321 .
 
-_:node1g797rbj3x7471 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7472 .
+_:node1g8tmdfl9x321 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x322 .
 
-_:node1g797rbj3x7472 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7473 .
+_:node1g8tmdfl9x322 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x323 .
 
-_:node1g797rbj3x7473 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7474 .
+_:node1g8tmdfl9x323 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x324 .
 
-_:node1g797rbj3x7474 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7475 .
+_:node1g8tmdfl9x324 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x325 .
 
-_:node1g797rbj3x7475 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7476 .
+_:node1g8tmdfl9x325 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x326 .
 
-_:node1g797rbj3x7476 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7477 .
+_:node1g8tmdfl9x326 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x327 .
 
-_:node1g797rbj3x7477 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7478 .
+_:node1g8tmdfl9x327 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x328 .
 
-_:node1g797rbj3x7478 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7479 .
+_:node1g8tmdfl9x328 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x329 .
 
-_:node1g797rbj3x7479 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7480 .
+_:node1g8tmdfl9x329 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x330 .
 
-_:node1g797rbj3x7480 rdf:first "sv";
+_:node1g8tmdfl9x330 rdf:first "sv";
   rdf:rest rdf:nil .
 
 pld:P98 sh:name "pref label"@en;
@@ -1045,78 +1074,78 @@ pld:P100 a skos:Concept;
 pld:P101 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
-  sh:languageIn _:node1g797rbj3x7481 .
+  sh:languageIn _:node1g8tmdfl9x331 .
 
-_:node1g797rbj3x7481 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7482 .
+_:node1g8tmdfl9x331 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x332 .
 
-_:node1g797rbj3x7482 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7483 .
+_:node1g8tmdfl9x332 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x333 .
 
-_:node1g797rbj3x7483 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7484 .
+_:node1g8tmdfl9x333 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x334 .
 
-_:node1g797rbj3x7484 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7485 .
+_:node1g8tmdfl9x334 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x335 .
 
-_:node1g797rbj3x7485 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7486 .
+_:node1g8tmdfl9x335 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x336 .
 
-_:node1g797rbj3x7486 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7487 .
+_:node1g8tmdfl9x336 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x337 .
 
-_:node1g797rbj3x7487 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7488 .
+_:node1g8tmdfl9x337 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x338 .
 
-_:node1g797rbj3x7488 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7489 .
+_:node1g8tmdfl9x338 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x339 .
 
-_:node1g797rbj3x7489 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7490 .
+_:node1g8tmdfl9x339 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x340 .
 
-_:node1g797rbj3x7490 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7491 .
+_:node1g8tmdfl9x340 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x341 .
 
-_:node1g797rbj3x7491 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7492 .
+_:node1g8tmdfl9x341 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x342 .
 
-_:node1g797rbj3x7492 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7493 .
+_:node1g8tmdfl9x342 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x343 .
 
-_:node1g797rbj3x7493 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7494 .
+_:node1g8tmdfl9x343 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x344 .
 
-_:node1g797rbj3x7494 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7495 .
+_:node1g8tmdfl9x344 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x345 .
 
-_:node1g797rbj3x7495 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7496 .
+_:node1g8tmdfl9x345 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x346 .
 
-_:node1g797rbj3x7496 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7497 .
+_:node1g8tmdfl9x346 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x347 .
 
-_:node1g797rbj3x7497 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7498 .
+_:node1g8tmdfl9x347 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x348 .
 
-_:node1g797rbj3x7498 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7499 .
+_:node1g8tmdfl9x348 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x349 .
 
-_:node1g797rbj3x7499 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7500 .
+_:node1g8tmdfl9x349 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x350 .
 
-_:node1g797rbj3x7500 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7501 .
+_:node1g8tmdfl9x350 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x351 .
 
-_:node1g797rbj3x7501 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7502 .
+_:node1g8tmdfl9x351 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x352 .
 
-_:node1g797rbj3x7502 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7503 .
+_:node1g8tmdfl9x352 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x353 .
 
-_:node1g797rbj3x7503 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7504 .
+_:node1g8tmdfl9x353 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x354 .
 
-_:node1g797rbj3x7504 rdf:first "sv";
+_:node1g8tmdfl9x354 rdf:first "sv";
   rdf:rest rdf:nil .
 
 pld:P101 sh:minCount 1;
@@ -1137,78 +1166,78 @@ pld:P104 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
   sh:datatype rdf:langString;
-  sh:languageIn _:node1g797rbj3x7505 .
+  sh:languageIn _:node1g8tmdfl9x355 .
 
-_:node1g797rbj3x7505 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7506 .
+_:node1g8tmdfl9x355 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x356 .
 
-_:node1g797rbj3x7506 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7507 .
+_:node1g8tmdfl9x356 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x357 .
 
-_:node1g797rbj3x7507 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7508 .
+_:node1g8tmdfl9x357 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x358 .
 
-_:node1g797rbj3x7508 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7509 .
+_:node1g8tmdfl9x358 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x359 .
 
-_:node1g797rbj3x7509 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7510 .
+_:node1g8tmdfl9x359 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x360 .
 
-_:node1g797rbj3x7510 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7511 .
+_:node1g8tmdfl9x360 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x361 .
 
-_:node1g797rbj3x7511 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7512 .
+_:node1g8tmdfl9x361 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x362 .
 
-_:node1g797rbj3x7512 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7513 .
+_:node1g8tmdfl9x362 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x363 .
 
-_:node1g797rbj3x7513 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7514 .
+_:node1g8tmdfl9x363 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x364 .
 
-_:node1g797rbj3x7514 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7515 .
+_:node1g8tmdfl9x364 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x365 .
 
-_:node1g797rbj3x7515 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7516 .
+_:node1g8tmdfl9x365 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x366 .
 
-_:node1g797rbj3x7516 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7517 .
+_:node1g8tmdfl9x366 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x367 .
 
-_:node1g797rbj3x7517 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7518 .
+_:node1g8tmdfl9x367 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x368 .
 
-_:node1g797rbj3x7518 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7519 .
+_:node1g8tmdfl9x368 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x369 .
 
-_:node1g797rbj3x7519 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7520 .
+_:node1g8tmdfl9x369 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x370 .
 
-_:node1g797rbj3x7520 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7521 .
+_:node1g8tmdfl9x370 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x371 .
 
-_:node1g797rbj3x7521 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7522 .
+_:node1g8tmdfl9x371 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x372 .
 
-_:node1g797rbj3x7522 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7523 .
+_:node1g8tmdfl9x372 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x373 .
 
-_:node1g797rbj3x7523 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7524 .
+_:node1g8tmdfl9x373 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x374 .
 
-_:node1g797rbj3x7524 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7525 .
+_:node1g8tmdfl9x374 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x375 .
 
-_:node1g797rbj3x7525 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7526 .
+_:node1g8tmdfl9x375 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x376 .
 
-_:node1g797rbj3x7526 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7527 .
+_:node1g8tmdfl9x376 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x377 .
 
-_:node1g797rbj3x7527 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7528 .
+_:node1g8tmdfl9x377 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x378 .
 
-_:node1g797rbj3x7528 rdf:first "sv";
+_:node1g8tmdfl9x378 rdf:first "sv";
   rdf:rest rdf:nil .
 
 pld:P104 sh:minCount 1;
@@ -1228,78 +1257,78 @@ pld:P106 a skos:Concept;
 pld:P107 a skos:Concept;
   skos:inScheme <https://data.europarl.europa.eu/def/plenary-documents#>;
   skos:topConceptOf <https://data.europarl.europa.eu/def/plenary-documents#>;
-  sh:languageIn _:node1g797rbj3x7529 .
+  sh:languageIn _:node1g8tmdfl9x379 .
 
-_:node1g797rbj3x7529 rdf:first "bg";
-  rdf:rest _:node1g797rbj3x7530 .
+_:node1g8tmdfl9x379 rdf:first "bg";
+  rdf:rest _:node1g8tmdfl9x380 .
 
-_:node1g797rbj3x7530 rdf:first "es";
-  rdf:rest _:node1g797rbj3x7531 .
+_:node1g8tmdfl9x380 rdf:first "es";
+  rdf:rest _:node1g8tmdfl9x381 .
 
-_:node1g797rbj3x7531 rdf:first "cs";
-  rdf:rest _:node1g797rbj3x7532 .
+_:node1g8tmdfl9x381 rdf:first "cs";
+  rdf:rest _:node1g8tmdfl9x382 .
 
-_:node1g797rbj3x7532 rdf:first "da";
-  rdf:rest _:node1g797rbj3x7533 .
+_:node1g8tmdfl9x382 rdf:first "da";
+  rdf:rest _:node1g8tmdfl9x383 .
 
-_:node1g797rbj3x7533 rdf:first "de";
-  rdf:rest _:node1g797rbj3x7534 .
+_:node1g8tmdfl9x383 rdf:first "de";
+  rdf:rest _:node1g8tmdfl9x384 .
 
-_:node1g797rbj3x7534 rdf:first "et";
-  rdf:rest _:node1g797rbj3x7535 .
+_:node1g8tmdfl9x384 rdf:first "et";
+  rdf:rest _:node1g8tmdfl9x385 .
 
-_:node1g797rbj3x7535 rdf:first "el";
-  rdf:rest _:node1g797rbj3x7536 .
+_:node1g8tmdfl9x385 rdf:first "el";
+  rdf:rest _:node1g8tmdfl9x386 .
 
-_:node1g797rbj3x7536 rdf:first "en";
-  rdf:rest _:node1g797rbj3x7537 .
+_:node1g8tmdfl9x386 rdf:first "en";
+  rdf:rest _:node1g8tmdfl9x387 .
 
-_:node1g797rbj3x7537 rdf:first "fr";
-  rdf:rest _:node1g797rbj3x7538 .
+_:node1g8tmdfl9x387 rdf:first "fr";
+  rdf:rest _:node1g8tmdfl9x388 .
 
-_:node1g797rbj3x7538 rdf:first "ga";
-  rdf:rest _:node1g797rbj3x7539 .
+_:node1g8tmdfl9x388 rdf:first "ga";
+  rdf:rest _:node1g8tmdfl9x389 .
 
-_:node1g797rbj3x7539 rdf:first "hr";
-  rdf:rest _:node1g797rbj3x7540 .
+_:node1g8tmdfl9x389 rdf:first "hr";
+  rdf:rest _:node1g8tmdfl9x390 .
 
-_:node1g797rbj3x7540 rdf:first "it";
-  rdf:rest _:node1g797rbj3x7541 .
+_:node1g8tmdfl9x390 rdf:first "it";
+  rdf:rest _:node1g8tmdfl9x391 .
 
-_:node1g797rbj3x7541 rdf:first "lt";
-  rdf:rest _:node1g797rbj3x7542 .
+_:node1g8tmdfl9x391 rdf:first "lt";
+  rdf:rest _:node1g8tmdfl9x392 .
 
-_:node1g797rbj3x7542 rdf:first "lv";
-  rdf:rest _:node1g797rbj3x7543 .
+_:node1g8tmdfl9x392 rdf:first "lv";
+  rdf:rest _:node1g8tmdfl9x393 .
 
-_:node1g797rbj3x7543 rdf:first "hu";
-  rdf:rest _:node1g797rbj3x7544 .
+_:node1g8tmdfl9x393 rdf:first "hu";
+  rdf:rest _:node1g8tmdfl9x394 .
 
-_:node1g797rbj3x7544 rdf:first "mt";
-  rdf:rest _:node1g797rbj3x7545 .
+_:node1g8tmdfl9x394 rdf:first "mt";
+  rdf:rest _:node1g8tmdfl9x395 .
 
-_:node1g797rbj3x7545 rdf:first "nl";
-  rdf:rest _:node1g797rbj3x7546 .
+_:node1g8tmdfl9x395 rdf:first "nl";
+  rdf:rest _:node1g8tmdfl9x396 .
 
-_:node1g797rbj3x7546 rdf:first "pl";
-  rdf:rest _:node1g797rbj3x7547 .
+_:node1g8tmdfl9x396 rdf:first "pl";
+  rdf:rest _:node1g8tmdfl9x397 .
 
-_:node1g797rbj3x7547 rdf:first "pt";
-  rdf:rest _:node1g797rbj3x7548 .
+_:node1g8tmdfl9x397 rdf:first "pt";
+  rdf:rest _:node1g8tmdfl9x398 .
 
-_:node1g797rbj3x7548 rdf:first "ro";
-  rdf:rest _:node1g797rbj3x7549 .
+_:node1g8tmdfl9x398 rdf:first "ro";
+  rdf:rest _:node1g8tmdfl9x399 .
 
-_:node1g797rbj3x7549 rdf:first "sk";
-  rdf:rest _:node1g797rbj3x7550 .
+_:node1g8tmdfl9x399 rdf:first "sk";
+  rdf:rest _:node1g8tmdfl9x400 .
 
-_:node1g797rbj3x7550 rdf:first "sl";
-  rdf:rest _:node1g797rbj3x7551 .
+_:node1g8tmdfl9x400 rdf:first "sl";
+  rdf:rest _:node1g8tmdfl9x401 .
 
-_:node1g797rbj3x7551 rdf:first "fi";
-  rdf:rest _:node1g797rbj3x7552 .
+_:node1g8tmdfl9x401 rdf:first "fi";
+  rdf:rest _:node1g8tmdfl9x402 .
 
-_:node1g797rbj3x7552 rdf:first "sv";
+_:node1g8tmdfl9x402 rdf:first "sv";
   rdf:rest rdf:nil .
 
 pld:P107 sh:name "pref label"@en;
