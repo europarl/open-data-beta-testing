@@ -1,10 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <html lang="en">
    <head>
-      <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"/>
       <style type="text/css">
 					.anchor {
 						float: left;
@@ -18,24 +14,163 @@
 						font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 						font-size: 87.5%;
 					}
+					
+					
+					.CONTAINER{
+				         width: calc(100% - 40px);
+				         max-width: 1000px;
+				         margin-left: auto;
+				         margin-right: auto;
+				      }
+				
+				      h2 {
+				         margin: 25px 0px 10px 0px;
+				      }
+				
+				      ul{
+				         margin: 0.5em
+				         margin-bottom: 2rem;
+				      }
+				      
+				      a {
+                      color: #007bff;
+                      text-decoration: none;
+                      background-color: transparent;
+	                  }
+	
+	                  a:-webkit-any-link {
+	                      cursor: pointer;                      
+	                  }
+	                  
+				      
+				     
+				     table {
+						    display: table;
+						    border-spacing: 0px;
+							margin-botton: 1rem;
+						}
+						
+						tr:nth-child(even) {
+						    background-color: #eee;
+						}
+						
+						
+						.prefixes table {
+						    border-collapse: collapse;
+						    margin-bottom: 1rem;
+						    color: #212529;
+						}
+						
+						
+						.prefixes td {
+						    padding: 0.25rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						
+						
+						.propertyshapes table {
+						    border-collapse: collapse;
+						}
+			
+			
+						.propertyshapes thead {
+						    display: table-header-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+						
+						
+						.propertyshapes tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						p {
+					      font-size: 0.875em;
+					    }
+						
+						@media only print {
+							
+						}
+						
+						@page {
+								size: A4 portrait;
+								margin-top: 1.2cm;
+								margin-bottom: 1.2cm;
+								margin-left: 1.2cm;
+								margin-right: 1.2cm;
+								background-repeat: no-repeat;
+								background-position: 40px 10px;
+								 @bottom-center {
+								 	content: counter(page);
+								 }
+						}
+						
+						
+						.propertyshapes th:nth-child(4) {
+						    width: 6%;
+						}
+						
+						.propertyshapes td {
+						    padding: 0.75rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						.propertyshapes tbody {
+						    display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+			
+			
+						.propertyshapes tbody tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						.text-break {
+						    word-break: break-word;
+						}
+						
+						body {
+						         margin: 0;
+						         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+						         background-color: #fff;
+						      }
+				     
+				     			
+					
+					
+					
 				</style>
    </head>
    <body>
-      <div class="container-md">
+      <div class="container">
          <br/>
-         <div class="container">
-            <div class="row row-cols-auto">
-               <div class="col">
-                  <center>
-                     <h1>Plenary documents dataset specification</h1>
-                  </center>
-               </div>
-            </div>
-         </div>
+         <table style="width:100%">
+            <tr>
+               <td width="20%">
+                  <img src="https://www.europarl.europa.eu/portal/img/ep-logo.svg"/>
+               </td>
+               <td width="80%">
+                  <div>
+                     <center>
+                        <h1>Plenary documents dataset description</h1>
+                     </center>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br/>
          <br/>
          <b>Created date: </b>2022-05-05<br/>
-         <b>Last updated: </b>2022-07-14T00:00:00.000Z<br/>
-         <b>Copyright date  </b>2022<br/>
+         <b>Last updated: </b>2022-07-27T00:00:00.000Z<br/>
+         <b>Copyright date: </b>2022<br/>
          <b>Version: </b>0.4.4<br/>
          <b>License: </b>
          <a href="https://www.europarl.europa.eu/legal-notice/en/" target="_blank">https://www.europarl.europa.eu/legal-notice/en/</a>
@@ -50,7 +185,6 @@
          <br/>
          <br/>
          <hr/>
-         <br/>
          <br/>
          <div>
             <h2>Table of Content</h2>
@@ -76,6 +210,8 @@
             <br/>
             <a href="#pld:ParticipationRoleReference">Reference to a Role</a>
             <br/>
+            <a href="#pld:WorkTypeReference">Reference to a Work type</a>
+            <br/>
             <a href="#pld:ActivityTypeReference">Reference to an Activity type</a>
             <br/>
             <a href="#pld:AgentReference">Reference to an Agent</a>
@@ -92,15 +228,15 @@
          <br/>
          <div id="diagram">
             <h2>Dataset diagram</h2>
-            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="970px" preserveAspectRatio="none" style="width:2440px;height:970px;" version="1.1" viewBox="0 0 2440 970" width="2440px" zoomAndPan="magnify"><defs><filter height="300%" id="f7zx5g8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class pld:Manifestation--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Manifestation" xlink:show="new" xlink:title="#pld:Manifestation" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="98.3203" style="stroke: #008000; stroke-width: 1.5;" width="232" x="1805" y="727"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="1862" y="744.9951">pld:Manifestation</text><line style="stroke: #008000; stroke-width: 1.5;" x1="1806" x2="2036" y1="753.2969" y2="753.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="1811" y="767.5073">dcterms:issued  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="1811" y="780.312">eli:is_exemplified_by  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="1811" y="793.1167">eli:media_type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="1811" y="805.9214">epvoc:byteSize  : xsd:long  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1811" y="818.7261">rdf:type  [1..1]  = eli:Manifestation</text></a><!--class pld:MediaTypeOrExtentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:MediaTypeOrExtentReference" xlink:show="new" xlink:title="#pld:MediaTypeOrExtentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="1773" y="902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="233" x="1804.5" y="919.9951">pld:MediaTypeOrExtentReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1774" x2="2068" y1="928.2969" y2="928.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="1779" y="942.5073">rdf:type  [1..*]  = dcterms:MediaTypeOrExtent</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1779" y="955.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class pld:Expression--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Expression" xlink:show="new" xlink:title="#pld:Expression" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="72.7109" style="stroke: #0000FF; stroke-width: 1.5;" width="210" x="1798" y="570.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="1852" y="588.4951">pld:Expression</text><line style="stroke: #0000FF; stroke-width: 1.5;" x1="1799" x2="2007" y1="596.7969" y2="596.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="1804" y="611.0073">eli:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="1804" y="623.812">eli:title_alternative  : rdf:langString</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="1804" y="636.6167">rdf:type  [1..1]  = eli:Expression</text></a><!--class pld:Participation--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Participation" xlink:show="new" xlink:title="#pld:Participation" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="47.1016" style="stroke: #000000; stroke-width: 1.5;" width="216" x="577" y="752.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="630" y="770.4951">pld:Participation</text><line style="stroke: #000000; stroke-width: 1.5;" x1="578" x2="792" y1="778.7969" y2="778.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="204" x="583" y="793.0073">rdf:type  [1..1]  = eli-dl:Participation</text></a><!--class pld:OrganizationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:OrganizationReference" xlink:show="new" xlink:title="#pld:OrganizationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="208" x="1118" y="902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="1129.5" y="919.9951">pld:OrganizationReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1119" x2="1325" y1="928.2969" y2="928.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1124" y="942.5073">rdf:type  [1..*]  = org:Organization</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="1124" y="955.312">skos:prefLabel uniqueLang</text></a><!--class pld:PersonReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:PersonReference" xlink:show="new" xlink:title="#pld:PersonReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="180" x="6" y="902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="22.5" y="919.9951">pld:PersonReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="7" x2="185" y1="928.2969" y2="928.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="12" y="942.5073">rdf:type  [1..*]  = foaf:Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="12" y="955.312">rdfs:label  [0..1] uniqueLang</text></a><!--class pld:ParticipationRoleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ParticipationRoleReference" xlink:show="new" xlink:title="#pld:ParticipationRoleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="239" x="281.5" y="902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="213" x="294.5" y="919.9951">pld:ParticipationRoleReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="282.5" x2="519.5" y1="928.2969" y2="928.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="287.5" y="942.5073">rdf:type  [1..*]  = eli-dl:ParticipationRole</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="287.5" y="955.312">skos:prefLabel uniqueLang</text></a><!--class pld:DocumentSubmission--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:DocumentSubmission" xlink:show="new" xlink:title="#pld:DocumentSubmission" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="85.5156" style="stroke: #00008B; stroke-width: 1.5;" width="218" x="576" y="564"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="595.5" y="581.9951">pld:DocumentSubmission</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="577" x2="793" y1="590.2969" y2="590.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194" x="582" y="604.5073">eli-dl:activity_date  : xsd:dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="582" y="617.312">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="582" y="630.1167">eli-dl:created_a_realization_of  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="582" y="642.9214">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class pld:ActivityTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ActivityTypeReference" xlink:show="new" xlink:title="#pld:ActivityTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="211" x="330.5" y="746"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="346.5" y="763.9951">pld:ActivityTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="331.5" x2="540.5" y1="772.2969" y2="772.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="199" x="336.5" y="786.5073">rdf:type  [1..*]  = eli-dl:ActivityType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="336.5" y="799.312">skos:prefLabel uniqueLang</text></a><!--class pld:AgentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:AgentReference" xlink:show="new" xlink:title="#pld:AgentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="26.2969" style="stroke: #A9A9A9; stroke-width: 1.5;" width="145" x="1664.5" y="89"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1667.5" y="106.9951">pld:AgentReference</text></a><!--class pld:Amendment--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Amendment" xlink:show="new" xlink:title="#pld:Amendment" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="213.5625" style="stroke: #FFA500; stroke-width: 1.5;" width="269" x="931.5" y="273"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111" x="1010.5" y="290.9951">pld:Amendment</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="932.5" x2="1199.5" y1="299.2969" y2="299.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="937.5" y="313.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="937.5" y="326.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="937.5" y="339.1167">eli:amends  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="937.5" y="351.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="937.5" y="364.7261">eli:work_type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="937.5" y="377.5308">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="937.5" y="390.3354">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="937.5" y="403.1401">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="257" x="937.5" y="415.9448">epvoc:itemNumberBegin  : xsd:integer  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="937.5" y="428.7495">epvoc:itemNumberEnd  : xsd:integer  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="937.5" y="441.5542">epvoc:numbering  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="937.5" y="454.3589">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="937.5" y="467.1636">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="937.5" y="479.9683">skos:notation  : epvoc:publicRegister</text></a><polygon fill="#FEFECE" filter="url(#f7zx5g8)" points="972,764,984,776,972,788,960,776,972,764" style="stroke: #A80036; stroke-width: 1.5;"/><!--class pld:ParliamentaryTermReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ParliamentaryTermReference" xlink:show="new" xlink:title="#pld:ParliamentaryTermReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="254" x="1317" y="577"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="226" x="1331" y="594.9951">pld:ParliamentaryTermReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1318" x2="1570" y1="603.2969" y2="603.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="1323" y="617.5073">rdf:type  [1..*]  = eli-dl:ParliamentaryTerm</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="190" x="1323" y="630.312">skos:prefLabel  [1..*] uniqueLang</text></a><!--class pld:ConceptReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ConceptReference" xlink:show="new" xlink:title="#pld:ConceptReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="47.1016" style="stroke: #A9A9A9; stroke-width: 1.5;" width="191" x="1861.5" y="356.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="1878.5" y="374.4951">pld:ConceptReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1862.5" x2="2051.5" y1="382.7969" y2="382.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179" x="1867.5" y="397.0073">rdf:type  [1..*]  = skos:Concept</text></a><!--class pld:Erratum--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Erratum" xlink:show="new" xlink:title="#pld:Erratum" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="187.9531" style="stroke: #FFA500; stroke-width: 1.5;" width="280" x="1546" y="286"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="1646" y="303.9951">pld:Erratum</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="1547" x2="1825" y1="312.2969" y2="312.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1552" y="326.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="1552" y="339.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="1552" y="352.1167">eli:corrects  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="1552" y="364.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="1552" y="377.7261">eli:work_type  [1..1]  = resource-type:ERRATUM</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="1552" y="390.5308">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="1552" y="403.3354">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="1552" y="416.1401">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="1552" y="428.9448">epvoc:numbering  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1552" y="441.7495">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1552" y="454.5542">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="1552" y="467.3589">skos:notation  : epvoc:publicRegister</text></a><!--class pld:PlenaryDocument--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:PlenaryDocument" xlink:show="new" xlink:title="#pld:PlenaryDocument" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f7zx5g8)" height="187.9531" style="stroke: #FFA500; stroke-width: 1.5;" width="262" x="1367" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="1423.5" y="25.9951">pld:PlenaryDocument</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="1368" x2="1628" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1373" y="48.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="1373" y="61.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="1373" y="74.1167">eli:based_on</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="1373" y="86.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="1373" y="99.7261">eli:is_derivative_of</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="1373" y="112.5308">eli:work_type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="1373" y="125.3354">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="1373" y="138.1401">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="1373" y="150.9448">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1373" y="163.7495">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1373" y="176.5542">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="1373" y="189.3589">skos:notation  : epvoc:publicRegister</text></a><polygon fill="#FEFECE" filter="url(#f7zx5g8)" points="283,764,295,776,283,788,271,776,283,764" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M1921,825.3594 C1921,848.4006 1921,875.314 1921,896.3388 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1921,901.5513,1925,892.5513,1921,896.5513,1917,892.5513,1921,901.5513" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="1922" y="868.0669">dcterms:format [1..1]</text><path d="M1906.9057,643.6705 C1909.3388,666.5143 1912.5125,696.3119 1915.2321,721.8463 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1915.7697,726.893,1918.7937,717.5199,1915.24,721.9211,1910.8387,718.3674,1915.7697,726.893" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="1913" y="693.0669">eli:is_embodied_by</text><path d="M669.1579,799.8315 C657.089,821.2507 645.2878,852.2849 663,872 C692.4331,904.7613 958.2164,921.1511 1112.4573,927.9697 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1117.8965,928.2082,1109.0805,923.8176,1112.9013,927.9891,1108.7298,931.8099,1117.8965,928.2082" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="257" x="664" y="868.0669">eli-dl:had_participant_organization [0..1]</text><path d="M768.5559,799.527 C815.5414,813.7108 874.8545,833.2222 926,855 C940.8173,861.3092 942.9047,866.3885 958,872 C1007.6217,890.4461 1064.6825,904.2752 1113.0311,913.9792 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1117.9809,914.9644,1109.935,909.2843,1113.0771,913.9882,1108.3732,917.1303,1117.9809,914.9644" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="232" x="959" y="868.0669">eli-dl:participation_in_name_of [0..1]</text><path d="M634.9158,799.5552 C612.2372,809.1467 584.7822,819.2998 559,825 C508.3385,836.2008 128.4901,817.1516 93,855 C82.7231,865.9598 82.0403,882.1222 84.5117,896.8134 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="85.4615,901.7296,87.6815,892.1342,84.5129,896.8204,79.8267,893.6519,85.4615,901.7296" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="94" y="868.0669">eli-dl:had_participant_person [0..1]</text><path d="M628.7779,799.6099 C607.1762,808.2186 582.1497,817.6372 559,825 C506.6112,841.6624 481.7929,820.4892 439,855 C425.8639,865.5937 416.9148,881.875 411.0184,896.7423 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="409.1341,901.7197,416.0614,894.7188,410.9043,897.0436,408.5796,891.8865,409.1341,901.7197" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="182" x="440" y="868.0669">eli-dl:participation_role [1..1]</text><path d="M575.8331,633.7462 C546.3943,644.6502 516.0675,659.639 492,680 C472.7712,696.2675 458.592,720.9054 449.3123,741.1479 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="447.1748,745.9251,454.5018,739.3437,449.2169,741.3611,447.1995,736.0763,447.1748,745.9251" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="493" y="693.0669">eli-dl:had_activity_type [1..1]</text><path d="M685,650.0831 C685,680.5215 685,720.4854 685,747.1449 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="685,752.2927,689,743.2927,685,747.2927,681,743.2927,685,752.2927" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="144" x="686" y="693.0669">eli-dl:had_participation</text><path d="M931.4941,472.5955 C921.0726,477.9294 910.5122,482.8141 900,487 C832.7827,513.7657 799.5577,475.9215 740,517 C724.8437,527.4537 713.1086,543.5793 704.4454,559.3088 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="702.083,563.7298,709.8524,557.677,704.4394,559.3199,702.7966,553.9068,702.083,563.7298" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="741" y="530.0669">^created_a_realization_of [1..*]</text><path d="M1004.679,487.134 C1000.5589,497.0291 996.9016,507.0706 994,517 C968.1367,605.5052 969.544,717.7236 971.1659,759.4203 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="971.3832,764.6016,975.0025,755.4419,971.1736,759.606,967.0095,755.7772,971.3832,764.6016" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="983" y="611.5669">dcterms:creator</text><path d="M983.6826,776.4374 C1021.0084,778.4824 1138.5275,790.034 1200,855 C1211.849,867.5224 1217.3809,885.9793 1219.9354,901.6838 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M963.0956,779.4709 C939.0199,788.6875 870.4397,813.8323 811,825 C638.402,857.4283 590.4933,827.7647 417,855 C338.1612,867.3763 250.1141,889.071 186.2028,906.2849 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M1039.8312,487.1231 C1040.2393,503.4531 1043.4061,519.6314 1051,534 C1062.0593,554.9258 1079.6659,545.9705 1095,564 C1187.4904,672.7482 1200.041,715.6365 1231,855 C1233.9889,868.4549 1233.1464,883.4668 1231.0595,896.6368 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1230.1687,901.7763,1235.6471,893.5917,1231.0227,896.8498,1227.7647,892.2254,1230.1687,901.7763" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1186" y="693.0669">dcterms:publisher [0..1]</text><path d="M1049.114,487.3859 C1051.3241,504.4282 1056.9386,520.7683 1068,534 C1090.5021,560.9169 1188.5588,557.3164 1223,564 C1251.7466,569.5785 1282.5944,575.5745 1311.8519,581.2659 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1316.913,582.2504,1308.8425,576.6053,1312.005,581.2955,1307.3148,584.458,1316.913,582.2504" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="1069" y="530.0669">eli-dl:parliamentary_term [0..1]</text><path d="M1200.5987,453.0165 C1222.677,464.5994 1245.3972,476.2839 1267,487 C1311.7153,509.1811 1321.0802,520.0305 1369,534 C1463.7392,561.6181 1491.226,550.6389 1589,564 C1656.7399,573.2569 1732.6967,583.658 1792.9349,591.9118 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1797.9774,592.6027,1789.6038,587.4178,1793.0237,591.9238,1788.5177,595.3437,1797.9774,592.6027" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="1370" y="530.0669">eli:is_realized_by</text><path d="M1711.7961,474.0943 C1713.3228,494.3836 1711.6854,515.3315 1704,534 C1627.7006,719.3368 1410.62,844.4052 1295.6026,899.7012 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1290.8792,901.9604,1300.7242,901.6856,1295.3898,899.803,1297.2724,894.4686,1290.8792,901.9604" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1605" y="693.0669">dcterms:publisher [0..1]</text><path d="M1545.9985,472.9925 C1529.2923,486.7964 1513.1658,501.5955 1499,517 C1483.9168,533.4021 1470.7458,554.5465 1461.077,572.2187 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1458.6953,576.6318,1466.4898,570.6114,1461.07,572.2317,1459.4497,566.8119,1458.6953,576.6318" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="1500" y="530.0669">eli-dl:parliamentary_term [0..1]</text><path d="M1776.1423,474.2964 C1806.997,506.5729 1839.8915,540.9833 1864.451,566.6745 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1868.0128,570.4005,1864.685,561.1309,1864.5577,566.7863,1858.9023,566.659,1868.0128,570.4005" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="1833" y="530.0669">eli:is_realized_by</text><path d="M1366.6747,148.5866 C1318.1605,168.7667 1264.063,194.9427 1219,226 C1200.6803,238.6259 1182.6734,253.6182 1165.8094,269.214 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1162.003,272.7622,1171.3138,269.5514,1165.6604,269.3529,1165.8589,263.6995,1162.003,272.7622" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="1220" y="239.0669">^amends</text><path d="M1561.6482,196.1181 C1580.2533,223.6299 1600.6354,253.7694 1619.4172,281.5425 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1622.4173,285.9788,1620.689,276.2828,1619.6163,281.837,1614.0621,280.7643,1622.4173,285.9788" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="1593" y="239.0669">^corrects</text><path d="M1366.7594,111.6365 C1164.6426,129.4237 791.6068,174.9301 707,273 C638.1421,352.815 655.821,487.216 671.9727,558.7719 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="673.1318,563.8137,675.0136,554.1463,672.0115,558.9408,667.217,555.9388,673.1318,563.8137" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="205" x="708" y="384.5669">^created_a_realization_of [1..1]</text><path d="M1366.6775,113.0982 C1156.1665,133.3535 755.9479,182.7719 649,273 C462.7321,430.1476 320.4653,701.0789 289.3564,763.0982 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="286.9978,767.8262,294.5948,761.5584,289.2299,763.3521,287.4362,757.9871,286.9978,767.8262" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="434" y="530.0669">dcterms:creator</text><path d="M285.8913,785.3957 C289.951,796.8482 298.5138,815.8078 313,825 C364.5326,857.6999 526.0736,843.4363 586,855 C613.6345,860.3325 619.351,866.7433 647,872 C809.94,902.9788 1002.1131,918.9643 1117.885,926.4049 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M272.8321,778.0027 C232.6883,786.1344 86.1325,818.0185 60,855 C49.8658,869.3415 56.9321,886.988 67.3976,901.768 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M1629.1666,189.3109 C1635.0871,191.7902 1641.0443,194.0395 1647,196 C1927.3149,288.2762 2285,84.8876 2285,380 C2285,380 2285,380 2285,776 C2285,881.0545 2170.9307,846.5722 2069,872 C1999.2736,889.3941 1544.3606,915.1007 1331.5006,926.3651 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1326.2068,926.6449,1335.4054,930.1641,1331.1998,926.3809,1334.983,922.1753,1326.2068,926.6449" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="2286" y="611.5669">dcterms:publisher [0..1]</text><path d="M1379.0202,196.3773 C1358.226,219.0633 1339.5733,244.9434 1328,273 C1291.7314,360.9245 1271.8941,410.1999 1328,487 C1353.8693,522.411 1392.0817,484.9367 1422,517 C1435.6416,531.6197 1441.2223,553.2631 1443.354,571.6616 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1443.8676,576.7563,1446.9443,567.4004,1443.3659,571.7815,1438.9847,568.2031,1443.8676,576.7563" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="1329" y="384.5669">eli-dl:parliamentary_term [1..1]</text><path d="M1629.2482,186.6594 C1635.1956,189.9056 1641.1303,193.0353 1647,196 C1730.9102,238.3818 1764.6221,222.6384 1844,273 C1878.721,295.0288 1912.0972,328.6835 1933.4556,352.3546 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1937.0397,356.3584,1934.0171,346.9848,1933.7048,352.633,1928.0565,352.3207,1937.0397,356.3584" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1783" y="239.0669">eli:is_about</text><path d="M1629.334,188.8285 C1635.2084,191.4406 1641.1103,193.8495 1647,196 C1826.498,261.5411 1950.8514,123.6053 2070,273 C2129.3039,347.3584 2113.4015,402.3689 2070,487 C2052.3757,521.3665 2019.8253,548.1166 1988.1108,567.5504 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1983.4395,570.3647,1993.2128,569.1467,1987.7224,567.7846,1989.0845,562.2942,1983.4395,570.3647" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="2109" y="384.5669">eli:is_realized_by</text></g></svg></div>
-            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/hLXHJ-Gs47xdLxZSsqaWeEt3fRsJWAEqqd6WlMrFLLKYRpAxM3XswZZ0tg_lE9jadSHE7DgttMI-cMzcxC_Z58zCv5JHZ2IS5iKlKkWlx1kGqnyElajXpGIGJxzT_xgyNPn_lhuwAFRcCikb03JNMmwapFYPzVPPqVm6Ye9ku2jBzGCvFJcnNfyh9Pyl9PUAlBcXIafnS6d2ayESfz4D5MmDXQQQIN58td1a4Lqh0F7JWSlWwEX33OIKqUKsXrjrzQAHsmBMe40aS4WYaYOQL5P4QwaogibVfyV7ftyJfyUzCIkA4bA2JrwAD4gfXYNBW3He7nmuGsWCBv3bdAqPfF5gkqEz7KTb9eTOOnBJGV8dcKIhhOQgPJL7BiK6eIUZK9MkeswCzrNqZY6YhQvSlUGAEsgrv8ANK7V4VhblXwygsKgckv8CqJihpJIlCZ94EHMRBrgnAgzE1Jt0c7Bidi2uJqudBh2l8dkhRZdkgD8iONbdaLvmcZpM9UaPj5MvLHkioxVgSMTzOhIZb4SFD8tp1YjqB2txfgtZ4Uv05M6-yyeopEiKxzp6nKp4WcOGotKWP_lvGdAO3g7GghkBUywzJJM-EhRTrdwKIPaPPIjN6Uki-8zKFLghtcNOagK9BZ-cjx4HZQ60pF70MW4gh6smtzwZNX8563IDQOm_UDr0qvS09srxpcigHbnz2wkbMrMyqvXHtuEkkHQhUJUMx4Yd6-xT9dioslSP3vnjtMTlzjseRrrHbzNh2J_5eomYr9dr9xe2Jah1_YdX4wsqokQywPvfVRAsAPOeDMLgh6uLkciMhlMsROExhlVUvLDdF71epiw8fVZRd7lAkt9__a3mfCkaIEEx7xztyx8Cx4EvuYJLWVMQ71-JCPros_QLqbyTh_erdF9onLdnW0btzAvNc9rjuEdcue6RXMCc-92gxHAzUNHoRnIRc2Eap25dRDEYFpKCp8nwnMczJgPc8XVxuNcDuy1kNLdZm23kirIFpf6eQrcDGv1_BhELOzsT10B_m3LH7GapyVib_oVG-U6PXcn7u08sh0tFX8QDoMQ6WokHpeUB2bfn3MRkcvc-OhzyW08NlD6uy2YLE0hPpAGDuMh39GiiLg5DXhRwNKhS4BcUqlMXcLlIAmQrSMyeLehgCdEARFikL16xgFyiFPtuiuHdoE5_aHsBa5abYLGA4ZsGdPxPBD4PCW-Jd5vCX-2y9-X6bYg18_CYkbeipfU_txX8pz0XBon8XGReEHeq00SgW8KBsVzTyw3TRq5UiVV7FW8uLM3ygu5B3vhjD42sz-rHbxrfpxyTVNEWHn6SsNdLmvKOtZKxW2OVhvF0mNLCFfoin_LcPEmU00a9yTXloKG3ncwhldn6hhVZ-NI1X8Hu3ErB_qk1c_pmUuAByLhITMtRadGYMn6ejxsN7GU1pMek9iv3Tc2plxBQCyJzRiATmbZASzySJrEOrzoRzbyi-cvVStiwUpV6qJ8RlKETlGk_GzcsxZkKlrwl7MUSfPerrlWvlNgycUYbEGnNjC1bOEq9jzciCSUVYMkahOSUkfAb7kM0HYbE04_LXzFg4z7aXWcQhZpXlDSwb_sCeMeI7ZHSURtC6R8SJaA69ZSiQ7XoG4E7g0VCZ2HC9HnslpFG3n9Li_e3MQwt-CWKiFWN"
+            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="944px" preserveAspectRatio="none" style="width:2162px;height:944px;" version="1.1" viewBox="0 0 2162 944" width="2162px" zoomAndPan="magnify"><defs><filter height="300%" id="fd9i0zd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class pld:WorkTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:WorkTypeReference" xlink:show="new" xlink:title="#pld:WorkTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="26.2969" style="stroke: #A9A9A9; stroke-width: 1.5;" width="173" x="502.5" y="568"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="505.5" y="585.9951">pld:WorkTypeReference</text></a><!--class pld:ParticipationRoleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ParticipationRoleReference" xlink:show="new" xlink:title="#pld:ParticipationRoleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="239" x="1472.5" y="876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="213" x="1485.5" y="893.9951">pld:ParticipationRoleReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1473.5" x2="1710.5" y1="902.2969" y2="902.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="1478.5" y="916.5073">rdf:type  [1..*]  = eli-dl:ParticipationRole</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="1478.5" y="929.312">skos:prefLabel uniqueLang</text></a><!--class pld:MediaTypeOrExtentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:MediaTypeOrExtentReference" xlink:show="new" xlink:title="#pld:MediaTypeOrExtentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="296" x="1857" y="876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="233" x="1888.5" y="893.9951">pld:MediaTypeOrExtentReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1858" x2="2152" y1="902.2969" y2="902.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="1863" y="916.5073">rdf:type  [1..*]  = dcterms:MediaTypeOrExtent</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1863" y="929.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class pld:OrganizationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:OrganizationReference" xlink:show="new" xlink:title="#pld:OrganizationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="208" x="707" y="876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="718.5" y="893.9951">pld:OrganizationReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="708" x2="914" y1="902.2969" y2="902.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="713" y="916.5073">rdf:type  [1..*]  = org:Organization</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="713" y="929.312">skos:prefLabel uniqueLang</text></a><!--class pld:PersonReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:PersonReference" xlink:show="new" xlink:title="#pld:PersonReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="180" x="6" y="876"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="22.5" y="893.9951">pld:PersonReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="7" x2="185" y1="902.2969" y2="902.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="12" y="916.5073">rdf:type  [1..*]  = foaf:Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161" x="12" y="929.312">rdfs:label  [0..1] uniqueLang</text></a><!--class pld:ParliamentaryTermReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ParliamentaryTermReference" xlink:show="new" xlink:title="#pld:ParliamentaryTermReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="254" x="782" y="551"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="226" x="796" y="568.9951">pld:ParliamentaryTermReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="783" x2="1035" y1="577.2969" y2="577.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242" x="788" y="591.5073">rdf:type  [1..*]  = eli-dl:ParliamentaryTerm</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="190" x="788" y="604.312">skos:prefLabel  [1..*] uniqueLang</text></a><!--class pld:Manifestation--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Manifestation" xlink:show="new" xlink:title="#pld:Manifestation" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="98.3203" style="stroke: #008000; stroke-width: 1.5;" width="232" x="1889" y="701"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="118" x="1946" y="718.9951">pld:Manifestation</text><line style="stroke: #008000; stroke-width: 1.5;" x1="1890" x2="2120" y1="727.2969" y2="727.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="1895" y="741.5073">dcterms:issued  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="154" x="1895" y="754.312">eli:is_exemplified_by  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="120" x="1895" y="767.1167">eli:media_type  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="186" x="1895" y="779.9214">epvoc:byteSize  : xsd:long  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1895" y="792.7261">rdf:type  [1..1]  = eli:Manifestation</text></a><!--class pld:Expression--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Expression" xlink:show="new" xlink:title="#pld:Expression" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="72.7109" style="stroke: #0000FF; stroke-width: 1.5;" width="210" x="1879" y="544.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="102" x="1933" y="562.4951">pld:Expression</text><line style="stroke: #0000FF; stroke-width: 1.5;" x1="1880" x2="2088" y1="570.7969" y2="570.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="1885" y="585.0073">eli:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198" x="1885" y="597.812">eli:title_alternative  : rdf:langString</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="1885" y="610.6167">rdf:type  [1..1]  = eli:Expression</text></a><!--class pld:Participation--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Participation" xlink:show="new" xlink:title="#pld:Participation" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="47.1016" style="stroke: #000000; stroke-width: 1.5;" width="216" x="1484" y="726.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="1537" y="744.4951">pld:Participation</text><line style="stroke: #000000; stroke-width: 1.5;" x1="1485" x2="1699" y1="752.7969" y2="752.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="204" x="1490" y="767.0073">rdf:type  [1..1]  = eli-dl:Participation</text></a><!--class pld:DocumentSubmission--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:DocumentSubmission" xlink:show="new" xlink:title="#pld:DocumentSubmission" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="85.5156" style="stroke: #00008B; stroke-width: 1.5;" width="218" x="1466" y="538"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="1485.5" y="555.9951">pld:DocumentSubmission</text><line style="stroke: #00008B; stroke-width: 1.5;" x1="1467" x2="1683" y1="564.2969" y2="564.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194" x="1472" y="578.5073">eli-dl:activity_date  : xsd:dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="197" x="1472" y="591.312">eli-dl:activity_id  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="1472" y="604.1167">eli-dl:created_a_realization_of  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="173" x="1472" y="616.9214">rdf:type  [1..1]  = eli-dl:Activity</text></a><!--class pld:ActivityTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ActivityTypeReference" xlink:show="new" xlink:title="#pld:ActivityTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="59.9063" style="stroke: #A9A9A9; stroke-width: 1.5;" width="211" x="1237.5" y="720"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="179" x="1253.5" y="737.9951">pld:ActivityTypeReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1238.5" x2="1447.5" y1="746.2969" y2="746.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="199" x="1243.5" y="760.5073">rdf:type  [1..*]  = eli-dl:ActivityType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153" x="1243.5" y="773.312">skos:prefLabel uniqueLang</text></a><!--class pld:AgentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:AgentReference" xlink:show="new" xlink:title="#pld:AgentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="26.2969" style="stroke: #A9A9A9; stroke-width: 1.5;" width="145" x="1055.5" y="82.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1058.5" y="100.4951">pld:AgentReference</text></a><!--class pld:Amendment--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Amendment" xlink:show="new" xlink:title="#pld:Amendment" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="200.7578" style="stroke: #FFA500; stroke-width: 1.5;" width="269" x="1628.5" y="260"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111" x="1707.5" y="277.9951">pld:Amendment</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="1629.5" x2="1896.5" y1="286.2969" y2="286.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1634.5" y="300.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="1634.5" y="313.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="1634.5" y="326.1167">eli:amends  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="1634.5" y="338.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="1634.5" y="351.7261">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="1634.5" y="364.5308">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="1634.5" y="377.3354">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="257" x="1634.5" y="390.1401">epvoc:itemNumberBegin  : xsd:integer  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="1634.5" y="402.9448">epvoc:itemNumberEnd  : xsd:integer  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="1634.5" y="415.7495">epvoc:numbering  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1634.5" y="428.5542">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="1634.5" y="441.3589">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="1634.5" y="454.1636">skos:notation  : epvoc:publicRegister</text></a><polygon fill="#FEFECE" filter="url(#fd9i0zd)" points="811,738,823,750,811,762,799,750,811,738" style="stroke: #A80036; stroke-width: 1.5;"/><!--class pld:ConceptReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:ConceptReference" xlink:show="new" xlink:title="#pld:ConceptReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="47.1016" style="stroke: #A9A9A9; stroke-width: 1.5;" width="191" x="1402.5" y="337"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="157" x="1419.5" y="354.9951">pld:ConceptReference</text><line style="stroke: #A9A9A9; stroke-width: 1.5;" x1="1403.5" x2="1592.5" y1="363.2969" y2="363.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179" x="1408.5" y="377.5073">rdf:type  [1..*]  = skos:Concept</text></a><!--class pld:Erratum--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:Erratum" xlink:show="new" xlink:title="#pld:Erratum" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="175.1484" style="stroke: #FFA500; stroke-width: 1.5;" width="262" x="557" y="273"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="648" y="290.9951">pld:Erratum</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="558" x2="818" y1="299.2969" y2="299.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="563" y="313.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="563" y="326.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="563" y="339.1167">eli:corrects  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="563" y="351.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="563" y="364.7261">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="563" y="377.5308">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="563" y="390.3354">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="563" y="403.1401">epvoc:numbering  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="563" y="415.9448">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="563" y="428.7495">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="563" y="441.5542">skos:notation  : epvoc:publicRegister</text></a><!--class pld:PlenaryDocument--><a target="_top" xlink:actuate="onRequest" xlink:href="#pld:PlenaryDocument" xlink:show="new" xlink:title="#pld:PlenaryDocument" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fd9i0zd)" height="175.1484" style="stroke: #FFA500; stroke-width: 1.5;" width="262" x="758" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="814.5" y="25.9951">pld:PlenaryDocument</text><line style="stroke: #FFA500; stroke-width: 1.5;" x1="759" x2="1019" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="764" y="48.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="764" y="61.312">dcterms:title  : rdf:langString  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="764" y="74.1167">eli:based_on</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235" x="764" y="86.9214">eli:date_document  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105" x="764" y="99.7261">eli:is_derivative_of</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="207" x="764" y="112.5308">epvoc:epNumber  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="764" y="125.3354">epvoc:epNumberVersion  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="224" x="764" y="138.1401">epvoc:identifierYear  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="764" y="150.9448">rdf:type  [1..1]  = eli:Work</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="764" y="163.7495">rdfs:label  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="210" x="764" y="176.5542">skos:notation  : epvoc:publicRegister</text></a><polygon fill="#FEFECE" filter="url(#fd9i0zd)" points="184,738,196,750,184,762,172,750,184,738" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M2005,799.3594 C2005,822.4006 2005,849.314 2005,870.3388 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2005,875.5513,2009,866.5513,2005,870.5513,2001,866.5513,2005,875.5513" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="2006" y="842.0669">dcterms:format [1..1]</text><path d="M1988.5567,617.6705 C1991.3953,640.5143 1995.0979,670.3119 1998.2708,695.8463 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1998.8979,700.893,2001.7575,691.4684,1998.2813,695.9312,1993.8186,692.455,1998.8979,700.893" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="1996" y="667.0669">eli:is_embodied_by</text><path d="M1541.9256,773.5994 C1519.2488,783.1993 1491.7925,793.3467 1466,799 C1251.1406,846.094 1184.9369,773.861 972,829 C934.6922,838.6607 895.6306,857.1111 865.3268,873.5293 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="860.9205,875.9356,870.7366,875.1324,865.3087,873.5391,866.9021,868.1112,860.9205,875.9356" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="257" x="973" y="842.0669">eli-dl:had_participant_organization [0..1]</text><path d="M1537.503,773.5298 C1515.575,782.3793 1489.8699,791.9858 1466,799 C1278.4069,854.1247 1051.712,883.1836 920.1797,896.5117 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="915.1532,897.0181,924.5089,900.0956,920.128,896.5168,923.7068,892.1359,915.1532,897.0181" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="232" x="1345" y="842.0669">eli-dl:participation_in_name_of [0..1]</text><path d="M1542.5855,773.6077 C1519.8046,783.3348 1492.0824,793.5806 1466,799 C1297.9052,833.9269 865.0876,814.6896 694,829 C515.7977,843.9055 309.13,873.2072 191.3458,891.0535 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="186.1521,891.8417,195.6504,894.4459,191.0955,891.0914,194.45,886.5365,186.1521,891.8417" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="222" x="695" y="842.0669">eli-dl:had_participant_person [0..1]</text><path d="M1592,773.693 C1592,799.5573 1592,841.2371 1592,870.9009 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1592,875.9231,1596,866.9231,1592,870.9231,1588,866.9231,1592,875.9231" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="182" x="1593" y="842.0669">eli-dl:participation_role [1..1]</text><path d="M1465.5381,608.93 C1438.5493,619.698 1411.3069,634.3219 1390,654 C1372.3311,670.3182 1360.5059,694.7203 1353.1363,714.8381 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1351.449,719.5875,1358.2311,712.4459,1353.1228,714.876,1350.6927,709.7677,1351.449,719.5875" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="183" x="1391" y="667.0669">eli-dl:had_activity_type [1..1]</text><path d="M1579.3338,624.0831 C1582.3957,654.5215 1586.4157,694.4854 1589.0974,721.1449 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1589.6152,726.2927,1592.6941,716.9375,1589.1146,721.3178,1584.7343,717.7384,1589.6152,726.2927" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="144" x="1586" y="667.0669">eli-dl:had_participation</text><path d="M1628.0869,449.5823 C1602.183,467.9716 1581.8268,483.9092 1578,491 C1571.2549,503.4983 1568.9192,518.4595 1568.7127,532.5619 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1568.7288,537.7125,1572.7005,528.7,1568.7131,532.7125,1564.7005,528.7251,1568.7288,537.7125" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="204" x="1579" y="504.0669">^created_a_realization_of [1..*]</text><path d="M1628.2642,451.3632 C1622.4801,454.6981 1616.7099,457.925 1611,461 C1564.1915,486.2078 1551.8569,492.5065 1501,508 C1432.6257,528.8302 1411.6252,518.0118 1343,538 C1129.416,600.2097 882.7888,715.6215 824.0348,743.7151 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="819.2345,746.0163,829.0793,745.7323,823.7431,743.8547,825.6207,738.5186,819.2345,746.0163" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="1344" y="585.5669">dcterms:creator</text><path d="M811,762.2411 C811,786.5187 811,841.3933 811,875.887 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M799.4264,750.5519 C713.1664,754.7639 172.3896,782.9085 118,829 C104.5295,840.4153 99.0099,859.4549 96.8676,875.7446 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M1783.557,461.1158 C1806.6301,587.0553 1834.6668,792.7475 1784,846 C1769.2637,861.4883 1171.3335,889.9184 920.2433,901.2018 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="915.1082,901.4324,924.2787,905.0244,920.1032,901.208,923.9196,897.0325,915.1082,901.4324" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="1811" y="667.0669">dcterms:publisher [0..1]</text><path d="M1628.4042,454.0785 C1622.6291,456.6204 1616.8167,458.9452 1611,461 C1478.3972,507.843 1434.6864,467.6789 1296,491 C1264.4278,496.3091 1257.1555,500.6298 1226,508 C1165.4498,522.3239 1098.3033,537.8395 1041.4533,550.8682 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1036.3345,552.0409,1046.0005,553.93,1041.2082,550.9243,1044.214,546.1321,1036.3345,552.0409" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="1297" y="504.0669">eli-dl:parliamentary_term [0..1]</text><path d="M1824.0696,461.0678 C1836.4946,477.7306 1850.3037,494.0873 1865,508 C1878.1122,520.413 1893.6701,531.7834 1909.14,541.6668 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1913.4989,544.4146,1908.0188,536.2312,1909.2693,541.7481,1903.7524,542.9986,1913.4989,544.4146" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="1866" y="504.0669">eli:is_realized_by</text><path d="M1628.0841,454.6395 C1622.4204,457.0029 1616.7158,459.1402 1611,461 C1469.9087,506.9078 1090.7801,469.3238 944,491 C929.0536,493.2073 740.5527,541.7637 644.4926,566.6169 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="639.4266,567.9278,649.1417,569.5456,644.2672,566.6752,647.1376,561.8007,639.4266,567.9278" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="945" y="504.0669">eli:work_type [1..1]</text><path d="M641.9608,448.0527 C637.0749,468.4237 636.999,489.5377 647,508 C658.6257,529.4615 678.1976,518.5927 693,538 C713.8198,565.2966 776.7748,784.1734 801.1825,870.8443 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="802.5946,875.8638,804.0077,866.1168,801.2405,871.0507,796.3066,868.2835,802.5946,875.8638" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="744" y="667.0669">dcterms:publisher [0..1]</text><path d="M650.6664,448.2376 C647.2953,469.3882 649.1595,490.8154 662,508 C664.2581,511.022 732.8065,531.1528 797.1106,549.51 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="802.1265,550.9408,794.569,544.6254,797.3183,549.5692,792.3745,552.3185,802.1265,550.9408" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="663" y="504.0669">eli-dl:parliamentary_term [0..1]</text><path d="M815.8581,448.0503 C825.8162,452.9241 835.9217,457.3231 846,461 C940.3606,495.4262 973.2511,464.005 1070,491 C1088.2128,496.0818 1090.5929,503.6745 1109,508 C1365.8948,568.3686 1439.4504,511.41 1702,538 C1758.9209,543.7647 1821.8953,553.0831 1873.8684,561.5739 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1878.8631,562.3929,1870.629,556.9892,1873.929,561.5838,1869.3344,564.8837,1878.8631,562.3929" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="1110" y="504.0669">eli:is_realized_by</text><path d="M556.6323,446.3377 C547.7114,451.4582 538.7804,456.3936 530,461 C499.6644,476.9148 477.9311,462.4493 459,491 C454.8246,497.297 455.1832,501.4794 459,508 C475.8105,536.7194 508.5229,555.0039 536.9258,566.0912 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="541.808,567.9439,534.8126,561.011,537.1333,566.1699,531.9743,568.4906,541.808,567.9439" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="460" y="504.0669">eli:work_type [1..1]</text><path d="M1020.4214,176.6335 C1026.2717,178.9799 1032.1447,181.1199 1038,183 C1178.642,228.1584 1222.754,192.2256 1369,213 C1477.4763,228.4092 1509.5795,218.5461 1611,260 C1615.1935,261.714 1619.3935,263.5508 1623.5861,265.4912 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1628.132,267.6364,1621.6999,260.178,1623.6102,265.5025,1618.2857,267.4128,1628.132,267.6364" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="1515" y="226.0669">^amends</text><path d="M820.748,183.2673 C813.0486,193.2749 805.3378,203.3452 798,213 C784.3426,230.9699 769.8447,250.2564 756.0106,268.7639 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="752.8838,272.9488,761.475,268.133,755.8765,268.9433,755.0662,263.3448,752.8838,272.9488" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="799" y="226.0669">^corrects</text><path d="M1020.2748,170.9884 C1054.3108,195.7146 1088.2961,225.7646 1113,260 C1167.9391,336.1361 1118.2921,388.5432 1178,461 C1191.7264,477.6572 1242.6693,500.7516 1263,508 C1333.207,533.0306 1355.465,520.8468 1428,538 C1438.6589,540.5206 1449.6936,543.3434 1460.7071,546.3058 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1465.7644,547.6761,1458.1238,541.4615,1460.9384,546.3684,1456.0315,549.183,1465.7644,547.6761" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="205" x="1179" y="365.0669">^created_a_realization_of [1..1]</text><path d="M757.781,106.2054 C602.4013,121.3699 355.8377,154.0504 286,213 C122.7413,350.8056 167.7457,661.5465 180.971,734.4737 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="181.9357,739.6819,184.2295,730.1039,181.025,734.7655,176.3633,731.561,181.9357,739.6819" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="169" y="504.0669">dcterms:creator</text><path d="M192.5464,753.4638 C234.5014,770.4643 416.8954,844.3257 423,846 C517.3286,871.8714 627.8206,887.5913 706.716,896.4114 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M175.1763,753.2491 C153.5685,761.7502 98.2245,786.9471 77,829 C69.6793,843.5047 73.1442,860.9976 79.0071,875.6422 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M757.7599,117.8266 C618.4199,144.6551 412.3605,194.3826 369,260 C300.2153,364.0917 338.6878,413.5374 330,538 C327.3385,576.1294 310.9994,590.835 330,624 C409.4403,762.6606 586.4506,839.7568 702.1551,877.0277 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="706.9308,878.5547,699.5765,872.0038,702.1683,877.032,697.1401,879.6238,706.9308,878.5547" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="331" y="585.5669">dcterms:publisher [0..1]</text><path d="M892.6103,183.1392 C897.0658,291.2983 904.4335,470.1483 907.5434,545.6402 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="907.7598,550.8946,911.3859,541.7375,907.5539,545.8988,903.3926,542.0669,907.7598,550.8946" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="199" x="905" y="365.0669">eli-dl:parliamentary_term [1..1]</text><path d="M1020.2828,175.6382 C1026.1954,178.2774 1032.1164,180.7484 1038,183 C1100.6824,206.9877 1120.5295,198.2314 1186,213 C1270.4367,232.0469 1297.609,221.2318 1375,260 C1412.2113,278.6406 1448.298,310.2331 1471.6525,333.0268 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1475.2897,336.6062,1471.6806,327.4425,1471.7259,333.0991,1466.0693,333.1445,1475.2897,336.6062" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="1288" y="226.0669">eli:is_about</text><path d="M1020.3383,176.9003 C1026.2115,179.1732 1032.112,181.225 1038,183 C1225.3127,239.4662 1768.3616,130.4946 1915,260 C1994.9495,330.6084 1994.8863,469.5031 1989.0652,539.1295 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1988.5998,544.4277,1993.3718,535.8121,1989.0372,539.4469,1985.4025,535.1123,1988.5998,544.4277" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="1991" y="365.0669">eli:is_realized_by</text><path d="M757.7904,123.3963 C632.622,152.984 457.3339,203.2297 417,260 C352.6323,350.5981 365.9506,434.1488 449,508 C478.2627,534.0217 518.4628,553.7338 548.2808,566.0751 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="552.974,567.9923,546.155,560.8858,548.3453,566.1015,543.1297,568.2917,552.974,567.9923" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="120" x="418" y="365.0669">eli:work_type [1..1]</text></g></svg></div>
+            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/hLXTJ-Gs57tdLxYxRvKOCRHzs6bt9PQbj18i251NgrM9FF6TmSAnKzi1PdzzxKmoSIQsuz2-3V8zr-T--DmRr2Fb9PQuG3d3IlqkkBwbtm7DVpxuWS2ASa0NVvx_SNTrS_Bv_En0TUQYA0K7Owut351Li6Fdz5dYyXAKmcluGeb-GFEZ8-VuH4hnV2gOaEZj9PP2y8DJUprwKpAo-2BauzscX1jOWGIUmnlqbXacYqzOFfvBsFpgMbzZgMbEIwofu3U2nM2ZW0MIPBNGvdA4lirdin__HkWz0aOF2Hi24Khng1w5MfGILXTu2GnLdFvJmGNcQmDtuhW4Gh4D-qgUlMYJsB4uOW1_72JN80irHBQ1n5tk1T9SmamajrfI6qzpLIZ4Axd6d7xVfcaake2jFp0Xrpr06q_GIM9Dha6gSQe3Ap_9bS2hndRNE5waCZcj4_pjQ3QRXzDfsevHN9WoORcvCvLDwFmWOApp-q2dyoCUznjcf3qkJQrMe7HThZO4Gnzus_5zWyF33oYXRTkkNmbPO5sJC4drUkoCgL8L4DlZBuei2DPmHuicDGOTWfjy6MW6Br2KZAuea6ovwH8QGHKsXgpBV-oIyadaY-L6GotL3KScwXTu58NsQpnlQzmtx5VbxCLKK2cd91zP1Kr5tCEk7A6i54j1jYaPehTMcce64ML1KM26cQaUD_S-UPtumA6CT5Q3HzTfVPSHd3_wnekJbQ0MDM_i0PEiRB5SPyBLiwQiyHiyQXBmNMvLACdh6E_InMMKPzpeGIPMYPoZezDxXRIJj_UAzvm7YpeOultIVX9vPQNijbeMjDVnLaUThlSPxiZYtBGVrPlCYiPGGAPue3i1Kiupw9vtr4ikmLnACfoP7wmfeArBWfDTUKuQAdlhMA-nTdJhZFSA4_Kzg9glMUrPBDX8fLlk_I878lBEos3qaL7fOjeK1_qahY4dw_Www9gQ516RfjRgIXftRUCwfxio-FDw7soV9kA1Gpix5vIOttRkoM3d_lO1cKbN24wowrz-ylDo3DoXN7CIyi0vHhCPYkcKttPVASFP2QfVowcibeog1nDmJ-_s4hErJPnkFXxnHQlJoSueitT6IDaXPss9sjyQ1cPMlJBIzCdOJkHZFvpNPXtOzfMp3lYGdc_1hODdS-1Hd3xtUb62ydDLB3qT6Gcw1_pBT4izB2RYkyVm5V3qwwc6OalW8wpfxdhADQnjD1CSd74o7SvhQCqrcNbecx9b305sdpl9jzIooKMxhRQ4wwUOtvXaAMqZT7NnL9ZUAKU_gOTcVh6l6JJ6U-kob5XNXLT-TsUfMjb7_MTHwjq_IPA67FuNGN88sIx9XPIGwu4WxPbDagCXypGn6kAcIf7BUe8G1M59CZH0Jn6X0JXH0XnSYW3qpPEUlmDvnUE_Pi1D0xQRZlTj3cow7TYLdlljo1p3E7plswuUmxnc4Ui-WVRTlcOTEtuNu-YOHPUoutVfIvbhwr_AmlbwhGfwKpL93SESNgsA8xMqJsY9bMa3vv-7VhD9wXYEn3S96wt4Ir7fA0TZH8nkFDN_YQc_EKSVJ98eX_5JnTb7V898ZyAJn3hePOfeUvoaYB0VbYJ67cYgA3-Oo51EPSvW-xi0_I2CdjP_G56Qp_K2R0BLlm00"
                   target="_blank">View as PNG</a>
             </small>
             <br/>
          </div>
          <div id="prefixes">
             <h2>Namespaces</h2>
-            <table class="table table-striped table-sm" style="width:60%">
+            <table class="prefixes" style="width:60%">
                <thead>
                   <tr>
                      <th>Prefix</th>
@@ -110,55 +246,110 @@
                <tbody>
                   <tr>
                      <td>aut-event</td>
-                     <td>http://publications.europa.eu/resource/authority/event/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/resource/authority/event/"
+                              target="_blank">http://publications.europa.eu/resource/authority/event/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>dc</td>
-                     <td>http://purl.org/dc/elements/1.1/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>dcterms</td>
-                     <td>http://purl.org/dc/terms/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>eli</td>
-                     <td>http://data.europa.eu/eli/ontology#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/ontology#" target="_blank">http://data.europa.eu/eli/ontology#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>eli-dl</td>
-                     <td>http://data.europa.eu/eli/eli-draft-legislation-ontology#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#"
+                              target="_blank">http://data.europa.eu/eli/eli-draft-legislation-ontology#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>epvoc</td>
-                     <td>https://data.europarl.europa.eu/def/epvoc#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="https://data.europarl.europa.eu/def/epvoc#" target="_blank">https://data.europarl.europa.eu/def/epvoc#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>foaf</td>
-                     <td>http://xmlns.com/foaf/0.1/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>org</td>
-                     <td>http://www.w3.org/ns/org#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/org#" target="_blank">http://www.w3.org/ns/org#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdf</td>
-                     <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdfs</td>
-                     <td>http://www.w3.org/2000/01/rdf-schema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>resource-type</td>
-                     <td>http://publications.europa.eu/resource/authority/resource-type/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/resource/authority/resource-type/"
+                              target="_blank">http://publications.europa.eu/resource/authority/resource-type/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>skos</td>
-                     <td>http://www.w3.org/2004/02/skos/core#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>xsd</td>
-                     <td>http://www.w3.org/2001/XMLSchema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>
+                        </span>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -167,10 +358,10 @@
          <div id="pld:PlenaryDocument">
             <h2>Work Plenary document</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -189,11 +380,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>creator</td>
@@ -203,11 +398,15 @@
                         </code>
                      </td>
                      <td>
-                        <a href="#pld:OrganizationReference">pld:OrganizationReference </a>or <a href="# pld:PersonReference"> pld:PersonReference </a>
+                        <a href="#pld:OrganizationReference">pld:OrganizationReference </a>or<a href="# pld:PersonReference"> pld:PersonReference </a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>date document</td>
@@ -217,11 +416,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>descriptor</td>
@@ -234,8 +437,12 @@
                         <a href="#pld:ConceptReference">Reference to a Concept</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>en number version</td>
@@ -245,11 +452,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>ep number</td>
@@ -259,11 +470,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>has realization created by</td>
@@ -274,8 +489,12 @@
                         <a href="#pld:DocumentSubmission">Document Submission Activity</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier</td>
@@ -285,11 +504,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier year</td>
@@ -299,11 +522,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is amended by</td>
@@ -314,8 +541,12 @@
                         <a href="#pld:Amendment">Work Plenary Amendment</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is corrected by</td>
@@ -326,8 +557,12 @@
                         <a href="#pld:Erratum">Work Plenary Erratum</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is derivative of</td>
@@ -337,11 +572,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is realized by</td>
@@ -354,8 +593,12 @@
                         <a href="#pld:Expression">Realized By Expression</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>label</td>
@@ -365,11 +608,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>notation</td>
@@ -379,11 +626,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:publicRegister</span>
+                        <code>epvoc:publicRegister</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>parliamentary term</td>
@@ -396,8 +647,12 @@
                         <a href="#pld:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>publisher</td>
@@ -410,8 +665,12 @@
                         <a href="#pld:OrganizationReference">Reference to an Organization</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>title</td>
@@ -421,11 +680,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -435,11 +698,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:Work</span>
+                        <code>eli:Work</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>work type</td>
@@ -449,14 +716,18 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <a href="#pld:WorkTypeReference">Reference to a Work type</a>
                         <br/>
                         <p>
                            <small>(resource-type:PLENARY_REPORT, resource-type:MOTION_RES, resource-type:JOINT_MOTION_RES, resource-type:QUEST_ORAL_SESSION)</small>
                         </p>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -465,10 +736,10 @@
          <div id="pld:Amendment">
             <h2>Work Plenary Amendment</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -487,11 +758,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>creator</td>
@@ -501,11 +776,15 @@
                         </code>
                      </td>
                      <td>
-                        <a href="#pld:OrganizationReference">pld:OrganizationReference </a>or <a href="# pld:PersonReference"> pld:PersonReference </a>
+                        <a href="#pld:OrganizationReference">pld:OrganizationReference </a>or<a href="# pld:PersonReference"> pld:PersonReference </a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>date document</td>
@@ -515,11 +794,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>ep number</td>
@@ -529,11 +812,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>ep number version</td>
@@ -543,11 +830,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>has realization created by</td>
@@ -558,8 +849,12 @@
                         <a href="#pld:DocumentSubmission">Document Submission Activity</a>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier</td>
@@ -569,11 +864,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier year</td>
@@ -583,11 +882,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is realized by</td>
@@ -600,8 +903,12 @@
                         <a href="#pld:Expression">Realized By Expression</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>item number begin</td>
@@ -611,11 +918,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:integer</span>
+                        <code>xsd:integer</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>item number end</td>
@@ -625,11 +936,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:integer</span>
+                        <code>xsd:integer</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>label</td>
@@ -639,11 +954,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>notation</td>
@@ -653,11 +972,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:publicRegister</span>
+                        <code>epvoc:publicRegister</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>numbering</td>
@@ -667,11 +990,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>parliamentary term</td>
@@ -684,8 +1011,12 @@
                         <a href="#pld:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>publisher</td>
@@ -698,8 +1029,12 @@
                         <a href="#pld:OrganizationReference">Reference to an Organization</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>title</td>
@@ -709,11 +1044,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -723,11 +1062,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:Work</span>
+                        <code>eli:Work</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>work type</td>
@@ -737,14 +1080,18 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <a href="#pld:WorkTypeReference">Reference to a Work type</a>
                         <br/>
                         <p>
                            <small>(resource-type:AMEND_REPORT, resource-type:AMEND_MOTION_RES, resource-type:AMEND_JOINT_MOTION_RES)</small>
                         </p>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -753,10 +1100,10 @@
          <div id="pld:Erratum">
             <h2>Work Plenary Erratum</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -775,11 +1122,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>date document</td>
@@ -789,11 +1140,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>ep number</td>
@@ -803,11 +1158,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>ep number version</td>
@@ -817,11 +1176,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier</td>
@@ -831,11 +1194,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>identifier year</td>
@@ -845,11 +1212,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is realized by</td>
@@ -862,8 +1233,12 @@
                         <a href="#pld:Expression">Realized By Expression</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>label</td>
@@ -873,11 +1248,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>notation</td>
@@ -887,11 +1266,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:publicRegister</span>
+                        <code>epvoc:publicRegister</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>numbering</td>
@@ -901,11 +1284,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>parliamentary term</td>
@@ -918,8 +1305,12 @@
                         <a href="#pld:ParliamentaryTermReference">Reference to a Parliamentary Term</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>publisher</td>
@@ -932,8 +1323,12 @@
                         <a href="#pld:OrganizationReference">Reference to an Organization</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>title</td>
@@ -943,11 +1338,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -957,11 +1356,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:Work</span>
+                        <code>eli:Work</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>work type</td>
@@ -971,11 +1374,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">resource-type:ERRATUM</span>
+                        <a href="#pld:WorkTypeReference">Reference to a Work type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -986,10 +1393,10 @@
             <ul>
                <li>Target Class: <a href="http://data.europa.eu/eli/ontology#Expression">eli:Expression</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1008,11 +1415,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is embodied by</td>
@@ -1025,8 +1436,12 @@
                         <a href="#pld:Manifestation">Is embodied by Manifestation</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>title</td>
@@ -1036,11 +1451,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1050,11 +1469,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:Expression</span>
+                        <code>eli:Expression</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1065,10 +1488,10 @@
             <ul>
                <li>Target Class: <a href="http://data.europa.eu/eli/ontology#Manifestation">eli:Manifestation</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1087,11 +1510,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:long</span>
+                        <code>xsd:long</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>format</td>
@@ -1104,8 +1531,12 @@
                         <a href="#pld:MediaTypeOrExtentReference">Reference to a Media Type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>is exemplified by</td>
@@ -1115,11 +1546,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>issued</td>
@@ -1129,11 +1564,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>media type</td>
@@ -1143,11 +1582,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1157,11 +1600,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli:Manifestation</span>
+                        <code>eli:Manifestation</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1172,10 +1619,10 @@
             <ul>
                <li>Target Class: <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#Activity">eli-dl:Activity</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1194,11 +1641,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity id</td>
@@ -1208,11 +1659,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>activity type</td>
@@ -1225,8 +1680,12 @@
                         <a href="#pld:ActivityTypeReference">Reference to an Activity type</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>create a realization of</td>
@@ -1236,11 +1695,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">IRI</span>
+                        <code>IRI</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>participation</td>
@@ -1253,8 +1716,12 @@
                         <a href="#pld:Participation">Participation</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1264,11 +1731,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:Activity</span>
+                        <code>eli-dl:Activity</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1279,10 +1750,10 @@
             <ul>
                <li>Target Class: <a href="http://data.europa.eu/eli/eli-draft-legislation-ontology#Participation">eli-dl:Participation</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1304,8 +1775,12 @@
                         <a href="#pld:OrganizationReference">Reference to an Organization</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>participation organization</td>
@@ -1318,8 +1793,12 @@
                         <a href="#pld:OrganizationReference">Reference to an Organization</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>participation person</td>
@@ -1332,8 +1811,12 @@
                         <a href="#pld:PersonReference">Reference to a Person</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>participation role</td>
@@ -1346,8 +1829,12 @@
                         <a href="#pld:ParticipationRoleReference">Reference to a Role</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1357,11 +1844,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:Participation</span>
+                        <code>eli-dl:Participation</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1370,12 +1861,14 @@
          <div id="pld:ParliamentaryTermReference">
             <h2>Reference to a Parliamentary Term</h2>
             <ul>
+               <li>Target Class: <a href="https://data.europarl.europa.eu/org/ep-9">https://data.europarl.europa.eu/org/ep-9</a>
+               </li>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/org/ep-[0-9].*$</span>
                </li>
-               <li>Closed shape</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1394,11 +1887,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace"/>
+                        <code/>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1408,11 +1905,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:ParliamentaryTerm</span>
+                        <code>eli-dl:ParliamentaryTerm</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1421,12 +1922,14 @@
          <div id="pld:ActivityTypeReference">
             <h2>Reference to an Activity type</h2>
             <ul>
+               <li>Target Class: <a href="http://publications.europa.eu/resource/authority/event/DOCUMENT_SUBMISSION">aut-event:DOCUMENT_SUBMISSION</a>
+               </li>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^http://publications.europa.eu/resource/authority/event/.*$</span>
                </li>
-               <li>Closed shape</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1445,11 +1948,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace"/>
+                        <code/>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1459,31 +1966,51 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:ActivityType</span>
+                        <code>eli-dl:ActivityType</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
          </div>
          <br/>
+         <div id="pld:WorkTypeReference">
+            <h2>Reference to a Work type</h2>
+            <ul>
+               <li>Target Class: <a href="http://publications.europa.eu/resource/authority/resource-type/PLENARY_REPORT">resource-type:PLENARY_REPORT</a>
+               </li>
+               <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/resource-type/.*$</span>
+               </li>
+            </ul>
+         </div>
+         <br/>
          <div id="pld:AgentReference">
             <h2>Reference to an Agent</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
          </div>
          <br/>
          <div id="pld:MediaTypeOrExtentReference">
             <h2>Reference to a Media Type</h2>
             <ul>
-               <li>Nodes: IRI</li>
+               <li>Target Class: <a href="http://publications.europa.eu/resource/authority/file-type/PDF">op-aut:file-type/PDF</a>
+               </li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/file-type/.*$</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1502,11 +2029,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1516,11 +2047,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">dcterms:MediaTypeOrExtent</span>
+                        <code>dcterms:MediaTypeOrExtent</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1529,10 +2064,14 @@
          <div id="pld:ParticipationRoleReference">
             <h2>Reference to a Role</h2>
             <ul>
-               <li>Nodes: IRI</li>
+               <li>Target Class: <a href="http://publications.europa.eu/resource/authority/role/AUT">op-aut:role/AUT</a>
+               </li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/role/.*$</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1551,11 +2090,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace"/>
+                        <code/>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1565,11 +2108,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">eli-dl:ParticipationRole</span>
+                        <code>eli-dl:ParticipationRole</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1578,10 +2125,14 @@
          <div id="pld:OrganizationReference">
             <h2>Reference to an Organization</h2>
             <ul>
-               <li>Nodes: IRI</li>
+               <li>Target Class: <a href="http://publications.europa.eu/resource/authority/corporate-body/EP">op-aut:corporate-body/EP</a>
+               </li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/corporate-body/.*$</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1600,11 +2151,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace"/>
+                        <code/>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1614,11 +2169,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Organization</span>
+                        <code>org:Organization</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1627,10 +2186,14 @@
          <div id="pld:PersonReference">
             <h2>Reference to a Person</h2>
             <ul>
-               <li>Nodes: IRI</li>
+               <li>Target Class: <a href="https://data.europarl.europa.eu/person/1234">https://data.europarl.europa.eu/person/1234</a>
+               </li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
+               <li>URI: <span class="monospace">^https://data.europarl.europa.eu/person/[0-9].*$</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1649,11 +2212,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace"/>
+                        <code/>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1663,11 +2230,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">foaf:Person</span>
+                        <code>foaf:Person</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1676,10 +2247,10 @@
          <div id="pld:ConceptReference">
             <h2>Reference to a Concept</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1698,11 +2269,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">skos:Concept</span>
+                        <code>skos:Concept</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
