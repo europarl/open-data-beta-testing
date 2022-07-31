@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <html lang="en">
    <head>
-      <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-            crossorigin="anonymous"/>
       <style type="text/css">
 					.anchor {
 						float: left;
@@ -18,24 +13,163 @@
 						font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 						font-size: 87.5%;
 					}
+					
+					
+					.CONTAINER{
+				         width: calc(100% - 40px);
+				         max-width: 1000px;
+				         margin-left: auto;
+				         margin-right: auto;
+				      }
+				
+				      h2 {
+				         margin: 25px 0px 10px 0px;
+				      }
+				
+				      ul{
+				         margin: 0.5em
+				         margin-bottom: 2rem;
+				      }
+				      
+				      a {
+                      color: #007bff;
+                      text-decoration: none;
+                      background-color: transparent;
+	                  }
+	
+	                  a:-webkit-any-link {
+	                      cursor: pointer;                      
+	                  }
+	                  
+				      
+				     
+				     table {
+						    display: table;
+						    border-spacing: 0px;
+							margin-botton: 1rem;
+						}
+						
+						tr:nth-child(even) {
+						    background-color: #eee;
+						}
+						
+						
+						.prefixes table {
+						    border-collapse: collapse;
+						    margin-bottom: 1rem;
+						    color: #212529;
+						}
+						
+						
+						.prefixes td {
+						    padding: 0.25rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						
+						
+						.propertyshapes table {
+						    border-collapse: collapse;
+						}
+			
+			
+						.propertyshapes thead {
+						    display: table-header-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+						
+						
+						.propertyshapes tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						p {
+					      font-size: 0.875em;
+					    }
+						
+						@media only print {
+							
+						}
+						
+						@page {
+								size: A4 portrait;
+								margin-top: 1.2cm;
+								margin-bottom: 1.2cm;
+								margin-left: 1.2cm;
+								margin-right: 1.2cm;
+								background-repeat: no-repeat;
+								background-position: 40px 10px;
+								 @bottom-center {
+								 	content: counter(page);
+								 }
+						}
+						
+						
+						.propertyshapes th:nth-child(4) {
+						    width: 6%;
+						}
+						
+						.propertyshapes td {
+						    padding: 0.75rem;
+						    vertical-align: top;
+						    border-top: 1px solid #dee2e6;
+						}
+						
+						.propertyshapes tbody {
+						    display: table-row-group;
+						    vertical-align: middle;
+						    border-color: inherit;
+						}
+			
+			
+						.propertyshapes tbody tr {
+						    display: table-row;
+						    vertical-align: inherit;
+						    border-color: inherit;
+						}
+						
+						.text-break {
+						    word-break: break-word;
+						}
+						
+						body {
+						         margin: 0;
+						         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+						         background-color: #fff;
+						      }
+				     
+				     			
+					
+					
+					
 				</style>
    </head>
    <body>
-      <div class="container-md">
+      <div class="container">
          <br/>
-         <div class="container">
-            <div class="row row-cols-auto">
-               <div class="col">
-                  <center>
-                     <h1>Meps dataset description</h1>
-                  </center>
-               </div>
-            </div>
-         </div>
+         <table style="width:100%">
+            <tr>
+               <td width="20%">
+                  <img src="https://www.europarl.europa.eu/portal/img/ep-logo.svg"/>
+               </td>
+               <td width="80%">
+                  <div>
+                     <center>
+                        <h1>Meps dataset description</h1>
+                     </center>
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br/>
          <br/>
          <b>Created date: </b>2022-03-24<br/>
          <b>Last updated: </b>2022-06-28T00:00:00.000Z<br/>
-         <b>Copyright date  </b>2022<br/>
+         <b>Copyright date: </b>2022<br/>
          <b>Version: </b>0.3.1<br/>
          <b>License: </b>
          <a href="https://www.europarl.europa.eu/legal-notice/en/" target="_blank">https://www.europarl.europa.eu/legal-notice/en/</a>
@@ -50,7 +184,6 @@
          <br/>
          <br/>
          <hr/>
-         <br/>
          <br/>
          <div>
             <h2>Table of Content</h2>
@@ -98,15 +231,15 @@
          <br/>
          <div id="diagram">
             <h2>Dataset diagram</h2>
-            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="912px" preserveAspectRatio="none" style="width:3203px;height:912px;" version="1.1" viewBox="0 0 3203 912" width="3203px" zoomAndPan="magnify"><defs><filter height="300%" id="f43pi29" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class meps:Voice--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Voice" xlink:show="new" xlink:title="#meps:Voice" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="1006" y="732"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="82" x="1055" y="749.9951">meps:Voice</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1007" x2="1185" y1="758.2969" y2="758.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="1012" y="772.5073">rdf:type  [1..1]  = vcard:Voice</text></a><!--class meps:ResourceReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ResourceReference" xlink:show="new" xlink:title="#meps:ResourceReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="194" x="789" y="856"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="183" x="794.5" y="873.9951">meps:ResourceReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="790" x2="982" y1="882.2969" y2="882.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="182" x="795" y="896.5073">rdf:type  [1..*]  = rdfs:Resource</text></a><!--class meps:Fax--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Fax" xlink:show="new" xlink:title="#meps:Fax" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="169" x="801.5" y="732"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="852.5" y="749.9951">meps:Fax</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="802.5" x2="969.5" y1="758.2969" y2="758.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="807.5" y="772.5073">rdf:type  [1..1]  = vcard:Fax</text></a><!--class meps:Organization--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Organization" xlink:show="new" xlink:title="#meps:Organization" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="965" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="1047.5" y="485.4951">meps:Organization</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="966" x2="1260" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="971" y="508.0073">rdf:type  [1..*]  = org:Organization</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="971" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:CorporateBodyClassificationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:CorporateBodyClassificationReference" xlink:show="new" xlink:title="#meps:CorporateBodyClassificationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="315" x="595.5" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="309" x="598.5" y="628.9951">meps:CorporateBodyClassificationReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="596.5" x2="909.5" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="300" x="601.5" y="651.5073">rdf:type  [1..*]  = euvoc:CorporateBodyClassification</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="601.5" y="664.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:Membership--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Membership" xlink:show="new" xlink:title="#meps:Membership" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="72.7109" style="stroke: #A80036; stroke-width: 1.5;" width="208" x="1009" y="311"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="130" x="1048" y="328.9951">meps:Membership</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1010" x2="1216" y1="337.2969" y2="337.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1015" y="351.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1015" y="364.312">rdf:type  [1..1]  = org:Membership</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="1015" y="377.1167">skos:notation  [1..*]</text></a><!--class meps:ContactPoint--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ContactPoint" xlink:show="new" xlink:title="#meps:ContactPoint" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="238" x="1296" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133" x="1348.5" y="485.4951">meps:ContactPoint</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1297" x2="1533" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="1302" y="508.0073">euvoc:officeAddress  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="211" x="1302" y="520.812">rdf:type  [1..1]  = epvoc:ContactPoint</text></a><!--class meps:CountryReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:CountryReference" xlink:show="new" xlink:title="#meps:CountryReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="1569" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="1632" y="485.4951">meps:CountryReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1570" x2="1864" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="1575" y="508.0073">rdf:type  [1..*]  = euvoc:Country</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1575" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:PeriodOfTimeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:PeriodOfTimeReference" xlink:show="new" xlink:title="#meps:PeriodOfTimeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="72.7109" style="stroke: #A80036; stroke-width: 1.5;" width="224" x="59" y="461"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="209" x="66.5" y="478.9951">meps:PeriodOfTimeReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="60" x2="282" y1="487.2969" y2="487.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="65" y="501.5073">dcat:endDate  : xsd:dateTime  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="212" x="65" y="514.312">dcat:startDate  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="65" y="527.1167">rdf:type  [1..*]  = dct:PeriodOfTime</text></a><!--class meps:RoleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:RoleReference" xlink:show="new" xlink:title="#meps:RoleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="318" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="392.5" y="485.4951">meps:RoleReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="319" x2="613" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="149" x="324" y="508.0073">rdf:type  [1..*]  = org:Role</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="324" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:OnlineAccount--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:OnlineAccount" xlink:show="new" xlink:title="#meps:OnlineAccount" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="221" x="1868.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="1906.5" y="341.9951">meps:OnlineAccount</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1869.5" x2="2088.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="1874.5" y="364.5073">rdf:type  [1..1]  = foaf:OnlineAccount</text></a><!--class meps:AddressTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:AddressTypeReference" xlink:show="new" xlink:title="#meps:AddressTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="259" x="1900.5" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="207" x="1926.5" y="485.4951">meps:AddressTypeReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1901.5" x2="2158.5" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="1906.5" y="508.0073">rdf:type  [1..*]  = euvoc:AddressType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="1906.5" y="520.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class meps:SiteReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:SiteReference" xlink:show="new" xlink:title="#meps:SiteReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="1267" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="1344" y="628.9951">meps:SiteReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1268" x2="1562" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1273" y="651.5073">rdf:type  [1..*]  = org:Site</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1273" y="664.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><polygon fill="#FEFECE" filter="url(#f43pi29)" points="1096,629,1108,641,1096,653,1084,641,1096,629" style="stroke: #A80036; stroke-width: 1.5;"/><!--class meps:DocumentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:DocumentReference" xlink:show="new" xlink:title="#meps:DocumentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="197" x="2124.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189" x="2128.5" y="341.9951">meps:DocumentReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2125.5" x2="2320.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="185" x="2130.5" y="364.5073">rdf:type  [1..*]  = foaf:Document</text></a><!--class meps:GenderReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:GenderReference" xlink:show="new" xlink:title="#meps:GenderReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="2357" y="317.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="2421" y="335.4951">meps:GenderReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2358" x2="2652" y1="343.7969" y2="343.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179" x="2363" y="358.0073">rdf:type  [1..*]  = vcard:Gender</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="2363" y="370.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:HonorificTitleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:HonorificTitleReference" xlink:show="new" xlink:title="#meps:HonorificTitleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="2688" y="317.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="205" x="2733.5" y="335.4951">meps:HonorificTitleReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2689" x2="2983" y1="343.7969" y2="343.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="2694" y="358.0073">rdf:type  [1..*]  = euvoc:HonorificTitle</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="2694" y="370.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:ImageReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ImageReference" xlink:show="new" xlink:title="#meps:ImageReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="175" x="3019.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="3028" y="341.9951">meps:ImageReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="3020.5" x2="3193.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="3025.5" y="364.5073">rdf:type  [1..*]  = foaf:Image</text></a><!--class meps:Person--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Person" xlink:show="new" xlink:title="#meps:Person" xlink:type="simple"><rect fill="#FEFECE" filter="url(#f43pi29)" height="226.3672" style="stroke: #A80036; stroke-width: 1.5;" width="301" x="2011.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="2115.5" y="25.9951">meps:Person</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2012.5" x2="2311.5" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2017.5" y="48.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="2017.5" y="61.312">epvoc:deathDate  : xsd:dateTime  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2017.5" y="74.1167">epvoc:upperFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="2017.5" y="86.9214">epvoc:upperGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="289" x="2017.5" y="99.7261">epvoc:upperOfficialFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="285" x="2017.5" y="112.5308">epvoc:upperOfficialGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254" x="2017.5" y="125.3354">euvoc:officialFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2017.5" y="138.1401">euvoc:officialGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="204" x="2017.5" y="150.9448">foaf:familyName  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="2017.5" y="163.7495">foaf:givenName  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225" x="2017.5" y="176.5542">person:placeOfBirth  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="2017.5" y="189.3589">rdf:type  [1..1]  = foaf:Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="164" x="2017.5" y="202.1636">rdfs:label  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2017.5" y="214.9683">skos:notation  : epvoc:codictPersonId  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="193" x="2017.5" y="227.7729">vcard:bday  : xsd:dateTime  [0..1]</text></a><path d="M1079.2899,779.1743 C1067.547,794.3337 1050.6501,813.446 1032,826 C1015.1744,837.3259 995.6493,846.6119 976.4585,854.08 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="971.5886,855.9396,981.4234,856.4658,976.2596,854.1559,978.5695,848.9922,971.5886,855.9396" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="1053" y="822.0669">vcard:hasValue [1..1]</text><path d="M886,779.1153 C886,799.542 886,829.1333 886,850.8978 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="886,855.9726,890,846.9726,886,850.9726,882,846.9726,886,855.9726" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="887" y="822.0669">vcard:hasValue [1..1]</text><path d="M1037.5322,527.5823 C977.651,551.4516 894.1497,584.7362 833.0938,609.0737 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="828.3684,610.9573,838.2098,611.3402,833.013,609.1058,835.2474,603.9089,828.3684,610.9573" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="143" x="944" y="577.0669">org:classification [1..*]</text><path d="M1196.6547,384.1344 C1217.481,393.5857 1239.6645,403.9379 1260,414 C1292.3757,430.0197 1327.8912,449.0431 1356.7483,464.8832 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1361.321,467.3972,1355.3615,459.556,1356.9395,464.9883,1351.5072,466.5664,1361.321,467.3972" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="200" x="1291" y="427.0669">dcat:contactPointsh:BlankNode</text><path d="M1008.6401,361.8299 C899.5221,379.2034 739.0481,412.3341 702,461 C669.0655,504.2622 701.0106,567.9126 727.0674,606.7885 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="729.8889,610.9372,728.1353,601.2457,727.0771,606.8027,721.5201,605.7445,729.8889,610.9372" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="703" y="502.0669">epvoc:membershipClassification [0..1]</text><path d="M1217.2241,358.4995 C1296.0242,368.4675 1406.2751,385.9681 1500,414 C1518.1156,419.4181 1521.4707,423.911 1539,431 C1568.0548,442.75 1600.0591,454.9375 1628.8223,465.6195 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1633.7805,467.4579,1626.7325,460.5785,1629.0924,465.7196,1623.9513,468.0795,1633.7805,467.4579" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="1540" y="427.0669">euvoc:represents [0..1]</text><path d="M1008.6401,352.4487 C799.7498,362.8426 344.4929,388.1283 278,414 C253.2971,423.6116 229.6434,440.8993 210.8867,457.2611 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="206.7166,460.9538,216.1063,457.9817,210.4599,457.639,210.8026,451.9925,206.7166,460.9538" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="252" x="279" y="427.0669">org:memberDuring [1..1] sh:BlankNode</text><path d="M1112.2534,384.0802 C1112.0361,398.6759 1111.8845,415.633 1112,431 C1112.0761,441.1272 1112.2175,452.1212 1112.3704,462.1992 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1112.4512,467.3764,1116.3103,458.3151,1112.3732,462.377,1108.3113,458.4399,1112.4512,467.3764" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="1113" y="427.0669">org:organization [1..1]</text><path d="M1008.8319,353.3763 C873.6479,362.1753 645.9641,381.3304 569,414 C542.1816,425.3838 516.7055,445.9204 497.7994,463.7774 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="494.1073,467.3096,503.3757,463.9785,497.7203,463.8532,497.8455,458.1978,494.1073,467.3096" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="87" x="570" y="427.0669">org:role [1..1]</text><path d="M1987.0811,371.2679 C1995.4447,395.8668 2008.5971,434.5502 2018.1391,462.6149 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2019.7573,467.3743,2020.6469,457.5657,2018.1476,462.6405,2013.0728,460.1412,2019.7573,467.3743" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="2007" y="427.0669">dct:type [0..1]</text><path d="M1415,527.5823 C1415,550.4471 1415,581.9513 1415,605.9549 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1415,610.9573,1419,601.9573,1415,605.9573,1411,601.9573,1415,610.9573" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="1416" y="577.0669">epvoc:hasSite [0..1]</text><path d="M1348.1271,527.5823 C1270.8448,562.3473 1149.1635,617.0847 1109.1988,635.0626 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1104.3214,637.2567,1114.1702,637.2124,1108.8813,635.2055,1110.8882,629.9166,1104.3214,637.2567" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="1266" y="577.0669">vcard:hasTelephone</text><path d="M1096,653.2535 C1096,671.9454 1096,707.9252 1096,731.8276 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M1088.0242,645.3487 C1062.3266,659.36 980.3923,704.0337 929.1026,731.9988 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M2070.5,234.25 C2044.7593,266.1093 2019.0187,297.9687 2001.4265,319.7426 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1998.2383,323.6886,2007.0058,319.2018,2001.3806,319.7994,2000.783,314.1742,1998.2383,323.6886" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="2044" y="277.0669">foaf:account</text><path d="M2192.5,234.25 C2200.9378,265.5806 2209.3756,296.9111 2215.2303,318.6501 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2216.5872,323.6886,2218.1088,313.958,2215.2868,318.8607,2210.3841,316.0386,2216.5872,323.6886" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="2205" y="277.0669">foaf:homepage</text><path d="M2312.8093,149.5644 C2481.9863,182.8878 2763.8974,242.2656 3002,311 C3013.6004,314.3487 3025.8018,318.2406 3037.6178,322.2102 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3042.6553,323.9149,3035.4126,317.2409,3037.9192,322.312,3032.848,324.8187,3042.6553,323.9149" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="2890" y="277.0669">foaf:img [0..1]</text><path d="M2011.4249,153.5122 C1797.5366,199.6949 1410.8188,283.195 1222.2766,323.905 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1217.3082,324.9778,1226.9498,326.9879,1222.1955,323.9224,1225.2611,319.1681,1217.3082,324.9778" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="127" x="1483" y="277.0669">org:hasMembership</text><path d="M2011.2875,147.6622 C1915.8293,172.8676 1798.5958,220.891 1734,311 C1702.2747,355.2558 1704.784,421.4283 1710.3125,461.8992 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1711.0726,467.1906,1713.7521,457.7133,1710.3616,462.2414,1705.8334,458.8509,1711.0726,467.1906" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="1735" y="352.0669">person:citizenship</text><path d="M2011.2512,128.9244 C1521.4075,155.6595 6,246.5282 6,347.5 C6,347.5 6,347.5 6,755.5 C6,833.275 551.9393,865.4596 783.8045,875.6214 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="788.8852,875.8427,780.0679,871.4546,783.8899,875.625,779.7196,879.447,788.8852,875.8427" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="7" y="577.0669">vcard:hasEmail</text><path d="M2312.9439,220.6758 C2363.8938,254.3205 2417.2991,289.5867 2454.8226,314.3653 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2459.3186,317.3343,2454.0125,309.037,2455.1462,314.5791,2449.6041,315.7128,2459.3186,317.3343" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="2404" y="277.0669">vcard:hasGender [0..1]</text><path d="M2312.8391,171.69 C2444.1811,215.8279 2630.4994,278.4408 2741.7091,315.8132 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2746.6187,317.4631,2739.3619,310.8043,2741.8792,315.8702,2736.8133,318.3875,2746.6187,317.4631" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="2637" y="277.0669">vcard:hasHonorificPrefix</text></g></svg></div>
-            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/fLXTRzmg47tthw2zRv4QPNjlNwosKZwQD5AIZP9LxyDLLH4Ohr5iy0MSPlFhY_6krs3mEjat6-OSpi0mCxPwPBp24fU855YfSy7rFNi1DFidUKSXOnpGrUN5zyNyxlZcubkYjkQYh0G7OwvN1Q2wB3xsPdzBN5s3KdW9_pAgSpGxEkfD7qifVf-AGaZqrpMMGl3aj5aUlI-XKkaFmGYyHudpbY99irIlAa3elzdXuUmdGb_G4y6IjYR80tpuy7NDTmTAr9B07MGWWRTiBJB7wWSkQjXGEZhEyNEdmZwFQJ06o37UV_svN6BENh1cWdT2tC7j8gT2La9Y3IU2hYmBonYnPiwwGYvJuapRjGz-XXVmNJwmBZSaVJiK0wj7eT9AGdQ57w10Qxe2y-MzbemlEzAQi_zhkCBDaBC9rr0-W5Gvgxejw0-bY9AKKHE8nX-GpGhFYgQgnzwSKW3PtpgkCT6tWd7TCcATajwWojCJe_dnHb3OHJNj5A1w4YGjEuvJxqIEscWONwhcMgvSshgXbM1sN9ajKPE8Ra4oGUVPWfKm29LMubbjjtEzczEtmm-7Xb7qusOJzcCaTw8Owf9cS0GTlgaDS6k5ma0RibpeTM1lWjwzcRmmgV6OaEOCjbVJ7TrwS4ofEH2rC78SHoZHhKRtc3oUi2-Pm9bhwMbqepe93MuLtZCDWG0rwQcPyVJvzwMDEf6Py8MrguDxUEJSGvyXv62he6zfu9-_8ifmAJZzTVlfxxXJFICdsIwWW2etXIlfMQ33G-IKdiXaazQTBGwVQp9-wA5yskvW3u5siUnChD64EYr59Q_BPt6dHXZGQrVPlveCasOIpwPZJbbhD8RUN-oP87LfqlXGRM0cBDTcYOsrHty1d88SaW_6mzJjdMgDqGXs_ttuBhYGJKGic2u2DoqwFtQ4BWXDuDhVaSlIDCH3_Vxmo55QKuyrKh-J7TNTTZdckCxClTkaQsgU6yD1mXvdKHfB7U6PJUC9UToKnpvWwBVgDSQRrzTrX5jKMsyeO9rFtH87MLSLo7DSic9rWqlOKG63w0ls1Foju7bJVnakzfEmONc3b6qNy4OL3i5h1VIQJhzziZS7j--3LUra5bSR2nUBMqP5pdQ836PmovaBOs1kUHGwJ1SMnygbrwSDeMwdsxJ3fYVQ3aPneVfMMQkKCCrUW0VWdKbLO0Bpx8H9dK-EXcZFsvg44SgautLkza_Z8BI8r-jlRW8Hb9b-qffTqX5yMmCVA5vDJXTJVmjyAp4hejX0dUsGwvAyAnP6Abr7rTdSchB7dftq6v2VZ3WMIl3sn3RMNdRtllgIoBTWxEz4OuYYgFrBkVV1b4G-esBox5TL5FKsURafUeWmIGfedqlGkQ2gVO6oqYkq_kFm1m00"
+            <div><?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="912px" preserveAspectRatio="none" style="width:3221px;height:912px;" version="1.1" viewBox="0 0 3221 912" width="3221px" zoomAndPan="magnify"><defs><filter height="300%" id="fl2zbbc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class meps:Voice--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Voice" xlink:show="new" xlink:title="#meps:Voice" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="1024" y="732"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="82" x="1073" y="749.9951">meps:Voice</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1025" x2="1203" y1="758.2969" y2="758.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="1030" y="772.5073">rdf:type  [1..1]  = vcard:Voice</text></a><!--class meps:ResourceReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ResourceReference" xlink:show="new" xlink:title="#meps:ResourceReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="194" x="807" y="856"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="183" x="812.5" y="873.9951">meps:ResourceReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="808" x2="1000" y1="882.2969" y2="882.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="182" x="813" y="896.5073">rdf:type  [1..*]  = rdfs:Resource</text></a><!--class meps:Fax--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Fax" xlink:show="new" xlink:title="#meps:Fax" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="169" x="819.5" y="732"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="870.5" y="749.9951">meps:Fax</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="820.5" x2="987.5" y1="758.2969" y2="758.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157" x="825.5" y="772.5073">rdf:type  [1..1]  = vcard:Fax</text></a><!--class meps:Organization--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Organization" xlink:show="new" xlink:title="#meps:Organization" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="983" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="131" x="1065.5" y="485.4951">meps:Organization</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="984" x2="1278" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="989" y="508.0073">rdf:type  [1..*]  = org:Organization</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="989" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:CorporateBodyClassificationReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:CorporateBodyClassificationReference" xlink:show="new" xlink:title="#meps:CorporateBodyClassificationReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="315" x="613.5" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="309" x="616.5" y="628.9951">meps:CorporateBodyClassificationReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="614.5" x2="927.5" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="300" x="619.5" y="651.5073">rdf:type  [1..*]  = euvoc:CorporateBodyClassification</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="619.5" y="664.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:Membership--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Membership" xlink:show="new" xlink:title="#meps:Membership" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="72.7109" style="stroke: #A80036; stroke-width: 1.5;" width="208" x="1027" y="311"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="130" x="1066" y="328.9951">meps:Membership</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1028" x2="1234" y1="337.2969" y2="337.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="1033" y="351.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="196" x="1033" y="364.312">rdf:type  [1..1]  = org:Membership</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114" x="1033" y="377.1167">skos:notation  [1..*]</text></a><!--class meps:ContactPoint--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ContactPoint" xlink:show="new" xlink:title="#meps:ContactPoint" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="238" x="1314" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133" x="1366.5" y="485.4951">meps:ContactPoint</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1315" x2="1551" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="1320" y="508.0073">euvoc:officeAddress  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="211" x="1320" y="520.812">rdf:type  [1..1]  = epvoc:ContactPoint</text></a><!--class meps:CountryReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:CountryReference" xlink:show="new" xlink:title="#meps:CountryReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="1587" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="1650" y="485.4951">meps:CountryReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1588" x2="1882" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="183" x="1593" y="508.0073">rdf:type  [1..*]  = euvoc:Country</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1593" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:PeriodOfTimeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:PeriodOfTimeReference" xlink:show="new" xlink:title="#meps:PeriodOfTimeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="72.7109" style="stroke: #A80036; stroke-width: 1.5;" width="242" x="59" y="461"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="209" x="75.5" y="478.9951">meps:PeriodOfTimeReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="60" x2="300" y1="487.2969" y2="487.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="65" y="501.5073">dcat:endDate  : xsd:dateTime  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="212" x="65" y="514.312">dcat:startDate  : xsd:dateTime  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="230" x="65" y="527.1167">rdf:type  [1..*]  = dcterms:PeriodOfTime</text></a><!--class meps:RoleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:RoleReference" xlink:show="new" xlink:title="#meps:RoleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="336" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="410.5" y="485.4951">meps:RoleReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="337" x2="631" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="149" x="342" y="508.0073">rdf:type  [1..*]  = org:Role</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="342" y="520.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:OnlineAccount--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:OnlineAccount" xlink:show="new" xlink:title="#meps:OnlineAccount" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="221" x="1886.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="1924.5" y="341.9951">meps:OnlineAccount</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1887.5" x2="2106.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="1892.5" y="364.5073">rdf:type  [1..1]  = foaf:OnlineAccount</text></a><!--class meps:AddressTypeReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:AddressTypeReference" xlink:show="new" xlink:title="#meps:AddressTypeReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="259" x="1918.5" y="467.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="207" x="1944.5" y="485.4951">meps:AddressTypeReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1919.5" x2="2176.5" y1="493.7969" y2="493.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="1924.5" y="508.0073">rdf:type  [1..*]  = euvoc:AddressType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="1924.5" y="520.812">skos:prefLabel  : rdf:langString uniqueLang</text></a><!--class meps:SiteReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:SiteReference" xlink:show="new" xlink:title="#meps:SiteReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="1285" y="611"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="1362" y="628.9951">meps:SiteReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1286" x2="1580" y1="637.2969" y2="637.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="147" x="1291" y="651.5073">rdf:type  [1..*]  = org:Site</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="1291" y="664.312">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><polygon fill="#FEFECE" filter="url(#fl2zbbc)" points="1114,629,1126,641,1114,653,1102,641,1114,629" style="stroke: #A80036; stroke-width: 1.5;"/><!--class meps:DocumentReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:DocumentReference" xlink:show="new" xlink:title="#meps:DocumentReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="197" x="2142.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="189" x="2146.5" y="341.9951">meps:DocumentReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2143.5" x2="2338.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="185" x="2148.5" y="364.5073">rdf:type  [1..*]  = foaf:Document</text></a><!--class meps:GenderReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:GenderReference" xlink:show="new" xlink:title="#meps:GenderReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="2375" y="317.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="168" x="2439" y="335.4951">meps:GenderReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2376" x2="2670" y1="343.7969" y2="343.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="179" x="2381" y="358.0073">rdf:type  [1..*]  = vcard:Gender</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="2381" y="370.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:HonorificTitleReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:HonorificTitleReference" xlink:show="new" xlink:title="#meps:HonorificTitleReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="59.9063" style="stroke: #A80036; stroke-width: 1.5;" width="296" x="2706" y="317.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="205" x="2751.5" y="335.4951">meps:HonorificTitleReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2707" x2="3001" y1="343.7969" y2="343.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="2712" y="358.0073">rdf:type  [1..*]  = euvoc:HonorificTitle</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="284" x="2712" y="370.812">skos:prefLabel  : rdf:langString  [1..*] uniqueLang</text></a><!--class meps:ImageReference--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:ImageReference" xlink:show="new" xlink:title="#meps:ImageReference" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="47.1016" style="stroke: #A80036; stroke-width: 1.5;" width="175" x="3037.5" y="324"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="3046" y="341.9951">meps:ImageReference</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="3038.5" x2="3211.5" y1="350.2969" y2="350.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="163" x="3043.5" y="364.5073">rdf:type  [1..*]  = foaf:Image</text></a><!--class meps:Person--><a target="_top" xlink:actuate="onRequest" xlink:href="#meps:Person" xlink:show="new" xlink:title="#meps:Person" xlink:type="simple"><rect fill="#FEFECE" filter="url(#fl2zbbc)" height="226.3672" style="stroke: #A80036; stroke-width: 1.5;" width="301" x="2029.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="2133.5" y="25.9951">meps:Person</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2030.5" x2="2329.5" y1="34.2969" y2="34.2969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="2035.5" y="48.5073">dc:identifier  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226" x="2035.5" y="61.312">epvoc:deathDate  : xsd:dateTime  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2035.5" y="74.1167">epvoc:upperFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="246" x="2035.5" y="86.9214">epvoc:upperGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="289" x="2035.5" y="99.7261">epvoc:upperOfficialFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="285" x="2035.5" y="112.5308">epvoc:upperOfficialGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254" x="2035.5" y="125.3354">euvoc:officialFamilyName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2035.5" y="138.1401">euvoc:officialGivenName  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="204" x="2035.5" y="150.9448">foaf:familyName  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="200" x="2035.5" y="163.7495">foaf:givenName  : xsd:string  [1..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="225" x="2035.5" y="176.5542">person:placeOfBirth  : xsd:string  [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="169" x="2035.5" y="189.3589">rdf:type  [1..1]  = foaf:Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="164" x="2035.5" y="202.1636">rdfs:label  : xsd:string  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="250" x="2035.5" y="214.9683">skos:notation  : epvoc:codictPersonId  [1..*]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="193" x="2035.5" y="227.7729">vcard:bday  : xsd:dateTime  [0..1]</text></a><path d="M1097.2899,779.1743 C1085.547,794.3337 1068.6501,813.446 1050,826 C1033.1744,837.3259 1013.6493,846.6119 994.4585,854.08 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="989.5886,855.9396,999.4234,856.4658,994.2596,854.1559,996.5695,848.9922,989.5886,855.9396" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="1071" y="822.0669">vcard:hasValue [1..1]</text><path d="M904,779.1153 C904,799.542 904,829.1333 904,850.8978 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="904,855.9726,908,846.9726,904,850.9726,900,846.9726,904,855.9726" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="905" y="822.0669">vcard:hasValue [1..1]</text><path d="M1055.5322,527.5823 C995.651,551.4516 912.1497,584.7362 851.0938,609.0737 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="846.3684,610.9573,856.2098,611.3402,851.013,609.1058,853.2474,603.9089,846.3684,610.9573" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="143" x="962" y="577.0669">org:classification [1..*]</text><path d="M1214.6547,384.1344 C1235.481,393.5857 1257.6645,403.9379 1278,414 C1310.3757,430.0197 1345.8912,449.0431 1374.7483,464.8832 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1379.321,467.3972,1373.3615,459.556,1374.9395,464.9883,1369.5072,466.5664,1379.321,467.3972" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="200" x="1309" y="427.0669">dcat:contactPointsh:BlankNode</text><path d="M1026.6401,361.8299 C917.5221,379.2034 757.0481,412.3341 720,461 C687.0655,504.2622 719.0106,567.9126 745.0674,606.7885 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="747.8889,610.9372,746.1353,601.2457,745.0771,606.8027,739.5201,605.7445,747.8889,610.9372" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="244" x="721" y="502.0669">epvoc:membershipClassification [0..1]</text><path d="M1235.2241,358.4995 C1314.0242,368.4675 1424.2751,385.9681 1518,414 C1536.1156,419.4181 1539.4707,423.911 1557,431 C1586.0548,442.75 1618.0591,454.9375 1646.8223,465.6195 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1651.7805,467.4579,1644.7325,460.5785,1647.0924,465.7196,1641.9513,468.0795,1651.7805,467.4579" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="149" x="1558" y="427.0669">euvoc:represents [0..1]</text><path d="M1026.9921,348.8377 C833.8527,352.4608 427.4888,365.7507 296,414 C269.5748,423.6966 243.7916,441.1951 223.2702,457.6773 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="219.2374,460.9576,228.7434,458.3815,223.1162,457.8025,223.6952,452.1753,219.2374,460.9576" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="252" x="297" y="427.0669">org:memberDuring [1..1] sh:BlankNode</text><path d="M1130.2534,384.0802 C1130.0361,398.6759 1129.8845,415.633 1130,431 C1130.0761,441.1272 1130.2175,452.1212 1130.3704,462.1992 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1130.4512,467.3764,1134.3103,458.3151,1130.3732,462.377,1126.3113,458.4399,1130.4512,467.3764" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="1131" y="427.0669">org:organization [1..1]</text><path d="M1026.8319,353.3763 C891.6479,362.1753 663.9641,381.3304 587,414 C560.1816,425.3838 534.7055,445.9204 515.7994,463.7774 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="512.1073,467.3096,521.3757,463.9785,515.7203,463.8532,515.8455,458.1978,512.1073,467.3096" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="87" x="588" y="427.0669">org:role [1..1]</text><path d="M2005.0811,371.2679 C2013.4447,395.8668 2026.5971,434.5502 2036.1391,462.6149 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2037.7573,467.3743,2038.6469,457.5657,2036.1476,462.6405,2031.0728,460.1412,2037.7573,467.3743" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="123" x="2025" y="427.0669">dcterms:type [0..1]</text><path d="M1433,527.5823 C1433,550.4471 1433,581.9513 1433,605.9549 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1433,610.9573,1437,601.9573,1433,605.9573,1429,601.9573,1433,610.9573" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="1434" y="577.0669">epvoc:hasSite [0..1]</text><path d="M1366.1271,527.5823 C1288.8448,562.3473 1167.1635,617.0847 1127.1988,635.0626 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1122.3214,637.2567,1132.1702,637.2124,1126.8813,635.2055,1128.8882,629.9166,1122.3214,637.2567" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="128" x="1284" y="577.0669">vcard:hasTelephone</text><path d="M1114,653.2535 C1114,671.9454 1114,707.9252 1114,731.8276 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M1106.0242,645.3487 C1080.3266,659.36 998.3923,704.0337 947.1026,731.9988 " fill="none" style="stroke: #800000; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><path d="M2088.5,234.25 C2062.7593,266.1093 2037.0187,297.9687 2019.4265,319.7426 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2016.2383,323.6886,2025.0058,319.2018,2019.3806,319.7994,2018.783,314.1742,2016.2383,323.6886" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="79" x="2062" y="277.0669">foaf:account</text><path d="M2210.5,234.25 C2218.9378,265.5806 2227.3756,296.9111 2233.2303,318.6501 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2234.5872,323.6886,2236.1088,313.958,2233.2868,318.8607,2228.3841,316.0386,2234.5872,323.6886" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="2223" y="277.0669">foaf:homepage</text><path d="M2330.8093,149.5644 C2499.9863,182.8878 2781.8974,242.2656 3020,311 C3031.6004,314.3487 3043.8018,318.2406 3055.6178,322.2102 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="3060.6553,323.9149,3053.4126,317.2409,3055.9192,322.312,3050.848,324.8187,3060.6553,323.9149" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="2908" y="277.0669">foaf:img [0..1]</text><path d="M2029.4249,153.5122 C1815.5366,199.6949 1428.8188,283.195 1240.2766,323.905 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1235.3082,324.9778,1244.9498,326.9879,1240.1955,323.9224,1243.2611,319.1681,1235.3082,324.9778" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="127" x="1501" y="277.0669">org:hasMembership</text><path d="M2029.2875,147.6622 C1933.8293,172.8676 1816.5958,220.891 1752,311 C1720.2747,355.2558 1722.784,421.4283 1728.3125,461.8992 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="1729.0726,467.1906,1731.7521,457.7133,1728.3616,462.2414,1723.8334,458.8509,1729.0726,467.1906" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="115" x="1753" y="352.0669">person:citizenship</text><path d="M2029.2848,128.7897 C1536.7304,155.2322 6,245.6054 6,347.5 C6,347.5 6,347.5 6,755.5 C6,835.0305 565.8523,866.2759 801.4556,875.9038 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="806.6173,876.1134,797.7871,871.7513,801.6214,875.9104,797.4623,879.7447,806.6173,876.1134" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="97" x="7" y="577.0669">vcard:hasEmail</text><path d="M2330.9439,220.6758 C2381.8938,254.3205 2435.2991,289.5867 2472.8226,314.3653 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2477.3186,317.3343,2472.0125,309.037,2473.1462,314.5791,2467.6041,315.7128,2477.3186,317.3343" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="147" x="2422" y="277.0669">vcard:hasGender [0..1]</text><path d="M2330.8391,171.69 C2462.1811,215.8279 2648.4994,278.4408 2759.7091,315.8132 " fill="none" style="stroke: #800000; stroke-width: 1.0;"/><polygon fill="#800000" points="2764.6187,317.4631,2757.3619,310.8043,2759.8792,315.8702,2754.8133,318.3875,2764.6187,317.4631" style="stroke: #800000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="153" x="2655" y="277.0669">vcard:hasHonorificPrefix</text></g></svg></div>
+            <small class="form-text text-muted">Click diagram to navigate to corresponding section | <a href="http://www.plantuml.com/plantuml/png/fLXTRzmg47tthw2zRv4QPNjlNwosKZwQD5AIZP9LxyDLLH4Ohr5iy0MSPlFhY_5wrs3mEjat6-OSpi0mCxPwPBp24fU855YfSy7rFNi1DFidUKSXOnpGrUN5zyNyxlZcubkYjkQYh0G7OwvN1Q2wB3xsPdzBN5s3KdW9_pAgSpGxEkfD7qifVf-AGaZqrpMMGl3aj5aUlI-XKkaFmGYyHudpbY99irIlAa3elzdXuUmdGb_G4y6IjYR80tpuy7NDTmTAr9B07MGWWRTiBJB7wWSkQkWe7Htd-7cZmZwFQJ06o37UV_svN6BENh1cWc-4k8FRHKw5h8J46au4NLaMbZ5YpPnrXLocn9csQn_y32_WktnWNMv8-dOe1bQFGgMLXEmAFq21rdG5vijxBHbVRaXhplwluGetGyucN4Fv05BbhDfiGNyeHPIaZ9f0DFw0R5PuLZHLFVRcb0B8_jPnZOc-5OphbX7hbFG6LPwU6CsFDuB2Bgfffm3Lao1fkU4uzKxag8s6yQLghkNAfQqRMWbcnvNP4ZM9w1Oa4tIUBLW9Wr1f9PxLTZlNkpbzE_nmQ1X5Fswwi1yZkHF5K9SqWoFey4rjW5ih50RQaEL2hmEx2thtPlB2fCPZGfeps5vDTtJhmJ6bva3KmiXn7A54WonLgzCzAeyhx4ycSEPQUZhTo4v2WrkLzqn384XDYcfcF7t-dMaZJsGcX67jxk0k7ZbtqMS8ETWgw5iQ-EUlY39S2av_tNxwE-vKpyX9k0ieeCfDyKfw5kZm43db9pBPf7PdYyDdcumVV2YdjZlOGw1TB3kJQpIfJajJoUjoMjof4GRqsbNshoZ3n9d4C-gOKzOQZQ7t5ticI5sQL3vK6vW9oxLPehFsw2-0Kv13yi5ucBgzKwqn6i7klm_V1HUoYOW5qqNWfaNdnuxG1Q49NFixSbcQfdYetnyUEKfhwh56QdYoeyBRJiSSrvcvTrswfkQvCHmax74MfR7K4PxPD9wGnrs9x8E6lgjUWzozlguptABQcaC1wtpgjZZ8kgf0dkEI5QiRNCAEAXX4Nx0du6y5pviQp72nduIEvGrIjft06rKu1AyLq6i-_HRAtXxSlWzMjPDPN6qiN2nk6HKvso4ocCKjPowCWRdfKUWmPLWSAvTUhpQ4kXrlqnQRlcWx6CM5QbnbhLB2D7i17e1lJAe24vXd9qpgV78qHFlUrYICK2Obh_EpVne7eKMydh-x2KHGPdfAQtP9H_1j7NoWU3KvNKpzFV2jnAo8OWErTeDSb-LTiJ1IxJPK6vjRK_hOivD-0_AJ4ST2ITwUM6VjPNVlwo-9V1F6_b8qXYYAsh-SUnzDIUHJAYRFVbb5KM-JbvkYXmYJf83skGIT2whQ5oWhlKBhFmz_0000"
                   target="_blank">View as PNG</a>
             </small>
             <br/>
          </div>
          <div id="prefixes">
             <h2>Namespaces</h2>
-            <table class="table table-striped table-sm" style="width:60%">
+            <table class="prefixes" style="width:60%">
                <thead>
                   <tr>
                      <th>Prefix</th>
@@ -116,55 +249,107 @@
                <tbody>
                   <tr>
                      <td>dc</td>
-                     <td>http://purl.org/dc/elements/1.1/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>dcat</td>
-                     <td>http://www.w3.org/ns/dcat#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/dcat#" target="_blank">http://www.w3.org/ns/dcat#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
-                     <td>dct</td>
-                     <td>http://purl.org/dc/terms/</td>
+                     <td>dcterms</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://purl.org/dc/terms/" target="_blank">http://purl.org/dc/terms/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>epvoc</td>
-                     <td>https://data.europarl.europa.eu/def/epvoc#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="https://data.europarl.europa.eu/def/epvoc#" target="_blank">https://data.europarl.europa.eu/def/epvoc#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>euvoc</td>
-                     <td>http://publications.europa.eu/ontology/euvoc#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://publications.europa.eu/ontology/euvoc#" target="_blank">http://publications.europa.eu/ontology/euvoc#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>foaf</td>
-                     <td>http://xmlns.com/foaf/0.1/</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://xmlns.com/foaf/0.1/" target="_blank">http://xmlns.com/foaf/0.1/</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>org</td>
-                     <td>http://www.w3.org/ns/org#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/org#" target="_blank">http://www.w3.org/ns/org#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>person</td>
-                     <td>http://www.w3.org/ns/person#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/ns/person#" target="_blank">http://www.w3.org/ns/person#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdf</td>
-                     <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>rdfs</td>
-                     <td>http://www.w3.org/2000/01/rdf-schema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2000/01/rdf-schema#" target="_blank">http://www.w3.org/2000/01/rdf-schema#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>skos</td>
-                     <td>http://www.w3.org/2004/02/skos/core#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2004/02/skos/core#" target="_blank">http://www.w3.org/2004/02/skos/core#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>vcard</td>
-                     <td>http://www.w3.org/2006/vcard/ns#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2006/vcard/ns#" target="_blank">http://www.w3.org/2006/vcard/ns#</a>
+                        </span>
+                     </td>
                   </tr>
                   <tr>
                      <td>xsd</td>
-                     <td>http://www.w3.org/2001/XMLSchema#</td>
+                     <td>
+                        <span class="monospace">
+                           <a href="http://www.w3.org/2001/XMLSchema#" target="_blank">http://www.w3.org/2001/XMLSchema#</a>
+                        </span>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -173,13 +358,14 @@
          <div id="meps:Person">
             <h2>Person</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/person/[0-9]*?$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/person/124936</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/person/124936</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -201,8 +387,12 @@
                         <a href="#meps:OnlineAccount">Online Account</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Birthday</td>
@@ -212,11 +402,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Citizenship</td>
@@ -229,8 +423,12 @@
                         <a href="#meps:CountryReference">Reference to a Country</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Death date</td>
@@ -240,11 +438,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Family name</td>
@@ -254,11 +456,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Given name</td>
@@ -268,11 +474,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Has email</td>
@@ -285,8 +495,12 @@
                         <a href="#meps:ResourceReference">Reference to a Resource</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Has gender</td>
@@ -299,8 +513,12 @@
                         <a href="#meps:GenderReference">Reference to a Gender</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Has honorific prefix</td>
@@ -313,8 +531,12 @@
                         <a href="#meps:HonorificTitleReference">Reference to a Honorific Title</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Has membership</td>
@@ -327,8 +549,12 @@
                         <a href="#meps:Membership">Membership</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Homepage</td>
@@ -341,8 +567,12 @@
                         <a href="#meps:DocumentReference">Reference to a Document</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Identifier</td>
@@ -352,11 +582,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Image</td>
@@ -369,8 +603,12 @@
                         <a href="#meps:ImageReference">Reference to a Image</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Label</td>
@@ -380,11 +618,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Notation</td>
@@ -394,11 +636,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:codictPersonId</span>
+                        <code>epvoc:codictPersonId</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Official family name</td>
@@ -408,11 +654,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Official given name</td>
@@ -422,11 +672,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Place of birth</td>
@@ -436,11 +690,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Upper family name</td>
@@ -450,11 +708,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Upper given name</td>
@@ -464,11 +726,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Uppercase official family name</td>
@@ -478,11 +744,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Uppercase official given name</td>
@@ -492,11 +762,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -506,11 +780,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">foaf:Person</span>
+                        <code>foaf:Person</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -521,11 +799,12 @@
             <ul>
                <li>Target Class: <a href="http://www.w3.org/ns/org#Membership">org:Membership</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/membership/12345-m-999900001 , https://data.europarl.europa.eu/membership/12345-f-999900001</li>
+               <li>Nodes: IRI</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/membership/12345-m-999900001 , https://data.europarl.europa.eu/membership/12345-f-999900001</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -547,8 +826,12 @@
                         <a href="#meps:ContactPoint">Contact Point</a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Member during</td>
@@ -561,8 +844,12 @@
                         <a href="#meps:PeriodOfTimeReference">Reference to a Period Of Time</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Membership Classification</td>
@@ -575,8 +862,12 @@
                         <a href="#meps:CorporateBodyClassificationReference">Reference to a Corporate Body Classification</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Membership id</td>
@@ -586,11 +877,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Notation</td>
@@ -600,11 +895,15 @@
                         </code>
                      </td>
                      <td>
-                        <a href="#epvoc:codictFunctionId">epvoc:codictFunctionId </a>or <a href="# epvoc:codictMandateId"> epvoc:codictMandateId </a>
+                        <a href="#epvoc:codictFunctionId">epvoc:codictFunctionId </a>or<a href="# epvoc:codictMandateId"> epvoc:codictMandateId </a>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Organization</td>
@@ -617,8 +916,12 @@
                         <a href="#meps:Organization">Organization</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Represents</td>
@@ -631,8 +934,12 @@
                         <a href="#meps:CountryReference">Reference to a Country</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Role</td>
@@ -645,8 +952,12 @@
                         <a href="#meps:RoleReference">Reference to a Role</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -656,11 +967,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Membership</span>
+                        <code>org:Membership</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -671,13 +986,14 @@
             <ul>
                <li>Target Class: <a href="http://www.w3.org/ns/org#Organization">org:Organization</a>
                </li>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/org/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/org/1234</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/org/1234</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -699,8 +1015,12 @@
                         <a href="#meps:CorporateBodyClassificationReference">Reference to a Corporate Body Classification</a>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Preferred label</td>
@@ -710,11 +1030,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -724,11 +1048,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Organization</span>
+                        <code>org:Organization</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -741,7 +1069,7 @@
                </li>
                <li>Closed shape</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -763,8 +1091,12 @@
                         <a href="#meps:SiteReference">Reference to a Site</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Has telephone</td>
@@ -774,11 +1106,15 @@
                         </code>
                      </td>
                      <td>
-                        <a href="#meps:Voice">meps:Voice </a>or <a href="# meps:Fax"> meps:Fax </a>
+                        <a href="#meps:Voice">meps:Voice </a>or<a href="# meps:Fax"> meps:Fax </a>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Office address</td>
@@ -788,11 +1124,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:string</span>
+                        <code>xsd:string</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -802,11 +1142,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">epvoc:ContactPoint</span>
+                        <code>epvoc:ContactPoint</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -817,11 +1161,12 @@
             <ul>
                <li>Target Class: <a href="http://xmlns.com/foaf/0.1/OnlineAccount">foaf:OnlineAccount</a>
                </li>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
-               <li>Example: https://twitter.com/mariearenaps</li>
+               <li>Nodes: IRI</li>
+               <li>Example: <span class="monospace">https://twitter.com/mariearenaps</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -836,15 +1181,19 @@
                      <td>Type</td>
                      <td>
                         <code>
-                           <a href="http://purl.org/dc/terms/type">dct:type</a>
+                           <a href="http://purl.org/dc/terms/type">dcterms:type</a>
                         </code>
                      </td>
                      <td>
                         <a href="#meps:AddressTypeReference">Reference to a Address Type</a>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -854,11 +1203,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">foaf:OnlineAccount</span>
+                        <code>foaf:OnlineAccount</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -869,13 +1222,14 @@
             <ul>
                <li>Target Class: <a href="http://www.w3.org/2006/vcard/ns#Voice">vcard:Voice</a>
                </li>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/tel/[0-9]*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/tel/33388175139</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/tel/33388175139</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -897,8 +1251,12 @@
                         <a href="#meps:ResourceReference">Reference to a Resource</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -908,11 +1266,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">vcard:Voice</span>
+                        <code>vcard:Voice</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -923,13 +1285,14 @@
             <ul>
                <li>Target Class: <a href="http://www.w3.org/2006/vcard/ns#Fax">vcard:Fax</a>
                </li>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">^https://data.europarl.europa.eu/tel/[0-9]*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/tel/33388175139</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/tel/33388175139</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -951,8 +1314,12 @@
                         <a href="#meps:ResourceReference">Reference to a Resource</a>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -962,11 +1329,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">vcard:Fax</span>
+                        <code>vcard:Fax</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -975,11 +1346,12 @@
          <div id="meps:ImageReference">
             <h2>Reference to a Image</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
-               <li>Example: https://www.europarl.europa.eu/mepphoto/124936.jpg</li>
+               <li>Nodes: IRI</li>
+               <li>Example: <span class="monospace">https://www.europarl.europa.eu/mepphoto/124936.jpg</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -998,11 +1370,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">foaf:Image</span>
+                        <code>foaf:Image</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1011,10 +1387,10 @@
          <div id="meps:ResourceReference">
             <h2>Reference to a Resource</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1033,11 +1409,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdfs:Resource</span>
+                        <code>rdfs:Resource</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1046,10 +1426,10 @@
          <div id="meps:DocumentReference">
             <h2>Reference to a Document</h2>
             <ul>
-               <li>Nodes: IRI</li>
                <li>Closed shape</li>
+               <li>Nodes: IRI</li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1068,11 +1448,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">foaf:Document</span>
+                        <code>foaf:Document</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1082,9 +1466,10 @@
             <h2>Reference to a Period Of Time</h2>
             <ul>
                <li>Closed shape</li>
-               <li>Example: https://data.europarl.europa.eu/time-period/pt_9</li>
+               <li>Example: <span class="monospace">https://data.europarl.europa.eu/time-period/pt_9</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1103,11 +1488,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>0..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>Start date</td>
@@ -1117,11 +1506,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">xsd:dateTime</span>
+                        <code>xsd:dateTime</code>
                         <br/>
                      </td>
-                     <td>1..1</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..1</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1131,11 +1524,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">dct:PeriodOfTime</span>
+                        <code>dcterms:PeriodOfTime</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1144,13 +1541,14 @@
          <div id="meps:GenderReference">
             <h2>Reference to a Gender</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/human-sex/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/human-sex/FEMALE</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/human-sex/FEMALE</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1169,11 +1567,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1183,11 +1585,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">vcard:Gender</span>
+                        <code>vcard:Gender</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1196,13 +1602,14 @@
          <div id="meps:HonorificTitleReference">
             <h2>Reference to a Honorific Title</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/honorific/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/honorific/MR</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/honorific/MR</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1221,11 +1628,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1235,11 +1646,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">euvoc:HonorificTitle</span>
+                        <code>euvoc:HonorificTitle</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1248,13 +1663,14 @@
          <div id="meps:CountryReference">
             <h2>Reference to a Country</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/country/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/country/BEL</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/country/BEL</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1273,11 +1689,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1287,11 +1707,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">euvoc:Country</span>
+                        <code>euvoc:Country</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1300,13 +1724,14 @@
          <div id="meps:AddressTypeReference">
             <h2>Reference to a Address Type</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/address-type/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/address-type/TWT</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/address-type/TWT</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1325,11 +1750,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>0..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">0..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1339,11 +1768,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">euvoc:AddressType</span>
+                        <code>euvoc:AddressType</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1352,13 +1785,14 @@
          <div id="meps:RoleReference">
             <h2>Reference to a Role</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/role/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/role/MEMBER_EP</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/role/MEMBER_EP</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1377,11 +1811,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1391,11 +1829,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Role</span>
+                        <code>org:Role</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1404,13 +1846,14 @@
          <div id="meps:CorporateBodyClassificationReference">
             <h2>Reference to a Corporate Body Classification</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/corporate-body-classification/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/corporate-body-classification/EP_GROUP</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1429,11 +1872,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1443,11 +1890,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">euvoc:CorporateBodyClassification</span>
+                        <code>euvoc:CorporateBodyClassification</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
@@ -1456,13 +1907,14 @@
          <div id="meps:SiteReference">
             <h2>Reference to a Site</h2>
             <ul>
+               <li>Closed shape</li>
                <li>Nodes: IRI</li>
                <li>URI: <span class="monospace">http://publications.europa.eu/resource/authority/site/.*$</span>
                </li>
-               <li>Closed shape</li>
-               <li>Example: http://publications.europa.eu/resource/authority/site/ASP</li>
+               <li>Example: <span class="monospace">http://publications.europa.eu/resource/authority/site/ASP</span>
+               </li>
             </ul>
-            <table class="table table-striped" style="width:100%">
+            <table class="propertyshapes" style="width:100%">
                <thead>
                   <tr>
                      <th>Property name</th>
@@ -1481,11 +1933,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">rdf:langString</span>
+                        <code>rdf:langString</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                   <tr>
                      <td>type</td>
@@ -1495,11 +1951,15 @@
                         </code>
                      </td>
                      <td>
-                        <span class="monospace">org:Site</span>
+                        <code>org:Site</code>
                         <br/>
                      </td>
-                     <td>1..*</td>
-                     <td class="text-break"/>
+                     <td>
+                        <div style="width:30px">1..*</div>
+                     </td>
+                     <td class="text-break">
+                        <p/>
+                     </td>
                   </tr>
                </tbody>
             </table>
