@@ -1,0 +1,727 @@
+mep_identifier,mep_honorific_prefix,mep_given_name,mep_family_name,mep_official_given_name,mep_official_family_name,mep_gender,mep_citizenship,mep_place_of_birth,mep_birthday,mep_death_date,mep_image,mep_email,mep_homepage,mep_twitter,mep_facebook_page,mep_facebook_profile,mep_instagram,mep_URI
+4,Mr,Th.E.,Westerterp,,,male,Netherlands,Rotterdam,02/12/1930 02:00,,https://www.europarl.europa.eu/mepphoto/4.jpg,,,,,,,https://data.europarl.europa.eu/person/4
+5,Mr,Egbert R.,Wieldraaijer,,,male,Netherlands,Borne,31/03/1927 02:00,,https://www.europarl.europa.eu/mepphoto/5.jpg,,,,,,,https://data.europarl.europa.eu/person/5
+6,Mr,J.,de Wilde,,,male,Netherlands,Amsterdam,27/12/1913 01:00,,https://www.europarl.europa.eu/mepphoto/6.jpg,,,,,,,https://data.europarl.europa.eu/person/6
+10,Mr,Hendrikus,Vredeling,,,male,Netherlands,Amersfoort,20/11/1924 02:00,,https://www.europarl.europa.eu/mepphoto/10.jpg,,,,,,,https://data.europarl.europa.eu/person/10
+11,Mr,Hendrik J.G.,Waltmans,,,male,Netherlands,Brunssum (L),28/03/1930 02:00,,https://www.europarl.europa.eu/mepphoto/11.jpg,,,,,,,https://data.europarl.europa.eu/person/11
+12,Mr,G.,Vixseboxse,,,male,Netherlands,Almelo,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/12.jpg,,,,,,,https://data.europarl.europa.eu/person/12
+13,Mr,Mario,Zotta,,,male,Italy,Pietra Galla,06/11/1904 01:00,,https://www.europarl.europa.eu/mepphoto/13.jpg,,,,,,,https://data.europarl.europa.eu/person/13
+14,Mr,Vincenzo,Vernaschi,,,male,Italy,Cremona,27/03/1929 02:00,,https://www.europarl.europa.eu/mepphoto/14.jpg,,,,,,,https://data.europarl.europa.eu/person/14
+15,Mr,Mario,Vetrone,,,male,Italy,Benrvento,26/01/1914 01:00,,https://www.europarl.europa.eu/mepphoto/15.jpg,,,,,,,https://data.europarl.europa.eu/person/15
+16,Mr,Max,van der Stoel,,,male,Netherlands,,03/08/1924 01:00,,https://www.europarl.europa.eu/mepphoto/16.jpg,,,,,,,https://data.europarl.europa.eu/person/16
+17,Mr,Daniele,Turani,,,male,Italy,Bergamo,08/02/1907 01:00,,https://www.europarl.europa.eu/mepphoto/17.jpg,,,,,,,https://data.europarl.europa.eu/person/17
+18,Mr,Michele,Troisi,,,male,Italy,Tufo (Avellino),27/02/1906 01:00,,https://www.europarl.europa.eu/mepphoto/18.jpg,,,,,,,https://data.europarl.europa.eu/person/18
+19,Mr,Athos,Valsecchi,,,male,Italy,Gravedona (Como),26/11/1919 02:00,,https://www.europarl.europa.eu/mepphoto/19.jpg,,,,,,,https://data.europarl.europa.eu/person/19
+20,Mr,Raul,Zaccari,,,male,Italy,Bordighera (Imperia),02/03/1916 01:00,,https://www.europarl.europa.eu/mepphoto/20.jpg,,,,,,,https://data.europarl.europa.eu/person/20
+21,Mr,Vinicio,Ziino,,,male,Italy,Messina,21/08/1900 01:36,,https://www.europarl.europa.eu/mepphoto/21.jpg,,,,,,,https://data.europarl.europa.eu/person/21
+22,Mr,Amor,Tartufoli,,,male,Italy,Ascoli Piceno,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/22.jpg,,,,,,,https://data.europarl.europa.eu/person/22
+23,Mr,Giuseppe,Togni,,,male,Italy,Pontedera (Pisa),05/12/1903 01:36,,https://www.europarl.europa.eu/mepphoto/23.jpg,,,,,,,https://data.europarl.europa.eu/person/23
+24,Mr,Giusto,Tolloy,,,male,Italy,Trieste,03/11/1907 01:00,,https://www.europarl.europa.eu/mepphoto/24.jpg,,,,,,,https://data.europarl.europa.eu/person/24
+25,Mr,Alberto,Simonini,,,male,Italy,Reggio Emilia,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/25.jpg,,,,,,,https://data.europarl.europa.eu/person/25
+26,Mr,Zefferino,Tomé,,,male,Italy,Casarsa della Delizia (Udine),01/12/1905 01:00,,https://www.europarl.europa.eu/mepphoto/26.jpg,,,,,,,https://data.europarl.europa.eu/person/26
+27,Mr,Bruno,Storti,,,male,Italy,Roma,09/07/1913 01:00,,https://www.europarl.europa.eu/mepphoto/27.jpg,,,,,,,https://data.europarl.europa.eu/person/27
+28,Mr,Attilio,Terragni,,,male,Italy,Lentate S. Severo (Milano),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/28.jpg,,,,,,,https://data.europarl.europa.eu/person/28
+29,Mr,Guglielmo,Schiratti,,,male,Italy,Maiano,07/08/1901 01:36,,https://www.europarl.europa.eu/mepphoto/29.jpg,,,,,,,https://data.europarl.europa.eu/person/29
+30,Mr,Mauro,Scoccimarro,,,male,Italy,Udine,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/30.jpg,,,,,,,https://data.europarl.europa.eu/person/30
+31,Mr,Alessandro,Schiavi,,,male,Italy,Cesenatico (Forlì),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/31.jpg,,,,,,,https://data.europarl.europa.eu/person/31
+32,Mr,Vincenzo,Selvaggi,,,male,Italy,S. Massimo (Campobasso),13/07/1913 01:00,,https://www.europarl.europa.eu/mepphoto/32.jpg,,,,,,,https://data.europarl.europa.eu/person/32
+33,Mr,Mario,Scelba,,,male,Italy,Caltagirone (Catania),05/09/1901 01:36,,https://www.europarl.europa.eu/mepphoto/33.jpg,,,,,,,https://data.europarl.europa.eu/person/33
+34,Ms,Käte,Strobel,,,female,Germany,Nürnberg,23/07/1907 01:00,,https://www.europarl.europa.eu/mepphoto/34.jpg,,,,,,,https://data.europarl.europa.eu/person/34
+36,Mr,Emile,Vanrullen,,,male,France,Tourcoing,07/03/1903 01:36,,https://www.europarl.europa.eu/mepphoto/36.jpg,,,,,,,https://data.europarl.europa.eu/person/36
+37,Mr,Francis,Vals,,,male,France,Leucate,09/01/1910 01:00,,https://www.europarl.europa.eu/mepphoto/37.jpg,,,,,,,https://data.europarl.europa.eu/person/37
+38,Mr,Jacques,Vendroux,,,male,France,Calais (Pas-de-Calais),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/38.jpg,,,,,,,https://data.europarl.europa.eu/person/38
+39,Mr,Decio,Scardaccione,,,male,Italy,Sant'Arcangelo (Potenza),28/03/1917 01:00,,https://www.europarl.europa.eu/mepphoto/39.jpg,,,,,,,https://data.europarl.europa.eu/person/39
+40,Mr,Jacques,Vial,,,male,France,Paris,15/06/1913 01:00,,https://www.europarl.europa.eu/mepphoto/40.jpg,,,,,,,https://data.europarl.europa.eu/person/40
+41,Mr,Raymond,Triboulet,,,male,France,Paris,03/10/1906 01:00,,https://www.europarl.europa.eu/mepphoto/41.jpg,,,,,,,https://data.europarl.europa.eu/person/41
+42,Mr,Louis,Terrenoire,,,male,France,Lyon (Rhône),10/11/1908 01:00,,https://www.europarl.europa.eu/mepphoto/42.jpg,,,,,,,https://data.europarl.europa.eu/person/42
+43,Mr,Alain,Terrenoire,,,male,France,Lyon,14/06/1941 12:00,,https://www.europarl.europa.eu/mepphoto/43.jpg,,,,,,,https://data.europarl.europa.eu/person/43
+44,Mr,René,Tomasini,,,male,France,Petreto-Bicchisano (Corse),14/04/1919 01:00,,https://www.europarl.europa.eu/mepphoto/44.jpg,,,,,,,https://data.europarl.europa.eu/person/44
+45,Mr,Werner,Zywietz,,,male,Germany,Saleschen (Ostpreussen),21/05/1940 12:00,,https://www.europarl.europa.eu/mepphoto/45.jpg,,,,,,,https://data.europarl.europa.eu/person/45
+46,Mr,Herbert,Wehner,,,male,Germany,Dresden,11/07/1906 01:00,,https://www.europarl.europa.eu/mepphoto/46.jpg,,,,,,,https://data.europarl.europa.eu/person/46
+47,Mr,Rudolf,Werner,,,male,Germany,Hannover,31/03/1920 01:00,,https://www.europarl.europa.eu/mepphoto/47.jpg,,,,,,,https://data.europarl.europa.eu/person/47
+48,Mr,Hans-Jürgen,Wischnewski,,,male,Germany,Allenstein (Ostpreussen),24/07/1922 01:00,,https://www.europarl.europa.eu/mepphoto/48.jpg,,,,,,,https://data.europarl.europa.eu/person/48
+49,Mr,Erich,Wolfram,,,male,Germany,Bruch (Sudetenland),05/10/1928 01:00,,https://www.europarl.europa.eu/mepphoto/49.jpg,,,,,,,https://data.europarl.europa.eu/person/49
+50,Mr,Peter,Würtz,,,male,Germany,Berlin,06/09/1939 01:00,,https://www.europarl.europa.eu/mepphoto/50.jpg,,,,,,,https://data.europarl.europa.eu/person/50
+51,Mr,Werner,Zeyer,,,male,Germany,Oberthal (Kreis St. Wende,25/05/1929 01:00,,https://www.europarl.europa.eu/mepphoto/51.jpg,,,,,,,https://data.europarl.europa.eu/person/51
+52,Mr,Otto,Weinkamm,,,male,Germany,Aschaffenburg,13/02/1902 01:36,,https://www.europarl.europa.eu/mepphoto/52.jpg,,,,,,,https://data.europarl.europa.eu/person/52
+53,Ms,Johanna F.,Schouwenaar-Fransen,,,female,Netherlands,Rotterdam,03/05/1909 01:00,,https://www.europarl.europa.eu/mepphoto/53.jpg,,,,,,,https://data.europarl.europa.eu/person/53
+54,Mr,Willem J.,Schuijt,,,male,Netherlands,Amsterdam,27/06/1909 01:00,,https://www.europarl.europa.eu/mepphoto/54.jpg,,,,,,,https://data.europarl.europa.eu/person/54
+55,Mr,THE LORD,Walston,,,male,United Kingdom,Newton (Cambridge),28/11/1918 02:00,,https://www.europarl.europa.eu/mepphoto/55.jpg,,,,,,,https://data.europarl.europa.eu/person/55
+56,Mr,Walter,Suck,,,male,Germany,Flensburg,21/09/1912 01:00,,https://www.europarl.europa.eu/mepphoto/56.jpg,,,,,,,https://data.europarl.europa.eu/person/56
+57,Mr,Karl-Heinz,Walkhoff,,,male,Germany,Habighorst,26/02/1936 02:00,,https://www.europarl.europa.eu/mepphoto/57.jpg,,,,,,,https://data.europarl.europa.eu/person/57
+58,Mr,E.M.J.A.,Sassen,,,male,Netherlands,s'Hertogenbosch,08/09/1911 01:00,,https://www.europarl.europa.eu/mepphoto/58.jpg,,,,,,,https://data.europarl.europa.eu/person/58
+59,Mr,Willem,Scholten,,,male,Netherlands,Deventer,01/06/1927 01:00,,https://www.europarl.europa.eu/mepphoto/59.jpg,,,,,,,https://data.europarl.europa.eu/person/59
+60,Mr,Natale,Santero,,,male,Italy,Saliceto (Como),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/60.jpg,,,,,,,https://data.europarl.europa.eu/person/60
+61,Mr,Carlo,Scarascia Mugnozza,,,male,Italy,Roma,19/01/1920 02:00,,https://www.europarl.europa.eu/mepphoto/61.jpg,,,,,,,https://data.europarl.europa.eu/person/61
+62,Mr,Pieter J.A.,van der Sanden,,,male,Netherlands,Gouda,11/11/1924 02:00,,https://www.europarl.europa.eu/mepphoto/62.jpg,,,,,,,https://data.europarl.europa.eu/person/62
+63,Mr,Agide,Samaritani,,,male,Italy,Alfonsine (Ravenna),13/06/1921 01:00,,https://www.europarl.europa.eu/mepphoto/63.jpg,,,,,,,https://data.europarl.europa.eu/person/63
+64,Mr,Renato,Sandri,,,male,Italy,Mantova,27/07/1926 01:00,,https://www.europarl.europa.eu/mepphoto/64.jpg,,,,,,,https://data.europarl.europa.eu/person/64
+65,Mr,Pierre-Henri,Teitgen,,,male,France,Rennes,29/05/1908 01:00,,https://www.europarl.europa.eu/mepphoto/65.jpg,,,,,,,https://data.europarl.europa.eu/person/65
+66,Mr,Georges,Spénale,,,male,France,Carcassonne,29/11/1913 01:00,,https://www.europarl.europa.eu/mepphoto/66.jpg,,,,,,,https://data.europarl.europa.eu/person/66
+67,Mr,Italo Mario,Sacco,,,male,Italy,Torino,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/67.jpg,,,,,,,https://data.europarl.europa.eu/person/67
+68,Mr,Léon,Teisseire,,,male,France,Nice,12/04/1907 01:00,,https://www.europarl.europa.eu/mepphoto/68.jpg,,,,,,,https://data.europarl.europa.eu/person/68
+69,Mr,François,Tanguy-Prigent,,,male,France,Saint-Jean-du-Doigt,11/10/1909 01:00,,https://www.europarl.europa.eu/mepphoto/69.jpg,,,,,,,https://data.europarl.europa.eu/person/69
+71,Mr,Franz Josef,Strauss,,,male,Germany,München,06/09/1915 01:00,,https://www.europarl.europa.eu/mepphoto/71.jpg,,,,,,,https://data.europarl.europa.eu/person/71
+72,Mr,Heinz,Starke,,,male,Germany,Schweidnitz (Schlesien),27/02/1911 01:00,,https://www.europarl.europa.eu/mepphoto/72.jpg,,,,,,,https://data.europarl.europa.eu/person/72
+73,Mr,Heinrich,Sträter,,,male,Germany,Soest,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/73.jpg,,,,,,,https://data.europarl.europa.eu/person/73
+74,Mr,Gerd,Springorum,,,male,Germany,Schweidnitz/Schlesien,27/02/1911 01:00,,https://www.europarl.europa.eu/mepphoto/74.jpg,,,,,,,https://data.europarl.europa.eu/person/74
+75,Mr,Anton,Storch,,,male,Germany,Fulda,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/75.jpg,,,,,,,https://data.europarl.europa.eu/person/75
+76,Mr,THE LORD,St. Oswald,,,male,United Kingdom,London,19/09/1916 12:00,05/11/2007 01:00,https://www.europarl.europa.eu/mepphoto/76.jpg,,,,,,,https://data.europarl.europa.eu/person/76
+77,Mr,Michael Norman,Shaw,,,male,United Kingdom,Leeds,09/10/1920 01:00,,https://www.europarl.europa.eu/mepphoto/77.jpg,,,,,,,https://data.europarl.europa.eu/person/77
+78,Mr,Michael R.,Stewart,,,male,United Kingdom,Bromley (Kent),06/11/1906 01:00,,https://www.europarl.europa.eu/mepphoto/78.jpg,,,,,,,https://data.europarl.europa.eu/person/78
+79,Mr,Dick,Taverne,,,male,United Kingdom,,18/10/1928 02:00,,https://www.europarl.europa.eu/mepphoto/79.jpg,,,,,,,https://data.europarl.europa.eu/person/79
+80,Mr,Frank,Tomney,,,male,United Kingdom,Bolton (Lancaster),24/05/1908 01:00,,https://www.europarl.europa.eu/mepphoto/80.jpg,,,,,,,https://data.europarl.europa.eu/person/80
+81,Mr,Derek,Walker-Smith,,,male,United Kingdom,Edinburgh,13/04/1910 01:00,,https://www.europarl.europa.eu/mepphoto/81.jpg,,,,,,,https://data.europarl.europa.eu/person/81
+82,Mr,Leopoldo,Rubinacci,,,male,Italy,Cremano (Napoli),13/09/1903 01:36,,https://www.europarl.europa.eu/mepphoto/82.jpg,,,,,,,https://data.europarl.europa.eu/person/82
+83,Mr,Armando,Sabatini,,,male,Italy,Granaglioni (Bologna),21/06/1908 01:00,,https://www.europarl.europa.eu/mepphoto/83.jpg,,,,,,,https://data.europarl.europa.eu/person/83
+84,Mr,Jacques,Sourdille,,,male,France,Nantes,19/06/1922 01:00,,https://www.europarl.europa.eu/mepphoto/84.jpg,,,,,,,https://data.europarl.europa.eu/person/84
+85,Mr,André,Soury,,,male,France,Verneuil,14/04/1924 01:00,,https://www.europarl.europa.eu/mepphoto/85.jpg,,,,,,,https://data.europarl.europa.eu/person/85
+86,Mr,Enrico,Roselli,,,male,Italy,Casale Monferato (Allessandria),10/03/1909 01:00,,https://www.europarl.europa.eu/mepphoto/86.jpg,,,,,,,https://data.europarl.europa.eu/person/86
+87,Mr,Hans Stefan,Seifriz,,,male,Germany,Bremen,28/01/1927 02:00,,https://www.europarl.europa.eu/mepphoto/87.jpg,,,,,,,https://data.europarl.europa.eu/person/87
+88,Mr,Walter,Seuffert,,,male,Germany,Rahway - New Jersey (USA),04/02/1907 01:00,,https://www.europarl.europa.eu/mepphoto/88.jpg,,,,,,,https://data.europarl.europa.eu/person/88
+89,Mr,Alain,Savary,,,male,France,Anger,25/04/1918 12:00,,https://www.europarl.europa.eu/mepphoto/89.jpg,,,,,,,https://data.europarl.europa.eu/person/89
+90,Mr,Robert,Schuman,,,male,France,Luxembourg,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/90.jpg,,,,,,,https://data.europarl.europa.eu/person/90
+91,Mr,Franz,Singer,,,male,France,Seligenstadt,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/91.jpg,,,,,,,https://data.europarl.europa.eu/person/91
+92,Mr,Hermann,Spillecke,,,male,Germany,Homberg (Niederrhein),15/05/1924 01:00,,https://www.europarl.europa.eu/mepphoto/92.jpg,,,,,,,https://data.europarl.europa.eu/person/92
+93,Mr,Hermann,Schwörer,,,male,Germany,Oberstetten (Württemberg),01/05/1922 01:00,,https://www.europarl.europa.eu/mepphoto/93.jpg,,,,,,,https://data.europarl.europa.eu/person/93
+94,Mr,Wolfgang,Schwabe,,,male,Germany,Frankfurt (Mein),12/10/1910 01:00,03/01/1978 01:00,https://www.europarl.europa.eu/mepphoto/94.jpg,,,,,,,https://data.europarl.europa.eu/person/94
+95,Mr,THE LORD,Reay,,,male,United Kingdom,Edinburgh,19/07/1937 01:00,,https://www.europarl.europa.eu/mepphoto/95.jpg,,,,,,,https://data.europarl.europa.eu/person/95
+96,Mr,W.,Rip,,,male,Netherlands,Haarlemmermeer,13/11/1903 01:36,,https://www.europarl.europa.eu/mepphoto/96.jpg,,,,,,,https://data.europarl.europa.eu/person/96
+97,Mr,John Leslie,Prescott,,,male,United Kingdom,Prestatyn,31/05/1938 01:00,,https://www.europarl.europa.eu/mepphoto/97.jpg,,,,,,,https://data.europarl.europa.eu/person/97
+98,Mr,Christopher,Price,,,male,United Kingdom,Leeds,26/01/1932 02:00,,https://www.europarl.europa.eu/mepphoto/98.jpg,,,,,,,https://data.europarl.europa.eu/person/98
+99,Mr,Geoffrey,Rippon,,,male,United Kingdom,Writhlington (Somerset),28/05/1924 01:00,,https://www.europarl.europa.eu/mepphoto/99.jpg,,,,,,,https://data.europarl.europa.eu/person/99
+100,Ms,J.C.,Rutgers,,,female,Netherlands,Hilversum,13/11/1908 01:00,,https://www.europarl.europa.eu/mepphoto/100.jpg,,,,,,,https://data.europarl.europa.eu/person/100
+101,Mr,Sijbrandus A.,Posthumus,,,male,Netherlands,Franeker,19/04/1910 01:00,,https://www.europarl.europa.eu/mepphoto/101.jpg,,,,,,,https://data.europarl.europa.eu/person/101
+102,Mr,Enrico,Rizzi,,,male,Italy,Milano,05/07/1930 01:00,,https://www.europarl.europa.eu/mepphoto/102.jpg,,,,,,,https://data.europarl.europa.eu/person/102
+103,Mr,Nicola,Romeo,,,male,Italy,Napoli,10/07/1902 01:36,,https://www.europarl.europa.eu/mepphoto/103.jpg,,,,,,,https://data.europarl.europa.eu/person/103
+104,Mr,Luigi C.,Rosati,,,male,Italy,Romeno (Trento),21/08/1914 01:00,,https://www.europarl.europa.eu/mepphoto/104.jpg,,,,,,,https://data.europarl.europa.eu/person/104
+105,Mr,Jan P.,Pronk,,,male,Netherlands,Scheveningen,16/03/1940 01:00,,https://www.europarl.europa.eu/mepphoto/105.jpg,,,,,,,https://data.europarl.europa.eu/person/105
+106,Mr,C.E.P.M.,Raedts,,,male,Netherlands,Venray,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/106.jpg,,,,,,,https://data.europarl.europa.eu/person/106
+107,Mr,Roger,de Saivre,,,male,France,Paris,14/05/1908 01:00,,https://www.europarl.europa.eu/mepphoto/107.jpg,,,,,,,https://data.europarl.europa.eu/person/107
+108,Mr,Xavier,Salado,,,male,France,Frenda (Tiaret),18/08/1917 12:00,,https://www.europarl.europa.eu/mepphoto/108.jpg,,,,,,,https://data.europarl.europa.eu/person/108
+109,Mr,Camillo,Ripamonti,,,male,Italy,Gorgonzola (Milano),25/05/1919 01:00,,https://www.europarl.europa.eu/mepphoto/109.jpg,,,,,,,https://data.europarl.europa.eu/person/109
+110,Mr,Roland,Riz,,,male,Italy,Bolzano,12/05/1927 01:00,,https://www.europarl.europa.eu/mepphoto/110.jpg,,,,,,,https://data.europarl.europa.eu/person/110
+111,Mr,Paul,Reynaud,,,male,France,Barcelonnette,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/111.jpg,,,,,,,https://data.europarl.europa.eu/person/111
+112,Mr,René,Ribière,,,male,France,Paris,21/01/1922 02:00,,https://www.europarl.europa.eu/mepphoto/112.jpg,,,,,,,https://data.europarl.europa.eu/person/112
+113,Mr,Henri,Rochereau,,,male,France,Chantonnay (Vendée),25/03/1908 01:00,,https://www.europarl.europa.eu/mepphoto/113.jpg,,,,,,,https://data.europarl.europa.eu/person/113
+114,Mr,Joachim,Schöne,,,male,Germany,Magdeburg,19/06/1906 01:00,,https://www.europarl.europa.eu/mepphoto/114.jpg,,,,,,,https://data.europarl.europa.eu/person/114
+115,Mr,Klaus-Peter,Schulz,,,male,Germany,Berlin,02/04/1915 01:00,,https://www.europarl.europa.eu/mepphoto/115.jpg,,,,,,,https://data.europarl.europa.eu/person/115
+116,Mr,Helmut,Schmidt,,,male,Germany,Hamburg,23/12/1918 02:00,,https://www.europarl.europa.eu/mepphoto/116.jpg,,,,,,,https://data.europarl.europa.eu/person/116
+117,Mr,Manfred,Schmidt,,,male,Germany,Schwabenhausen bei München,16/01/1936 02:00,,https://www.europarl.europa.eu/mepphoto/117.jpg,,,,,,,https://data.europarl.europa.eu/person/117
+118,Mr,Martin,Schmidt,,,male,Germany,Gassen/N.-L.,16/06/1914 01:00,,https://www.europarl.europa.eu/mepphoto/118.jpg,,,,,,,https://data.europarl.europa.eu/person/118
+119,Mr,Alain,Poher,,,male,France,Albon-sur-Seine,17/04/1909 01:00,,https://www.europarl.europa.eu/mepphoto/119.jpg,,,,,,,https://data.europarl.europa.eu/person/119
+120,Mr,Pietro C.,Restagno,,,male,Italy,Torino,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/120.jpg,,,,,,,https://data.europarl.europa.eu/person/120
+121,Mr,Cristoforo,Ricci,,,male,Italy,Circello (Benevento),30/06/1921 01:00,,https://www.europarl.europa.eu/mepphoto/121.jpg,,,,,,,https://data.europarl.europa.eu/person/121
+123,Mr,Julien,Ramizason,,,male,France,Port-Berge,19/12/1923 02:00,,https://www.europarl.europa.eu/mepphoto/123.jpg,,,,,,,https://data.europarl.europa.eu/person/123
+124,Mr,Heinrich,Schild,,,male,Germany,Wuppertal,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/124.jpg,,,,,,,https://data.europarl.europa.eu/person/124
+125,Mr,Walter,Scheel,,,male,Germany,Solingen,08/07/1919 01:00,,https://www.europarl.europa.eu/mepphoto/125.jpg,,,,,,,https://data.europarl.europa.eu/person/125
+126,Mr,Antoine,Porcu,,,male,France,Longwy,29/08/1926 01:00,,https://www.europarl.europa.eu/mepphoto/126.jpg,,,,,,,https://data.europarl.europa.eu/person/126
+127,Mr,Michel,Raingeard,,,male,France,Nantes,20/06/1919 01:00,,https://www.europarl.europa.eu/mepphoto/127.jpg,,,,,,,https://data.europarl.europa.eu/person/127
+128,Mr,Rafton,Pounder,,,male,United Kingdom,Belfast,13/05/1933 01:00,,https://www.europarl.europa.eu/mepphoto/128.jpg,,,,,,,https://data.europarl.europa.eu/person/128
+129,Mr,Wilmar,Sabass,,,male,Germany,Siemianowitz Oberschlesien,04/12/1902 01:36,,https://www.europarl.europa.eu/mepphoto/129.jpg,,,,,,,https://data.europarl.europa.eu/person/129
+130,Mr,Hans Georg,Schachtschabel,,,male,Germany,Dessau,16/03/1914 01:00,,https://www.europarl.europa.eu/mepphoto/130.jpg,,,,,,,https://data.europarl.europa.eu/person/130
+131,Mr,Richard Charles,Mitchell,,,male,United Kingdom,Witley (Surrey),22/08/1927 01:00,,https://www.europarl.europa.eu/mepphoto/131.jpg,,,,,,,https://data.europarl.europa.eu/person/131
+132,Mr,William,Molloy,,,male,United Kingdom,Swansea Glamorgan,26/10/1918 01:00,,https://www.europarl.europa.eu/mepphoto/132.jpg,,,,,,,https://data.europarl.europa.eu/person/132
+133,Mr,THE LORD,Murray of Gravesend,,,male,United Kingdom,London,09/01/1930 02:00,,https://www.europarl.europa.eu/mepphoto/133.jpg,,,,,,,https://data.europarl.europa.eu/person/133
+134,Mr,John Holbrook,Osborn,,,male,United Kingdom,Sheffield,14/12/1922 02:00,,https://www.europarl.europa.eu/mepphoto/134.jpg,,,,,,,https://data.europarl.europa.eu/person/134
+135,Mr,John,Peel,,,male,United Kingdom,Penang,06/06/1912 01:00,,https://www.europarl.europa.eu/mepphoto/135.jpg,,,,,,,https://data.europarl.europa.eu/person/135
+136,Mr,Schelto,Patijn,,,male,Netherlands,Den Haag,13/08/1936 01:00,,https://www.europarl.europa.eu/mepphoto/136.jpg,,,,,,,https://data.europarl.europa.eu/person/136
+137,Mr,Cornelis J.,van der Ploeg,,,male,Netherlands,Zoeterwouden,15/12/1907 01:00,,https://www.europarl.europa.eu/mepphoto/137.jpg,,,,,,,https://data.europarl.europa.eu/person/137
+138,Mr,THE EARL,Mansfield,,,male,United Kingdom,London,07/07/1930 01:00,,https://www.europarl.europa.eu/mepphoto/138.jpg,,,,,,,https://data.europarl.europa.eu/person/138
+139,Mr,Adriaan Peter,Oele,,,male,Netherlands,Rotterdam,28/11/1923 02:00,,https://www.europarl.europa.eu/mepphoto/139.jpg,,,,,,,https://data.europarl.europa.eu/person/139
+140,Mr,G.M.,Nederhorst,,,male,Netherlands,Gouda,17/10/1907 01:00,,https://www.europarl.europa.eu/mepphoto/140.jpg,,,,,,,https://data.europarl.europa.eu/person/140
+141,Mr,René,Pleven,,,male,France,Rennes,15/04/1901 01:36,,https://www.europarl.europa.eu/mepphoto/141.jpg,,,,,,,https://data.europarl.europa.eu/person/141
+142,Mr,Durk F.,van der Mei,,,male,Netherlands,Brummen,13/10/1924 02:00,,https://www.europarl.europa.eu/mepphoto/142.jpg,,,,,,,https://data.europarl.europa.eu/person/142
+143,Mr,Georges,Pianta,,,male,France,Thonon-les-Bains,02/03/1912 01:00,,https://www.europarl.europa.eu/mepphoto/143.jpg,,,,,,,https://data.europarl.europa.eu/person/143
+144,Mr,Alain,Peyrefitte,,,male,France,Najac (Aveyron),26/08/1925 01:00,,https://www.europarl.europa.eu/mepphoto/144.jpg,,,,,,,https://data.europarl.europa.eu/person/144
+145,Mr,Raymond,Offroy,,,male,France,Paris,03/05/1909 01:00,,https://www.europarl.europa.eu/mepphoto/145.jpg,,,,,,,https://data.europarl.europa.eu/person/145
+146,Mr,Antoine,Pinay,,,male,France,Saint-Symphorien-sur-Coise,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/146.jpg,,,,,,,https://data.europarl.europa.eu/person/146
+147,Ms,Maria,Probst,,,female,Germany,München,01/07/1902 01:36,,https://www.europarl.europa.eu/mepphoto/147.jpg,,,,,,,https://data.europarl.europa.eu/person/147
+148,Ms,MARQUESS OF,Lothian,,,female,United Kingdom,Melbourne (Derbyshire),08/09/1922 01:00,,https://www.europarl.europa.eu/mepphoto/148.jpg,,,,,,,https://data.europarl.europa.eu/person/148
+149,Mr,Hans,Richarts,,,male,Germany,Schwartzenborn (Wittlich),14/10/1910 01:00,,https://www.europarl.europa.eu/mepphoto/149.jpg,,,,,,,https://data.europarl.europa.eu/person/149
+150,Mr,Clemens,Riedel,,,male,Germany,Breslau,23/08/1914 01:00,,https://www.europarl.europa.eu/mepphoto/150.jpg,,,,,,,https://data.europarl.europa.eu/person/150
+151,Mr,Michael B.,Yeats,,,male,Ireland,Thame,22/08/1921 01:00,,https://www.europarl.europa.eu/mepphoto/151.jpg,,,,,,,https://data.europarl.europa.eu/person/151
+152,Mr,Stefano,Perrier,,,male,Italy,Tenda (Cuneo),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/152.jpg,,,,,,,https://data.europarl.europa.eu/person/152
+153,Mr,Attilio,Piccioni,,,male,Italy,Poggio Bustone (Rieti),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/153.jpg,,,,,,,https://data.europarl.europa.eu/person/153
+154,Mr,Ludwig,Ratzel,,,male,Germany,Friedrichsfeld (Mannheim),13/02/1915 01:00,,https://www.europarl.europa.eu/mepphoto/154.jpg,,,,,,,https://data.europarl.europa.eu/person/154
+155,Mr,Russell,Johnston,,,male,United Kingdom,Edingburgh,28/07/1932 01:00,,https://www.europarl.europa.eu/mepphoto/155.jpg,,,,,,,https://data.europarl.europa.eu/person/155
+156,Mr,THE LORD,Kennet,,,male,United Kingdom,London,02/08/1923 01:00,,https://www.europarl.europa.eu/mepphoto/156.jpg,,,,,,,https://data.europarl.europa.eu/person/156
+157,Mr,Peter M.,Kirk,,,male,United Kingdom,Oxford,18/05/1928 01:00,17/04/1977 12:00,https://www.europarl.europa.eu/mepphoto/157.jpg,,,,,,,https://data.europarl.europa.eu/person/157
+158,Mr,Reint,Laan,,,male,Netherlands,Velsen,10/12/1914 01:00,,https://www.europarl.europa.eu/mepphoto/158.jpg,,,,,,,https://data.europarl.europa.eu/person/158
+159,Mr,Cornelis,Laban,,,male,Netherlands,Rotterdam,07/09/1925 01:00,05/09/1977 12:00,https://www.europarl.europa.eu/mepphoto/159.jpg,,,,,,,https://data.europarl.europa.eu/person/159
+160,Mr,W.F.,Lichtenauer,,,male,Netherlands,Rotterdam,11/05/1900 01:36,,https://www.europarl.europa.eu/mepphoto/160.jpg,,,,,,,https://data.europarl.europa.eu/person/160
+161,Mr,Charles,Naveau,,,male,France,Ramousies (Nord),14/07/1903 01:36,,https://www.europarl.europa.eu/mepphoto/161.jpg,,,,,,,https://data.europarl.europa.eu/person/161
+162,Mr,Ferruccio,Parri,,,male,Italy,Pinetolo (Torino),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/162.jpg,,,,,,,https://data.europarl.europa.eu/person/162
+163,Mr,Giuseppe,Pella,,,male,Italy,Valdengo (VC),18/04/1902 01:36,,https://www.europarl.europa.eu/mepphoto/163.jpg,,,,,,,https://data.europarl.europa.eu/person/163
+164,Mr,Willy Max,Rademacher,,,male,Germany,Langenhagen (Hannover),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/164.jpg,,,,,,,https://data.europarl.europa.eu/person/164
+165,Mr,Gerhard,Reischl,,,male,Germany,München,17/07/1918 12:00,,https://www.europarl.europa.eu/mepphoto/165.jpg,,,,,,,https://data.europarl.europa.eu/person/165
+166,Mr,Hellmut,Rohde,,,male,Germany,Hannover,09/11/1925 02:00,,https://www.europarl.europa.eu/mepphoto/166.jpg,,,,,,,https://data.europarl.europa.eu/person/166
+167,Mr,Victor Emanuel,Preusker,,,male,Germany,Berlin,25/02/1913 01:00,,https://www.europarl.europa.eu/mepphoto/167.jpg,,,,,,,https://data.europarl.europa.eu/person/167
+168,Mr,Georg,Pelster,,,male,Germany,Rheine,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/168.jpg,,,,,,,https://data.europarl.europa.eu/person/168
+169,Mr,Wolfgang,Pohle,,,male,Germany,Erfurt,28/11/1903 01:36,,https://www.europarl.europa.eu/mepphoto/169.jpg,,,,,,,https://data.europarl.europa.eu/person/169
+170,Mr,Hermann,Pünder,,,male,Germany,Trier,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/170.jpg,,,,,,,https://data.europarl.europa.eu/person/170
+171,Mr,Gerhard,Philipp,,,male,Germany,Dresden,04/01/1904 01:36,,https://www.europarl.europa.eu/mepphoto/171.jpg,,,,,,,https://data.europarl.europa.eu/person/171
+172,Mr,Pierre L.J.J.,Wigny,,,male,Belgium,Liège,18/04/1905 01:00,,https://www.europarl.europa.eu/mepphoto/172.jpg,,,,,,,https://data.europarl.europa.eu/person/172
+173,Mr,Johannes H.,Lamberts,,,male,Netherlands,Vriezenveen,08/07/1911 01:00,,https://www.europarl.europa.eu/mepphoto/173.jpg,,,,,,,https://data.europarl.europa.eu/person/173
+174,Mr,P.J.,Lardinois,,,male,Netherlands,,13/08/1924 01:00,,https://www.europarl.europa.eu/mepphoto/174.jpg,,,,,,,https://data.europarl.europa.eu/person/174
+175,Mr,Pierre,Warnant,,,male,Belgium,Ixelles (Bruxelles),16/02/1905 01:00,,https://www.europarl.europa.eu/mepphoto/175.jpg,,,,,,,https://data.europarl.europa.eu/person/175
+176,Mr,Paul J.,Kapteyn,,,male,Netherlands,Amsterdam,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/176.jpg,,,,,,,https://data.europarl.europa.eu/person/176
+177,Mr,H.A.,Korthals,,,male,Netherlands,Dordrecht,03/07/1911 01:00,,https://www.europarl.europa.eu/mepphoto/177.jpg,,,,,,,https://data.europarl.europa.eu/person/177
+178,Ms,Marga A.M.,Klompé,,,female,Netherlands,Arnhem,16/08/1912 01:00,,https://www.europarl.europa.eu/mepphoto/178.jpg,,,,,,,https://data.europarl.europa.eu/person/178
+179,Mr,Jan,de Koning,,,male,Netherlands,Zwartsluis,31/08/1926 01:00,,https://www.europarl.europa.eu/mepphoto/179.jpg,,,,,,,https://data.europarl.europa.eu/person/179
+180,Mr,Eugène,Schaus,,,male,Luxembourg,Gonderange,12/05/1901 01:36,,https://www.europarl.europa.eu/mepphoto/180.jpg,,,,,,,https://data.europarl.europa.eu/person/180
+182,Mr,Augusto,Premoli,,,male,Italy,Almenno S. Bartolomeo (Bergamo),17/08/1911 01:00,,https://www.europarl.europa.eu/mepphoto/182.jpg,,,,,,,https://data.europarl.europa.eu/person/182
+183,Mr,Luigi,Preti,,,male,Italy,Ferrara,23/10/1914 01:00,,https://www.europarl.europa.eu/mepphoto/183.jpg,,,,,,,https://data.europarl.europa.eu/person/183
+184,Mr,Ernesto,Pucci,,,male,Italy,Chiaravalle Centrale,08/04/1917 01:00,,https://www.europarl.europa.eu/mepphoto/184.jpg,,,,,,,https://data.europarl.europa.eu/person/184
+185,Mr,Emile,Schaus,,,male,Luxembourg,Reimberg,12/02/1903 01:36,,https://www.europarl.europa.eu/mepphoto/185.jpg,,,,,,,https://data.europarl.europa.eu/person/185
+186,Mr,Giovanni,Persico,,,male,Italy,Benevento,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/186.jpg,,,,,,,https://data.europarl.europa.eu/person/186
+187,Mr,Mariano,Pintus,,,male,Italy,Luras (Sassari),24/09/1916 12:00,,https://www.europarl.europa.eu/mepphoto/187.jpg,,,,,,,https://data.europarl.europa.eu/person/187
+188,Mr,Michele,Pistillo,,,male,Italy,San Severo (Foggia),04/11/1926 02:00,,https://www.europarl.europa.eu/mepphoto/188.jpg,,,,,,,https://data.europarl.europa.eu/person/188
+189,Mr,Armando,Plebe,,,male,Italy,Alessandria,12/09/1927 01:00,,https://www.europarl.europa.eu/mepphoto/189.jpg,,,,,,,https://data.europarl.europa.eu/person/189
+190,Mr,David Andrew,Thornley,,,male,Ireland,Sutton,31/07/1935 01:00,,https://www.europarl.europa.eu/mepphoto/190.jpg,,,,,,,https://data.europarl.europa.eu/person/190
+191,Mr,Luigi,Noe',,,male,Italy,Milano,29/11/1915 01:00,,https://www.europarl.europa.eu/mepphoto/191.jpg,,,,,,,https://data.europarl.europa.eu/person/191
+192,Mr,Dino,Penazzato,,,male,Italy,Vicenza,05/11/1913 01:00,,https://www.europarl.europa.eu/mepphoto/192.jpg,,,,,,,https://data.europarl.europa.eu/person/192
+193,Mr,Emile,Muller,,,male,France,Mulhouse,20/04/1915 01:00,,https://www.europarl.europa.eu/mepphoto/193.jpg,,,,,,,https://data.europarl.europa.eu/person/193
+194,Mr,Erwin,Müller,,,male,France,Duisburg,18/03/1906 01:00,,https://www.europarl.europa.eu/mepphoto/194.jpg,,,,,,,https://data.europarl.europa.eu/person/194
+195,Mr,André,Mutter,,,male,France,Troyes (Aube),11/11/1901 01:36,,https://www.europarl.europa.eu/mepphoto/195.jpg,,,,,,,https://data.europarl.europa.eu/person/195
+196,Mr,François,de Menthon,,,male,France,Montmirey-la-Ville,08/01/1901 01:36,,https://www.europarl.europa.eu/mepphoto/196.jpg,,,,,,,https://data.europarl.europa.eu/person/196
+197,Mr,Bertrand,Motte,,,male,France,Annappes (Nord),19/07/1914 01:00,,https://www.europarl.europa.eu/mepphoto/197.jpg,,,,,,,https://data.europarl.europa.eu/person/197
+199,Ms,Elisabeth,Orth,,,female,Germany,Hannover,24/03/1921 01:00,,https://www.europarl.europa.eu/mepphoto/199.jpg,,,,,,,https://data.europarl.europa.eu/person/199
+200,Mr,Jean,Maroger,,,male,France,Nîmes,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/200.jpg,,,,,,,https://data.europarl.europa.eu/person/200
+201,Mr,Jean,Medecin,,,male,France,Nice,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/201.jpg,,,,,,,https://data.europarl.europa.eu/person/201
+202,Mr,Erich,Ollenhauer,,,male,Germany,Magdeburg,27/03/1901 01:36,,https://www.europarl.europa.eu/mepphoto/202.jpg,,,,,,,https://data.europarl.europa.eu/person/202
+203,Mr,Josef,Oesterle,,,male,Germany,Weissensberg,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/203.jpg,,,,,,,https://data.europarl.europa.eu/person/203
+204,Mr,Knud,Thomsen,,,male,Denmark,Ålborg,16/01/1908 01:00,,https://www.europarl.europa.eu/mepphoto/204.jpg,,,,,,,https://data.europarl.europa.eu/person/204
+205,Mr,William Mark,Hughes,,,male,United Kingdom,Manchester,18/12/1932 02:00,,https://www.europarl.europa.eu/mepphoto/205.jpg,,,,,,,https://data.europarl.europa.eu/person/205
+206,Mr,Jacques L.G.,Van Offelen,,,male,Belgium,Isleworth (Grande-Bretagne),18/10/1916 01:00,,https://www.europarl.europa.eu/mepphoto/206.jpg,,,,,,,https://data.europarl.europa.eu/person/206
+207,Mr,Pierre F.,Vermeylen,,,male,Belgium,Ukkel,08/04/1904 01:36,,https://www.europarl.europa.eu/mepphoto/207.jpg,,,,,,,https://data.europarl.europa.eu/person/207
+208,Mr,THE LORD,Gladwyn,,,male,United Kingdom,Furback Hall Rotherham,25/04/1900 01:36,,https://www.europarl.europa.eu/mepphoto/208.jpg,,,,,,,https://data.europarl.europa.eu/person/208
+209,Mr,William Winter,Hamilton,,,male,United Kingdom,Herrington Co Durham,26/06/1917 12:00,,https://www.europarl.europa.eu/mepphoto/209.jpg,,,,,,,https://data.europarl.europa.eu/person/209
+210,Mr,James,Hill,,,male,United Kingdom,Southampton,21/12/1924 02:00,,https://www.europarl.europa.eu/mepphoto/210.jpg,,,,,,,https://data.europarl.europa.eu/person/210
+211,Mr,John E.B.,Hill,,,male,United Kingdom,London,13/11/1912 01:00,,https://www.europarl.europa.eu/mepphoto/211.jpg,,,,,,,https://data.europarl.europa.eu/person/211
+212,Mr,Ralph F.,Howell,,,male,United Kingdom,Great Moulton,25/05/1923 01:00,,https://www.europarl.europa.eu/mepphoto/212.jpg,,,,,,,https://data.europarl.europa.eu/person/212
+213,Mr,M.M.A.A.,Janssen,,,male,Netherlands,Breda,13/06/1903 01:36,,https://www.europarl.europa.eu/mepphoto/213.jpg,,,,,,,https://data.europarl.europa.eu/person/213
+214,Mr,Mario,Martinelli,,,male,Italy,Como,12/05/1906 01:00,,https://www.europarl.europa.eu/mepphoto/214.jpg,,,,,,,https://data.europarl.europa.eu/person/214
+215,Mr,Edoardo,Martino,,,male,Italy,Alessandria,20/04/1910 01:00,,https://www.europarl.europa.eu/mepphoto/215.jpg,,,,,,,https://data.europarl.europa.eu/person/215
+216,Mr,Gaetano,Martino,,,male,Italy,Messina,25/11/1900 01:36,,https://www.europarl.europa.eu/mepphoto/216.jpg,,,,,,,https://data.europarl.europa.eu/person/216
+217,Mr,Karl,Mitterdorfer,,,male,Italy,Bolzano,28/01/1920 02:00,,https://www.europarl.europa.eu/mepphoto/217.jpg,,,,,,,https://data.europarl.europa.eu/person/217
+218,Mr,Claude,Mont,,,male,France,Pouilly-sous-Charlieu,30/06/1913 01:00,,https://www.europarl.europa.eu/mepphoto/218.jpg,,,,,,,https://data.europarl.europa.eu/person/218
+219,Mr,Pierre,Montel,,,male,France,,,,https://www.europarl.europa.eu/mepphoto/219.jpg,,,,,,,https://data.europarl.europa.eu/person/219
+220,Mr,Richie,Ryan,,,male,Ireland,Dublin,27/02/1929 02:00,17/03/2019 01:00,https://www.europarl.europa.eu/mepphoto/220.jpg,,,,,,,https://data.europarl.europa.eu/person/220
+221,Mr,Pierre,Mariotte,,,male,France,Maiche (Doubs),12/03/1909 01:00,,https://www.europarl.europa.eu/mepphoto/221.jpg,,,,,,,https://data.europarl.europa.eu/person/221
+222,Mr,Michel,Maurice-Bokanowski,,,male,France,Paris,06/11/1912 01:00,,https://www.europarl.europa.eu/mepphoto/222.jpg,,,,,,,https://data.europarl.europa.eu/person/222
+223,Mr,René,Mayer,,,male,France,Paris,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/223.jpg,,,,,,,https://data.europarl.europa.eu/person/223
+224,Mr,Albert,Liogier,,,male,France,Yssingeaux,17/02/1910 01:00,,https://www.europarl.europa.eu/mepphoto/224.jpg,,,,,,,https://data.europarl.europa.eu/person/224
+225,Mr,Kléber,Loustau,,,male,France,Romorantin (Loir-et-Cher),05/02/1915 01:00,,https://www.europarl.europa.eu/mepphoto/225.jpg,,,,,,,https://data.europarl.europa.eu/person/225
+226,Mr,Hervé,Laudrin,,,male,France,Locminé,23/03/1902 01:36,,https://www.europarl.europa.eu/mepphoto/226.jpg,,,,,,,https://data.europarl.europa.eu/person/226
+227,Mr,Jean,Legendre,,,male,France,Paris,07/05/1906 01:00,,https://www.europarl.europa.eu/mepphoto/227.jpg,,,,,,,https://data.europarl.europa.eu/person/227
+228,Mr,Marcel,Lemoine,,,male,France,Chateauroux,23/12/1918 02:00,,https://www.europarl.europa.eu/mepphoto/228.jpg,,,,,,,https://data.europarl.europa.eu/person/228
+229,Mr,Pierre-Olivier,Lapie,,,male,France,Rennes,02/04/1901 01:36,,https://www.europarl.europa.eu/mepphoto/229.jpg,,,,,,,https://data.europarl.europa.eu/person/229
+230,Mr,Francis,Leenhardt,,,male,France,Marseille,24/04/1908 01:00,,https://www.europarl.europa.eu/mepphoto/230.jpg,,,,,,,https://data.europarl.europa.eu/person/230
+231,Mr,Pierre,Lagorce,,,male,France,Pugnac,16/05/1914 01:00,,https://www.europarl.europa.eu/mepphoto/231.jpg,,,,,,,https://data.europarl.europa.eu/person/231
+236,Mr,Georges,Laffargue,,,male,France,Vicq (Haute-Vienne),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/236.jpg,,,,,,,https://data.europarl.europa.eu/person/236
+239,Mr,Ludwig,Metzger,,,male,Germany,Darmstadt,18/03/1902 01:36,,https://www.europarl.europa.eu/mepphoto/239.jpg,,,,,,,https://data.europarl.europa.eu/person/239
+240,Mr,Josef,Müller,,,male,Germany,Eschweiler,18/07/1919 01:00,,https://www.europarl.europa.eu/mepphoto/240.jpg,,,,,,,https://data.europarl.europa.eu/person/240
+241,Mr,Willi,Müller,,,male,Germany,Mülheim a.d. Ruhr,14/07/1925 01:00,,https://www.europarl.europa.eu/mepphoto/241.jpg,,,,,,,https://data.europarl.europa.eu/person/241
+242,Mr,Willy,Odenthal,,,male,Germany,Köln,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/242.jpg,,,,,,,https://data.europarl.europa.eu/person/242
+243,Mr,Hans,Merten,,,male,Germany,Wiesbaden,01/09/1908 01:00,,https://www.europarl.europa.eu/mepphoto/243.jpg,,,,,,,https://data.europarl.europa.eu/person/243
+244,Mr,Hans-Joachim,von Merkatz,,,male,Germany,Stargard,07/07/1905 01:00,,https://www.europarl.europa.eu/mepphoto/244.jpg,,,,,,,https://data.europarl.europa.eu/person/244
+245,Mr,Robert,Margulies,,,male,Germany,Düsseldorf,29/09/1908 01:00,,https://www.europarl.europa.eu/mepphoto/245.jpg,,,,,,,https://data.europarl.europa.eu/person/245
+246,Mr,Adolf,Mauk,,,male,Germany,Lauffen,08/05/1906 01:00,,https://www.europarl.europa.eu/mepphoto/246.jpg,,,,,,,https://data.europarl.europa.eu/person/246
+247,Mr,Linus,Memmel,,,male,Germany,Rothenburg ob der Tauber,24/07/1914 01:00,,https://www.europarl.europa.eu/mepphoto/247.jpg,,,,,,,https://data.europarl.europa.eu/person/247
+248,Mr,Roger,Toubeau,,,male,Belgium,Frameries,31/03/1900 01:36,,https://www.europarl.europa.eu/mepphoto/248.jpg,,,,,,,https://data.europarl.europa.eu/person/248
+249,Mr,Leon-Eli,Troclet,,,male,Belgium,Liège,08/02/1907 01:00,,https://www.europarl.europa.eu/mepphoto/249.jpg,,,,,,,https://data.europarl.europa.eu/person/249
+250,Mr,Louis P.J.,Vanvelthoven,,,male,Belgium,Lommel (Limburg),08/06/1938 01:00,,https://www.europarl.europa.eu/mepphoto/250.jpg,,,,,,,https://data.europarl.europa.eu/person/250
+251,Mr,Arie,van der Hek,,,male,Netherlands,Schoonhoven,12/09/1938 01:00,,https://www.europarl.europa.eu/mepphoto/251.jpg,,,,,,,https://data.europarl.europa.eu/person/251
+252,Mr,Johan Wilhelm,van Hulst,,,male,Netherlands,Amsterdam,28/01/1911 01:00,,https://www.europarl.europa.eu/mepphoto/252.jpg,,,,,,,https://data.europarl.europa.eu/person/252
+253,Mr,THE LORD,Gordon-Walker,,,male,United Kingdom,Worthing,07/04/1907 01:00,,https://www.europarl.europa.eu/mepphoto/253.jpg,,,,,,,https://data.europarl.europa.eu/person/253
+254,Mr,Nicolas,Margue,,,male,Luxembourg,Fingig,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/254.jpg,,,,,,,https://data.europarl.europa.eu/person/254
+255,Mr,Camille,Ney,,,male,Luxembourg,Ell,01/01/1919 02:00,,https://www.europarl.europa.eu/mepphoto/255.jpg,,,,,,,https://data.europarl.europa.eu/person/255
+256,Mr,C.P.,Hazenbosch,,,male,Netherlands,Dordrecht,10/11/1921 02:00,,https://www.europarl.europa.eu/mepphoto/256.jpg,,,,,,,https://data.europarl.europa.eu/person/256
+257,Mr,Gerolamo Lino,Moro,,,male,Italy,Venezia,12/02/1903 01:36,,https://www.europarl.europa.eu/mepphoto/257.jpg,,,,,,,https://data.europarl.europa.eu/person/257
+258,Mr,Giovanni,Mosca,,,male,Italy,Casalpusterlengo (Milano),12/07/1927 01:00,,https://www.europarl.europa.eu/mepphoto/258.jpg,,,,,,,https://data.europarl.europa.eu/person/258
+259,Mr,Angelo Giacomo,Mott,,,male,Italy,Fransacqua di Primerio (TN),03/07/1902 01:36,,https://www.europarl.europa.eu/mepphoto/259.jpg,,,,,,,https://data.europarl.europa.eu/person/259
+260,Mr,Andrea,Mascagni,,,male,Italy,S. Miniato (Pisa),07/08/1917 12:00,,https://www.europarl.europa.eu/mepphoto/260.jpg,,,,,,,https://data.europarl.europa.eu/person/260
+261,Mr,Aldo,Masullo,,,male,Italy,Avellino,12/04/1923 02:00,,https://www.europarl.europa.eu/mepphoto/261.jpg,,,,,,,https://data.europarl.europa.eu/person/261
+262,Mr,Pietro,Micara,,,male,Italy,Frascati,04/11/1912 01:00,,https://www.europarl.europa.eu/mepphoto/262.jpg,,,,,,,https://data.europarl.europa.eu/person/262
+263,Mr,Ludovico,Montini,,,male,Italy,Brescia,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/263.jpg,,,,,,,https://data.europarl.europa.eu/person/263
+264,Mr,Franco,Malfatti,,,male,Italy,Roma,16/01/1927 02:00,,https://www.europarl.europa.eu/mepphoto/264.jpg,,,,,,,https://data.europarl.europa.eu/person/264
+265,Mr,Francesco,Marenghi,,,male,Italy,Castell'Arquato (Piacenza),24/03/1904 01:36,,https://www.europarl.europa.eu/mepphoto/265.jpg,,,,,,,https://data.europarl.europa.eu/person/265
+266,Mr,Mario,Marina,,,male,Italy,Milano,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/266.jpg,,,,,,,https://data.europarl.europa.eu/person/266
+267,Mr,Luigi,Marras,,,male,Italy,Bonorva (Sassari),17/04/1922 01:00,,https://www.europarl.europa.eu/mepphoto/267.jpg,,,,,,,https://data.europarl.europa.eu/person/267
+269,Mr,Patrick Joseph,Power,,,male,Ireland,The Curragn Co. Kildare,19/11/1928 02:00,,https://www.europarl.europa.eu/mepphoto/269.jpg,,,,,,,https://data.europarl.europa.eu/person/269
+270,Mr,Silvio,Leonardi,,,male,Italy,Torino,16/07/1914 01:00,21/04/1990 12:00,https://www.europarl.europa.eu/mepphoto/270.jpg,,,,,,,https://data.europarl.europa.eu/person/270
+271,Mr,Giovanni,Malagodi,,,male,Italy,Londra,12/10/1904 01:00,,https://www.europarl.europa.eu/mepphoto/271.jpg,,,,,,,https://data.europarl.europa.eu/person/271
+272,Mr,Maurice,Lemaire,,,male,France,Gerbepal,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/272.jpg,,,,,,,https://data.europarl.europa.eu/person/272
+273,Mr,Henri,Longchambon,,,male,France,Clermont-Ferrand (Puy-de-Dôme),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/273.jpg,,,,,,,https://data.europarl.europa.eu/person/273
+274,Mr,Pierre,Lagaillarde,,,male,France,Courbevoie (Seine),15/05/1931 01:00,,https://www.europarl.europa.eu/mepphoto/274.jpg,,,,,,,https://data.europarl.europa.eu/person/274
+275,Mr,Jean,Laurain,,,male,France,Metz-Grigy,01/01/1921 02:00,07/03/2008 01:00,https://www.europarl.europa.eu/mepphoto/275.jpg,,,,,,,https://data.europarl.europa.eu/person/275
+276,Mr,Pierre Charles Alfred,Krieg,,,male,France,Lille,18/01/1922 02:00,,https://www.europarl.europa.eu/mepphoto/276.jpg,,,,,,,https://data.europarl.europa.eu/person/276
+277,Mr,Jozef,Kurtz,,,male,France,Rentrisch,29/01/1903 01:36,,https://www.europarl.europa.eu/mepphoto/277.jpg,,,,,,,https://data.europarl.europa.eu/person/277
+278,Mr,Jean,Laborbe,,,male,France,Lyon,08/10/1911 01:00,,https://www.europarl.europa.eu/mepphoto/278.jpg,,,,,,,https://data.europarl.europa.eu/person/278
+279,Mr,René,Lacombe,,,male,France,Combrée (Maine et Loire),18/04/1915 01:00,,https://www.europarl.europa.eu/mepphoto/279.jpg,,,,,,,https://data.europarl.europa.eu/person/279
+280,Mr,Karl-Heinz,Mursch,,,male,Germany,Krotoschin/Posen,25/09/1911 01:00,,https://www.europarl.europa.eu/mepphoto/280.jpg,,,,,,,https://data.europarl.europa.eu/person/280
+281,Mr,Gabriel,Kaspereit,,,male,France,Paris,21/06/1919 01:00,,https://www.europarl.europa.eu/mepphoto/281.jpg,,,,,,,https://data.europarl.europa.eu/person/281
+282,Mr,Hans-Werner,Müller,,,male,Germany,Nunkirchen,03/09/1942 12:00,,https://www.europarl.europa.eu/mepphoto/282.jpg,,,,,,,https://data.europarl.europa.eu/person/282
+283,Ms,Peggy Edith,Fenner,,,female,United Kingdom,,,,https://www.europarl.europa.eu/mepphoto/283.jpg,,,,,,,https://data.europarl.europa.eu/person/283
+284,Ms,THE BARONESS,Fisher of Rednal,,,female,United Kingdom,Birmingham,13/09/1919 01:00,,https://www.europarl.europa.eu/mepphoto/284.jpg,,,,,,,https://data.europarl.europa.eu/person/284
+285,Ms,Dore,Smets,,,female,Belgium,Mechelen,06/06/1901 01:36,,https://www.europarl.europa.eu/mepphoto/285.jpg,,,,,,,https://data.europarl.europa.eu/person/285
+286,Mr,Siegfried,Meister,,,male,Germany,Geisingen,09/01/1903 01:36,,https://www.europarl.europa.eu/mepphoto/286.jpg,,,,,,,https://data.europarl.europa.eu/person/286
+287,Mr,Wilhelm,Michels,,,male,Germany,Welper (Ruhr),27/09/1919 01:00,,https://www.europarl.europa.eu/mepphoto/287.jpg,,,,,,,https://data.europarl.europa.eu/person/287
+288,Mr,Aloys Michael,Lenz,,,male,Germany,Vochem b. Köln,10/02/1910 01:00,,https://www.europarl.europa.eu/mepphoto/288.jpg,,,,,,,https://data.europarl.europa.eu/person/288
+289,Mr,Paul,Leverkuehn,,,male,Germany,Lübeck,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/289.jpg,,,,,,,https://data.europarl.europa.eu/person/289
+290,Mr,Heinrich,Lindenberg,,,male,Germany,Berlin,02/10/1902 01:36,,https://www.europarl.europa.eu/mepphoto/290.jpg,,,,,,,https://data.europarl.europa.eu/person/290
+291,Mr,Walter,Löhr,,,male,Germany,Darmstadt,27/09/1911 01:00,,https://www.europarl.europa.eu/mepphoto/291.jpg,,,,,,,https://data.europarl.europa.eu/person/291
+292,Mr,Helweg,Petersen,,,male,Denmark,Sdr. Longelse Langeland,29/11/1909 01:00,,https://www.europarl.europa.eu/mepphoto/292.jpg,,,,,,,https://data.europarl.europa.eu/person/292
+293,Mr,Ib Gunnar,Stetter,,,male,Denmark,Odense,01/03/1917 01:00,,https://www.europarl.europa.eu/mepphoto/293.jpg,,,,,,,https://data.europarl.europa.eu/person/293
+294,Mr,Hans,Lautenschlager,,,male,Germany,Stekene,21/07/1901 01:36,,https://www.europarl.europa.eu/mepphoto/294.jpg,,,,,,,https://data.europarl.europa.eu/person/294
+296,Mr,Marcel O.C.L.G.,Thiry,,,male,Belgium,Charleroi,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/296.jpg,,,,,,,https://data.europarl.europa.eu/person/296
+297,Mr,Alexander,Fletcher,,,male,United Kingdom,Greenock Renfrewshire (Scotland),26/08/1929 01:00,,https://www.europarl.europa.eu/mepphoto/297.jpg,,,,,,,https://data.europarl.europa.eu/person/297
+298,Mr,Charles,Fletcher-Cooke,,,male,United Kingdom,London,05/05/1914 01:00,,https://www.europarl.europa.eu/mepphoto/298.jpg,,,,,,,https://data.europarl.europa.eu/person/298
+299,Mr,Geoffrey Stanley,De Freitas,,,male,United Kingdom,St. Lucia (Windward Islan,07/04/1913 01:00,,https://www.europarl.europa.eu/mepphoto/299.jpg,,,,,,,https://data.europarl.europa.eu/person/299
+300,Mr,Guillaume,Schyns,,,male,Belgium,Kelmis (Lüttich),13/10/1923 02:00,,https://www.europarl.europa.eu/mepphoto/300.jpg,,,,,,,https://data.europarl.europa.eu/person/300
+301,Mr,Paul-Henri,Spaak,,,male,Belgium,Schaerbeek-Bruxelles,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/301.jpg,,,,,,,https://data.europarl.europa.eu/person/301
+302,Mr,Jonkheer M.,Van Der Goes Van Naters,,,male,Netherlands,Nijmegen,21/12/1900 01:36,,https://www.europarl.europa.eu/mepphoto/302.jpg,,,,,,,https://data.europarl.europa.eu/person/302
+303,Mr,Wessel,Hartog,,,male,Netherlands,Wormer,25/05/1911 01:00,,https://www.europarl.europa.eu/mepphoto/303.jpg,,,,,,,https://data.europarl.europa.eu/person/303
+304,Mr,Ernest Alan,Fitch,,,male,United Kingdom,New Tredegar (Wales),10/03/1915 01:00,,https://www.europarl.europa.eu/mepphoto/304.jpg,,,,,,,https://data.europarl.europa.eu/person/304
+305,Mr,Jospeh,Lucius,,,male,Luxembourg,Luxembourg,20/05/1912 01:00,,https://www.europarl.europa.eu/mepphoto/305.jpg,,,,,,,https://data.europarl.europa.eu/person/305
+306,Mr,Carlo,Meintz,,,male,Luxembourg,,,,https://www.europarl.europa.eu/mepphoto/306.jpg,,,,,,,https://data.europarl.europa.eu/person/306
+307,Mr,Lucio,Luzzatto,,,male,Italy,Milano,05/07/1913 01:00,,https://www.europarl.europa.eu/mepphoto/307.jpg,,,,,,,https://data.europarl.europa.eu/person/307
+308,Ms,Marichen,Nielsen,,,female,Denmark,Åbenrå,18/02/1921 02:00,,https://www.europarl.europa.eu/mepphoto/308.jpg,,,,,,,https://data.europarl.europa.eu/person/308
+309,Mr,Fernand,Lösch,,,male,Luxembourg,Luxembourg,19/01/1900 01:36,,https://www.europarl.europa.eu/mepphoto/309.jpg,,,,,,,https://data.europarl.europa.eu/person/309
+310,Mr,Charles B.,McDonald,,,male,Ireland,Larchfield,11/06/1935 01:00,,https://www.europarl.europa.eu/mepphoto/310.jpg,,,,,,,https://data.europarl.europa.eu/person/310
+311,Mr,Ugo,La Malfa,,,male,Italy,Palermo,16/05/1903 01:36,,https://www.europarl.europa.eu/mepphoto/311.jpg,,,,,,,https://data.europarl.europa.eu/person/311
+312,Mr,Pietro,LEZZI,,,male,Italy,Napoli,15/12/1922 02:00,05/10/2013 12:00,https://www.europarl.europa.eu/mepphoto/312.jpg,,,,,,,https://data.europarl.europa.eu/person/312
+313,Mr,Tarcisio,Longoni,,,male,Italy,Brugherio (Milano),28/02/1913 01:00,,https://www.europarl.europa.eu/mepphoto/313.jpg,,,,,,,https://data.europarl.europa.eu/person/313
+314,Mr,Léon,Jozeau-Marigné,,,male,France,Angers,21/07/1909 01:00,,https://www.europarl.europa.eu/mepphoto/314.jpg,,,,,,,https://data.europarl.europa.eu/person/314
+315,Mr,Alfred,Krieger,,,male,France,,,,https://www.europarl.europa.eu/mepphoto/315.jpg,,,,,,,https://data.europarl.europa.eu/person/315
+316,Mr,René,Kuehn,,,male,France,,,,https://www.europarl.europa.eu/mepphoto/316.jpg,,,,,,,https://data.europarl.europa.eu/person/316
+317,Mr,André,Jarrot,,,male,France,Lux-par-Chalon-sur-Saône,13/12/1909 01:00,,https://www.europarl.europa.eu/mepphoto/317.jpg,,,,,,,https://data.europarl.europa.eu/person/317
+318,Mr,Pierre,Joxe,,,male,France,Paris,28/11/1934 02:00,,https://www.europarl.europa.eu/mepphoto/318.jpg,,,,,,,https://data.europarl.europa.eu/person/318
+319,Mr,Guy,Jarrosson,,,male,France,Lyon,09/03/1911 01:00,,https://www.europarl.europa.eu/mepphoto/319.jpg,,,,,,,https://data.europarl.europa.eu/person/319
+320,Mr,Alwin,Kulawig,,,male,Germany,Klarenthal-Krughütte (Saar),17/01/1926 02:00,,https://www.europarl.europa.eu/mepphoto/320.jpg,,,,,,,https://data.europarl.europa.eu/person/320
+321,Mr,Georg,Leber,,,male,Germany,Obertiefenbach (Oberlahnkreis),07/10/1920 01:00,,https://www.europarl.europa.eu/mepphoto/321.jpg,,,,,,,https://data.europarl.europa.eu/person/321
+322,Mr,Hans,Lemp,,,male,Germany,Vechta,11/12/1928 02:00,,https://www.europarl.europa.eu/mepphoto/322.jpg,,,,,,,https://data.europarl.europa.eu/person/322
+323,Mr,Gerhard,Kreyssig,,,male,Germany,Crossen (Mulde),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/323.jpg,,,,,,,https://data.europarl.europa.eu/person/323
+324,Mr,Herbert,Kriedemann,,,male,Germany,Berlin,01/03/1903 01:36,,https://www.europarl.europa.eu/mepphoto/324.jpg,,,,,,,https://data.europarl.europa.eu/person/324
+325,Mr,Hermann,Kopf,,,male,Germany,Freiburg/Breisgau,29/05/1901 01:36,,https://www.europarl.europa.eu/mepphoto/325.jpg,,,,,,,https://data.europarl.europa.eu/person/325
+326,Mr,Lothar,Krall,,,male,Germany,Winningen,15/01/1924 02:00,,https://www.europarl.europa.eu/mepphoto/326.jpg,,,,,,,https://data.europarl.europa.eu/person/326
+327,Mr,Hans-Jürgen,Klinker,,,male,Germany,Ülsby,13/01/1921 02:00,,https://www.europarl.europa.eu/mepphoto/327.jpg,,,,,,,https://data.europarl.europa.eu/person/327
+328,Mr,Ivar,Nørgaard,,,male,Denmark,Kgs. Lyngby,26/07/1922 01:00,,https://www.europarl.europa.eu/mepphoto/328.jpg,,,,,,,https://data.europarl.europa.eu/person/328
+329,Mr,Gert Verner,Petersen,,,male,Denmark,Nykøbing F.,19/08/1927 01:00,,https://www.europarl.europa.eu/mepphoto/329.jpg,,,,,,,https://data.europarl.europa.eu/person/329
+330,Mr,Hellmut,Kalbitzer,,,male,Germany,Hamburg,17/11/1913 01:00,,https://www.europarl.europa.eu/mepphoto/330.jpg,,,,,,,https://data.europarl.europa.eu/person/330
+331,Mr,Kurt Georg,Kiesinger,,,male,Germany,Ebingen (Würtemberg),06/04/1904 01:36,,https://www.europarl.europa.eu/mepphoto/331.jpg,,,,,,,https://data.europarl.europa.eu/person/331
+332,Mr,Léon,Servais,,,male,Belgium,Liège,07/11/1907 01:00,,https://www.europarl.europa.eu/mepphoto/332.jpg,,,,,,,https://data.europarl.europa.eu/person/332
+333,Mr,Knud,Nielsen,,,male,Denmark,Ålborg,17/09/1928 01:00,,https://www.europarl.europa.eu/mepphoto/333.jpg,,,,,,,https://data.europarl.europa.eu/person/333
+334,Ms,Gwyneth,Dunwoody,,,female,United Kingdom,London,12/12/1930 02:00,,https://www.europarl.europa.eu/mepphoto/334.jpg,,,,,,,https://data.europarl.europa.eu/person/334
+335,Mr,Robert,Edwards,,,male,United Kingdom,Liverpool,16/01/1905 01:00,,https://www.europarl.europa.eu/mepphoto/335.jpg,,,,,,,https://data.europarl.europa.eu/person/335
+336,Mr,Robert Thomas,Ellis,,,male,United Kingdom,Rhosllanerchrugog,15/03/1924 02:00,,https://www.europarl.europa.eu/mepphoto/336.jpg,,,,,,,https://data.europarl.europa.eu/person/336
+337,Mr,John,Evans,,,male,United Kingdom,Aylesham (Kent),19/10/1930 02:00,,https://www.europarl.europa.eu/mepphoto/337.jpg,,,,,,,https://data.europarl.europa.eu/person/337
+338,Mr,Alfred,Scokaert,,,male,Belgium,Frameries,09/04/1921 01:00,,https://www.europarl.europa.eu/mepphoto/338.jpg,,,,,,,https://data.europarl.europa.eu/person/338
+339,Mr,Adrien P.J.,van Kauvenbergh,,,male,Luxembourg,Rédange-sur-Attert,12/07/1914 01:00,,https://www.europarl.europa.eu/mepphoto/339.jpg,,,,,,,https://data.europarl.europa.eu/person/339
+340,Mr,Antoine,Krier,,,male,Luxembourg,Luxembourg,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/340.jpg,,,,,,,https://data.europarl.europa.eu/person/340
+341,Mr,Wilhelm,de Gaay Fortman,,,male,Netherlands,Amsterdam,08/05/1911 01:00,,https://www.europarl.europa.eu/mepphoto/341.jpg,,,,,,,https://data.europarl.europa.eu/person/341
+342,Mr,Gerald,L'Estrange,,,male,Ireland,Correally Streete Co. Wes,07/11/1921 02:00,,https://www.europarl.europa.eu/mepphoto/342.jpg,,,,,,,https://data.europarl.europa.eu/person/342
+343,Mr,Farell,McElgunn,,,male,Ireland,¿,,,https://www.europarl.europa.eu/mepphoto/343.jpg,,,,,,,https://data.europarl.europa.eu/person/343
+344,Mr,Raffaele,Jannuzzi,,,male,Italy,Grottolella (Avellino),20/02/1928 02:00,,https://www.europarl.europa.eu/mepphoto/344.jpg,,,,,,,https://data.europarl.europa.eu/person/344
+345,Mr,Gerhard,Kunz,,,male,Germany,Komotau,11/02/1942 12:00,,https://www.europarl.europa.eu/mepphoto/345.jpg,,,,,,,https://data.europarl.europa.eu/person/345
+346,Mr,Michel,Inchauspé,,,male,France,St-Jean-Pied-de-Port,05/11/1925 02:00,,https://www.europarl.europa.eu/mepphoto/346.jpg,,,,,,,https://data.europarl.europa.eu/person/346
+347,Mr,Marc,Jacquet,,,male,France,Mercy-Le-Bas,17/02/1913 01:00,,https://www.europarl.europa.eu/mepphoto/347.jpg,,,,,,,https://data.europarl.europa.eu/person/347
+348,Mr,Gerhard,Koch,,,male,Germany,Holtrup (Westfalen),22/08/1906 01:00,,https://www.europarl.europa.eu/mepphoto/348.jpg,,,,,,,https://data.europarl.europa.eu/person/348
+349,Mr,Hans Edgar,Jahn,,,male,Germany,Neustettin (Pommern),21/11/1914 01:00,,https://www.europarl.europa.eu/mepphoto/349.jpg,,,,,,,https://data.europarl.europa.eu/person/349
+350,Mr,Helmut,Kater,,,male,Germany,Danzig,30/08/1927 01:00,,https://www.europarl.europa.eu/mepphoto/350.jpg,,,,,,,https://data.europarl.europa.eu/person/350
+351,Mr,Hugh John,Dykes,,,male,United Kingdom,Burnham-on-Sea (Somerset),17/05/1939 01:00,,https://www.europarl.europa.eu/mepphoto/351.jpg,,,,,,,https://data.europarl.europa.eu/person/351
+352,Mr,René,Pêtre,,,male,Belgium,Ghlin,05/06/1911 01:00,27/12/1976 01:00,https://www.europarl.europa.eu/mepphoto/352.jpg,,,,,,,https://data.europarl.europa.eu/person/352
+353,Mr,Jozef,Ramaekers,,,male,Belgium,Tienen,05/06/1923 01:00,,https://www.europarl.europa.eu/mepphoto/353.jpg,,,,,,,https://data.europarl.europa.eu/person/353
+354,Mr,Jens,Maigård,,,male,Denmark,København,10/12/1938 02:00,05/08/2018 12:00,https://www.europarl.europa.eu/mepphoto/354.jpg,,,,,,,https://data.europarl.europa.eu/person/354
+355,Mr,Nicolas,Kollwelter,,,male,Luxembourg,Luxembourg-Weimerskirch,05/09/1918 12:00,,https://www.europarl.europa.eu/mepphoto/355.jpg,,,,,,,https://data.europarl.europa.eu/person/355
+356,Mr,Maarten Boudewijn,Engwirda,,,male,Netherlands,,04/06/1943 12:00,,https://www.europarl.europa.eu/mepphoto/356.jpg,,,,,,,https://data.europarl.europa.eu/person/356
+357,Mr,John Alexander,Corrie,,,male,United Kingdom,Kirkcudbright (Scotland),29/07/1935 01:00,,https://www.europarl.europa.eu/mepphoto/357.jpg,,,,,,,https://data.europarl.europa.eu/person/357
+358,Mr,Tam,Dalyell,,,male,United Kingdom,Edinburgh,09/08/1932 01:00,,https://www.europarl.europa.eu/mepphoto/358.jpg,,,,,,,https://data.europarl.europa.eu/person/358
+359,Mr,Arthur Douglas,Dodds-Parker,,,male,United Kingdom,Oxford,05/07/1909 01:00,,https://www.europarl.europa.eu/mepphoto/359.jpg,,,,,,,https://data.europarl.europa.eu/person/359
+360,Mr,Teresio,Guglielmone,,,male,Italy,Pinerolo,24/06/1902 01:36,,https://www.europarl.europa.eu/mepphoto/360.jpg,,,,,,,https://data.europarl.europa.eu/person/360
+361,Mr,Frankie Léopold,Hansen,,,male,Luxembourg,Diekirch,21/05/1922 01:00,,https://www.europarl.europa.eu/mepphoto/361.jpg,,,,,,,https://data.europarl.europa.eu/person/361
+362,Mr,Joseph,Herr,,,male,Luxembourg,Clervaux,14/07/1910 01:00,,https://www.europarl.europa.eu/mepphoto/362.jpg,,,,,,,https://data.europarl.europa.eu/person/362
+363,Mr,Giovanni,Giraudo,,,male,Italy,Roccavione (Cuneo),18/10/1912 01:00,,https://www.europarl.europa.eu/mepphoto/363.jpg,,,,,,,https://data.europarl.europa.eu/person/363
+364,Mr,Luciano,Granzotto Basso,,,male,Italy,Biadene di Montebelluna (Treviso),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/364.jpg,,,,,,,https://data.europarl.europa.eu/person/364
+365,Ms,Erisia,Gennai Tonietti,,,female,Italy,Rio Marina (Isola d'Elba),05/07/1900 01:36,,https://www.europarl.europa.eu/mepphoto/365.jpg,,,,,,,https://data.europarl.europa.eu/person/365
+366,Mr,Brian,Lenihan,,,male,Ireland,Dundalk,17/11/1930 02:00,,https://www.europarl.europa.eu/mepphoto/366.jpg,,,,,,,https://data.europarl.europa.eu/person/366
+367,Mr,Luigi Michele,Galli,,,male,Italy,Gallarate (Varese),27/10/1924 02:00,,https://www.europarl.europa.eu/mepphoto/367.jpg,,,,,,,https://data.europarl.europa.eu/person/367
+368,Mr,Alessandro,Gerini,,,male,Italy,Firenze,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/368.jpg,,,,,,,https://data.europarl.europa.eu/person/368
+369,Mr,Luigi,Girardin,,,male,Italy,Mirano (Venezia),07/07/1925 01:00,,https://www.europarl.europa.eu/mepphoto/369.jpg,,,,,,,https://data.europarl.europa.eu/person/369
+370,Mr,Roger,Houdet,,,male,France,Angers,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/370.jpg,,,,,,,https://data.europarl.europa.eu/person/370
+371,Mr,Xavier,Hunault,,,male,France,Châteaubriant,29/07/1923 01:00,,https://www.europarl.europa.eu/mepphoto/371.jpg,,,,,,,https://data.europarl.europa.eu/person/371
+372,Mr,Michel,Habib-Deloncle,,,male,France,Neully s/Seine,26/11/1921 02:00,,https://www.europarl.europa.eu/mepphoto/372.jpg,,,,,,,https://data.europarl.europa.eu/person/372
+373,Mr,Josef,Illerhaus,,,male,Germany,Duisburg-Hamborn,31/01/1903 01:36,,https://www.europarl.europa.eu/mepphoto/373.jpg,,,,,,,https://data.europarl.europa.eu/person/373
+374,Mr,Richard,Jaeger,,,male,Germany,Berlin-Schöneberg,16/02/1913 01:00,,https://www.europarl.europa.eu/mepphoto/374.jpg,,,,,,,https://data.europarl.europa.eu/person/374
+375,Mr,Kurt,Jung,,,male,Germany,Kandel,15/02/1925 02:00,,https://www.europarl.europa.eu/mepphoto/375.jpg,,,,,,,https://data.europarl.europa.eu/person/375
+376,Mr,George,Cunningham,,,male,United Kingdom,Dunfirmline,10/06/1931 01:00,,https://www.europarl.europa.eu/mepphoto/376.jpg,,,,,,,https://data.europarl.europa.eu/person/376
+377,Mr,Lucien A.J.,Outers,,,male,Belgium,Barchon (Liège),09/04/1924 01:00,,https://www.europarl.europa.eu/mepphoto/377.jpg,,,,,,,https://data.europarl.europa.eu/person/377
+378,Mr,Karl J.,Mortensen,,,male,Denmark,,,,https://www.europarl.europa.eu/mepphoto/378.jpg,,,,,,,https://data.europarl.europa.eu/person/378
+379,Mr,Heinrich,Imig,,,male,Germany,Essen-Steele,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/379.jpg,,,,,,,https://data.europarl.europa.eu/person/379
+380,Mr,Philippus,van Campen,,,male,Netherlands,Nijmegen,01/01/1911 01:00,,https://www.europarl.europa.eu/mepphoto/380.jpg,,,,,,,https://data.europarl.europa.eu/person/380
+381,Mr,Frederik G.,van Dijk,,,male,Netherlands,Baarderadeel,31/10/1905 01:00,,https://www.europarl.europa.eu/mepphoto/381.jpg,,,,,,,https://data.europarl.europa.eu/person/381
+382,Mr,EARL OF,Bessborough,,,male,United Kingdom,,,,https://www.europarl.europa.eu/mepphoto/382.jpg,,,,,,,https://data.europarl.europa.eu/person/382
+383,Mr,THE LORD,Castle,,,male,United Kingdom,Abingdon,05/05/1907 01:00,,https://www.europarl.europa.eu/mepphoto/383.jpg,,,,,,,https://data.europarl.europa.eu/person/383
+384,Mr,THE LORD,Chelwood,,,male,United Kingdom,,,,https://www.europarl.europa.eu/mepphoto/384.jpg,,,,,,,https://data.europarl.europa.eu/person/384
+385,Mr,Jean-Pierre,Glesner,,,male,Luxembourg,Rumelange,06/08/1921 01:00,,https://www.europarl.europa.eu/mepphoto/385.jpg,,,,,,,https://data.europarl.europa.eu/person/385
+386,Mr,Luigi,Granelli,,,male,Italy,Lovere-Bergamo,01/03/1929 02:00,,https://www.europarl.europa.eu/mepphoto/386.jpg,,,,,,,https://data.europarl.europa.eu/person/386
+387,Mr,Dante,Graziosi,,,male,Italy,Granozzo (Novara),11/01/1915 01:00,,https://www.europarl.europa.eu/mepphoto/387.jpg,,,,,,,https://data.europarl.europa.eu/person/387
+388,Mr,Raffaele,Guariglia,,,male,Italy,Napoli,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/388.jpg,,,,,,,https://data.europarl.europa.eu/person/388
+389,Mr,Fazio,Fabbrini,,,male,Italy,Abbadia S. Salvatore (Siena),05/02/1926 02:00,,https://www.europarl.europa.eu/mepphoto/389.jpg,,,,,,,https://data.europarl.europa.eu/person/389
+390,Mr,Bartalo,Galletto,,,male,Italy,Sandrigo (Vicenza),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/390.jpg,,,,,,,https://data.europarl.europa.eu/person/390
+391,Mr,Giuseppe,Garlato,,,male,Italy,San Vito al Tagliamento (Udine),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/391.jpg,,,,,,,https://data.europarl.europa.eu/person/391
+392,Mr,Alberto,Giovannini,,,male,Italy,Bologna,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/392.jpg,,,,,,,https://data.europarl.europa.eu/person/392
+393,Ms,Clara Edele Bengta,Kruchow,,,female,Denmark,Frederiksberg,22/10/1915 01:00,,https://www.europarl.europa.eu/mepphoto/393.jpg,,,,,,,https://data.europarl.europa.eu/person/393
+394,Ms,Marie-Thérèse,Goutmann,,,female,France,Pontchartrain,29/08/1933 01:00,,https://www.europarl.europa.eu/mepphoto/394.jpg,,,,,,,https://data.europarl.europa.eu/person/394
+395,Mr,Diori,Hamani,,,male,France,Soudoure,16/06/1916 12:00,,https://www.europarl.europa.eu/mepphoto/395.jpg,,,,,,,https://data.europarl.europa.eu/person/395
+396,Mr,Michael,Herbert,,,male,Ireland,Lisnagry,17/05/1925 01:00,,https://www.europarl.europa.eu/mepphoto/396.jpg,,,,,,,https://data.europarl.europa.eu/person/396
+397,Mr,Gilles,Gozard,,,male,France,Moulins (Allier),20/04/1910 01:00,,https://www.europarl.europa.eu/mepphoto/397.jpg,,,,,,,https://data.europarl.europa.eu/person/397
+398,Mr,André Jean,Guerlin,,,male,France,Samatan (Gers),19/07/1911 01:00,,https://www.europarl.europa.eu/mepphoto/398.jpg,,,,,,,https://data.europarl.europa.eu/person/398
+399,Ms,Betty,Boothroyd,,,female,United Kingdom,Dewsbury (Yorkshire),08/10/1919 02:00,,https://www.europarl.europa.eu/mepphoto/399.jpg,,,,,,,https://data.europarl.europa.eu/person/399
+400,Mr,Karl,Hahn,,,male,Germany,Allmendshofen,17/05/1901 01:36,,https://www.europarl.europa.eu/mepphoto/400.jpg,,,,,,,https://data.europarl.europa.eu/person/400
+401,Mr,Lothar,Ibrügger,,,male,Germany,Bed Elster (Sachsen),24/12/1944 01:00,,https://www.europarl.europa.eu/mepphoto/401.jpg,,,,,,,https://data.europarl.europa.eu/person/401
+402,Mr,Pierre,Giraud,,,male,France,Nantes,28/02/1913 01:00,,https://www.europarl.europa.eu/mepphoto/402.jpg,,,,,,,https://data.europarl.europa.eu/person/402
+403,Mr,Roger,Motz,,,male,Belgium,Schaerbeek,08/07/1904 01:00,,https://www.europarl.europa.eu/mepphoto/403.jpg,,,,,,,https://data.europarl.europa.eu/person/403
+404,Mr,John,Brewis,,,male,United Kingdom,Scarborough,08/04/1920 01:00,,https://www.europarl.europa.eu/mepphoto/404.jpg,,,,,,,https://data.europarl.europa.eu/person/404
+405,Mr,THE LORD,Brimelow,,,male,United Kingdom,Tykdesley,25/10/1915 01:00,,https://www.europarl.europa.eu/mepphoto/405.jpg,,,,,,,https://data.europarl.europa.eu/person/405
+406,Mr,Ronald William,Brown,,,male,United Kingdom,London,07/09/1922 01:00,,https://www.europarl.europa.eu/mepphoto/406.jpg,,,,,,,https://data.europarl.europa.eu/person/406
+407,Mr,THE LORD,Bruce of Donington,,,male,United Kingdom,Norbury (Surrey),03/10/1912 01:00,,https://www.europarl.europa.eu/mepphoto/407.jpg,,,,,,,https://data.europarl.europa.eu/person/407
+408,Mr,Lucien,Martens,,,male,Belgium,Membruggen,14/06/1911 01:00,,https://www.europarl.europa.eu/mepphoto/408.jpg,,,,,,,https://data.europarl.europa.eu/person/408
+409,Mr,Laurent,Merchiers,,,male,Belgium,Zottegem,09/06/1904 01:00,,https://www.europarl.europa.eu/mepphoto/409.jpg,,,,,,,https://data.europarl.europa.eu/person/409
+410,Mr,J.A.H.J.S.,Bruins Slot,,,male,Netherlands,Smallingerland,08/01/1906 01:00,,https://www.europarl.europa.eu/mepphoto/410.jpg,,,,,,,https://data.europarl.europa.eu/person/410
+411,Mr,Jacob A.W.,Burger,,,male,Netherlands,Willemstad,20/08/1904 01:00,,https://www.europarl.europa.eu/mepphoto/411.jpg,,,,,,,https://data.europarl.europa.eu/person/411
+412,Mr,Nicolas Guy,Barnett,,,male,United Kingdom,London,23/08/1919 01:00,,https://www.europarl.europa.eu/mepphoto/412.jpg,,,,,,,https://data.europarl.europa.eu/person/412
+413,Mr,THE LORD,Brecon,,,male,United Kingdom,Merthyr Tydfil,14/08/1905 01:00,,https://www.europarl.europa.eu/mepphoto/413.jpg,,,,,,,https://data.europarl.europa.eu/person/413
+414,Mr,Johannes B.,Broeksz,,,male,Netherlands,Amsterdam,12/02/1906 01:00,,https://www.europarl.europa.eu/mepphoto/414.jpg,,,,,,,https://data.europarl.europa.eu/person/414
+415,Mr,Tiemen,Brouwer,,,male,Netherlands,Rheden,19/12/1916 01:00,,https://www.europarl.europa.eu/mepphoto/415.jpg,,,,,,,https://data.europarl.europa.eu/person/415
+416,Mr,Corstiaan A.,Bos,,,male,Netherlands,Alphen a/d Rijn,12/11/1923 02:00,,https://www.europarl.europa.eu/mepphoto/416.jpg,,,,,,,https://data.europarl.europa.eu/person/416
+417,Mr,P.A.,Blaisse,,,male,Netherlands,Amsterdam,24/04/1911 01:00,,https://www.europarl.europa.eu/mepphoto/417.jpg,,,,,,,https://data.europarl.europa.eu/person/417
+418,Mr,Jan,Baas,,,male,Netherlands,Wedde,12/10/1917 01:00,,https://www.europarl.europa.eu/mepphoto/418.jpg,,,,,,,https://data.europarl.europa.eu/person/418
+419,Mr,J.,Boersma,,,male,Netherlands,Leeuwarden,02/12/1929 02:00,,https://www.europarl.europa.eu/mepphoto/419.jpg,,,,,,,https://data.europarl.europa.eu/person/419
+420,Mr,C.,Boertien,,,male,Netherlands,Enschede,26/07/1927 01:00,,https://www.europarl.europa.eu/mepphoto/420.jpg,,,,,,,https://data.europarl.europa.eu/person/420
+421,Mr,Pierre,GREGOIRE,,,male,Luxembourg,Vichten (Luxembourg),09/11/1907 01:00,08/04/1991 12:00,https://www.europarl.europa.eu/mepphoto/421.jpg,,,,,,,https://data.europarl.europa.eu/person/421
+422,Mr,Jean,Fohrmann,,,male,Luxembourg,Dudelange,05/06/1904 01:00,,https://www.europarl.europa.eu/mepphoto/422.jpg,,,,,,,https://data.europarl.europa.eu/person/422
+423,Mr,Lando,Ferretti,,,male,Italy,Pontedera,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/423.jpg,,,,,,,https://data.europarl.europa.eu/person/423
+424,Mr,Mario,Fioret,,,male,Italy,Pordenone,12/03/1930 02:00,,https://www.europarl.europa.eu/mepphoto/424.jpg,,,,,,,https://data.europarl.europa.eu/person/424
+425,Mr,Francesco,De Bosio,,,male,Italy,Rovereto,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/425.jpg,,,,,,,https://data.europarl.europa.eu/person/425
+426,Mr,Francesco,De Vita,,,male,Italy,Trapani,05/01/1913 01:00,,https://www.europarl.europa.eu/mepphoto/426.jpg,,,,,,,https://data.europarl.europa.eu/person/426
+427,Mr,Amintore,Fanfani,,,male,Italy,Pieve Santo Stefano (Arezzo),06/02/1908 01:00,,https://www.europarl.europa.eu/mepphoto/427.jpg,,,,,,,https://data.europarl.europa.eu/person/427
+428,Mr,Francesco,Ferrari,,,male,Italy,Casarano,15/10/1905 01:00,,https://www.europarl.europa.eu/mepphoto/428.jpg,,,,,,,https://data.europarl.europa.eu/person/428
+429,Mr,Paul Fernand,Granet,,,male,France,Roquemaure,20/03/1931 02:00,,https://www.europarl.europa.eu/mepphoto/429.jpg,,,,,,,https://data.europarl.europa.eu/person/429
+430,Mr,Maurice,GRIMAUD,,,male,France,Nantes,08/08/1902 01:36,03/01/1977 01:00,https://www.europarl.europa.eu/mepphoto/430.jpg,,,,,,,https://data.europarl.europa.eu/person/430
+431,Mr,Michael,Hilliard,,,male,Ireland,Navan,11/03/1903 01:36,,https://www.europarl.europa.eu/mepphoto/431.jpg,,,,,,,https://data.europarl.europa.eu/person/431
+432,Mr,Hans-Joachim,Hoffmann,,,male,Germany,Lichtenfels (Oberfranken),12/02/1945 01:00,,https://www.europarl.europa.eu/mepphoto/432.jpg,,,,,,,https://data.europarl.europa.eu/person/432
+433,Mr,André,Fanton,,,male,France,,31/03/1928 02:00,,https://www.europarl.europa.eu/mepphoto/433.jpg,,,,,,,https://data.europarl.europa.eu/person/433
+434,Mr,René Francis,Feït,,,male,France,Lyon (Rhône),20/10/1920 01:00,,https://www.europarl.europa.eu/mepphoto/434.jpg,,,,,,,https://data.europarl.europa.eu/person/434
+435,Mr,Jean,Filliol,,,male,France,Argentat (Corrèze),11/09/1906 01:00,,https://www.europarl.europa.eu/mepphoto/435.jpg,,,,,,,https://data.europarl.europa.eu/person/435
+436,Mr,Horst,Haase,,,male,Germany,Königsberg,26/10/1933 02:00,,https://www.europarl.europa.eu/mepphoto/436.jpg,,,,,,,https://data.europarl.europa.eu/person/436
+437,Mr,Kurt,Härzschel,,,male,Germany,Gross-Mangersdorf,08/06/1924 01:00,,https://www.europarl.europa.eu/mepphoto/437.jpg,,,,,,,https://data.europarl.europa.eu/person/437
+438,Mr,Udo,Hein,,,male,Germany,Hirschberg (Riesengebirge),27/12/1914 01:00,,https://www.europarl.europa.eu/mepphoto/438.jpg,,,,,,,https://data.europarl.europa.eu/person/438
+439,Mr,Fritz,Hellwig,,,male,Germany,Saarbrücken,03/08/1912 01:00,,https://www.europarl.europa.eu/mepphoto/439.jpg,,,,,,,https://data.europarl.europa.eu/person/439
+440,Mr,Gunter,Henle,,,male,Germany,Würzburg,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/440.jpg,,,,,,,https://data.europarl.europa.eu/person/440
+441,Mr,Fritz,Henssler,,,male,Germany,Altensteig,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/441.jpg,,,,,,,https://data.europarl.europa.eu/person/441
+442,Mr,Horst Bruno,Gerlach,,,male,Germany,Lötzen/Ostpreussen,16/08/1919 01:00,,https://www.europarl.europa.eu/mepphoto/442.jpg,,,,,,,https://data.europarl.europa.eu/person/442
+443,Mr,Hugo,GEIGER,,,male,Germany,Furth i. Wald,01/04/1901 01:36,08/07/1984 12:00,https://www.europarl.europa.eu/mepphoto/443.jpg,,,,,,,https://data.europarl.europa.eu/person/443
+444,Mr,Eugen,Gerstenmaier,,,male,Germany,Kirchheim-Teck,25/08/1906 01:00,,https://www.europarl.europa.eu/mepphoto/444.jpg,,,,,,,https://data.europarl.europa.eu/person/444
+445,Mr,Hermann,Haage,,,male,Germany,München,23/07/1912 01:00,,https://www.europarl.europa.eu/mepphoto/445.jpg,,,,,,,https://data.europarl.europa.eu/person/445
+446,Mr,Detlef,Haase,,,male,Germany,Kellinghusen,15/07/1924 01:00,,https://www.europarl.europa.eu/mepphoto/446.jpg,,,,,,,https://data.europarl.europa.eu/person/446
+447,Mr,René L.H.,Lefebvre,,,male,Belgium,Tournai (Hainaut),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/447.jpg,,,,,,,https://data.europarl.europa.eu/person/447
+448,Mr,Théodore J.A.M.,Lefevre,,,male,Belgium,Gand,17/01/1914 01:00,,https://www.europarl.europa.eu/mepphoto/448.jpg,,,,,,,https://data.europarl.europa.eu/person/448
+449,Mr,Erik Carl,Holst,,,male,Denmark,Nakskov,21/06/1922 01:00,,https://www.europarl.europa.eu/mepphoto/449.jpg,,,,,,,https://data.europarl.europa.eu/person/449
+450,Mr,Uwe,Jensen,,,male,Denmark,Dybbøl,07/04/1936 02:00,,https://www.europarl.europa.eu/mepphoto/450.jpg,,,,,,,https://data.europarl.europa.eu/person/450
+451,Mr,Victor,Leemans,,,male,Belgium,Stekene,21/07/1901 01:36,,https://www.europarl.europa.eu/mepphoto/451.jpg,,,,,,,https://data.europarl.europa.eu/person/451
+452,Mr,,Ardwick,,,male,United Kingdom,Manchester,29/04/1910 01:00,,https://www.europarl.europa.eu/mepphoto/452.jpg,,,,,,,https://data.europarl.europa.eu/person/452
+453,Mr,Nel Mej.,Barendregt,,,male,Netherlands,,,,https://www.europarl.europa.eu/mepphoto/453.jpg,,,,,,,https://data.europarl.europa.eu/person/453
+454,Mr,Barend Willem,Biesheuvel,,,male,Netherlands,Haarlemmerliede en Spaarnwoude,05/04/1920 01:00,,https://www.europarl.europa.eu/mepphoto/454.jpg,,,,,,,https://data.europarl.europa.eu/person/454
+455,Mr,Francesco Maria,Dominedo',,,male,Italy,Rome,25/07/1903 01:36,,https://www.europarl.europa.eu/mepphoto/455.jpg,,,,,,,https://data.europarl.europa.eu/person/455
+456,Mr,Marcel,Fischbach,,,male,Luxembourg,Luxembourg,22/08/1914 01:00,,https://www.europarl.europa.eu/mepphoto/456.jpg,,,,,,,https://data.europarl.europa.eu/person/456
+457,Mr,Marius J.J.,van Amelsvoort,,,male,Netherlands,,21/08/1930 01:00,,https://www.europarl.europa.eu/mepphoto/457.jpg,,,,,,,https://data.europarl.europa.eu/person/457
+458,Mr,Antonio,Daniele,,,male,Italy,Gagliano del Capo (Lecce),06/04/1903 01:36,,https://www.europarl.europa.eu/mepphoto/458.jpg,,,,,,,https://data.europarl.europa.eu/person/458
+459,Mr,Alcide,De Gasperi,,,male,Italy,Pieve Tesino (Trento),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/459.jpg,,,,,,,https://data.europarl.europa.eu/person/459
+460,Mr,Libero,Della Briotta,,,male,Italy,Ponte di Valtellina (Sondrio),28/03/1925 02:00,,https://www.europarl.europa.eu/mepphoto/460.jpg,,,,,,,https://data.europarl.europa.eu/person/460
+461,Mr,Umberto,Delle Fave,,,male,Italy,San Severo (Foggia),13/12/1912 01:00,,https://www.europarl.europa.eu/mepphoto/461.jpg,,,,,,,https://data.europarl.europa.eu/person/461
+462,Mr,Valerio,De Sanctis,,,male,Italy,Borgo S. Lorenzo (Firenze),16/08/1923 01:00,,https://www.europarl.europa.eu/mepphoto/462.jpg,,,,,,,https://data.europarl.europa.eu/person/462
+463,Mr,Michele,Cifarelli,,,male,Italy,Bari,08/08/1913 01:00,,https://www.europarl.europa.eu/mepphoto/463.jpg,,,,,,,https://data.europarl.europa.eu/person/463
+464,Mr,Nicola,Cipolla,,,male,Italy,Agrigento,14/01/1922 02:00,,https://www.europarl.europa.eu/mepphoto/464.jpg,,,,,,,https://data.europarl.europa.eu/person/464
+465,Mr,Achille,Corona,,,male,Italy,Roma,30/07/1914 01:00,,https://www.europarl.europa.eu/mepphoto/465.jpg,,,,,,,https://data.europarl.europa.eu/person/465
+466,Mr,Alfredo,Covelli,,,male,Italy,Bonito (Avellino),22/02/1914 01:00,,https://www.europarl.europa.eu/mepphoto/466.jpg,,,,,,,https://data.europarl.europa.eu/person/466
+467,Mr,Giuseppe,Caron,,,male,Italy,Treviso,24/02/1904 01:36,,https://www.europarl.europa.eu/mepphoto/467.jpg,,,,,,,https://data.europarl.europa.eu/person/467
+468,Mr,Giuseppe,Cerulli-Irelli,,,male,Italy,Teramo,05/07/1905 01:00,,https://www.europarl.europa.eu/mepphoto/468.jpg,,,,,,,https://data.europarl.europa.eu/person/468
+469,Mr,Antonio,Cavalli,,,male,Italy,Bergamo,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/469.jpg,,,,,,,https://data.europarl.europa.eu/person/469
+470,Mr,Enrico,Carboni,,,male,Italy,Cagliari,10/07/1906 01:00,,https://www.europarl.europa.eu/mepphoto/470.jpg,,,,,,,https://data.europarl.europa.eu/person/470
+471,Mr,Antonio,Carcaterra,,,male,Italy,Sessa Aurunca,24/10/1905 01:00,,https://www.europarl.europa.eu/mepphoto/471.jpg,,,,,,,https://data.europarl.europa.eu/person/471
+472,Mr,James Martin,Gibbons,,,male,Ireland,Kilkenny,03/08/1924 01:00,,https://www.europarl.europa.eu/mepphoto/472.jpg,,,,,,,https://data.europarl.europa.eu/person/472
+473,Mr,Roberto,Cantalupo,,,male,Italy,Napoli,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/473.jpg,,,,,,,https://data.europarl.europa.eu/person/473
+474,Mr,Yves,Estève,,,male,France,St.-Georges-sur-Loire,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/474.jpg,,,,,,,https://data.europarl.europa.eu/person/474
+475,Mr,André,Fosset,,,male,France,Paris,13/11/1918 01:00,,https://www.europarl.europa.eu/mepphoto/475.jpg,,,,,,,https://data.europarl.europa.eu/person/475
+476,Mr,Hans,Furler,,,male,Germany,Lahr (Baden),05/06/1904 01:00,,https://www.europarl.europa.eu/mepphoto/476.jpg,,,,,,,https://data.europarl.europa.eu/person/476
+477,Mr,Ferdinand,Friedensburg,,,male,Germany,Schweidnitz,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/477.jpg,,,,,,,https://data.europarl.europa.eu/person/477
+478,Mr,Børge,Halvgaard,,,male,Denmark,Aarslev,14/09/1921 01:00,,https://www.europarl.europa.eu/mepphoto/478.jpg,,,,,,,https://data.europarl.europa.eu/person/478
+479,Mr,Ove Henry,Hansen,,,male,Denmark,Slagelse,24/09/1909 01:00,,https://www.europarl.europa.eu/mepphoto/479.jpg,,,,,,,https://data.europarl.europa.eu/person/479
+480,Mr,Walter,Faller,,,male,Germany,Frankeneck (Pfalz),11/11/1909 01:00,,https://www.europarl.europa.eu/mepphoto/480.jpg,,,,,,,https://data.europarl.europa.eu/person/480
+481,Mr,Gerhard,Flämig,,,male,Germany,Glauchau,19/12/1919 02:00,,https://www.europarl.europa.eu/mepphoto/481.jpg,,,,,,,https://data.europarl.europa.eu/person/481
+482,Mr,Charles,Janssens,,,male,Belgium,Bruxelles,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/482.jpg,,,,,,,https://data.europarl.europa.eu/person/482
+483,Mr,Norbert,Hougardy,,,male,Belgium,Etterbeek,01/11/1909 01:00,,https://www.europarl.europa.eu/mepphoto/483.jpg,,,,,,,https://data.europarl.europa.eu/person/483
+484,Mr,Ove,Guldberg,,,male,Denmark,Nysted,02/12/1918 02:00,,https://www.europarl.europa.eu/mepphoto/484.jpg,,,,,,,https://data.europarl.europa.eu/person/484
+485,Mr,Willy,Dondelinger,,,male,Luxembourg,Echternach,11/12/1928 02:00,,https://www.europarl.europa.eu/mepphoto/485.jpg,,,,,,,https://data.europarl.europa.eu/person/485
+486,Mr,Jean,Bech,,,male,Luxembourg,Diekirch,28/09/1926 01:00,01/10/1968 01:00,https://www.europarl.europa.eu/mepphoto/486.jpg,,,,,,,https://data.europarl.europa.eu/person/486
+487,Mr,Antonio,Boggiano Pico,,,male,Italy,Savona,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/487.jpg,,,,,,,https://data.europarl.europa.eu/person/487
+488,Mr,Carl,Braitenberg,,,male,Italy,Merano,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/488.jpg,,,,,,,https://data.europarl.europa.eu/person/488
+489,Mr,Giorgio,Braccesi,,,male,Italy,Firenze,30/01/1900 01:36,,https://www.europarl.europa.eu/mepphoto/489.jpg,,,,,,,https://data.europarl.europa.eu/person/489
+490,Mr,Peter,Brugger,,,male,Italy,S. Pietro Valle Aurina (B,27/04/1920 01:00,,https://www.europarl.europa.eu/mepphoto/490.jpg,,,,,,,https://data.europarl.europa.eu/person/490
+491,Mr,Alessandro,Bermani,,,male,Italy,Novara,23/10/1906 01:00,,https://www.europarl.europa.eu/mepphoto/491.jpg,,,,,,,https://data.europarl.europa.eu/person/491
+492,Mr,Giovanni,Boano,,,male,Italy,Castell'Alfero (Asti),16/08/1922 01:00,,https://www.europarl.europa.eu/mepphoto/492.jpg,,,,,,,https://data.europarl.europa.eu/person/492
+493,Mr,Uberto,Bonino,,,male,Italy,La Spezia,13/03/1901 01:36,,https://www.europarl.europa.eu/mepphoto/493.jpg,,,,,,,https://data.europarl.europa.eu/person/493
+494,Mr,Renato,Ballardini,,,male,Italy,Riva del Garda (Trento),21/10/1927 02:00,,https://www.europarl.europa.eu/mepphoto/494.jpg,,,,,,,https://data.europarl.europa.eu/person/494
+495,Mr,Edoardo,Battaglia,,,male,Italy,Termini Imerese (Palermo),31/08/1909 01:00,,https://www.europarl.europa.eu/mepphoto/495.jpg,,,,,,,https://data.europarl.europa.eu/person/495
+496,Mr,Emilio,Battista,,,male,Italy,Terracina,03/03/1903 01:36,,https://www.europarl.europa.eu/mepphoto/496.jpg,,,,,,,https://data.europarl.europa.eu/person/496
+497,Mr,Ezio,Amadeo,,,male,Italy,Milano,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/497.jpg,,,,,,,https://data.europarl.europa.eu/person/497
+498,Mr,Giovanni Maria,Angioy,,,male,Italy,Cagliari,11/11/1909 01:00,,https://www.europarl.europa.eu/mepphoto/498.jpg,,,,,,,https://data.europarl.europa.eu/person/498
+499,Mr,Mario,Cingolani,,,male,Italy,Roma,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/499.jpg,,,,,,,https://data.europarl.europa.eu/person/499
+500,Mr,Franco,Concas,,,male,Italy,Villacido (Cagliari),17/06/1927 01:00,,https://www.europarl.europa.eu/mepphoto/500.jpg,,,,,,,https://data.europarl.europa.eu/person/500
+501,Mr,Pietro,Campilli,,,male,Italy,Frascati (Roma),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/501.jpg,,,,,,,https://data.europarl.europa.eu/person/501
+502,Mr,Alessandro,Casati,,,male,Italy,Milano,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/502.jpg,,,,,,,https://data.europarl.europa.eu/person/502
+503,Mr,Franco,Boiardi,,,male,Italy,Reggio Emilia,28/03/1931 02:00,,https://www.europarl.europa.eu/mepphoto/503.jpg,,,,,,,https://data.europarl.europa.eu/person/503
+504,Mr,Paolo,Bonomi,,,male,Italy,Romentino (Novara),06/06/1910 01:00,,https://www.europarl.europa.eu/mepphoto/504.jpg,,,,,,,https://data.europarl.europa.eu/person/504
+506,Mr,Giulio,Battistini,,,male,Italy,Pisa,05/04/1912 01:00,,https://www.europarl.europa.eu/mepphoto/506.jpg,,,,,,,https://data.europarl.europa.eu/person/506
+507,Mr,Ludovico,Benvenuti,,,male,Italy,Verona,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/507.jpg,,,,,,,https://data.europarl.europa.eu/person/507
+508,Mr,Giovanni,Bertoli,,,male,Italy,Venezia,01/09/1906 01:00,,https://www.europarl.europa.eu/mepphoto/508.jpg,,,,,,,https://data.europarl.europa.eu/person/508
+509,Mr,Francantonio,Biaggi,,,male,Italy,Milano,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/509.jpg,,,,,,,https://data.europarl.europa.eu/person/509
+510,Mr,Egidio,Ariosto,,,male,Italy,Casto (Brescia),16/03/1911 01:00,,https://www.europarl.europa.eu/mepphoto/510.jpg,,,,,,,https://data.europarl.europa.eu/person/510
+511,Mr,Antonio,Azara,,,male,Italy,Tempio (Sassari),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/511.jpg,,,,,,,https://data.europarl.europa.eu/person/511
+512,Mr,Aldo,Ajello,,,male,Italy,Palermo,15/01/1936 02:00,,https://www.europarl.europa.eu/mepphoto/512.jpg,,,,,,,https://data.europarl.europa.eu/person/512
+513,Mr,Francesco,Albertini,,,male,Italy,Gravellona Toce (Novara),30/12/1906 01:00,,https://www.europarl.europa.eu/mepphoto/513.jpg,,,,,,,https://data.europarl.europa.eu/person/513
+514,Mr,Giuseppe,Alessi,,,male,Italy,S. Cotaldo (Caltanisetta),29/10/1905 01:00,,https://www.europarl.europa.eu/mepphoto/514.jpg,,,,,,,https://data.europarl.europa.eu/person/514
+515,Mr,Giulio,Andreotti,,,male,Italy,Roma,14/01/1919 02:00,,https://www.europarl.europa.eu/mepphoto/515.jpg,,,,,,,https://data.europarl.europa.eu/person/515
+516,Mr,Armando,Angelini,,,male,Italy,Seravezza (Lucca),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/516.jpg,,,,,,,https://data.europarl.europa.eu/person/516
+517,Mr,Jean,Durieux,,,male,France,Laghouat (Algérie),07/02/1934 02:00,,https://www.europarl.europa.eu/mepphoto/517.jpg,,,,,,,https://data.europarl.europa.eu/person/517
+518,Mr,Sean,Brosnan,,,male,Ireland,Dingle Co. Kerry,20/12/1916 01:00,18/04/1979 12:00,https://www.europarl.europa.eu/mepphoto/518.jpg,,,,,,,https://data.europarl.europa.eu/person/518
+519,Mr,Ruairi C.,Brugha,,,male,Ireland,Dublin,17/10/1917 01:00,,https://www.europarl.europa.eu/mepphoto/519.jpg,,,,,,,https://data.europarl.europa.eu/person/519
+520,Mr,Donald,Creed,,,male,Ireland,Macroom,07/09/1924 01:00,,https://www.europarl.europa.eu/mepphoto/520.jpg,,,,,,,https://data.europarl.europa.eu/person/520
+521,Mr,Conor,Cruise O'Brien,,,male,Ireland,¿,,,https://www.europarl.europa.eu/mepphoto/521.jpg,,,,,,,https://data.europarl.europa.eu/person/521
+522,Mr,Thomas,Dunne,,,male,Ireland,Tipperary Town,10/03/1926 02:00,,https://www.europarl.europa.eu/mepphoto/522.jpg,,,,,,,https://data.europarl.europa.eu/person/522
+523,Mr,Antony C.,Esmonde,,,male,Ireland,Salop,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/523.jpg,,,,,,,https://data.europarl.europa.eu/person/523
+524,Mr,François,Duval,,,male,France,Vauclin (Martinique),10/08/1903 01:36,,https://www.europarl.europa.eu/mepphoto/524.jpg,,,,,,,https://data.europarl.europa.eu/person/524
+525,Mr,André,Dulin,,,male,France,Langoiran (Gironde),12/04/1900 01:36,,https://www.europarl.europa.eu/mepphoto/525.jpg,,,,,,,https://data.europarl.europa.eu/person/525
+526,Mr,Charles,Durand,,,male,France,Bazoches (Niève),15/04/1901 01:36,,https://www.europarl.europa.eu/mepphoto/526.jpg,,,,,,,https://data.europarl.europa.eu/person/526
+527,Mr,Jean,Drouot L'Hermine,,,male,France,Luxeuil-l.-Bains (Haute-Saône),15/09/1907 01:00,,https://www.europarl.europa.eu/mepphoto/527.jpg,,,,,,,https://data.europarl.europa.eu/person/527
+528,Mr,Emile M.,Didier,,,male,France,Embrun,30/12/1909 01:00,,https://www.europarl.europa.eu/mepphoto/528.jpg,,,,,,,https://data.europarl.europa.eu/person/528
+529,Mr,Henri,Darras,,,male,France,Ronchamp (Haute-Saône),13/03/1919 01:00,,https://www.europarl.europa.eu/mepphoto/529.jpg,,,,,,,https://data.europarl.europa.eu/person/529
+530,Mr,Yvon,Delbos,,,male,France,Thonac (Dordogne),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/530.jpg,,,,,,,https://data.europarl.europa.eu/person/530
+531,Mr,Pierre,Coulon,,,male,France,Paris,28/06/1913 01:00,,https://www.europarl.europa.eu/mepphoto/531.jpg,,,,,,,https://data.europarl.europa.eu/person/531
+532,Mr,Jean,Crouzier,,,male,France,Raon-l'Étape,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/532.jpg,,,,,,,https://data.europarl.europa.eu/person/532
+533,Mr,André,Colin,,,male,France,Brest,19/01/1910 01:00,29/08/1978 12:00,https://www.europarl.europa.eu/mepphoto/533.jpg,,,,,,,https://data.europarl.europa.eu/person/533
+534,Mr,René,Couveinhes,,,male,France,Montpellier,16/06/1925 01:00,,https://www.europarl.europa.eu/mepphoto/534.jpg,,,,,,,https://data.europarl.europa.eu/person/534
+536,Mr,Michel,Cointat,,,male,France,Paris,13/04/1921 01:00,,https://www.europarl.europa.eu/mepphoto/536.jpg,,,,,,,https://data.europarl.europa.eu/person/536
+537,Mr,Roger,Carcassonne,,,male,France,Salon-de-Provence,15/06/1903 01:36,,https://www.europarl.europa.eu/mepphoto/537.jpg,,,,,,,https://data.europarl.europa.eu/person/537
+538,Mr,Alfred,Chupin,,,male,France,Brest,13/08/1916 12:00,,https://www.europarl.europa.eu/mepphoto/538.jpg,,,,,,,https://data.europarl.europa.eu/person/538
+539,Mr,Napoléon,Cochart,,,male,France,Arrancy/s/Creusnes (Meuse),13/05/1912 01:00,,https://www.europarl.europa.eu/mepphoto/539.jpg,,,,,,,https://data.europarl.europa.eu/person/539
+540,Mr,René,Charpentier,,,male,France,Paris,09/06/1909 01:00,,https://www.europarl.europa.eu/mepphoto/540.jpg,,,,,,,https://data.europarl.europa.eu/person/540
+541,Mr,Georges,Carpentier,,,male,France,Saint-Chinian,03/01/1924 02:00,,https://www.europarl.europa.eu/mepphoto/541.jpg,,,,,,,https://data.europarl.europa.eu/person/541
+542,Mr,Jean,Charlot,,,male,France,Mantes,26/01/1901 01:36,,https://www.europarl.europa.eu/mepphoto/542.jpg,,,,,,,https://data.europarl.europa.eu/person/542
+543,Mr,Jean-Marie,Caro,,,male,France,Istanbul (Turquie),14/08/1929 01:00,,https://www.europarl.europa.eu/mepphoto/543.jpg,,,,,,,https://data.europarl.europa.eu/person/543
+544,Mr,Jean,de Broglie,,,male,France,Paris,21/06/1921 01:00,,https://www.europarl.europa.eu/mepphoto/544.jpg,,,,,,,https://data.europarl.europa.eu/person/544
+545,Mr,Julien,Brunhes,,,male,France,Clermont-Ferrand,25/11/1900 01:36,,https://www.europarl.europa.eu/mepphoto/545.jpg,,,,,,,https://data.europarl.europa.eu/person/545
+546,Mr,Louis,Briot,,,male,France,Thury (Yonne),15/02/1905 01:00,,https://www.europarl.europa.eu/mepphoto/546.jpg,,,,,,,https://data.europarl.europa.eu/person/546
+547,Mr,Marcel,Brégégère,,,male,France,Condat-sur-Vézère,29/08/1900 01:36,,https://www.europarl.europa.eu/mepphoto/547.jpg,,,,,,,https://data.europarl.europa.eu/person/547
+548,Mr,Heinz,Braun,,,male,France,Neuss,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/548.jpg,,,,,,,https://data.europarl.europa.eu/person/548
+549,Mr,Pierre,Bourdellès,,,male,France,Louannec,23/04/1908 01:00,,https://www.europarl.europa.eu/mepphoto/549.jpg,,,,,,,https://data.europarl.europa.eu/person/549
+550,Mr,Raymond,Bousquet,,,male,France,Paris,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/550.jpg,,,,,,,https://data.europarl.europa.eu/person/550
+551,Mr,André,Boutemy,,,male,France,Becherel,21/12/1905 01:00,,https://www.europarl.europa.eu/mepphoto/551.jpg,,,,,,,https://data.europarl.europa.eu/person/551
+552,Mr,Jean-Eric,Bousch,,,male,France,Forbach (Moselle),30/09/1910 01:00,,https://www.europarl.europa.eu/mepphoto/552.jpg,,,,,,,https://data.europarl.europa.eu/person/552
+553,Mr,Roland,Boscary-Monsservin,,,male,France,Rodez (Aveyron),12/05/1904 01:36,,https://www.europarl.europa.eu/mepphoto/553.jpg,,,,,,,https://data.europarl.europa.eu/person/553
+554,Mr,Yvon,Bourges,,,male,France,Pau,29/06/1921 01:00,,https://www.europarl.europa.eu/mepphoto/554.jpg,,,,,,,https://data.europarl.europa.eu/person/554
+555,Mr,Edmond,Borocco,,,male,France,Colmar,03/08/1911 01:00,,https://www.europarl.europa.eu/mepphoto/555.jpg,,,,,,,https://data.europarl.europa.eu/person/555
+556,Mr,René,Blondelle,,,male,France,Pouilly sur Serre (Aisne),13/06/1900 01:36,,https://www.europarl.europa.eu/mepphoto/556.jpg,,,,,,,https://data.europarl.europa.eu/person/556
+557,Mr,Amédée,Bouquerel,,,male,France,Raimbeaucourt (Nord),01/07/1908 01:00,,https://www.europarl.europa.eu/mepphoto/557.jpg,,,,,,,https://data.europarl.europa.eu/person/557
+558,Mr,Jean,Berthoin,,,male,France,Enghien.-les-Bains (S.-et-O.),###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/558.jpg,,,,,,,https://data.europarl.europa.eu/person/558
+559,Mr,Gérard,Bordu,,,male,France,Melun,21/04/1928 01:00,,https://www.europarl.europa.eu/mepphoto/559.jpg,,,,,,,https://data.europarl.europa.eu/person/559
+560,Mr,Jean,Bernasconi,,,male,France,Noisy-le-Sec (Seine),23/05/1927 01:00,,https://www.europarl.europa.eu/mepphoto/560.jpg,,,,,,,https://data.europarl.europa.eu/person/560
+561,Mr,André,Armengaud,,,male,France,Paris,10/01/1901 01:36,11/03/1974 01:00,https://www.europarl.europa.eu/mepphoto/561.jpg,,,,,,,https://data.europarl.europa.eu/person/561
+562,Mr,Pierre,Beylot,,,male,France,Thiviers,18/08/1920 01:00,,https://www.europarl.europa.eu/mepphoto/562.jpg,,,,,,,https://data.europarl.europa.eu/person/562
+563,Mr,Ouali,Azem,,,male,France,Agouni-Gueghrane (Tizi-Ouzon),03/03/1913 01:00,,https://www.europarl.europa.eu/mepphoto/563.jpg,,,,,,,https://data.europarl.europa.eu/person/563
+564,Mr,Camille,Bégué,,,male,France,Pessoulens (Gers),30/11/1906 01:00,,https://www.europarl.europa.eu/mepphoto/564.jpg,,,,,,,https://data.europarl.europa.eu/person/564
+565,Mr,Gustave,Alric,,,male,France,Toulouse,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/565.jpg,,,,,,,https://data.europarl.europa.eu/person/565
+566,Mr,Jacques,Eberhard,,,male,France,Le Havra,25/05/1919 01:00,,https://www.europarl.europa.eu/mepphoto/566.jpg,,,,,,,https://data.europarl.europa.eu/person/566
+567,Ms,Ilse,Elsner,,,female,Germany,Berlin,25/11/1910 01:00,,https://www.europarl.europa.eu/mepphoto/567.jpg,,,,,,,https://data.europarl.europa.eu/person/567
+568,Mr,Paul,Devinat,,,male,France,Mâcon,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/568.jpg,,,,,,,https://data.europarl.europa.eu/person/568
+569,Mr,Pierre,Croze,,,male,France,Casablanca (Maroc),14/05/1921 01:00,,https://www.europarl.europa.eu/mepphoto/569.jpg,,,,,,,https://data.europarl.europa.eu/person/569
+570,Mr,Pierre,de Félice,,,male,France,Enghien-les-Bains,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/570.jpg,,,,,,,https://data.europarl.europa.eu/person/570
+571,Mr,Pierre,Comte-Offenbach,,,male,France,Paris,23/09/1910 01:00,,https://www.europarl.europa.eu/mepphoto/571.jpg,,,,,,,https://data.europarl.europa.eu/person/571
+572,Mr,Diomède,Catroux,,,male,France,Paris,01/05/1916 01:00,,https://www.europarl.europa.eu/mepphoto/572.jpg,,,,,,,https://data.europarl.europa.eu/person/572
+573,Mr,Pierre,Billotte,,,male,France,,,,https://www.europarl.europa.eu/mepphoto/573.jpg,,,,,,,https://data.europarl.europa.eu/person/573
+574,Mr,François,Blancho,,,male,France,St.-Nazaire,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/574.jpg,,,,,,,https://data.europarl.europa.eu/person/574
+575,Mr,Pascal,Arrighi,,,male,France,Vico (Corse),16/06/1921 01:00,,https://www.europarl.europa.eu/mepphoto/575.jpg,,,,,,,https://data.europarl.europa.eu/person/575
+576,Mr,Jean,Aubaume,,,male,France,Libreville,10/11/1912 01:00,,https://www.europarl.europa.eu/mepphoto/576.jpg,,,,,,,https://data.europarl.europa.eu/person/576
+577,Mr,Jacques,Baumel,,,male,France,,06/03/1918 01:00,,https://www.europarl.europa.eu/mepphoto/577.jpg,,,,,,,https://data.europarl.europa.eu/person/577
+578,Mr,Heinrich,Deist,,,male,Germany,Bant (Willelmshaven),10/12/1902 01:36,,https://www.europarl.europa.eu/mepphoto/578.jpg,,,,,,,https://data.europarl.europa.eu/person/578
+579,Mr,Werner,Dollinger,,,male,Germany,Neustadt an der Aisch,10/10/1918 01:00,,https://www.europarl.europa.eu/mepphoto/579.jpg,,,,,,,https://data.europarl.europa.eu/person/579
+580,Mr,Wilhelm,Dröscher,,,male,Germany,Kirn a.d. Nahe,07/10/1920 01:00,,https://www.europarl.europa.eu/mepphoto/580.jpg,,,,,,,https://data.europarl.europa.eu/person/580
+581,Mr,Walter,Eckhardt,,,male,Germany,Homburg,23/03/1906 01:00,,https://www.europarl.europa.eu/mepphoto/581.jpg,,,,,,,https://data.europarl.europa.eu/person/581
+582,Mr,Ernst H.,Engelbrecht-Greve,,,male,Germany,Neuendorf-Holstein,12/07/1916 12:00,,https://www.europarl.europa.eu/mepphoto/582.jpg,,,,,,,https://data.europarl.europa.eu/person/582
+583,Mr,Stefan,Dittrich,,,male,Germany,Hof/Saale,28/06/1912 01:00,,https://www.europarl.europa.eu/mepphoto/583.jpg,,,,,,,https://data.europarl.europa.eu/person/583
+584,Mr,Arved,DERINGER,,,male,Germany,Neustuttgart Ukraine,04/06/1913 01:00,25/10/2011 12:00,https://www.europarl.europa.eu/mepphoto/584.jpg,,,,,,,https://data.europarl.europa.eu/person/584
+585,Mr,Kurt,Conrad,,,male,Germany,Homburg-Saar,19/10/1911 01:00,,https://www.europarl.europa.eu/mepphoto/585.jpg,,,,,,,https://data.europarl.europa.eu/person/585
+586,Mr,Hans,Dichgans,,,male,Germany,Wuppertal-Elberfeld,16/05/1907 01:00,,https://www.europarl.europa.eu/mepphoto/586.jpg,,,,,,,https://data.europarl.europa.eu/person/586
+587,Mr,Heinrich,von Brentano,,,male,Germany,Offenbach (Main),20/06/1904 01:00,,https://www.europarl.europa.eu/mepphoto/587.jpg,,,,,,,https://data.europarl.europa.eu/person/587
+588,Mr,Friedrich,Burgbacher,,,male,Germany,Mainz,01/09/1900 01:36,,https://www.europarl.europa.eu/mepphoto/588.jpg,,,,,,,https://data.europarl.europa.eu/person/588
+589,Mr,Kurt,Birrenbach,,,male,Germany,Arnsberg,02/07/1907 01:00,,https://www.europarl.europa.eu/mepphoto/589.jpg,,,,,,,https://data.europarl.europa.eu/person/589
+590,Mr,Martin,Blank,,,male,Germany,Barmen,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/590.jpg,,,,,,,https://data.europarl.europa.eu/person/590
+592,Mr,Walter,Behrendt,,,male,Germany,Dortmund,18/09/1914 01:00,,https://www.europarl.europa.eu/mepphoto/592.jpg,,,,,,,https://data.europarl.europa.eu/person/592
+593,Mr,Karl,Bergmann,,,male,Germany,Duisburg,07/06/1907 01:00,,https://www.europarl.europa.eu/mepphoto/593.jpg,,,,,,,https://data.europarl.europa.eu/person/593
+594,Mr,Rudolf,Adams,,,male,Germany,Masburg Kreis Cochem,10/11/1919 02:00,,https://www.europarl.europa.eu/mepphoto/594.jpg,,,,,,,https://data.europarl.europa.eu/person/594
+595,Mr,Walter,Arendt,,,male,Germany,"Heessen, Kr. Beckum (Westf.)",17/01/1925 02:00,,https://www.europarl.europa.eu/mepphoto/595.jpg,,,,,,,https://data.europarl.europa.eu/person/595
+596,Mr,Klaus Dieter,Arndt,,,male,Germany,Berlin,09/03/1927 02:00,29/01/1974 01:00,https://www.europarl.europa.eu/mepphoto/596.jpg,,,,,,,https://data.europarl.europa.eu/person/596
+597,Mr,Helmut K.,Artzinger,,,male,Germany,Bergisch Gladbach,22/04/1912 01:00,,https://www.europarl.europa.eu/mepphoto/597.jpg,,,,,,,https://data.europarl.europa.eu/person/597
+598,Mr,Harri,Bading,,,male,Germany,Berlin,23/05/1901 01:36,,https://www.europarl.europa.eu/mepphoto/598.jpg,,,,,,,https://data.europarl.europa.eu/person/598
+599,Mr,Alfons,Bayerl,,,male,Germany,Haid,27/12/1923 02:00,,https://www.europarl.europa.eu/mepphoto/599.jpg,,,,,,,https://data.europarl.europa.eu/person/599
+600,Mr,Ernst W.,Achenbach,,,male,Germany,Siegen,09/04/1909 01:00,,https://www.europarl.europa.eu/mepphoto/600.jpg,,,,,,,https://data.europarl.europa.eu/person/600
+601,Mr,Alexander,Elbrächter,,,male,Germany,Herford (Westfalen),20/02/1908 01:00,,https://www.europarl.europa.eu/mepphoto/601.jpg,,,,,,,https://data.europarl.europa.eu/person/601
+602,Mr,Heinz,Frehsee,,,male,Germany,Stobnitt,30/08/1916 12:00,,https://www.europarl.europa.eu/mepphoto/602.jpg,,,,,,,https://data.europarl.europa.eu/person/602
+603,Mr,Peter,Corterier,,,male,Germany,Karlsruhe,19/06/1936 01:00,,https://www.europarl.europa.eu/mepphoto/603.jpg,,,,,,,https://data.europarl.europa.eu/person/603
+604,Mr,William,Borm,,,male,Germany,Hamburg,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/604.jpg,,,,,,,https://data.europarl.europa.eu/person/604
+605,Mr,Fritz,Corterier,,,male,Germany,Wunstorf (Hannover),19/07/1906 01:00,,https://www.europarl.europa.eu/mepphoto/605.jpg,,,,,,,https://data.europarl.europa.eu/person/605
+606,Mr,Karl Wilhelm,Berkhan,,,male,Germany,Hamburg,08/04/1915 01:00,,https://www.europarl.europa.eu/mepphoto/606.jpg,,,,,,,https://data.europarl.europa.eu/person/606
+607,Mr,Helmuth,Bertram,,,male,Germany,Soest,20/03/1910 01:00,,https://www.europarl.europa.eu/mepphoto/607.jpg,,,,,,,https://data.europarl.europa.eu/person/607
+608,Ms,Karen,Dahlerup,,,female,Denmark,Brønderslev,17/01/1920 02:00,,https://www.europarl.europa.eu/mepphoto/608.jpg,,,,,,,https://data.europarl.europa.eu/person/608
+609,Mr,Hans,Apel,,,male,Germany,Hambourg,25/02/1932 02:00,,https://www.europarl.europa.eu/mepphoto/609.jpg,,,,,,,https://data.europarl.europa.eu/person/609
+610,Mr,Albrecht,Aschoff,,,male,Germany,Berlin,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/610.jpg,,,,,,,https://data.europarl.europa.eu/person/610
+611,Mr,Knud,Bro,,,male,Denmark,Fredericia,13/02/1937 02:00,,https://www.europarl.europa.eu/mepphoto/611.jpg,,,,,,,https://data.europarl.europa.eu/person/611
+612,Mr,Finn,Christensen,,,male,Denmark,København,14/02/1932 02:00,,https://www.europarl.europa.eu/mepphoto/612.jpg,,,,,,,https://data.europarl.europa.eu/person/612
+613,Mr,Poul C.,Dalsager,,,male,Denmark,Hirtshals,05/03/1929 02:00,,https://www.europarl.europa.eu/mepphoto/613.jpg,,,,,,,https://data.europarl.europa.eu/person/613
+614,Mr,Per,Dich,,,male,Denmark,København,04/04/1926 02:00,,https://www.europarl.europa.eu/mepphoto/614.jpg,,,,,,,https://data.europarl.europa.eu/person/614
+615,Mr,Per T.,Federspiel,,,male,Denmark,Berlin,09/04/1905 01:00,,https://www.europarl.europa.eu/mepphoto/615.jpg,,,,,,,https://data.europarl.europa.eu/person/615
+616,Mr,Erling,Dinesen,,,male,Denmark,Næstved,25/02/1910 01:00,,https://www.europarl.europa.eu/mepphoto/616.jpg,,,,,,,https://data.europarl.europa.eu/person/616
+617,Mr,Ole,Espersen,,,male,Denmark,Nylars,20/12/1934 02:00,,https://www.europarl.europa.eu/mepphoto/617.jpg,,,,,,,https://data.europarl.europa.eu/person/617
+618,Mr,Kristian,Albertsen,,,male,Denmark,Marstal,27/02/1917 01:00,,https://www.europarl.europa.eu/mepphoto/618.jpg,,,,,,,https://data.europarl.europa.eu/person/618
+619,Mr,Henri L.E.E.M.,Moreau de Melen,,,male,Belgium,Liège,20/08/1902 01:36,,https://www.europarl.europa.eu/mepphoto/619.jpg,,,,,,,https://data.europarl.europa.eu/person/619
+620,Mr,Erik,Andersen,,,male,Denmark,Oster Nykirke,25/09/1919 01:00,,https://www.europarl.europa.eu/mepphoto/620.jpg,,,,,,,https://data.europarl.europa.eu/person/620
+621,Mr,Poul Nyboe,Andersen,,,male,Denmark,,10/01/1901 01:36,,https://www.europarl.europa.eu/mepphoto/621.jpg,,,,,,,https://data.europarl.europa.eu/person/621
+622,Mr,Arthur,Gailly,,,male,Belgium,Wanfercée-Baulet,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/622.jpg,,,,,,,https://data.europarl.europa.eu/person/622
+623,Mr,Lucien R.J.G.,Harmegnies,,,male,Belgium,Flawinne,12/02/1916 01:00,,https://www.europarl.europa.eu/mepphoto/623.jpg,,,,,,,https://data.europarl.europa.eu/person/623
+624,Mr,Jozef,Dupont,,,male,Belgium,Rijkel,19/07/1907 01:00,,https://www.europarl.europa.eu/mepphoto/624.jpg,,,,,,,https://data.europarl.europa.eu/person/624
+625,Mr,Jean,Duvieusart,,,male,Belgium,Frasnes-les-Gosselies,10/04/1900 01:36,,https://www.europarl.europa.eu/mepphoto/625.jpg,,,,,,,https://data.europarl.europa.eu/person/625
+626,Mr,Henri,Fayat,,,male,Belgium,St. Jans Molenbeek,02/06/1908 01:00,,https://www.europarl.europa.eu/mepphoto/626.jpg,,,,,,,https://data.europarl.europa.eu/person/626
+627,Mr,Fernand,Dehousse,,,male,Belgium,Liège,03/07/1906 01:00,,https://www.europarl.europa.eu/mepphoto/627.jpg,,,,,,,https://data.europarl.europa.eu/person/627
+628,Mr,Maurice A.M.J.,Dewulf,,,male,Belgium,St. Denys Westrem.,25/09/1922 01:00,,https://www.europarl.europa.eu/mepphoto/628.jpg,,,,,,,https://data.europarl.europa.eu/person/628
+629,Mr,Pierre,De Smet,,,male,Belgium,Brussel,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/629.jpg,,,,,,,https://data.europarl.europa.eu/person/629
+630,Mr,Nicolas,Dethier,,,male,Belgium,Beyne-Heusay,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/630.jpg,,,,,,,https://data.europarl.europa.eu/person/630
+631,Mr,Emile P.,De Winter,,,male,Belgium,Elsene-Brussel,23/09/1912 01:00,,https://www.europarl.europa.eu/mepphoto/631.jpg,,,,,,,https://data.europarl.europa.eu/person/631
+632,Ms,Marguerite,De Riemaecker-Legot,,,female,Belgium,Oudenaarde,09/03/1913 01:00,,https://www.europarl.europa.eu/mepphoto/632.jpg,,,,,,,https://data.europarl.europa.eu/person/632
+633,Mr,Roger,De Kinder,,,male,Belgium,Gand,06/06/1919 01:00,,https://www.europarl.europa.eu/mepphoto/633.jpg,,,,,,,https://data.europarl.europa.eu/person/633
+634,Mr,Paul Leopold,De Clercq,,,male,Belgium,Sint Amands,08/01/1919 02:00,,https://www.europarl.europa.eu/mepphoto/634.jpg,,,,,,,https://data.europarl.europa.eu/person/634
+635,Mr,Albert,De Gryse,,,male,Belgium,Wevelgem,17/03/1911 01:00,,https://www.europarl.europa.eu/mepphoto/635.jpg,,,,,,,https://data.europarl.europa.eu/person/635
+636,Mr,Max,Buset,,,male,Belgium,Fayt-lez-Manage,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/636.jpg,,,,,,,https://data.europarl.europa.eu/person/636
+637,Mr,Willy G.J.,Calewaert,,,male,Belgium,Antwerpen,26/10/1916 01:00,,https://www.europarl.europa.eu/mepphoto/637.jpg,,,,,,,https://data.europarl.europa.eu/person/637
+638,Mr,August,De Block,,,male,Belgium,St. Nikolaas-Waas,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/638.jpg,,,,,,,https://data.europarl.europa.eu/person/638
+639,Mr,Alfred,Bertrand,,,male,Belgium,Bilsen,26/05/1913 01:00,,https://www.europarl.europa.eu/mepphoto/639.jpg,,,,,,,https://data.europarl.europa.eu/person/639
+640,Mr,Georges,Bohy,,,male,Belgium,Wavre,###############################################################################################################################################################################################################################################################,,https://www.europarl.europa.eu/mepphoto/640.jpg,,,,,,,https://data.europarl.europa.eu/person/640
+641,Mr,Gustaaf,Breyne,,,male,Belgium,Wervik,16/02/1914 01:00,,https://www.europarl.europa.eu/mepphoto/641.jpg,,,,,,,https://data.europarl.europa.eu/person/641
+642,Mr,Philippe,Le Hodey,,,male,Belgium,Odessa,16/11/1914 01:00,,https://www.europarl.europa.eu/mepphoto/642.jpg,,,,,,,https://data.europarl.europa.eu/person/642
+643,Mr,Jozef,Magé,,,male,Belgium,Hoboken,22/09/1905 01:00,,https://www.europarl.europa.eu/mepphoto/643.jpg,,,,,,,https://data.europarl.europa.eu/person/643
+644,Mr,Charles Emile V.M.M.,Hegér,,,male,Belgium,Bruxelles,26/05/1902 01:36,,https://www.europarl.europa.eu/mepphoto/644.jpg,,,,,,,https://data.europarl.europa.eu/person/644
+645,Mr,Abel,Dubois,,,male,Belgium,Erbisoeul,05/01/1921 02:00,,https://www.europarl.europa.eu/mepphoto/645.jpg,,,,,,,https://data.europarl.europa.eu/person/645
+646,Mr,André R.J.-M.H.-A,Damseaux,,,male,Belgium,,05/03/1937 02:00,,https://www.europarl.europa.eu/mepphoto/646.jpg,,,,,,,https://data.europarl.europa.eu/person/646
+648,Ms,Hanna,Walz,,,female,Germany,Templin (Uckermark),28/11/1918 02:00,,https://www.europarl.europa.eu/mepphoto/648.jpg,,,,,,,https://data.europarl.europa.eu/person/648
+649,Mr,Alfred,Califice,,,male,Belgium,Melen,02/10/1916 01:00,,https://www.europarl.europa.eu/mepphoto/649.jpg,,,,,,,https://data.europarl.europa.eu/person/649
+650,Mr,Georges A.E.M.,Clerfayt,,,male,Belgium,Colleret (Nord-France),23/04/1935 01:00,,https://www.europarl.europa.eu/mepphoto/650.jpg,,,,,,,https://data.europarl.europa.eu/person/650
+651,Mr,Pierre J.F.,Bertrand,,,male,Belgium,Liège,06/07/1926 01:00,,https://www.europarl.europa.eu/mepphoto/651.jpg,,,,,,,https://data.europarl.europa.eu/person/651
+653,Mr,Joris B.,Verhaegen,,,male,Belgium,Hulshout,03/05/1921 01:00,25/08/1981 12:00,https://www.europarl.europa.eu/mepphoto/653.jpg,,,,,,,https://data.europarl.europa.eu/person/653
+654,Mr,Protogene,Veronesi,,,male,Italy,Bologna,19/02/1920 01:00,23/08/1990 12:00,https://www.europarl.europa.eu/mepphoto/654.jpg,,,,,,,https://data.europarl.europa.eu/person/654
+656,Mr,Giuseppe,VITALE,,,male,Italy,Locri (Reggio Calabria),26/08/1923 01:00,29/01/2013 01:00,https://www.europarl.europa.eu/mepphoto/656.jpg,,,,,,,https://data.europarl.europa.eu/person/656
+659,Mr,Marcel Albert,Vandewiele,,,male,Belgium,Saint-Joris-Ten Distel,10/07/1920 01:00,,https://www.europarl.europa.eu/mepphoto/659.jpg,,,,,,,https://data.europarl.europa.eu/person/659
+677,Mr,Gaston,Thorn,,,male,Luxembourg,Luxembourg,03/09/1928 01:00,,https://www.europarl.europa.eu/mepphoto/677.jpg,,,,,,,https://data.europarl.europa.eu/person/677
+678,Mr,James W.,SPICER,,,male,United Kingdom,London,04/10/1925 02:00,21/03/2015 01:00,https://www.europarl.europa.eu/mepphoto/678.jpg,,,,,,,https://data.europarl.europa.eu/person/678
+687,Mr,Hellmut,Sieglerschmidt,,,male,Germany,Berlin,17/10/1917 01:00,,https://www.europarl.europa.eu/mepphoto/687.jpg,,,,,,,https://data.europarl.europa.eu/person/687
+698,Mr,Jacques,Santer,,,male,Luxembourg,Wasserbillig,18/05/1937 01:00,,https://www.europarl.europa.eu/mepphoto/698.jpg,,,,,,,https://data.europarl.europa.eu/person/698
+709,Mr,Hector,Rivierez,,,male,France,Cayenne (Guyane Française),19/03/1913 01:00,,https://www.europarl.europa.eu/mepphoto/709.jpg,,,,,,,https://data.europarl.europa.eu/person/709
+711,Mr,Lucien,Radoux,,,male,Belgium,Bruxelles,18/07/1921 01:00,,https://www.europarl.europa.eu/mepphoto/711.jpg,,,,,,,https://data.europarl.europa.eu/person/711
+713,Mr,Brandon,Rhys Williams,,,male,United Kingdom,London,14/11/1927 02:00,,https://www.europarl.europa.eu/mepphoto/713.jpg,,,,,,,https://data.europarl.europa.eu/person/713
+720,Mr,Jean-François A.,Pintat,,,male,France,Bordeaux,29/07/1923 01:00,,https://www.europarl.europa.eu/mepphoto/720.jpg,,,,,,,https://data.europarl.europa.eu/person/720
+721,Mr,Edgard Edouard,Pisani,,,male,France,Tunis (Tunisie),09/10/1918 01:00,,https://www.europarl.europa.eu/mepphoto/721.jpg,,,,,,,https://data.europarl.europa.eu/person/721
+726,Mr,Mario,Pedini,,,male,Italy,Montichiari (Brescia),27/12/1918 02:00,,https://www.europarl.europa.eu/mepphoto/726.jpg,,,,,,,https://data.europarl.europa.eu/person/726
+756,Mr,Harry A.C.M.,Notenboom,,,male,Netherlands,Roosendaal,31/08/1926 01:00,,https://www.europarl.europa.eu/mepphoto/756.jpg,,,,,,,https://data.europarl.europa.eu/person/756
+757,Mr,Kai,Nyborg,,,male,Denmark,Sønderborg,06/04/1922 01:00,,https://www.europarl.europa.eu/mepphoto/757.jpg,,,,,,,https://data.europarl.europa.eu/person/757
+759,Mr,Ernst,Müller-Hermann,,,male,Germany,Königsberg (Preussen),30/09/1915 01:00,,https://www.europarl.europa.eu/mepphoto/759.jpg,,,,,,,https://data.europarl.europa.eu/person/759
+763,Mr,Joseph A.,Mommersteeg,,,male,Netherlands,'s-Hertogenbosch,06/03/1917 01:00,,https://www.europarl.europa.eu/mepphoto/763.jpg,,,,,,,https://data.europarl.europa.eu/person/763
+766,Mr,François,Mitterand,,,male,France,Jarnac,26/10/1916 01:00,,https://www.europarl.europa.eu/mepphoto/766.jpg,,,,,,,https://data.europarl.europa.eu/person/766
+782,Mr,Hans August,Lücker,,,male,Germany,Krümmel (Hessen),21/02/1915 01:00,,https://www.europarl.europa.eu/mepphoto/782.jpg,,,,,,,https://data.europarl.europa.eu/person/782
+783,Ms,Elaine,KELLETT-BOWMAN,,,female,United Kingdom,St. Anne's (Lancashire),08/07/1923 01:00,04/03/2014 01:00,https://www.europarl.europa.eu/mepphoto/783.jpg,,,,,,,https://data.europarl.europa.eu/person/783
+784,Ms,J. (Annie) B.,KROUWEL-VLAM,,,female,Netherlands,Hengelo,29/06/1928 01:00,05/09/2013 12:00,https://www.europarl.europa.eu/mepphoto/784.jpg,,,,,,,https://data.europarl.europa.eu/person/784
+785,Ms,Leonilde,Iotti,,,female,Italy,Reggio Emilia,10/04/1920 01:00,,https://www.europarl.europa.eu/mepphoto/785.jpg,,,,,,,https://data.europarl.europa.eu/person/785
+786,Mr,Jean-Noël,de Lipkowski,,,male,France,Paris,25/12/1920 02:00,,https://www.europarl.europa.eu/mepphoto/786.jpg,,,,,,,https://data.europarl.europa.eu/person/786
+789,Mr,Erwin,Lange,,,male,Germany,Essen,10/05/1914 01:00,,https://www.europarl.europa.eu/mepphoto/789.jpg,,,,,,,https://data.europarl.europa.eu/person/789
+796,Mr,Liam,Kavanagh,,,male,Ireland,Wicklow,09/02/1935 02:00,13/12/2021 01:00,https://www.europarl.europa.eu/mepphoto/796.jpg,,,,,,,https://data.europarl.europa.eu/person/796
+797,Mr,Justin,Keating,,,male,Ireland,Dublin,02/01/1930 02:00,,https://www.europarl.europa.eu/mepphoto/797.jpg,,,,,,,https://data.europarl.europa.eu/person/797
+810,Mr,Gérard,JAQUET,,,male,France,Malakoff (Hauts-de Seine),12/01/1916 01:00,15/04/2013 12:00,https://www.europarl.europa.eu/mepphoto/810.jpg,,,,,,,https://data.europarl.europa.eu/person/810
+815,Mr,Jaak P.J.,Henckens,,,male,Belgium,Saint-Truiden,22/07/1933 01:00,07/09/1981 12:00,https://www.europarl.europa.eu/mepphoto/815.jpg,,,,,,,https://data.europarl.europa.eu/person/815
+835,Mr,Frans G.,van der Gun,,,male,Netherlands,Hagestein (Z.H.),24/11/1918 01:00,,https://www.europarl.europa.eu/mepphoto/835.jpg,,,,,,,https://data.europarl.europa.eu/person/835
+839,Mr,Aart,Geurtsen,,,male,Netherlands,Schiedam,17/01/1926 02:00,,https://www.europarl.europa.eu/mepphoto/839.jpg,,,,,,,https://data.europarl.europa.eu/person/839
+853,Mr,Maurice,Faure,,,male,France,Azerat,02/01/1922 02:00,,https://www.europarl.europa.eu/mepphoto/853.jpg,,,,,,,https://data.europarl.europa.eu/person/853
+854,Mr,Raymond,Forni,,,male,France,Belfort,20/05/1941 12:00,,https://www.europarl.europa.eu/mepphoto/854.jpg,,,,,,,https://data.europarl.europa.eu/person/854
+855,Mr,Karl,Fuchs,,,male,Germany,Empertsreut (Oberpfalz),11/09/1920 01:00,,https://www.europarl.europa.eu/mepphoto/855.jpg,,,,,,,https://data.europarl.europa.eu/person/855
+877,Mr,Doeke,Eisma,,,male,Netherlands,Den Haag,30/12/1939 02:00,,https://www.europarl.europa.eu/mepphoto/877.jpg,,,,,,,https://data.europarl.europa.eu/person/877
+878,Mr,Pierre M.L.L.C.,Deschamps,,,male,Belgium,Schaerbeek,05/05/1921 01:00,,https://www.europarl.europa.eu/mepphoto/878.jpg,,,,,,,https://data.europarl.europa.eu/person/878
+883,Mr,Fernand L.,Delmotte,,,male,Belgium,Jeumont (France),24/07/1920 01:00,,https://www.europarl.europa.eu/mepphoto/883.jpg,,,,,,,https://data.europarl.europa.eu/person/883
+888,Mr,Michel J.-P.,Debré,,,male,France,Paris,15/01/1912 01:00,,https://www.europarl.europa.eu/mepphoto/888.jpg,,,,,,,https://data.europarl.europa.eu/person/888
+889,Mr,Paul Ph. M.H.,De Keersmaeker,,,male,Belgium,Kobbegem,14/07/1929 01:00,,https://www.europarl.europa.eu/mepphoto/889.jpg,,,,,,,https://data.europarl.europa.eu/person/889
+891,Mr,Francescopaolo,D'Angelosante,,,male,Italy,Penne (Pescara),17/09/1922 01:00,15/04/1997 12:00,https://www.europarl.europa.eu/mepphoto/891.jpg,,,,,,,https://data.europarl.europa.eu/person/891
+897,Mr,Pierre-Bernard,Cousté,,,male,France,Rochefort-sur-Mer,29/06/1920 01:00,,https://www.europarl.europa.eu/mepphoto/897.jpg,,,,,,,https://data.europarl.europa.eu/person/897
+900,Ms,Tullia,CARETTONI ROMAGNOLI,,,female,Italy,Verona,29/12/1918 02:00,24/11/2015 01:00,https://www.europarl.europa.eu/mepphoto/900.jpg,,,,,,,https://data.europarl.europa.eu/person/900
+917,Mr,Henri-Guy,Caillavet,,,male,France,Agen,13/02/1914 01:00,,https://www.europarl.europa.eu/mepphoto/917.jpg,,,,,,,https://data.europarl.europa.eu/person/917
+924,Mr,André,BORD,,,male,France,Strasbourg,30/11/1922 02:00,13/05/2013 12:00,https://www.europarl.europa.eu/mepphoto/924.jpg,,,,,,,https://data.europarl.europa.eu/person/924
+926,Mr,Cornelis,Berkhouwer,,,male,Netherlands,Alkmaar,19/03/1919 01:00,,https://www.europarl.europa.eu/mepphoto/926.jpg,,,,,,,https://data.europarl.europa.eu/person/926
+927,Mr,Willem,Albers,,,male,Netherlands,Rotterdam,30/11/1920 02:00,,https://www.europarl.europa.eu/mepphoto/927.jpg,,,,,,,https://data.europarl.europa.eu/person/927
+928,Mr,Giorgio,Amendola,,,male,Italy,Roma,21/11/1907 01:00,05/06/1980 12:00,https://www.europarl.europa.eu/mepphoto/928.jpg,,,,,,,https://data.europarl.europa.eu/person/928
+933,Mr,Martin,Bangemann,,,male,Germany,Wanzleben,15/11/1934 02:00,28/06/2022 12:00,https://www.europarl.europa.eu/mepphoto/933.jpg,,,,,,,https://data.europarl.europa.eu/person/933
+936,Mr,Gustave,Ansart,,,male,France,Roubaix,05/03/1923 02:00,,https://www.europarl.europa.eu/mepphoto/936.jpg,,,,,,,https://data.europarl.europa.eu/person/936
+937,Mr,Vincent F.M.,Ansquer,,,male,France,Treize-Septiers (Vendée),11/01/1925 02:00,,https://www.europarl.europa.eu/mepphoto/937.jpg,,,,,,,https://data.europarl.europa.eu/person/937
+949,Ms,Maria Luisa,Cassanmagnago Cerretti,,,female,Italy,Bergamo,07/04/1929 02:00,04/08/2008 12:00,https://www.europarl.europa.eu/mepphoto/949.jpg,,,,,,,https://data.europarl.europa.eu/person/949
+968,Mr,Emilio,COLOMBO,,,male,Italy,Potenza,11/04/1920 01:00,24/06/2013 12:00,https://www.europarl.europa.eu/mepphoto/968.jpg,,,,,,,https://data.europarl.europa.eu/person/968
+974,Mr,Christian,de la Malène,,,male,France,Nîmes (Gard),05/12/1920 02:00,26/09/2007 12:00,https://www.europarl.europa.eu/mepphoto/974.jpg,,,,,,,https://data.europarl.europa.eu/person/974
+977,Mr,Vincenzo,Bettiza,,,male,Italy,Split (Jugoslavia),07/06/1927 01:00,26/07/2017 12:00,https://www.europarl.europa.eu/mepphoto/977.jpg,,,,,,,https://data.europarl.europa.eu/person/977
+1003,Mr,Ferruccio,Pisoni,,,male,Italy,Sarche di Calavino (TN),06/08/1936 01:00,12/12/2020 01:00,https://www.europarl.europa.eu/mepphoto/1003.jpg,,,,,,,https://data.europarl.europa.eu/person/1003
+1027,Mr,Jean-Pierre,Cot,,,male,France,Chene-Bougeries (Suisse),23/10/1937 02:00,,https://www.europarl.europa.eu/mepphoto/1027.jpg,,,,,,,https://data.europarl.europa.eu/person/1027
+1048,Mr,Ib,Christensen,,,male,Denmark,Randers,15/03/1930 02:00,,https://www.europarl.europa.eu/mepphoto/1048.jpg,,,,,,,https://data.europarl.europa.eu/person/1048
+1145,Mr,Niels Anker,Kofoed,,,male,Denmark,Bornholm,21/02/1929 02:00,,https://www.europarl.europa.eu/mepphoto/1145.jpg,,,,,,,https://data.europarl.europa.eu/person/1145
+1153,Mr,Adrien G.H.,Zeller,,,male,France,Saverne,02/04/1940 01:00,,https://www.europarl.europa.eu/mepphoto/1153.jpg,,,,,,,https://data.europarl.europa.eu/person/1153
+1184,Ms,Colette,Flesch,,,female,Luxembourg,Dudelange,16/04/1937 01:00,,https://www.europarl.europa.eu/mepphoto/1184.jpg,,,,,,,https://data.europarl.europa.eu/person/1184
+1186,Ms,Astrid,Lulling,,,female,Luxembourg,Schifflange,11/06/1929 01:00,,https://www.europarl.europa.eu/mepphoto/1186.jpg,,,,,,,https://data.europarl.europa.eu/person/1186
+1259,Mr,Rudolf,Luster,,,male,Germany,Berlin-Schöneberg,20/01/1921 02:00,,https://www.europarl.europa.eu/mepphoto/1259.jpg,,,,,,,https://data.europarl.europa.eu/person/1259
+1267,Mr,Egon A.,KLEPSCH,,,male,Germany,Bodenbach (Elbe),30/01/1930 02:00,18/09/2010 12:00,https://www.europarl.europa.eu/mepphoto/1267.jpg,,,,,,,https://data.europarl.europa.eu/person/1267
+1271,Mr,Siegbert,Alber,,,male,Germany,Hechingen (Hohenzollern),27/07/1936 01:00,04/06/2021 12:00,https://www.europarl.europa.eu/mepphoto/1271.jpg,,,,,,,https://data.europarl.europa.eu/person/1271
+1278,Mr,Erhard V.,Jakobsen,,,male,Denmark,Grene,25/02/1917 01:00,,https://www.europarl.europa.eu/mepphoto/1278.jpg,,,,,,,https://data.europarl.europa.eu/person/1278
+1369,Ms,Winifred M.,Ewing,,,female,United Kingdom,Glasgow,10/07/1929 01:00,,https://www.europarl.europa.eu/mepphoto/1369.jpg,,,,,,,https://data.europarl.europa.eu/person/1369
+1393,Mr,James,Scott-Hopkins,,,male,United Kingdom,London,29/11/1921 02:00,11/03/1995 01:00,https://www.europarl.europa.eu/mepphoto/1393.jpg,,,,,,,https://data.europarl.europa.eu/person/1393
+1395,Mr,The Lord,O'Hagan,,,male,United Kingdom,London,06/09/1945 12:00,,https://www.europarl.europa.eu/mepphoto/1395.jpg,,,,,,,https://data.europarl.europa.eu/person/1395
+1422,Mr,Nicholas,BETHELL,,,male,United Kingdom,London,19/07/1938 01:00,08/09/2007 12:00,https://www.europarl.europa.eu/mepphoto/1422.jpg,,,,,,,https://data.europarl.europa.eu/person/1422
+1453,Mr,Pieter,DANKERT,,,male,Netherlands,Stiens (Leeuwarderadeel),08/01/1934 02:00,21/06/2003 12:00,https://www.europarl.europa.eu/mepphoto/1453.jpg,,,,,,,https://data.europarl.europa.eu/person/1453
+1475,Mr,Ernest,Glinne,,,male,Belgium,Forchies-la-Marche,30/03/1931 02:00,,https://www.europarl.europa.eu/mepphoto/1475.jpg,,,,,,,https://data.europarl.europa.eu/person/1475
+1480,Mr,Mario,Zagari,,,male,Italy,Milano,14/09/1913 01:00,,https://www.europarl.europa.eu/mepphoto/1480.jpg,,,,,,,https://data.europarl.europa.eu/person/1480
+1485,Mr,Joseph,Wohlfart,,,male,Luxembourg,Helmdange,04/06/1920 01:00,,https://www.europarl.europa.eu/mepphoto/1485.jpg,,,,,,,https://data.europarl.europa.eu/person/1485
+1487,Mr,Kurt,Wawrzik,,,male,Germany,Meiningen (Thüringen),15/02/1929 02:00,,https://www.europarl.europa.eu/mepphoto/1487.jpg,,,,,,,https://data.europarl.europa.eu/person/1487
+1489,Mr,Willem J.,Vergeer,,,male,Netherlands,Zeist,28/03/1926 02:00,,https://www.europarl.europa.eu/mepphoto/1489.jpg,,,,,,,https://data.europarl.europa.eu/person/1489
+1498,Ms,Jacqueline,Thome-Patenotre,,,female,France,Paris,03/02/1906 01:00,,https://www.europarl.europa.eu/mepphoto/1498.jpg,,,,,,,https://data.europarl.europa.eu/person/1498
+1501,Ms,Vera,Squarcialupi,,,female,Italy,Pola,05/08/1928 01:00,03/04/2021 12:00,https://www.europarl.europa.eu/mepphoto/1501.jpg,,,,,,,https://data.europarl.europa.eu/person/1501
+1505,Mr,Teun,Tolman,,,male,Netherlands,Oldeholtpade,22/09/1924 01:00,,https://www.europarl.europa.eu/mepphoto/1505.jpg,,,,,,,https://data.europarl.europa.eu/person/1505
+1513,Mr,Horst,Seefeld,,,male,Germany,Berlin,21/11/1930 02:00,10/01/2018 01:00,https://www.europarl.europa.eu/mepphoto/1513.jpg,,,,,,,https://data.europarl.europa.eu/person/1513
+1516,Mr,Heinz,Schreiber,,,male,Germany,Solingen,24/11/1942 01:00,,https://www.europarl.europa.eu/mepphoto/1516.jpg,,,,,,,https://data.europarl.europa.eu/person/1516
+1545,Mr,Pierre,Pflimlin,,,male,France,Roubaix,05/02/1907 01:00,28/06/2000 12:00,https://www.europarl.europa.eu/mepphoto/1545.jpg,,,,,,,https://data.europarl.europa.eu/person/1545
+1573,Mr,Jørgen Brøndlund,Nielsen,,,male,Denmark,Ålborg,02/08/1939 01:00,,https://www.europarl.europa.eu/mepphoto/1573.jpg,,,,,,,https://data.europarl.europa.eu/person/1573
+1575,Mr,Tom,Normanton,,,male,United Kingdom,Rochdale,12/03/1917 01:00,,https://www.europarl.europa.eu/mepphoto/1575.jpg,,,,,,,https://data.europarl.europa.eu/person/1575
+1605,Mr,Giosuè,Ligios,,,male,Italy,Bitti (Nuoro),26/12/1928 02:00,09/12/2021 01:00,https://www.europarl.europa.eu/mepphoto/1605.jpg,,,,,,,https://data.europarl.europa.eu/person/1605
+1643,Mr,Altiero,Spinelli,,,male,Italy,Roma,31/08/1907 01:00,23/05/1986 12:00,https://www.europarl.europa.eu/mepphoto/1643.jpg,,,,,,,https://data.europarl.europa.eu/person/1643
+1652,Mr,Carlo Alberto,Galluzzi,,,male,Italy,Firenze,02/12/1919 02:00,11/03/2000 01:00,https://www.europarl.europa.eu/mepphoto/1652.jpg,,,,,,,https://data.europarl.europa.eu/person/1652
+1662,Ms,The Baroness,Elles,,,female,United Kingdom,Bedford,19/07/1921 01:00,,https://www.europarl.europa.eu/mepphoto/1662.jpg,,,,,,,https://data.europarl.europa.eu/person/1662
+1669,Mr,Isidor W.,Früh,,,male,Germany,Sasbach (Baden),13/04/1922 01:00,,https://www.europarl.europa.eu/mepphoto/1669.jpg,,,,,,,https://data.europarl.europa.eu/person/1669
+1678,Mr,Ludwig,Fellermaier,,,male,Germany,Wien,02/07/1930 01:00,,https://www.europarl.europa.eu/mepphoto/1678.jpg,,,,,,,https://data.europarl.europa.eu/person/1678
+1702,Mr,André,Rossi,,,male,France,Menton,16/05/1921 01:00,,https://www.europarl.europa.eu/mepphoto/1702.jpg,,,,,,,https://data.europarl.europa.eu/person/1702
+1727,Mr,Pino,Romualdi,,,male,Italy,Predappio (Forli),24/07/1913 01:00,22/05/1988 12:00,https://www.europarl.europa.eu/mepphoto/1727.jpg,,,,,,,https://data.europarl.europa.eu/person/1727
+1762,Mr,Heinrich,Aigner,,,male,Germany,Ebrach (Bayern),25/05/1924 01:00,24/03/1988 01:00,https://www.europarl.europa.eu/mepphoto/1762.jpg,,,,,,,https://data.europarl.europa.eu/person/1762
+1776,Mr,Erik Bernhard,Blumenfeld,,,male,Germany,Hamburg,27/03/1915 01:00,,https://www.europarl.europa.eu/mepphoto/1776.jpg,,,,,,,https://data.europarl.europa.eu/person/1776
+1778,Mr,Philipp von,Bismarck,,,male,Germany,Jarchlin (Pommern),19/08/1913 01:00,,https://www.europarl.europa.eu/mepphoto/1778.jpg,,,,,,,https://data.europarl.europa.eu/person/1778
+1781,Mr,Giovanni,Bersani,,,male,Italy,Bologna,22/07/1914 01:00,,https://www.europarl.europa.eu/mepphoto/1781.jpg,,,,,,,https://data.europarl.europa.eu/person/1781
+1789,Mr,Dario,Antoniozzi,,,male,Italy,Rieti,11/12/1923 02:00,,https://www.europarl.europa.eu/mepphoto/1789.jpg,,,,,,,https://data.europarl.europa.eu/person/1789
+1790,Mr,Giuseppe,Amadei,,,male,Italy,Guastalla (Reggio Emilia),18/03/1919 01:00,06/11/2020 01:00,https://www.europarl.europa.eu/mepphoto/1790.jpg,,,,,,,https://data.europarl.europa.eu/person/1790
+1797,Mr,Jochen van,Aerssen,,,male,Germany,Kevelaer,15/04/1941 12:00,,https://www.europarl.europa.eu/mepphoto/1797.jpg,,,,,,,https://data.europarl.europa.eu/person/1797
