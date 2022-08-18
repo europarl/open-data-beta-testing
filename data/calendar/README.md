@@ -15,10 +15,3 @@ The data are for the moment limited only to meetings of year 2022.
 The data are currently only available in Turtle format.
 
 The CSV and JSON-LD versions are not yet available.
-
-## Files
-
-- Meetings - Year 2022 
-  - [Turtle](./data_v1_meetings-by-year_2022.ttl)
-  - CSV (not yet available)
-  - JSON-LD (not yet available)
