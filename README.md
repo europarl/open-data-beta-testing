@@ -2,7 +2,7 @@
 
 ## Context
 
-Over the 2021, the European Parliament has been pursuing a project to make its public data available as open data. The project will be launched operationally in the 4th quarter of 2022. Data made available cover the organisation of the European Parliament, its activities, and the documents produced during the legislative process.
+Over the 2021, the European Parliament has been pursuing a project to make its public data available as open data. The project will be launched operationally in the 4th quarter of 2022, with the release of the European Parliament Open Data Portal. Data made available cover the organisation of the European Parliament, its activities, and the documents produced during the legislative process.
 
 The main ambition of the project is to make useful data available to re-users and to facilitate the development of new services and analyses by commercial companies, journalists, and non governmental organisations.  
 
@@ -12,7 +12,13 @@ At this stage, the European Parliament wishes to better know the possible reuses
 
 The European Parliament Open Data project team is looking for companies, data journalists and non-governmental organisations to participate in the beta testing phase of the project. The beta testing phase will begin in August 2022 and end in November 2022.
 
+For this purpose, this repository makes available samples and provisional versions of the data that will be published through the European Parliament Open Data Portal.
+
 If you are interested in being involved, please review the data and data structures made available in this repository, and provide your feedback [by creating an issue](https://github.com/europarl/open-data-beta-testing/issues/new/choose).
+
+> ℹ️ 
+> **Please note** that the data available from this repository are unstable, and only made available for review porposes. 
+> The official version of this data is the one that will be published on the European Parliament Open Data Portal.
 
 ## Data made available for beta testing
 
@@ -26,7 +32,7 @@ Seven data collections will be made available as open data for the beta testing 
 6. Plenary session documents: Documents related to the activities in Plenary of the European Parliament, containing agendas, minutes (incl. results of votes), verbatim reports of proceedings (debates).
 7. Parliamentary questions: Parliamentary questions and answers, containing oral questions, written questions, interpellations, etc.
 
-Samples of these datasets are available from the [`data`](./data/) folder of this repository, available in the following formats: RDF (Turtle, RDF/XML, JSON-LD) and CSV.
+Samples of these datasets are available from the [`data`](./data/) folder of this repository, available in RDF (Turtle). CSV and JSON-LD versions will be also made available later.
 
 ### Management of multilingualism
 
