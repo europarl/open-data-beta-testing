@@ -8,8 +8,8 @@ Organisation of the European Parliament, including the description of its politi
 
 The data structure is defined in [`data-structure/corporate-bodies`](../../data-structure/corporate-bodies/)
 
-## Available formats
+## Data and formats
 
-- [Turtle](./corporate-bodies.ttl)
-- [JSON-LD](./corporate-bodies.jsonld)
-- [CSV](./corporate-bodies.csv)
+The data are currently only available in Turtle format.
+
+The CSV and JSON-LD versions are not yet available.
