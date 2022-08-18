@@ -8,8 +8,15 @@ Members of European Parliament with detailed information about their memberships
 
 The data structure is defined in [`data-structure/meps`](../../data-structure/meps/)
 
-## Available formats
 
-- [Turtle](./meps.ttl)
-- [JSON-LD](./meps.jsonld)
-- [CSV](./meps.csv)
+## Data and formats
+
+The data are are split by parliamentary term.
+
+The data are currently only available in Turtle and CSV formats.
+
+The Turtle version is multilingual, and includes also information about membership.
+
+The CSV version is monolingual, and here it is provided only in English. It does not include information about membership.
+
+The JSON-LD version is not yet available.
