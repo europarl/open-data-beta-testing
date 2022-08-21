@@ -8,8 +8,10 @@ Documents related to the activities in Plenary of the European Parliament, conta
 
 The data structure is defined in [`data-structure/plenary-session-documents`](../../data-structure/plenary-session-documents/)
 
-## Available formats
+## Data and formats
 
-- [Turtle](./plenary-session-documents.ttl)
-- [JSON-LD](./plenary-session-documents.jsonld)
-- [CSV](./plenary-session-documents.csv)
+The data are for the moment limited only to meetings of year 2022 (from February to July), and are split by session.
+
+The data are currently only available in Turtle format.
+
+The CSV and JSON-LD versions are not yet available.

@@ -8,8 +8,10 @@ Texts adopted by the European Parliament, containing resolutions, legislative re
 
 The data structure is defined in [`data-structure/adopted-texts`](../../data-structure/adopted-texts/)
 
-## Available formats
+## Data and formats
 
-- [Turtle](./adopted-texts.ttl)
-- [JSON-LD](./adopted-texts.jsonld)
-- [CSV](./adopted-texts.csv)
+The data are for the moment limited only to adopted texts of year 2022.
+
+The data are currently only available in Turtle format.
+
+The CSV and JSON-LD versions are not yet available.
