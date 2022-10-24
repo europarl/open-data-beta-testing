@@ -2,11 +2,11 @@
 
 ## Context
 
-Over the 2021, the European Parliament has been pursuing a project to make its public data available as open data. The project will be launched operationally in the 4th quarter of 2022, with the release of the European Parliament Open Data Portal. Data made available cover the organisation of the European Parliament, its activities, and the documents produced during the legislative process.
+Over the course of 2021, the European Parliament pursued a project to make its public data available as open data. The project will be launched operationally in the 4th quarter of 2022, with the release of the European Parliament Open Data Portal. Data made available cover the organisation of the European Parliament, its activities, and the documents produced during the legislative process.
 
 The main ambition of the project is to make useful data available to re-users and to facilitate the development of new services and analyses by commercial companies, journalists, and non governmental organisations.  
 
-At this stage, the European Parliament wishes to better know the possible reuses of data and documents, and the wishes to address the needs of potential reusers on the content made available or on the means of distribution.
+At this stage, the European Parliament wishes to better know the possible reuses of data and documents, and wishes to address the needs of potential reusers of content made available or on its means of distribution.
 
 ## Being a beta tester
 
