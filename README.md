@@ -52,6 +52,8 @@ The project takes in account the standards defined for [linked open data](https:
 
 Documentation of data models is available from the [`data-structure`](./data-structure) folder of this repository.
 
+Moreover, the controlled vocabularies used are available from the [`controlled-vocabularies`](./controlled-vocabularies) folder of this repository.
+
 ## Licence
 
 The content of this repository is distributed under the terms and conditions described in the [European Parliament Legal Notice](https://www.europarl.europa.eu/legal-notice/).

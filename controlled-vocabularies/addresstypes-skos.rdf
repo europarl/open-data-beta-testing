@@ -1,0 +1,2142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:at="http://publications.europa.eu/ontology/authority/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:atold="http://publications.europa.eu/resource/authority/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xml:base="http://publications.europa.eu/resource/authority/address-type">
+   <skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/address-type"
+                       at:table.id="address-type"
+                       at:table.version.number="20220316-0">
+      <at:prefLabel xml:lang="en">Address type</at:prefLabel>
+      <rdfs:label xml:lang="en">Address type</rdfs:label>
+      <owl:versionInfo>20220316-0</owl:versionInfo>
+      <skos:prefLabel xml:lang="en">Address type</skos:prefLabel>
+   </skos:ConceptScheme>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/07bd3c14b5b4f3a2b0b66972ddb4af41">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>OFFICEADDRESS</rdf:value>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/0bc2f48fdf2acaef40095c02ed4aad51">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>TEL</rdf:value>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/30de6f5b1080649f970d39c60b52e62d">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>FAX</rdf:value>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/9a3626dec9d539bfc1dcb5a350c2d7dc">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>POSTALADDRESS</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/ADM"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Административен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Administrativní adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Administrativ adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Verwaltungsanschrift</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Διοικητική διεύθυνση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Administrative address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección administrativa</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Haldusaadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Hallinnollinen osoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse administrative</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh riaracháin</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Administrativna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Értesítési cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo amministrativo</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Administracinis adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Administratīvā adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz amministrattiv</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Administratief adres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres administracyjny</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço administrativo</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă administrativă</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Administratívna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Upravni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Administrativ adress</skos:prefLabel>
+      <at:authority-code>ADM</at:authority-code>
+      <at:op-code>ADM</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>ADM</atold:op-code>
+      <dc:identifier>ADM</dc:identifier>
+      <skos:altLabel xml:lang="en">Administrative</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Administratif</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_da27d5b6"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_da27d5b6">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-08</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>ADM</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/ADR_OFFICE"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="sl">Upravni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="bg">Работен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Pracovní adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Arbejdsadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Büroanschrift</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Διεύθυνση εργασίας</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Office address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección de trabajo</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Töökoha aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Työosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse professionnelle</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh oifige</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Poslovna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Munkahelyi cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo professionale</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Darbo adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Biroja adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tax-xogħol</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Werkadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres służbowy</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço institucional</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă de serviciu</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Adresa pracoviska</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Jobbadress</skos:prefLabel>
+      <at:authority-code>ADR_OFFICE</at:authority-code>
+      <at:op-code>ADR_OFFICE</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>ADR_OFFICE</atold:op-code>
+      <dc:identifier>ADR_OFFICE</dc:identifier>
+      <skos:altLabel xml:lang="lv">Administratīvā adrese</skos:altLabel>
+      <skos:altLabel xml:lang="bg">Служебен адрес</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Pracovní</skos:altLabel>
+      <skos:altLabel xml:lang="da">Arbejde</skos:altLabel>
+      <skos:altLabel xml:lang="de">Büro</skos:altLabel>
+      <skos:altLabel xml:lang="el">Εργασία</skos:altLabel>
+      <skos:altLabel xml:lang="en">Work</skos:altLabel>
+      <skos:altLabel xml:lang="es">Oficina</skos:altLabel>
+      <skos:altLabel xml:lang="et">Tööaadress</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Adresse</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Travail</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Posao</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Munka</skos:altLabel>
+      <skos:altLabel xml:lang="it">Lavoro</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Darbo</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Darbs</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Xoghol</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Werk</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Praca</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Trabalho</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Birou</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Pracovná adresa</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Kraj delovnega mesta</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Kontor</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/07bd3c14b5b4f3a2b0b66972ddb4af41"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_077d71bb"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>OFFICEADDRESS</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_077d71bb">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-11</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>TRA</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Пощенски адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Postadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Postanschrift</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Postal address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección postal</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Postiaadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Postiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse postale</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh poist</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Poštanska adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Postacím</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Pašto adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Pasta adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz postali</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Postadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres pocztowy</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço postal</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă poștală</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Poštová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Poštni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Postadress</skos:prefLabel>
+      <at:authority-code>ADR_POSTAL</at:authority-code>
+      <at:op-code>ADR_POSTAL</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>ADR_POSTAL</atold:op-code>
+      <dc:identifier>ADR_POSTAL</dc:identifier>
+      <skos:altLabel xml:lang="bg">Поща</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Poštovní adresa</skos:altLabel>
+      <skos:altLabel xml:lang="da">Post</skos:altLabel>
+      <skos:altLabel xml:lang="de">Anschrift</skos:altLabel>
+      <skos:altLabel xml:lang="de">Post</skos:altLabel>
+      <skos:altLabel xml:lang="el">Αλληλογραφία</skos:altLabel>
+      <skos:altLabel xml:lang="en">Correspondence</skos:altLabel>
+      <skos:altLabel xml:lang="es">Correo</skos:altLabel>
+      <skos:altLabel xml:lang="et">Tavapostiaadress</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Courrier</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Korespondencija</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Posta</skos:altLabel>
+      <skos:altLabel xml:lang="it">Posta</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Paštas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Pasts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Posta</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Post</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Korespondencja</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Correspondência</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Corespondenta</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Pošta</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Post</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/9a3626dec9d539bfc1dcb5a350c2d7dc"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_c57a35ac"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>POSTALADDRESS</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/CDC"/>
+      <skos:definition xml:lang="en">Written communication through letters.</skos:definition>
+      <skos:definition xml:lang="fr">Communication écrite au moyen de lettres.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/NON"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/CDC"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Поща и документация</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Pošta a dokumentace</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Post og dokumentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Post und Dokumentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Αλληλογραφία και τεκμηρίωση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Correspondence and documentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Correo y Documentación</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Aadress tavaposti ja dokumentide saatmiseks</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Osoite postin ja aineiston lähettämistä varten</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Courrier et Documentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Comhfhreagras agus doiciméadacht</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Korespondencija i dokumentacija</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Posta és dokumentáció</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Posta e documentazione</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Paštas ir dokumentai</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Pasts un dokumentācija</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Posta u Dokumentazzjoni</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Post en Documentatie</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Korespondencja i dokumentacja</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Correspondência e documentação</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Corespondenta si Documentatie</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Pošta a dokumentácia</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Pošta in dokumentacija</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Post och dokumentation</skos:prefLabel>
+      <at:authority-code>CDC</at:authority-code>
+      <at:op-code>CDC</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>CDC</atold:op-code>
+      <dc:identifier>CDC</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_c7837442"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/DOC"/>
+      <skos:hiddenLabel xml:lang="lv">Pasts un dokumentacija</skos:hiddenLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/NON"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Няма пощенски адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Žádná poštovní adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Ingen postadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Keine Postadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Δεν υπάρχει διεύθυνση αλληλογραφίας</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">No address for correspondence</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Sin dirección de correo</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Tavapostiaadress puudub</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Ei postiosoitetta</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Pas d'adresse courrier</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Níl seoladh comhfhreagrais ann</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Nije adresa za korespondenciju</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Nincs postai cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Nessun recapito postale</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Pašto adresas nepateiktas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Nav pasta adreses</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">M'hemmx indirizz postali</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Geen postadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Brak adresu korespondencyjnego</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Sem endereço para correspondência</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Nu exista adresa de corespondenta</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Žiadna poštová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Brez naslova pošte</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Ingen postadress</skos:prefLabel>
+      <at:authority-code>NON</at:authority-code>
+      <at:op-code>NON</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>NON</atold:op-code>
+      <dc:identifier>NON</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_7098c851"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/ADR_POSTAL"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_c57a35ac">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-03</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>COU</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/BLG"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Блог</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Ιστολόγιο</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Ajaveeb</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Blogiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Blag</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Tinklaraštis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Blogs</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Blogue</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Blog</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Blogg</skos:prefLabel>
+      <at:authority-code>BLG</at:authority-code>
+      <at:op-code>BLG</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>BLG</atold:op-code>
+      <dc:identifier>BLG</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_cb6f30ea"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Informal, diary-style, informational website mostly focused on expressing the opinions of a community or individual about subjects of interest.</skos:definition>
+      <skos:definition xml:lang="fr">Site web informatif et informel, ressemblant à un journal de bord, principalement axé sur l’expression d’avis provenant d’une communauté ou d’une personne sur des sujets qui l’intéressent.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_cb6f30ea">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>BLG</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/CAL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Календар</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Kalendář</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Kalender</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Kalender</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Ημερολόγιο</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Calendar</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Calendario</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Kalender</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Kalenteri</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Calendrier</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Féilire</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Kalendar</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Naptár</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Calendario</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Kalendorius</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Kalendārs</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Kalendarju</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Agenda</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Kalendarz</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Agenda</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Calendar</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Kalendár</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Koledar</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Kalender</skos:prefLabel>
+      <at:authority-code>CAL</at:authority-code>
+      <at:op-code>CAL</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>CAL</atold:op-code>
+      <dc:identifier>CAL</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_717ca674"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">System or platform used for time-management and scheduling.</skos:definition>
+      <skos:definition xml:lang="fr">Système ou plateforme utilisé(e) à des fins de gestion du temps et de planification.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_717ca674">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>CAL</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/DOC"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Адрес за документацията</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Dokumentační adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Adresse til dokumentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Anschrift für Unterlagen</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Διεύθυνση τεκμηρίωσης</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Documentation address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección donde se encuentra la documentación</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Aadress dokumentatsiooni jaoks</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Asiakirjojen postitusosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse pour la documentation</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh doiciméadachta</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Adresa za dokumentaciju</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Dokumentumkézbesítési cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo per la documentazione</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Adresas keistis dokumentais</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Adrese dokumentu apmaiņai</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tad-dokumentazzjoni</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Adres voor documenten</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres do przesyłania dokumentów</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço para envio de documentação</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă pentru schimburi de documente</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Adresa na zasielanie dokumentácie</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Naslov za dokumentacijo</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Dokumentationsadress</skos:prefLabel>
+      <at:authority-code>DOC</at:authority-code>
+      <at:op-code>DOC</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>DOC</atold:op-code>
+      <dc:identifier>DOC</dc:identifier>
+      <skos:altLabel xml:lang="bg">Документация</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Dokumentace</skos:altLabel>
+      <skos:altLabel xml:lang="da">Dokumentation</skos:altLabel>
+      <skos:altLabel xml:lang="de">Dokumentation</skos:altLabel>
+      <skos:altLabel xml:lang="el">Τεκμηρίωση</skos:altLabel>
+      <skos:altLabel xml:lang="en">Documentation</skos:altLabel>
+      <skos:altLabel xml:lang="es">Documentación</skos:altLabel>
+      <skos:altLabel xml:lang="et">Aadress dokumentide saatmiseks</skos:altLabel>
+      <skos:altLabel xml:lang="fi">Osoite aineiston lähettämistä varten</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Documentation</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Dokumentacija</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Dokumentáció</skos:altLabel>
+      <skos:altLabel xml:lang="it">Documentazione</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Dokumentai</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Dokumentācija</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Dokumentazzjoni</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Documentatie</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Dokumentacja</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Documentação</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Documentatie</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Dokumentácia</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Dokumentacija</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Dokumentation</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_e6ad7513"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/CDC"/>
+      <skos:definition xml:lang="en">Pieces of documents.</skos:definition>
+      <skos:definition xml:lang="fr">Documents.</skos:definition>
+      <skos:hiddenLabel xml:lang="lv">Dokumentacija</skos:hiddenLabel>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_c7837442">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>CDC</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/CON"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Поверителен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Adresa pro důvěrnou korespondenci</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Fortrolig adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Vertrauliche Adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Εμπιστευτική διεύθυνση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Confidential address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección confidencial</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Konfidentsiaalne aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Luottamuksellinen osoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse confidentielle</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh rúnda</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Povjerljiva adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Bizalmas adatnak minősülő cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo riservato</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Konfidencialus adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Konfidenciālā adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz kunfidenzjali</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Vertrouwelijk adres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres poufny</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço confidencial</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă confidențială</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Dôverná adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Zaupni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Konfidentiell adress</skos:prefLabel>
+      <at:authority-code>CON</at:authority-code>
+      <at:op-code>CON</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>CON</atold:op-code>
+      <dc:identifier>CON</dc:identifier>
+      <skos:altLabel xml:lang="bg">Поверително</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Důvěrná</skos:altLabel>
+      <skos:altLabel xml:lang="da">Fortroligt</skos:altLabel>
+      <skos:altLabel xml:lang="de">Vertraulich</skos:altLabel>
+      <skos:altLabel xml:lang="el">Εμπιστευτικό</skos:altLabel>
+      <skos:altLabel xml:lang="en">Confidential</skos:altLabel>
+      <skos:altLabel xml:lang="es">Confidencial</skos:altLabel>
+      <skos:altLabel xml:lang="fi">Luottamuksellinen</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Confidentiel</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Povjerljivo</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Bizalmas</skos:altLabel>
+      <skos:altLabel xml:lang="it">Riservato</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Konfidencialu</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Konfidenciāli</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Kunfidenzjali</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Vertrouwelijk</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Poufny</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Confidencial</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Confidentiala</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Dôverné</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Zaupen</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Konfidentiell</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_b6d55f1c"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_b6d55f1c">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>CON</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/DIF"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Декларацията за финансов(и) интерес(и)</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Prohlášení o finančních zájmech</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Erklæring om finansielle interesser</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Erklärung der finanziellen Interessen</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Δήλωση οικονομικού(ών) συμφέροντος(ων)</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Declaration of financial interests</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Declaración de intereses económicos</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Majanduslike huvide deklaratsioon</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Ilmoitus taloudellisista eduista</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Déclaration d'intérêt(s) financier(s)</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Dearbhú maidir le leasanna airgeadais</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Izjava o financijskim interesima</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Nyilatkozat pénzügyi érdekeltség(ek)rol</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Dichiarazione di interesse(i) finanziari(o)</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Finansinio(-iu) intereso(-u) deklaracija</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Finanšu interešu deklarācija</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Dikjarazzjoni tal-interess(i) finanzjarju/i</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Opgave van de financiële belangen</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Oswiadczenie majatkowe</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Declaração de interesse(s) financeiro(s)</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Declaratie de interes(e) financiar(e)</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Vyhlásenie o financných záujmoch</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Izjava o financnem interesu</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Förklaring om ekonomiska intressen</skos:prefLabel>
+      <at:authority-code>DIF</at:authority-code>
+      <at:op-code>DIF</at:op-code>
+      <at:start.use>2021-12-08</at:start.use>
+      <atold:op-code>DIF</atold:op-code>
+      <dc:identifier>DIF</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_e118389b"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/EPL"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/EPL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="en">Europarl</skos:prefLabel>
+      <at:authority-code>EPL</at:authority-code>
+      <at:op-code>EPL</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>EPL</atold:op-code>
+      <dc:identifier>EPL</dc:identifier>
+      <skos:altLabel xml:lang="en">Europarl - MEP Page</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_2fe49675"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/DIF"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_e118389b">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-12-08</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-09</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>DIF</rdf:value>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_e6ad7513">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>DOC</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/DOM"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Домашен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Adresa bydliště</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Hjemadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Wohnanschrift</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Διεύθυνσης κατοικίας</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Home address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Domicilio</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Elukoha aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Kotiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse du domicile</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh baile</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Privatna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Lakcím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo privato</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Namų adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Dzīvesvietas adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tad-dar</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Huisadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres zamieszkania</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço privado</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă de domiciliu</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Domáca adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Domači naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Bostadsadress</skos:prefLabel>
+      <at:authority-code>DOM</at:authority-code>
+      <at:op-code>DOM</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>DOM</atold:op-code>
+      <dc:identifier>DOM</dc:identifier>
+      <skos:altLabel xml:lang="cs">Bydliště</skos:altLabel>
+      <skos:altLabel xml:lang="da">Privatadresse</skos:altLabel>
+      <skos:altLabel xml:lang="de">Wohnort</skos:altLabel>
+      <skos:altLabel xml:lang="el">Κατοικία</skos:altLabel>
+      <skos:altLabel xml:lang="en">Home</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Domicile</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Privatno</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Lakóhely</skos:altLabel>
+      <skos:altLabel xml:lang="it">Domicilio</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Gyvenamosios vietos adresas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Dzivesvieta</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Indirizz</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Domowy</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Domicílio</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Domiciliu</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Bydlisko</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Stalni naslov</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_3d50bd4f"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/PRI"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/PRI"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="da">Privatadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo privato</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço privado</skos:prefLabel>
+      <skos:prefLabel xml:lang="bg">Личен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Soukromá adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Privatanschrift</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Ιδιωτική διεύθυνση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Private address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección privada</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Eraadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Yksityisosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse privée</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Privatna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh príobháideach</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Magáncím</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Privatus adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Privātā adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz privat</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Privéadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres prywatny</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă privată</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Súkromná adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Zasebni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Privat adress</skos:prefLabel>
+      <at:authority-code>PRI</at:authority-code>
+      <at:op-code>PRI</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>PRI</atold:op-code>
+      <dc:identifier>PRI</dc:identifier>
+      <skos:altLabel xml:lang="bg">Лично</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Soukromá</skos:altLabel>
+      <skos:altLabel xml:lang="da">Privat</skos:altLabel>
+      <skos:altLabel xml:lang="de">Privat</skos:altLabel>
+      <skos:altLabel xml:lang="el">Ιδιωτική</skos:altLabel>
+      <skos:altLabel xml:lang="en">Private</skos:altLabel>
+      <skos:altLabel xml:lang="es">Privado</skos:altLabel>
+      <skos:altLabel xml:lang="et">Isiklik aadress</skos:altLabel>
+      <skos:altLabel xml:lang="fi">Henkilökohtainen osoite</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Privé</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Magán-</skos:altLabel>
+      <skos:altLabel xml:lang="it">Privato</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Privatu</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Privāts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Privat</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Privé</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Prywatny</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Privado</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Privata</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Súkromné</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Privat</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_7108e10d"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/DOM"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_3d50bd4f">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>DOM</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/EMAIL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Електронен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">E-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">E-mailadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">E-Mail-Adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Διεύθυνση ηλεκτρονικού ταχυδρομείου</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">E-mail address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección de correo electrónico</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">E-posti aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Sähköpostiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse électronique</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh ríomhphoist</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Adresa e-pošte</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">E-mail-cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">E. pašto adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">E-pasta adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tal-email</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">E-mailadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço eletrónico</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă de e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">E-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Elektronski naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">E-postadress</skos:prefLabel>
+      <at:authority-code>EMAIL</at:authority-code>
+      <at:op-code>EMAIL</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>EMAIL</atold:op-code>
+      <dc:identifier>EMAIL</dc:identifier>
+      <skos:altLabel xml:lang="bg">e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="cs">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="da">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="de">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="el">Ηλεκτρονική διεύθυνση</skos:altLabel>
+      <skos:altLabel xml:lang="en">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="es">Correo electrónico</skos:altLabel>
+      <skos:altLabel xml:lang="et">Elektronposti aadress</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Courrier électronique</skos:altLabel>
+      <skos:altLabel xml:lang="fr">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="hr">E-pošta</skos:altLabel>
+      <skos:altLabel xml:lang="hu">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="it">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="lt">E.paštas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">E-pasts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="nl">E-mail</skos:altLabel>
+      <skos:altLabel xml:lang="pl">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Correio eletrónico</skos:altLabel>
+      <skos:altLabel xml:lang="pt">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="ro">E-Mail</skos:altLabel>
+      <skos:altLabel xml:lang="sl">E-pošta</skos:altLabel>
+      <skos:altLabel xml:lang="sv">E-post</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_871efd20"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Electronic address used for the exchange of messages and documents.</skos:definition>
+      <skos:definition xml:lang="fr">Adresse électronique utilisée pour l’échange de messages et de documents.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/EMI"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/EMP"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/OLD"/>
+      <skos:hiddenLabel xml:lang="bg">Електронен адрес (e-mail)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="hu">E-mail:</skos:hiddenLabel>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/EMI"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Личен електронен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Soukromá emailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Personlig e-mailadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">persönliche E-Mail-Adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προσωπική διεύθυνση ηλεκτρονικού ταχυδρομείου</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Personal e-mail address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección de correo electrónico personal</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Era-e-posti aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Henkilökohtainen sähköpostiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse électronique personnelle</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh ríomhphoist pearsanta</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Osobna adresa e-pošte</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Személyes e-mail cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo e-mail personale</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Asmeninis e. pašto adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Privātā e-pasta adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tal-email personali </skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">E-mailadres privé</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Prywatny adres e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço eletrónico privado</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă de e-mail personală</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Osobná e-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Zasebni elektronski naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Privat e-postadress</skos:prefLabel>
+      <at:authority-code>EMI</at:authority-code>
+      <at:op-code>EMI</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>EMI</atold:op-code>
+      <dc:identifier>EMI</dc:identifier>
+      <skos:altLabel xml:lang="da">Privat email</skos:altLabel>
+      <skos:altLabel xml:lang="en">Personal e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="es">Correo electrónico personal</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Privatna e-adresa</skos:altLabel>
+      <skos:altLabel xml:lang="it">Indirizzo di posta personale</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Asmeninis e. paštas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Privātais e-pasts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Indirizz tal-posta elettronika personali</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Persoonlijk emailadres</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Prywatny adres poczty elektronicznej</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Endereço de correio eletrónico pessoal</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Súkromná emailová adresa</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Personlig e-post</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_98613676"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/EMAIL"/>
+      <skos:definition xml:lang="en">Electronic address used for the exchange of personal messages and documents.</skos:definition>
+      <skos:definition xml:lang="fr">Adresse électronique utilisée pour l’échange de messages et documents personnels.</skos:definition>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/EMP"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Професионален електронен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">pracovní e-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Arbejds-e-mailadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">berufliche E-Mail-Adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Επαγγελματική διεύθυνση ηλεκτρονικού ταχυδρομείου</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Professional e-mail address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección de correo electrónico profesional</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Ametialane e-posti aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Työsähköpostiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse électronique professionnelle</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh ríomhphoist gairmiúil</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Poslovna adresa e-pošte</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Munkahelyi e-mail cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo e-mail professionale</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Darbo e. pašto adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Darba e-pasta adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tal-email professjonali </skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">E-mailadres werk</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Służbowy adres e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço eletrónico institucional</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă de e-mail profesională</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Pracovná e-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Službeni e-naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Officiell e-postadress</skos:prefLabel>
+      <at:authority-code>EMP</at:authority-code>
+      <at:op-code>EMP</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>EMP</atold:op-code>
+      <dc:identifier>EMP</dc:identifier>
+      <skos:altLabel xml:lang="bg">Служебен електронен адрес</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Profesní emailová adresa</skos:altLabel>
+      <skos:altLabel xml:lang="da">Arbejds-email</skos:altLabel>
+      <skos:altLabel xml:lang="en">Professional e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="es">Correo electrónico profesional</skos:altLabel>
+      <skos:altLabel xml:lang="it">Indirizzo di posta professionale</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Darbo e. paštas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Darba e-pasts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Indirizz tal-posta elettronika professjonali</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Professioneel emailadres</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Służbowy adres poczty elektronicznej</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Endereço de correio eletrónico profissional</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Pracovná emailová adresa</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Službeni elektronski naslov</skos:altLabel>
+      <skos:altLabel xml:lang="sv">E-post i arbetet</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_582e1647"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/EMAIL"/>
+      <skos:definition xml:lang="en">Electronic address used for the exchange of professional messages and documents.</skos:definition>
+      <skos:definition xml:lang="fr">Adresse électronique utilisée pour l’échange de messages et documents professionnels.</skos:definition>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/OLD"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Предишен електронен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Předchozí e-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Tidligere e-mailadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">ehemalige E-Mail-Adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Παλαιά ηλεκτρονική διεύθυνση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Previous e-mail address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección de correo electrónico anterior</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Varasem e-posti aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Entinen sähköpostiosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse électronique précédente</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Seoladh ríomhphoist roimhe seo</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Prethodna poruka e-pošte</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Régi e-mail cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo e-mail precedente</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Ankstesnis e. pašto adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Agrākās e-pasta adreses</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz tal-email preċedenti</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Voormalig e-mailadres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Poprzedni adres e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço eletrónico usado anteriormente</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Vechea adresă de e-mail</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Predchádzajúca e-mailová adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Nekdanji e-naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Tidigare e-postadress</skos:prefLabel>
+      <at:authority-code>OLD</at:authority-code>
+      <at:op-code>OLD</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>OLD</atold:op-code>
+      <dc:identifier>OLD</dc:identifier>
+      <skos:altLabel xml:lang="cs">Původní e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="da">Gammel post</skos:altLabel>
+      <skos:altLabel xml:lang="de">frühere Mail</skos:altLabel>
+      <skos:altLabel xml:lang="en">Previous e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="es">Antiguo correo electrónico</skos:altLabel>
+      <skos:altLabel xml:lang="et">Endine elektronposti aadress</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Ancien mail</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Stara e-adresa</skos:altLabel>
+      <skos:altLabel xml:lang="it">Vecchia mail</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Ankstesnis e.paštas</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Agrakais e-pasts</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Indirizz antik</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Vroeger mailadres</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Dawny adres e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Endereço antigo</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Fosta adresa e-mail</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Stara sporocila</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_2fc05009"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/EMAIL"/>
+      <skos:definition xml:lang="en">MEP's former e-mail.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_871efd20">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>EMA</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_98613676">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>EMI</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_582e1647">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>EMP</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_2fe49675">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-07</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>EPL</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/FAX"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Факс</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">φαξ</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Faks</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Faksi</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Faks</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Fakso</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Fakss</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Faks</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Faks</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Fax</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Fax</skos:prefLabel>
+      <at:authority-code>FAX</at:authority-code>
+      <at:op-code>FAX</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>FAX</atold:op-code>
+      <dc:identifier>FAX</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/30de6f5b1080649f970d39c60b52e62d"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>FAX</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/FBK"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Facebook</skos:prefLabel>
+      <at:authority-code>FBK</at:authority-code>
+      <at:op-code>FBK</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>FBK</atold:op-code>
+      <dc:identifier>FBK</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_1a98f490"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Social network that allows its members to create a profile and share information.</skos:definition>
+      <skos:definition xml:lang="fr">Réseau social qui permet à ses membres de créer un profil et de partager des informations.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/FBP"/>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/FBW"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/FBP"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Провил във Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Facebookový profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Facebook-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Facebook-Profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προφίλ στο Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Facebook profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Perfil de Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Facebooki profiil</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Facebook-profiili</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Facebook Profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Próifíl Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Facebook profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Facebook-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Profilo Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Facebook profilis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Facebook profils</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Profil fuq Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Facebookprofiel</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Profil na Facebooku</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Perfil do Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Profil Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Profil na Facebooku</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Facebook profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Facebookprofil</skos:prefLabel>
+      <at:authority-code>FBP</at:authority-code>
+      <at:op-code>FBP</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>FBP</atold:op-code>
+      <dc:identifier>FBP</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_efc5adc5"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/FBK"/>
+      <skos:definition xml:lang="en">Personal or institutional profile, showing publicly shared information including personal details and published messages, on the Facebook platform.</skos:definition>
+      <skos:definition xml:lang="fr">Profil personnel ou institutionnel présentant des informations publiques, dont des informations personnelles et des messages publiés, sur la plateforme Facebook.</skos:definition>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/FBW"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Страница във Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Facebooková stránka</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Facebook-side</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Facebook-Seite</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Σελίδα στο Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Facebook page</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Página en Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Facebooki lehekülg</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Facebook-sivu</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Facebook Page</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Leathanach Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Facebook stranica</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Facebook-oldal</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Pagina Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Facebook puslapis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Facebook lapa</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Pagna fuq Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Facebookpagina</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Strona na Facebooku</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Página do Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Pagina Facebook</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Stránka na Facebooku</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Facebook stran</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Facebooksida</skos:prefLabel>
+      <at:authority-code>FBW</at:authority-code>
+      <at:op-code>FBW</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>FBW</atold:op-code>
+      <dc:identifier>FBW</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_39876d3e"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/FBK"/>
+      <skos:definition xml:lang="en">Profile created for business, brands or celebrities to share information on the Facebook platform.</skos:definition>
+      <skos:definition xml:lang="fr">Profil permettant aux entreprises, marques et personnalités de partager des informations sur la plateforme Facebook.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_1a98f490">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>FBK</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_efc5adc5">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>FBP</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_39876d3e">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>FBW</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/FLK"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Flickr</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Flickr</skos:prefLabel>
+      <at:authority-code>FLK</at:authority-code>
+      <at:op-code>FLK</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>FLK</atold:op-code>
+      <dc:identifier>FLK</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_f93d354d"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Image hosting platform.</skos:definition>
+      <skos:definition xml:lang="fr">Plateforme d’hébergement d’images.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_f93d354d">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>FLK</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/GGL"
+                 at:deprecated="true">
+      <skos:prefLabel xml:lang="bg">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Google+</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Google+</skos:prefLabel>
+      <at:authority-code>GGL</at:authority-code>
+      <at:op-code>GGL</at:op-code>
+      <at:start.use>2011-06-28</at:start.use>
+      <atold:op-code>GGL</atold:op-code>
+      <dc:identifier>GGL</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_539c609f"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Social network created by Google and closed in 2019.</skos:definition>
+      <skos:definition xml:lang="fr">Réseau social créé par Google et fermé en 2019.</skos:definition>
+      <at:end.use>2019-04-02</at:end.use>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_539c609f">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-06-28</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>GGL</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+      <euvoc:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-02</euvoc:endDate>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/GWS"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Groupwise</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Groupwise</skos:prefLabel>
+      <at:authority-code>GWS</at:authority-code>
+      <at:op-code>GWS</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>GWS</atold:op-code>
+      <dc:identifier>GWS</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_260c6998"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Collaboration platform used in enterprise environments providing features covering email, instant messaging, schedule, personal information management and document management.</skos:definition>
+      <skos:definition xml:lang="fr">Plateforme de collaboration utilisée dans les entreprises qui propose des fonctionnalités telles que: courrier électronique, messagerie instantanée, calendrier, gestion des informations personnelles et gestion de documents.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_260c6998">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>GWS</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/IST"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Instagram</skos:prefLabel>
+      <at:authority-code>IST</at:authority-code>
+      <at:op-code>IST</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>IST</atold:op-code>
+      <dc:identifier>IST</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_d4fe80fa"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Social network that allows its members to share photos and videos.</skos:definition>
+      <skos:definition xml:lang="fr">Réseau social qui permet à ses membres de partager des photos et des vidéos.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/ITP"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/ITP"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Профил в Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Instagramový profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Instagram-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Instagram Profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προφίλ στο Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Instagram profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Perfil de Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Instagrami profiil</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Instagram-profiili</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Instagram Profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Próifíl Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Instagram profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Instagram-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Profilo Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Instagram profilis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Instagram profils</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Profil fuq Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Instagramprofiel</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Profil na Instagramie</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Perfil do Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Profil Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Profil na Instagram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Instagram profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Instagramprofil</skos:prefLabel>
+      <at:authority-code>ITP</at:authority-code>
+      <at:op-code>ITP</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>ITP</atold:op-code>
+      <dc:identifier>ITP</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_7b117bce"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/IST"/>
+      <skos:definition xml:lang="en">Personal or institutional profile, showing photos, videos and other personal details on Instagram platform.</skos:definition>
+      <skos:definition xml:lang="fr">Profil personnel ou institutionnel présentant des photos, des vidéos et d’autres informations personnelles sur la plateforme Instagram.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_d4fe80fa">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>IST</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_7b117bce">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-23</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>ITP</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/LKP"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">LinkedIn профил</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">LinkedIn profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">LinkedIn-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">LinkedIn Profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προφίλ στο LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">LinkedIn profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Perfil de LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">LinkedIni profiil</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">LinkedIn-profiili</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">LinkedIn Profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Próifíl LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">LinkedIn profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">LinkedIn-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Profilo LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">LinkedIn profilis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">LinkedIn profils</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Profil fuq LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">LinkedInprofiel</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Profil LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Perfil do LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Profil LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Profil na LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">LinkedIn profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">LinkedInprofil</skos:prefLabel>
+      <at:authority-code>LKP</at:authority-code>
+      <at:op-code>LKP</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>LKP</atold:op-code>
+      <dc:identifier>LKP</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_14ecc5a3"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/LNK"/>
+      <skos:definition xml:lang="en">Personal or institutional profile, showing publicly shared information mainly related to professional life on LinkedIn platform. </skos:definition>
+      <skos:definition xml:lang="fr">Profil personnel ou institutionnel présentant des informations publiques concernant principalement la vie professionnelle sur la plateforme LinkedIn.</skos:definition>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/LNK"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">LinkedIn</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">LinkedIn</skos:prefLabel>
+      <at:authority-code>LNK</at:authority-code>
+      <at:op-code>LNK</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>LNK</atold:op-code>
+      <dc:identifier>LNK</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_d30827ef"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Business-oriented social network mainly used for professional networking and job searching.</skos:definition>
+      <skos:definition xml:lang="fr">Réseau social professionnel utilisé principalement à des fins de réseautage professionnel et de recherche d’emploi.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/LKP"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_14ecc5a3">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>LKP</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_d30827ef">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>LNK</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/MAIN"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="en">Main address</skos:prefLabel>
+      <at:authority-code>MAIN</at:authority-code>
+      <at:op-code>MAIN</at:op-code>
+      <at:start.use>2018-05-30</at:start.use>
+      <atold:op-code>MAIN</atold:op-code>
+      <dc:identifier>MAIN</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_7098c851">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>NON</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/OFFICE_NO"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="de">Büro</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Office</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Bureau</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Birojs</skos:prefLabel>
+      <at:authority-code>OFFICE_NO</at:authority-code>
+      <at:op-code>OFFICE_NO</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>OFFICE_NO</atold:op-code>
+      <dc:identifier>OFFICE_NO</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/a9123d85bb25383f13edf5c638a2a0d7"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>OFFICE</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/a9123d85bb25383f13edf5c638a2a0d7">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>OFFICE</rdf:value>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_2fc05009">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>OLD</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/OP_DATPRO"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Неокончателни данни</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Předběžné údaje</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Midlertidige data</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Vorläufige Daten</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προσωρινά δεδομένα</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Provisional data</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Datos provisionales</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Esialgsed andmed</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Alustavat tiedot</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Données provisoires</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Sonraí sealadacha</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Privremeni podaci</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Ideiglenes adatok</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Dati provvisori</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Laikinieji duomenys</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Provizoriski dati</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Dejta provviżorja</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Voorlopige gegevens</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Dane tymczasowe</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Dados provisórios</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Date provizorii</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Predbežné údaje</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Začasni podatki</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Tillfälliga uppgifter</skos:prefLabel>
+      <at:authority-code>OP_DATPRO</at:authority-code>
+      <at:op-code>OP_DATPRO</at:op-code>
+      <at:start.use>1952-07-23</at:start.use>
+      <atold:op-code>OP_DATPRO</atold:op-code>
+      <dc:identifier>OP_DATPRO</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_7108e10d">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>PRI</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/SEC"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="ga">Seoladh rúnda</skos:prefLabel>
+      <skos:prefLabel xml:lang="bg">Таен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Tajná adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Hemmelig adresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Geheimadresse</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Απόρρητη διεύθυνση</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Secret address</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Dirección secreta</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Varjatud aadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Salainen osoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Adresse secrète</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Tajna adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Rejtett cím</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Indirizzo segreto</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Slaptas adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Slepenā adrese</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Indirizz sigriet</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Geheim adres</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres tajny</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Endereço secreto</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Adresă secretă</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Tajná adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Tajni naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Hemlig adress</skos:prefLabel>
+      <at:authority-code>SEC</at:authority-code>
+      <at:op-code>SEC</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>SEC</atold:op-code>
+      <dc:identifier>SEC</dc:identifier>
+      <skos:altLabel xml:lang="da">Fortroligt</skos:altLabel>
+      <skos:altLabel xml:lang="pt">Confidencial</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Zaupen</skos:altLabel>
+      <skos:altLabel xml:lang="bg">Тайно</skos:altLabel>
+      <skos:altLabel xml:lang="cs">Tajná</skos:altLabel>
+      <skos:altLabel xml:lang="de">Geheim</skos:altLabel>
+      <skos:altLabel xml:lang="el">Απόρρητη</skos:altLabel>
+      <skos:altLabel xml:lang="en">Secret</skos:altLabel>
+      <skos:altLabel xml:lang="es">Secreto</skos:altLabel>
+      <skos:altLabel xml:lang="et">Salastatud aadress</skos:altLabel>
+      <skos:altLabel xml:lang="fi">Salainen</skos:altLabel>
+      <skos:altLabel xml:lang="fr">Secret</skos:altLabel>
+      <skos:altLabel xml:lang="hr">Tajna</skos:altLabel>
+      <skos:altLabel xml:lang="hu">Titkos</skos:altLabel>
+      <skos:altLabel xml:lang="it">Segreto</skos:altLabel>
+      <skos:altLabel xml:lang="lt">Slaptai</skos:altLabel>
+      <skos:altLabel xml:lang="lv">Slepens</skos:altLabel>
+      <skos:altLabel xml:lang="mt">Sigriet</skos:altLabel>
+      <skos:altLabel xml:lang="nl">Geheim</skos:altLabel>
+      <skos:altLabel xml:lang="pl">Tajny</skos:altLabel>
+      <skos:altLabel xml:lang="ro">Secreta</skos:altLabel>
+      <skos:altLabel xml:lang="sk">Tajné</skos:altLabel>
+      <skos:altLabel xml:lang="sv">Hemlig</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_b7d975d6"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_b7d975d6">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>SEC</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/SND"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">SoundCloud</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">SoundCloud</skos:prefLabel>
+      <at:authority-code>SND</at:authority-code>
+      <at:op-code>SND</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>SND</atold:op-code>
+      <dc:identifier>SND</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_862f631d"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Platform used for music sharing that allows its members to upload and promote audio.</skos:definition>
+      <skos:definition xml:lang="fr">Plateforme utilisée pour le partage de musique qui permet à ses membres de télécharger et de promouvoir des morceaux de musique.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_862f631d">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>SND</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TEL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">телефон</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">τηλεφώνου</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Telephone</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Teléfono</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Puhelin</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Téléphone</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Guthán</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Telefono</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Telefono</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Tālrunis</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Telefoon</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Telefone</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Telefón</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Telefon</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Telefon</skos:prefLabel>
+      <at:authority-code>TEL</at:authority-code>
+      <at:op-code>TEL</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>TEL</atold:op-code>
+      <dc:identifier>TEL</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/0bc2f48fdf2acaef40095c02ed4aad51"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>TEL</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TEL_EXT"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="de">Durchwahl</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Extension</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Numéro de poste</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Iekšējais numurs</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Doorverbinding</skos:prefLabel>
+      <at:authority-code>TEL_EXT</at:authority-code>
+      <at:op-code>TEL_EXT</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>TEL_EXT</atold:op-code>
+      <dc:identifier>TEL_EXT</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/a93c86b9389c7c087ac2a336cfbe8a7a"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>POSTE</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/a93c86b9389c7c087ac2a336cfbe8a7a">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>POSTE</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TEL_SWI"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="da">Omstillingsbord</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Zentrale</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Switchboard</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Centralita</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Standard</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Standard</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Centrālais tālrunis</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Schakelbord</skos:prefLabel>
+      <at:authority-code>TEL_SWI</at:authority-code>
+      <at:op-code>TEL_SWI</at:op-code>
+      <at:start.use>2009-12-01</at:start.use>
+      <atold:op-code>TEL_SWI</atold:op-code>
+      <dc:identifier>TEL_SWI</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/d3bd94108e8aafcee79fe4a05f24b545"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <at:op-mapped-code>
+         <at:MappedCode>
+            <dc:source>WHOISWHO</dc:source>
+            <at:legacy-code>CENTRAL</at:legacy-code>
+         </at:MappedCode>
+      </at:op-mapped-code>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/d3bd94108e8aafcee79fe4a05f24b545">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-01</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/WHOISWHO"/>
+      <rdf:value>CENTRAL</rdf:value>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TGR"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Телеграма</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Telegramm</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Τηλεγράφημα</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Telegram </skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Telegrama</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Aadress telegrammi saatmiseks</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Sähkeosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Télégramme</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Távirat</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Telegramma</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Telegrama</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Telegramma</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Telegramma</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Telegrama</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Telegrama</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Telegram</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Telegram</skos:prefLabel>
+      <at:authority-code>TGR</at:authority-code>
+      <at:op-code>TGR</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>TGR</atold:op-code>
+      <dc:identifier>TGR</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_9a1aa317"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Message delivered through telegraph.</skos:definition>
+      <skos:definition xml:lang="fr">Message transmis par télégraphe.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_9a1aa317">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>TGR</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TRA"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Служебен адрес</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Pracovní</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Arbejde</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Büro</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Εργασία</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Oficina</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Tööaadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Travail</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Munka</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Lavoro</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Darbo</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Darbs</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Xoghol</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Werk</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Praca</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Trabalho</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Birou</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Pracovná adresa</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Kraj delovnega mesta</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Kontor</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Työosoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Work address</skos:prefLabel>
+      <at:authority-code>TRA</at:authority-code>
+      <at:op-code>TRA</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>TRA</atold:op-code>
+      <dc:identifier>TRA</dc:identifier>
+      <skos:altLabel xml:lang="en">Work</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_bebf7ed1"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_bebf7ed1">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>TRA</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TT"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Twitter</skos:prefLabel>
+      <at:authority-code>TT</at:authority-code>
+      <at:op-code>TT</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>TT</atold:op-code>
+      <dc:identifier>TT</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_13bcd6c2"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Microblogging social network that allows its members to publish posts called "tweets".</skos:definition>
+      <skos:definition xml:lang="fr">Réseau social de «microblogging» qui permet à ses membres de publier des messages appelés «tweets».</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/TWT"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/TWT"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Профил в Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Twitterový profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Twitter-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Twitter Profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Προφίλ στο Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Twitter profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Perfil de Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Twitteri profiil</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Twitter-profiili</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Twitter Profile</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Próifíl Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Twitter profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Twitter-profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Profilo Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Twitter profilis</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Twitter profils</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Profil fuq Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Twitterprofiel</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Profil na Twitterze</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Perfil do Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Profil Twitter</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Profil na Twitteri</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Twitter profil</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Twitterprofil</skos:prefLabel>
+      <at:authority-code>TWT</at:authority-code>
+      <at:op-code>TWT</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>TWT</atold:op-code>
+      <dc:identifier>TWT</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_6fb1fdb5"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/TT"/>
+      <skos:definition xml:lang="en">Personal or institutional profile, showing publicly shared information including personal details and published messages, on Twitter platform.</skos:definition>
+      <skos:definition xml:lang="fr">Profil personnel ou institutionnel présentant des informations publiques, dont des informations personnelles et des messages publiés, sur la plateforme Twitter.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_13bcd6c2">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>TT</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-05</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_6fb1fdb5">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>TWT</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-05</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/URL"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Унифициран локатор на ресурс</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Jednotný lokátor zdroje</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Einheitlicher Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Ενιαίος Εντοπιστής Πόρου</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Localizador de recursos uniforme</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Internetiaadress</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">URL-osoite</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Aimsitheoir Aonfhoirmeach Acmhainne</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">Ujednačeni lokator sadržaja</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Egységes eroforrás-azonosító</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Universalusis adresas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Vienotais resursu vietradis</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Adres URL</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Localizador uniforme de recursos</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Localizator uniform de resurse</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Uniform Resource Locator</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">URL naslov</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Uniform Resource Locator</skos:prefLabel>
+      <at:authority-code>URL</at:authority-code>
+      <at:op-code>URL</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>URL</atold:op-code>
+      <dc:identifier>URL</dc:identifier>
+      <skos:altLabel xml:lang="bg">URL</skos:altLabel>
+      <skos:altLabel xml:lang="da">url</skos:altLabel>
+      <skos:altLabel xml:lang="en">URL</skos:altLabel>
+      <skos:altLabel xml:lang="et">URL</skos:altLabel>
+      <skos:altLabel xml:lang="hu">URL</skos:altLabel>
+      <skos:altLabel xml:lang="lt">URL</skos:altLabel>
+      <skos:altLabel xml:lang="pt">URL</skos:altLabel>
+      <skos:altLabel xml:lang="ro">url</skos:altLabel>
+      <skos:altLabel xml:lang="sk">URL</skos:altLabel>
+      <skos:altLabel xml:lang="sl">Uniform Resource Locator</skos:altLabel>
+      <skos:altLabel xml:lang="sv">URL</skos:altLabel>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_443107ba"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Internet address that specifies the location and the protocol used to access a digital resource.</skos:definition>
+      <skos:definition xml:lang="fr">Adresse internet qui précise l’emplacement d’une ressource numérique et le protocole utilisé pour y accéder.</skos:definition>
+      <skos:hiddenLabel xml:lang="bg">Унифициран локатор на ресурс (URL)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="da">Uniform Resource Locator (url)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="et">Internetiaadress (URL)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="hu">Egységes eroforrás-azonosító (URL)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="lt">Universalusis adresas (URL)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="pt">Localizador uniforme de recursos (URL)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="ro">Localizator uniform de resurse (url)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="sl">URL naslov (Uniform Resource Locator)</skos:hiddenLabel>
+      <skos:hiddenLabel xml:lang="sv">Uniform Resource Locator (URL)</skos:hiddenLabel>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_443107ba">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>URL</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/WEB"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">Уебсайт</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Webové stránky</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">Websted</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Website</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Ιστότοπος</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">Website</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Sitio web</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">Veebisait</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">Verkkosivusto</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Site web</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Suíomh gréasáin</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">Honlap</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Sito web</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">Tinklavietė</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">Tīmekļa vietne</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Sit web</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Website</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Strona internetowa</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Sítio Web</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Site web</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Webové sídlo</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">Spletno mesto</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Webbplats</skos:prefLabel>
+      <at:authority-code>WEB</at:authority-code>
+      <at:op-code>WEB</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>WEB</atold:op-code>
+      <dc:identifier>WEB</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_3925c987"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Group of webpages containing a domain name.</skos:definition>
+      <skos:definition xml:lang="fr">Groupe de pages web comportant un nom de domaine.</skos:definition>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_3925c987">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>WEB</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/YTB"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">YouTube</skos:prefLabel>
+      <at:authority-code>YTB</at:authority-code>
+      <at:op-code>YTB</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>YTB</atold:op-code>
+      <dc:identifier>YTB</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_76b9b93d"/>
+      <skos:topConceptOf rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:definition xml:lang="en">Social media platform mainly used for video sharing.</skos:definition>
+      <skos:definition xml:lang="fr">Plateforme de réseau social utilisée principalement pour le partage de vidéos.</skos:definition>
+      <skos:narrower rdf:resource="http://publications.europa.eu/resource/authority/address-type/YTC"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/address-type/YTC"
+                 at:deprecated="false">
+      <skos:prefLabel xml:lang="bg">YouTube канал</skos:prefLabel>
+      <skos:prefLabel xml:lang="cs">Kanál YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="da">YouTube-kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="de">Youtube Kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="el">Κανάλι YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="en">YouTube channel</skos:prefLabel>
+      <skos:prefLabel xml:lang="es">Canal de Youtube</skos:prefLabel>
+      <skos:prefLabel xml:lang="et">YouTube'i kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="fi">YouTube-kanava</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">Chaîne YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="ga">Cainéal YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="hr">YouTube kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="hu">YouTube kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="it">Canale Youtube</skos:prefLabel>
+      <skos:prefLabel xml:lang="lt">YouTube kanalas</skos:prefLabel>
+      <skos:prefLabel xml:lang="lv">YouTube kanāls</skos:prefLabel>
+      <skos:prefLabel xml:lang="mt">Kanal YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="nl">Youtube kanaal</skos:prefLabel>
+      <skos:prefLabel xml:lang="pl">Kanał Youtube</skos:prefLabel>
+      <skos:prefLabel xml:lang="pt">Canal do Youtube</skos:prefLabel>
+      <skos:prefLabel xml:lang="ro">Canalul YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="sk">Kanál YouTube</skos:prefLabel>
+      <skos:prefLabel xml:lang="sl">YouTube kanal</skos:prefLabel>
+      <skos:prefLabel xml:lang="sv">Youtube-kanal</skos:prefLabel>
+      <at:authority-code>YTC</at:authority-code>
+      <at:op-code>YTC</at:op-code>
+      <at:start.use>2021-09-29</at:start.use>
+      <atold:op-code>YTC</atold:op-code>
+      <dc:identifier>YTC</dc:identifier>
+      <skos:inScheme rdf:resource="http://publications.europa.eu/resource/authority/address-type"/>
+      <skos:notation rdf:resource="http://publications.europa.eu/resource/authority/address-type/notation_c75ded8f"/>
+      <skos:broader rdf:resource="http://publications.europa.eu/resource/authority/address-type/YTB"/>
+      <skos:definition xml:lang="en">Personal or institutional profile, showing video and other personal details, on YouTube platform.</skos:definition>
+      <skos:definition xml:lang="fr">Profil personnel ou institutionnel présentant des vidéos et d’autres informations personnelles sur la plateforme YouTube.</skos:definition>
+      <skos:hiddenLabel xml:lang="en">YouTube chanel</skos:hiddenLabel>
+   </skos:Concept>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_76b9b93d">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>YTB</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+   <euvoc:XlNotation rdf:about="http://publications.europa.eu/resource/authority/address-type/notation_c75ded8f">
+      <rdf:type rdf:resource="http://publications.europa.eu/ontology/euvoc#XlNotation"/>
+      <euvoc:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-29</euvoc:startDate>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-16</dct:created>
+      <dct:type rdf:resource="http://publications.europa.eu/resource/authority/notation-type/EP"/>
+      <rdf:value>YTC</rdf:value>
+      <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-08-25</dct:modified>
+   </euvoc:XlNotation>
+</rdf:RDF>
