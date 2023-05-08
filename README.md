@@ -1,4 +1,13 @@
-# European Parliament Open Data: Call for beta testers
+## [European Parliament's Open Data Portal](https://data.europarl.europa.eu/)
+
+> The portal is live and accessible since January 2023 at https://data.europarl.europa.eu/
+> 
+> The below call for beta testers was relevant August-November 2022. However, as we are preparing new datasets, we might be using this section again in the future.
+
+
+--- --- ---
+<I>August 2022</I>
+## European Parliament Open Data: Call for beta testers 
 
 ## Context
 
