@@ -93,6 +93,7 @@ The structure of the `time-period-identifier` can either be:
 |--|--|
 |URI pattern|`{base-uri}/def/{reference-ontology-identifier}-ep#`|
 |Examples|`https://data.europarl.europa.eu/def/dcat-ep#`, `https://data.europarl.europa.eu/def/org-ep#`, `https://data.europarl.europa.eu/def/eli-ep#`|
+|Remarks|The `reference-ontology-identifier` refers to the profiled ontology / vocabulary. For instance, `dcat-ep` identifies the European Parliament (EP) application profile of the W3C DCAT vocabulary [[VOCAB-DCAT](https://www.w3.org/TR/vocab-dcat/)].|
 
 ### Metadata
 
@@ -110,11 +111,13 @@ The structure of the `time-period-identifier` can either be:
 |--|--|
 |URI pattern|`{base-uri}/dataset/{dataset-series-identifier}_{parameter}`|
 |Examples|`https://data.europarl.europa.eu/dataset/meps_8`|
+|Remarks|The local identifier of a dataset consists of the identifier of the series the dataset belongs to, plus a parameter identifiying the dataset in the series. For instance, `meps_8` identifies the dataset of the Members of the Parliament (MEPs) of the 8th parliamentary term.|
 
 |Class|(Specific version of a) Dataset (`dcat:Dataset`)|
 |--|--|
 |URI pattern|`{base-uri}/dataset/{dataset-series-identifier}_{parameter}_{version}`|
 |Examples|`https://data.europarl.europa.eu/dataset/meps_8_1`|
+|Remarks|The local identifier of a specific version of a dataset consists of the identifier of the dataset, plus the version number. E.g., `meps_8_1` identifies the version of the dataset with identifier `meps_8`.|
 
 |Class|Data Service (`dcat:DataService`)|
 |--|--|
@@ -195,15 +198,15 @@ The structure of the `time-period-identifier` can either be:
 
 |Class|Document (`eli-dl:Work`)|
 |--|--|
-|URI pattern|`{base-uri}/eli/dl/doc/{work-identifier}`|
+|URI pattern|`{base-uri}/eli/dl/doc/{document-identifier}`|
 |Examples|`https://data.europarl.europa.eu/eli/dl/doc/OJ-9-2021-09-16`, `https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-07-08`|
 
 |Class|Language version of a Document (`eli:Expression`)|
 |--|--|
-|URI pattern|`{base-uri}/eli/dl/doc/{work-identifier}/{language}`|
+|URI pattern|`{base-uri}/eli/dl/doc/{document-identifier}/{language}`|
 |Examples|`https://data.europarl.europa.eu/eli/dl/doc/OJ-9-2021-09-16/en`, `https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-07-08/fr`|
 
 |Class|Format of a Document (`eli:Manifestation`)|
 |--|--|
-|URI pattern|`{base-uri}/eli/dl/doc/{work-identifier}/{language}/{format}`|
+|URI pattern|`{base-uri}/eli/dl/doc/{document-identifier}/{language}/{format}`|
 |Examples|`https://data.europarl.europa.eu/eli/dl/doc/OJ-9-2021-09-16/en/pdf`, `https://data.europarl.europa.eu/eli/dl/doc/PV-9-2021-07-08/fr/xml`|
