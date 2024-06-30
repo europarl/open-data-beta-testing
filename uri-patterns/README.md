@@ -133,7 +133,7 @@ The structure of the `time-period-identifier` can either be:
 |--|--|
 |URI pattern|`{base-uri}/distribution/{dataset-identifier}_{language}.{format}`|
 |Examples|`https://data.europarl.europa.eu/distribution/meps_9_1.ttl`, `https://data.europarl.europa.eu/distribution/meps_9_1_sv.csv`|
-|Remarks|The `language` component is specified by using the 2-letter language codes defined in [[ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1)], and it is used only for monolingual formats, e.g., CSV.|
+|Remarks|The `language` component is used only for monolingual formats, e.g., CSV, and it is specified by using the 2-letter language codes defined in [[ISO-639-1](https://en.wikipedia.org/wiki/ISO_639-1)].|
 
 
 ### People and organisations
@@ -142,7 +142,7 @@ The structure of the `time-period-identifier` can either be:
 |--|--|
 |URI pattern|`{base-uri}/org/{organisation-identifier}`|
 |Examples|`https://data.europarl.europa.eu/org/12344`, `https://data.europarl.europa.eu/org/ep-0`, `https://data.europarl.europa.eu/org/ep-9`|
-|Remarks|The `organisation-identifier` is a number, except for those organisations associated with a parliamentary term (e.g., the "Ninth European Parliament" is identified by `ep-9`|
+|Remarks|The `organisation-identifier` is a number, except for those organisations associated with a parliamentary term (e.g., the "Ninth European Parliament" is identified by `ep-9`).|
 
 |Class|Person (`foaf:Person`)|
 |--|--|
