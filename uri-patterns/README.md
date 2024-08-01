@@ -11,9 +11,9 @@ It consists of three main components:
 ````
 
 where
-- The base URI is common to all: `https://data.europa.europa.eu/`
-- The identifier of the category a resource belongs to (people, organisations, etc.).
-- The local identifier of the resource.
+- `base-uri` denotes the base URI, that is common to all: `https://data.europa.europa.eu/`
+- `category` denotes the identifier of the category a resource belongs to (data assets, data services, etc.).
+- `local-id` denotes the local identifier of the resource.
 
 Examples of category identifiers are:
 - `person`, for people
