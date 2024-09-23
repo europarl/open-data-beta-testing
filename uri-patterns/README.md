@@ -29,7 +29,7 @@ Local identifiers are alphanumeric strings whose structure vary depending on the
 |`adms`|`http://www.w3.org/ns/adms#`|[[VOCAB-ADMS](https://www.w3.org/TR/vocab-adms/)]|
 |`dcat`|`http://www.w3.org/ns/dcat#`|[[VOCAB-DCAT](https://www.w3.org/TR/vocab-dcat/)]|
 |`dcterms`|`http://purl.org/dc/terms/`|[[DCTERMS](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)]|
-|`eli`|`http://data.europa.eu/eli/eli-draft-legislation-ontology#`|[[ELI](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eli)]|
+|`eli`|`http://data.europa.eu/eli/ontology#`|[[ELI](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eli)]|
 |`eli-dl`|`http://data.europa.eu/eli/eli-draft-legislation-ontology#`|[[ELI-DL](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eli-dl)]|
 |`epvoc`|`https://data.europarl.europa.eu/def/epvoc#`|[[EPVOC](https://europarl.github.io/epvoc/)]|
 |`foaf`|`http://xmlns.com/foaf/0.1/`|[[FOAF](http://xmlns.com/foaf/spec)]|
