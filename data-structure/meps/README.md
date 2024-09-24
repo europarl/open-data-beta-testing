@@ -38,16 +38,15 @@ An example of a fictitious membership specifying the country of mandate of a MEP
 ````turtle
 <https://data.europarl.europa.eu/membership/12345-m-67890>
         rdf:type            org:Membership;
-        euvoc:represents    <http://publications.europa.eu/resource/authority/country/PRT>;
+        euvoc:represents    <http://publications.europa.eu/resource/authority/country/BEL>;
         dcterms:identifier  "12345-m-67890";
         skos:notation       "67890"^^epvoc:codictMandateId;
-        dcat:contactPoint   <https://data.europarl.europa.eu/contact-point/12345-m-67890-XYZ>;
-        org:memberDuring    <https://data.europarl.europa.eu/time-period/20240716>;
-        org:organization    <https://data.europarl.europa.eu/org/ep-10>;
+        org:memberDuring    <https://data.europarl.europa.eu/time-period/19890725-19940718>;
+        org:organization    <https://data.europarl.europa.eu/org/ep-3>;
         org:role            <https://data.europarl.europa.eu/def/ep-roles/MEMBER_PARLIAMENT> .
 ````
 
-It says that this membership is a about a MEP (`org:role`) of the 10th parliamentary term (`org:organization`), whose country of mandate is Portugal (`euvoc:represents`), and that the membership started on July, 16th, 2024 (`org:memberDuring`).
+It says that this membership is a about a MEP (`org:role`) of the 3rd parliamentary term (`org:organization`), whose country of mandate is Belgium (`euvoc:represents`), and that the membership started on 25 July 1989 and ended on 18 July 1994 (`org:memberDuring`).
 
 #### Example 2: National party
 
@@ -58,13 +57,13 @@ An example of a fictitious membership specifying the national party of a MEP is 
         rdf:type                        org:Membership;
         dcterms:identifier              "12345-f-56789";
         skos:notation                   "56789"^^epvoc:codictFunctionId;
-        org:memberDuring                <https://data.europarl.europa.eu/time-period/20240716>;
-        org:organization                <https://data.europarl.europa.eu/org/6817>;
+        org:memberDuring                <https://data.europarl.europa.eu/time-period/19890725-19940718>;
+        org:organization                <https://data.europarl.europa.eu/org/889>;
         org:role                        <https://data.europarl.europa.eu/def/ep-roles/MEMBER>;
         epvoc:membershipClassification  <https://data.europarl.europa.eu/def/ep-entities/NATIONAL_CHAMBER> .
 ````
 
-It says that this membership is a about a MEP who is a member (`org:role`) of the Partido Comunista Português (`org:organization`).
+It says that this membership is a about a MEP who has been a member (`org:role`) of the Parti social-chrétien (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
 
 #### Example 3: Political group
 
@@ -75,13 +74,13 @@ An example of a fictitious membership specifying the political group of a MEP is
         rdf:type                        org:Membership;
         dcterms:identifier              "12345-f-45678";
         skos:notation                   "45678"^^epvoc:codictFunctionId;
-        org:memberDuring                <https://data.europarl.europa.eu/time-period/20240716>;
-        org:organization                <https://data.europarl.europa.eu/org/7036>;
+        org:memberDuring                <https://data.europarl.europa.eu/time-period/19890725-19940718>;
+        org:organization                <https://data.europarl.europa.eu/org/484>;
         org:role                        <https://data.europarl.europa.eu/def/ep-roles/MEMBER>;
         epvoc:membershipClassification  <https://data.europarl.europa.eu/def/ep-entities/EU_POLITICAL_GROUP> .
 ````
 
-It says that this membership is a about a MEP who is a member (`org:role`) of the political group "The Left" (`org:organization`).
+It says that this membership is a about a MEP who has been a member (`org:role`) of the Group of the European People's Party (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
 
 
 
