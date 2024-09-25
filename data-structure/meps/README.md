@@ -1,18 +1,35 @@
 # MEPs (Members of the European Parliament) data structure
 
-This data structure definition is a profile of the [ORG-EP application profile (v0.3.1)](https://europarl.github.io/org-ep/0.3.1/).
+This data structure definition is a profile of the [ORG-EP application profile (v2.1.0)](https://europarl.github.io/org-ep/2.1.0/).
 
 The corresponding data are available in the [`data/meps`](../data/meps/) folder.
 
 The data structure definition is available in the following formats:
 - [SHACL (Turtle serialisation)](./org-ep_meps.shacl.ttl)
-- [HTML rendering](https://europarl.github.io/open-data-beta-testing/data-structure/meps)
+- [HTML rendering](https://europarl.github.io/org-ep/dsd/meps/org-ep_meps.shacl.ttl)
 
 ## Overall data organisation
 
+### MEPs' personal information
+
+Information about a MEP's name, surname, birth date, citizenship etc. are included in the MEP's properties.
+
+````mermaid
+flowchart TD
+A(MEP
+foaf:givenName Aaa
+foaf:familyName Bbb
+dcterms:identifier 12345
+...)
+C1(National Country)
+C2(...)
+A-- person:citizenship --> C1
+A-- ... -->C2
+````
+
 ### MEPs' memberships
 
-Information about a MEP's country of mandate, national parties, political groups, etc. are specified as "memberships" (`org:Membership`), which are linked to MEPs as shown in the following diagram:
+Information about a MEP's country of mandate, national parties, political groups, committees etc. are specified as "memberships" (`org:Membership`), which are linked to MEPs as shown in the following diagram:
 
 ````mermaid
 flowchart TD
@@ -28,12 +45,18 @@ A-- org:hasMembership -->M3
 Typically, memberships carry information about its start and end date, the role played by the MEP, as well as the "organisation" (national parties, political groups, etc.) the MEP is member of.
 
 Memberships are of two types:
-- mandates, used only for the country of mandate;
-- functions, for the rest (chambers, parties, political groups, etc.).
+- Membership-Mandate, used for their affiliation to the European Parliament as Members and representative of a country during a certain Parliamentary Term. The URI of the Membership will contain a "-m-".
+- Membership-Function, used for the their affiliation to committees, national parties, political groups, working groups etc. . The URI of the Membership will contain a "-f-".
 
-#### Example 1: Country of mandate
+#### Example 1: Membership-Mandate to retrieve the MEP's mandate during a certain Parliamentary Term and their country of representation
 
-An example of a fictitious membership specifying the country of mandate of a MEP is the following one:
+Let's take a fictitious MEP ```` <https://data.europarl.europa.eu/person/12345> ````
+
+An example of a fictitious membership specifying:
+- the Parliamentary Term during which 12345 was MEP;
+- the country of representation of 12345.
+  
+is the following one:
 
 ````turtle
 <https://data.europarl.europa.eu/membership/12345-m-67890>
@@ -46,11 +69,11 @@ An example of a fictitious membership specifying the country of mandate of a MEP
         org:role            <https://data.europarl.europa.eu/def/ep-roles/MEMBER_PARLIAMENT> .
 ````
 
-It says that this membership is a about a MEP (`org:role`) of the 3rd parliamentary term (`org:organization`), whose country of mandate is Belgium (`euvoc:represents`), and that the membership started on 25 July 1989 and ended on 18 July 1994 (`org:memberDuring`).
+This Membership tells us that 12345 was a member of the European Parliament (`org:role`) during the 3rd parliamentary term (`org:organization`), whose country of representation is Belgium (`euvoc:represents`), and that the membership started on 25 July 1989 and ended on 18 July 1994 (`org:memberDuring`).
 
-#### Example 2: National party
+#### Example 2: Membership-Function to retrieve the MEP's National party
 
-An example of a fictitious membership specifying the national party of a MEP is the following one:
+An example of a fictitious membership specifying the national party of MEP 12345 is the following one:
 
 ````turtle
 <https://data.europarl.europa.eu/membership/12345-f-56789>
@@ -63,11 +86,11 @@ An example of a fictitious membership specifying the national party of a MEP is 
         epvoc:membershipClassification  <https://data.europarl.europa.eu/def/ep-entities/NATIONAL_CHAMBER> .
 ````
 
-It says that this membership is a about a MEP who has been a member (`org:role`) of the Parti social-chrétien (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
+This Membership says that 12345 was a member (`org:role`) of the Parti social-chrétien (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
 
-#### Example 3: Political group
+#### Example 3: Membership-Function to retrieve the MEP's Political group
 
-An example of a fictitious membership specifying the political group of a MEP is the following one:
+An example of a fictitious membership specifying the political group of MEP 12345 is the following one:
 
 ````turtle
 <https://data.europarl.europa.eu/membership/12345-f-45678>
@@ -80,7 +103,7 @@ An example of a fictitious membership specifying the political group of a MEP is
         epvoc:membershipClassification  <https://data.europarl.europa.eu/def/ep-entities/EU_POLITICAL_GROUP> .
 ````
 
-It says that this membership is a about a MEP who has been a member (`org:role`) of the Group of the European People's Party (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
+This Membership says that 12345 was a member (`org:role`) of the Group of the European People's Party (`org:organization`) between 25 July 1989 and 18 July 1994 (`org:memberDuring`).
 
 
 
