@@ -1,12 +1,19 @@
 # MEPs (Members of the European Parliament) data structure
 
-This data structure definition is a profile of the [ORG-EP application profile (v2.1.0)](https://europarl.github.io/org-ep/2.1.0/).
+> ⚠️ **WARNING**
+>
+> The data, data structure definition, and applications profile listed below are out of date.
+> - Latest version of the MEPS dataset: [European Parliament Open Data Portal](https://data.europarl.europa.eu/en/datasets?dataThemeFamily=dataset.theme.MEPS).
+> - Latest version of the ORG-EP application profile: https://europarl.github.io/org-ep/
+> - Latest version of the data structure definition of the MEPs dataset: https://europarl.github.io/org-ep/dsd/meps/
 
-The corresponding data are available in the [`data/meps`](../data/meps/) folder.
+<del>This data structure definition is a profile of the [ORG-EP application profile (v0.3.1)](https://europarl.github.io/org-ep/0.3.1/).</del>
 
-The data structure definition is available in the following formats:
-- [SHACL (Turtle serialisation)](./org-ep_meps.shacl.ttl)
-- [HTML rendering](https://europarl.github.io/org-ep/dsd/meps/org-ep_meps.shacl.ttl)
+<del>The corresponding data are available in the [`data/meps`](../data/meps/) folder.</del>
+
+<del>The data structure definition is available in the following formats:</del>
+- <del>[SHACL (Turtle serialisation)](./org-ep_meps.shacl.ttl)</del>
+- <del>[HTML rendering](https://europarl.github.io/open-data-beta-testing/data-structure/meps)</del>
 
 ## Overall data organisation
 
@@ -21,7 +28,7 @@ foaf:givenName Aaa
 foaf:familyName Bbb
 dcterms:identifier 12345
 ...)
-C1(National Country)
+C1(Country)
 C2(...)
 A-- person:citizenship --> C1
 A-- ... -->C2
@@ -29,7 +36,7 @@ A-- ... -->C2
 
 ### MEPs' memberships
 
-Information about a MEP's country of mandate, national parties, political groups, committees etc. are specified as "memberships" (`org:Membership`), which are linked to MEPs as shown in the following diagram:
+Information about a MEP's country of representation, national parties, political groups, committees etc. are specified as "memberships" (`org:Membership`), which are linked to MEPs as shown in the following diagram:
 
 ````mermaid
 flowchart TD
